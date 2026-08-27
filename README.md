@@ -1,14 +1,69 @@
 # Evidence-Gated Support Copilot for Developer-Tool Companies
 
-A focused applied-AI product for drafting grounded developer-support responses.
-The Kubernetes-core track is the first reference implementation: it retrieves
-approved documentation passages, attaches citations, flags suspicious
-instructions, requires human review, and measures retrieval quality against
-labelled questions.
+A production-minded beta for drafting developer-support responses from approved
+documentation. The Kubernetes-core track is the first reference implementation:
+it retrieves pinned official passages, checks direct evidence, cites its sources,
+flags suspicious instructions, and abstains when support is insufficient.
+
+[**Live demo**](https://evidence-gated-support-copilot.onrender.com) ·
+[**Release status**](docs/release_status.md) ·
+[**Technical case study**](docs/technical_case_study.md) ·
+[**Quality gate**](https://github.com/Abdulrahman-tech/evidence-gated-support-copilot/actions/workflows/quality.yml)
+
+> **Current status:** production-minded portfolio beta, not production ready.
+> The public demo uses an explicitly non-production lexical evidence verifier,
+> every response requires human review, and the Kubernetes independent release
+> benchmark is not yet complete.
+
+## What it does
+
+```text
+Support question
+    → tenant and scope checks
+    → retrieval from pinned official documentation
+    → prompt-injection screening
+    → direct-evidence verification
+    → cited draft or abstention
+    → mandatory human review
+```
+
+The system does not send customer messages or make infrastructure changes. Its
+core product decision is whether available evidence is strong enough to support
+a reviewable draft.
+
+## Current proof
+
+| Area | Verified today | Honest boundary |
+|---|---|---|
+| Runtime | FastAPI service, authenticated tenant boundary, non-root Docker image | Public demo key is demonstration access, not production authentication |
+| Evidence | Exact document IDs, quotes, source URLs, and fail-closed verifier contract | Hosted demo uses deterministic lexical overlap, not a qualified semantic verifier |
+| Safety | Ticket and retrieved-passage injection tests; oversized input rejection | Gateway rate limiting and production security monitoring remain open |
+| Evaluation | Frozen splits, leakage groups, Wilson intervals, trajectory regressions | Kubernetes independent development, validation, and locked-test gates have not passed |
+| Delivery | Public HTTPS demo and GitHub Actions tests on Python 3.10/3.12 plus container checks | Render free tier is a portfolio environment without a production SLA |
+
+The historical mixed-support benchmark remains useful as engineering evidence,
+but it is not a Kubernetes production claim:
+
+| Historical split | Supported | Unsupported | Recall@1 | Recall@3 | Unsupported abstention |
+|---|---:|---:|---:|---:|---:|
+| Development | 80 | 20 | 75.0% | 78.8% | 70.0% |
+| Validation | 80 | 20 | 66.2% | 68.8% | 85.0% |
+| Challenge diagnostic | 80 | 100 | 55.0% | 56.2% | 73.0% |
+
+The challenge labels were not independently adjudicated case by case, so that
+row is diagnostic only. See the [release status](docs/release_status.md) for the
+open gates and the exact claim boundary.
 
 Read the [technical case study](docs/technical_case_study.md) for the product
 architecture, trajectory evaluation, safety decisions, measured results, and
 honest release boundary.
+
+<details>
+<summary><strong>Research history, corpus work, and experiment log</strong></summary>
+
+The sections below preserve failed experiments, dataset audits, candidate
+comparisons, and provenance. They are retained for reproducibility and are not
+the shortest path to understanding the current product.
 
 ## Kubernetes evidence-first track
 
@@ -309,6 +364,8 @@ locked test remains untouched.
 pip install -e '.[semantic]'
 HF_HUB_OFFLINE=1 PYTHONPATH=src python scripts/evaluate_hybrid_candidate.py --candidate v2 --split development
 ```
+
+</details>
 
 ## Quick start
 
