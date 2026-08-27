@@ -1,4 +1,4 @@
-# Evidence-Gated Support Copilot — Kubernetes Local Demo
+# Evidence-Gated Support Copilot — Kubernetes Portfolio Demo
 
 This demo runs without OpenAI, Groq, or any paid API. It uses the pinned
 Kubernetes documentation corpus, local BM25 retrieval, deterministic scope
@@ -19,6 +19,13 @@ uvicorn support_copilot.api:create_app_from_env --factory --host 127.0.0.1 --por
 
 Open `http://127.0.0.1:8000`, enter `local-demo-key`, and try the three example
 buttons. The key is a local demonstration value, not a deployable secret.
+
+## Deploy on Render
+
+The repository's `render.yaml` provides a zero-cost hosted version of the same
+demo. It uses the documented `local-demo-key` as public demonstration access,
+not as a security boundary. The free instance can sleep when idle and is not a
+production hosting tier.
 
 ## Run with Docker
 

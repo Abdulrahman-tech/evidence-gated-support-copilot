@@ -344,6 +344,20 @@ export SUPPORT_COPILOT_MINIMUM_SCORE_RATIO=1.0
 See [the local portfolio demo runbook](docs/portfolio_demo.md) for expected
 supported, routed, and abstained flows and the equivalent Docker command.
 
+## Deploy the portfolio demo
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Abdulrahman-tech/evidence-gated-support-copilot)
+
+The included `render.yaml` deploys the Docker image on Render's free web-service
+plan, waits for GitHub checks before redeploying, and monitors `/healthz`. Enter
+`local-demo-key` in the interface. This is deliberately public demonstration
+access, not a production credential.
+
+The hosted demo uses the explicitly non-production `local_demo` verifier and
+retains mandatory human review. Render's free service sleeps after 15 minutes
+without traffic and can take about a minute to wake. It is a portfolio endpoint,
+not evidence that the independent production-readiness gates have passed.
+
 The command above runs in `fail_closed` verification mode. For the free-tier
 development path, install and configure the Groq adapter. It defaults to
 `openai/gpt-oss-20b`, which supports Groq strict structured output:

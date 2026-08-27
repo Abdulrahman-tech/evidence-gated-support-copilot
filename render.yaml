@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: evidence-gated-support-copilot
+    runtime: docker
+    plan: free
+    region: frankfurt
+    healthCheckPath: /healthz
+    autoDeployTrigger: checksPass
+    envVars:
+      - key: PORT
+        value: "8000"
+      - key: SUPPORT_COPILOT_KNOWLEDGE_PATH
+        value: /app/data/kubernetes/knowledge.json
+      - key: SUPPORT_COPILOT_API_KEYS
+        value: '{"local-demo-key":"kubernetes"}'
+      - key: SUPPORT_COPILOT_EVIDENCE_VERIFIER
+        value: local_demo
+      - key: SUPPORT_COPILOT_MINIMUM_SCORE_RATIO
+        value: "1.0"
+      - key: SUPPORT_COPILOT_MAX_TICKET_CHARACTERS
+        value: "2000"

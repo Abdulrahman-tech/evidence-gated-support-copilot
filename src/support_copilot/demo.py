@@ -54,12 +54,12 @@ DEMO_HTML = """<!doctype html>
   </style>
 </head>
 <body><main>
-  <div class="eyebrow">Kubernetes reference implementation · Local demo</div>
+  <div class="eyebrow">Kubernetes reference implementation · Zero-cost demo</div>
   <h1>Evidence-Gated Support Copilot</h1>
   <p class="lede">Ask a Kubernetes-core question. The copilot cites its pinned source,
     routes uncovered tooling questions, and abstains when evidence is insufficient.</p>
   <section class="panel">
-    <label for="key">Local API key</label>
+    <label for="key">Demo access key</label>
     <input id="key" type="password" autocomplete="off" placeholder="Enter the key supplied at startup">
     <label for="ticket">Support question</label>
     <textarea id="ticket" placeholder="Which Kubernetes Service type is reachable only from inside the cluster?"></textarea>
