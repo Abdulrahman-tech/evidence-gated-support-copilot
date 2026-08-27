@@ -346,6 +346,8 @@ supported, routed, and abstained flows and the equivalent Docker command.
 
 ## Deploy the portfolio demo
 
+[**Open the live demo**](https://evidence-gated-support-copilot.onrender.com)
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Abdulrahman-tech/evidence-gated-support-copilot)
 
 The included `render.yaml` deploys the Docker image on Render's free web-service
