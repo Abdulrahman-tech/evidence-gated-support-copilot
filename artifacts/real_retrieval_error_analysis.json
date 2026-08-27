@@ -1,0 +1,2524 @@
+{
+  "retriever": "bm25_v1",
+  "minimum_score": 9.0,
+  "minimum_score_ratio": 1.1,
+  "analyzed_splits": [
+    "development",
+    "challenge"
+  ],
+  "excluded_splits": [
+    "validation",
+    "test"
+  ],
+  "splits": {
+    "development": {
+      "case_count": 100,
+      "supported_count": 80,
+      "unsupported_count": 20,
+      "failure_counts": {
+        "confidence_gate_false_reject": 5,
+        "correct_abstention": 14,
+        "correct_supported": 60,
+        "deep_ranking_failure": 5,
+        "lexical_retrieval_miss": 5,
+        "ranking_and_confidence_failure": 2,
+        "ranking_error_top3": 3,
+        "unsupported_false_accept": 6
+      },
+      "case_sha256": "cd00725430e4423bfe98fa7fd06c13bedaaef2077c16bf5998b9e918b8c552d5",
+      "knowledge_sha256": "1434ecc3d597b234da5b90580ac5434a07177df7084a2eaf499e8bd0f6e65683",
+      "failures": [
+        {
+          "case_id": "",
+          "source_conversation_id": "98a00a7295c3be69f7e516226ceafae1",
+          "source_tweet_id": "2128764",
+          "question": "[user] I am regretting taking a decision to book Airbnb for my vacation to goa after almost a month of booking my host cancel led the booking and there was no notification from airbnb to confirm the same and it's like a huge task to get through customer service.",
+          "expected_document_id": "tweetsumm-98a00a7295c3",
+          "failure_category": "ranking_error_top3",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-1d330a4bd28f",
+              "score": 10.6238,
+              "title": "Resolved customer-care case 1d330a4b"
+            },
+            {
+              "document_id": "tweetsumm-98a00a7295c3",
+              "score": 8.2658,
+              "title": "Resolved customer-care case 98a00a72"
+            },
+            {
+              "document_id": "tweetsumm-a434f21d0a39",
+              "score": 7.9351,
+              "title": "Resolved customer-care case a434f21d"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "f9568962737f91782cece36caef049d4",
+          "source_tweet_id": "2091917",
+          "question": "BAD: [user] - sends emails about accounts long closed, you can't reply to the email and it says \"you can't unsubscribe\". Endless SPAM!",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 11.2777,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-1d330a4bd28f",
+              "score": 7.7385,
+              "title": "Resolved customer-care case 1d330a4b"
+            },
+            {
+              "document_id": "tweetsumm-ecd0fde1107f",
+              "score": 6.3023,
+              "title": "Resolved customer-care case ecd0fde1"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "bb351d26154e3c406515066a7db2810b",
+          "source_tweet_id": "1225425",
+          "question": "[user] did divide get taken down from Spotify? It's the only [user] album that doesn't play",
+          "expected_document_id": "tweetsumm-bb351d26154e",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 6,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 8.0663,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-1d330a4bd28f",
+              "score": 7.5033,
+              "title": "Resolved customer-care case 1d330a4b"
+            },
+            {
+              "document_id": "tweetsumm-88bf07bf1c09",
+              "score": 7.1927,
+              "title": "Resolved customer-care case 88bf07bf"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e22e5d465682653d10c0c206ded1c2b7",
+          "source_tweet_id": "2615035",
+          "question": "[user] so u like Verizon? I don't have any other options at this point. [user] can't solve the problem. Once again my service is down!",
+          "expected_document_id": "tweetsumm-e22e5d465682",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-0a362d1098c0",
+              "score": 8.5097,
+              "title": "Resolved customer-care case 0a362d10"
+            },
+            {
+              "document_id": "tweetsumm-0f46b4e4672b",
+              "score": 8.3674,
+              "title": "Resolved customer-care case 0f46b4e4"
+            },
+            {
+              "document_id": "tweetsumm-e22e5d465682",
+              "score": 8.3384,
+              "title": "Resolved customer-care case e22e5d46"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "c2a3096e285ac728e26a218c7941ef45",
+          "source_tweet_id": "2156857",
+          "question": "[user] All TVs pixelated. Audio as well. Can't get help",
+          "expected_document_id": "tweetsumm-c2a3096e285a",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-f1b036c4eb1b",
+              "score": 6.7258,
+              "title": "Resolved customer-care case f1b036c4"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 6.146,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-9968f1140b2c",
+              "score": 3.2318,
+              "title": "Resolved customer-care case 9968f114"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "6cc6d10052f4ec6e6f5837a1a6310dc8",
+          "source_tweet_id": "888603",
+          "question": "[user] I can play several albums, including this one in Chrome, but the application won't play it [url] [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 11.2777,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-29ffb696b7ea",
+              "score": 7.0423,
+              "title": "Resolved customer-care case 29ffb696"
+            },
+            {
+              "document_id": "tweetsumm-6540ec016e46",
+              "score": 7.0019,
+              "title": "Resolved customer-care case 6540ec01"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "47251e24638f787e37d700999e309e1a",
+          "source_tweet_id": "1017196",
+          "question": "[user] arrived at FLL only to find hotel I booked through you is closed and I wasn’t notified. Not how I expected to start my vac!!",
+          "expected_document_id": "tweetsumm-47251e24638f",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 4,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-ecd0fde1107f",
+              "score": 8.2796,
+              "title": "Resolved customer-care case ecd0fde1"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 7.2904,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-a9657cc81ad2",
+              "score": 7.0513,
+              "title": "Resolved customer-care case a9657cc8"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "bcc847cdbb1a196e72401f6ab77b68f6",
+          "source_tweet_id": "1917235",
+          "question": "[user] Hi BA on flight [reference] from incheon today and am not going to make bag check. Is there anyone i can contact to speed thru?",
+          "expected_document_id": "tweetsumm-bcc847cdbb1a",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-bcc847cdbb1a",
+              "score": 7.3116,
+              "title": "Resolved customer-care case bcc847cd"
+            },
+            {
+              "document_id": "tweetsumm-8778a86e7f3b",
+              "score": 6.7215,
+              "title": "Resolved customer-care case 8778a86e"
+            },
+            {
+              "document_id": "tweetsumm-ecd0fde1107f",
+              "score": 6.1978,
+              "title": "Resolved customer-care case ecd0fde1"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "5bef9fb7a05078847a771ca934cbcf31",
+          "source_tweet_id": "2741040",
+          "question": "Sence [user] OTR update my #GalaxyNote8 won't work with [user] even on [user] HELP! [user] [user] [user] [user] [user] [url]",
+          "expected_document_id": "tweetsumm-5bef9fb7a050",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-5bef9fb7a050",
+              "score": 10.2826,
+              "title": "Resolved customer-care case 5bef9fb7"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 9.7084,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-f64aad327798",
+              "score": 8.2065,
+              "title": "Resolved customer-care case f64aad32"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "4ac7e3146b8191666b77a8292baacba4",
+          "source_tweet_id": "1630430",
+          "question": "[user] bonjour, suite a des conneries de [user] je suis bloqué en Angleterre et je vais rater mon bus. Comment je peux faire?",
+          "expected_document_id": "tweetsumm-4ac7e3146b81",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 3.5623,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-f1b036c4eb1b",
+              "score": 3.1497,
+              "title": "Resolved customer-care case f1b036c4"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "29ffb696b7ea986b0ad05ca97d72c08e",
+          "source_tweet_id": "839505",
+          "question": "[user] had problem after problem trying to set up my Clubcard app still not getting anywhere! 😡as a member of staff is like to say I use it!",
+          "expected_document_id": "tweetsumm-29ffb696b7ea",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 17,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-df08f761aa40",
+              "score": 8.7586,
+              "title": "Resolved customer-care case df08f761"
+            },
+            {
+              "document_id": "tweetsumm-92211d086007",
+              "score": 8.5097,
+              "title": "Resolved customer-care case 92211d08"
+            },
+            {
+              "document_id": "tweetsumm-f1b036c4eb1b",
+              "score": 6.7258,
+              "title": "Resolved customer-care case f1b036c4"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "975cb927e70e4ea536d96d719c125971",
+          "source_tweet_id": "2178275",
+          "question": "[user] T1 I booked a flight with you, through [user] I missed my flight due to an incident at Euston, Opodo say to get a refunds are only authorised + given by the airlines, ie you is this true?",
+          "expected_document_id": "tweetsumm-975cb927e70e",
+          "failure_category": "ranking_error_top3",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-4ac7e3146b81",
+              "score": 10.4066,
+              "title": "Resolved customer-care case 4ac7e314"
+            },
+            {
+              "document_id": "tweetsumm-8778a86e7f3b",
+              "score": 7.8619,
+              "title": "Resolved customer-care case 8778a86e"
+            },
+            {
+              "document_id": "tweetsumm-975cb927e70e",
+              "score": 7.3772,
+              "title": "Resolved customer-care case 975cb927"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "92b2626b60b8d0ec6225512206a28a25",
+          "source_tweet_id": "174625",
+          "question": "[user] my ps 4 just stopped working and won't let me out of safe mode",
+          "expected_document_id": "tweetsumm-92b2626b60b8",
+          "failure_category": "ranking_error_top3",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 13.2707,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-66d05230797b",
+              "score": 7.6472,
+              "title": "Resolved customer-care case 66d05230"
+            },
+            {
+              "document_id": "tweetsumm-92b2626b60b8",
+              "score": 5.9195,
+              "title": "Resolved customer-care case 92b2626b"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "dbfec27dac2dbe10f6373bf0be308995",
+          "source_tweet_id": "682245",
+          "question": "[user] your San Antonio baggage agents are kinda terrible. And the text for my delayed flight from Dallas to Detroit pissed me off! This mean I won't get home till about 2 am and I work tomorrow. What is wrong with you that's over a 2 hour delay",
+          "expected_document_id": "tweetsumm-dbfec27dac2d",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 5,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 10.0593,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-28591f175c5f",
+              "score": 9.2825,
+              "title": "Resolved customer-care case 28591f17"
+            },
+            {
+              "document_id": "tweetsumm-f2e402724e87",
+              "score": 8.8695,
+              "title": "Resolved customer-care case f2e40272"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "5785ce672f25f7641207ba90a77079a9",
+          "source_tweet_id": "1564781",
+          "question": "[user] Will the 6.33 from Sheffield to York be on time. Your journey planner is showing no delay",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-36686816af9b",
+              "score": 9.586,
+              "title": "Resolved customer-care case 36686816"
+            },
+            {
+              "document_id": "tweetsumm-4ac7e3146b81",
+              "score": 7.4814,
+              "title": "Resolved customer-care case 4ac7e314"
+            },
+            {
+              "document_id": "tweetsumm-cf3d7dc5fe57",
+              "score": 7.2305,
+              "title": "Resolved customer-care case cf3d7dc5"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "a434f21d0a39b245366344753e3977a7",
+          "source_tweet_id": "1169177",
+          "question": "NO SERVICE - AGAIN!!! EMERGENCY CALLS ONLY?!?! *FIX IT! PERMANENT FIX WOULD BE APPRECIATED. [user] [user] #sprint #infuriating",
+          "expected_document_id": "tweetsumm-a434f21d0a39",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-cf3d7dc5fe57",
+              "score": 8.5474,
+              "title": "Resolved customer-care case cf3d7dc5"
+            },
+            {
+              "document_id": "tweetsumm-a434f21d0a39",
+              "score": 7.9351,
+              "title": "Resolved customer-care case a434f21d"
+            },
+            {
+              "document_id": "tweetsumm-5bef9fb7a050",
+              "score": 6.4059,
+              "title": "Resolved customer-care case 5bef9fb7"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "3e37b7f60cc23265c203780c0890cc98",
+          "source_tweet_id": "1585276",
+          "question": "[user] Good morning. When did your policy on carrying guitars on board change?",
+          "expected_document_id": "tweetsumm-3e37b7f60cc2",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-28591f175c5f",
+              "score": 5.6831,
+              "title": "Resolved customer-care case 28591f17"
+            },
+            {
+              "document_id": "tweetsumm-ecd0fde1107f",
+              "score": 5.2837,
+              "title": "Resolved customer-care case ecd0fde1"
+            },
+            {
+              "document_id": "tweetsumm-36686816af9b",
+              "score": 5.0541,
+              "title": "Resolved customer-care case 36686816"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "42b59e617f527d33f0b0b3caa340e3ac",
+          "source_tweet_id": "12246",
+          "question": "Pretty neat how [user]’s ‘live’ stream of the ballgame is two batters behind Twitter. 😑",
+          "expected_document_id": "tweetsumm-42b59e617f52",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-f1b036c4eb1b",
+              "score": 5.5854,
+              "title": "Resolved customer-care case f1b036c4"
+            },
+            {
+              "document_id": "tweetsumm-f2e402724e87",
+              "score": 4.7201,
+              "title": "Resolved customer-care case f2e40272"
+            },
+            {
+              "document_id": "tweetsumm-1a75853e2641",
+              "score": 3.6149,
+              "title": "Resolved customer-care case 1a75853e"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "eff170b9cd3b7fee97b075af8e009196",
+          "source_tweet_id": "2600050",
+          "question": "[user] my wifi is down and the troubleshooter is broken",
+          "expected_document_id": "tweetsumm-eff170b9cd3b",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-eff170b9cd3b",
+              "score": 4.8644,
+              "title": "Resolved customer-care case eff170b9"
+            },
+            {
+              "document_id": "tweetsumm-e22e5d465682",
+              "score": 4.1692,
+              "title": "Resolved customer-care case e22e5d46"
+            },
+            {
+              "document_id": "tweetsumm-28591f175c5f",
+              "score": 3.8286,
+              "title": "Resolved customer-care case 28591f17"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "cf3d7dc5fe571b372873ccf23020e6cc",
+          "source_tweet_id": "1424666",
+          "question": "[user] a bit about missing the 11:30 vintage train at Totnes - only hope of getting the rest of my trains. How long delayed expected? 2/2",
+          "expected_document_id": "tweetsumm-cf3d7dc5fe57",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-36686816af9b",
+              "score": 10.378,
+              "title": "Resolved customer-care case 36686816"
+            },
+            {
+              "document_id": "tweetsumm-1d330a4bd28f",
+              "score": 7.0966,
+              "title": "Resolved customer-care case 1d330a4b"
+            },
+            {
+              "document_id": "tweetsumm-08e9e6fcdc85",
+              "score": 6.4582,
+              "title": "Resolved customer-care case 08e9e6fc"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "a750409471aea269d8a8c8feb939c465",
+          "source_tweet_id": "244333",
+          "question": "[user] hi! I've had a problem with my Spotify for over a month now. The app for my phone keeps telling me I'm offline. Please help me",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-66d05230797b",
+              "score": 9.3021,
+              "title": "Resolved customer-care case 66d05230"
+            },
+            {
+              "document_id": "tweetsumm-1a75853e2641",
+              "score": 8.3972,
+              "title": "Resolved customer-care case 1a75853e"
+            },
+            {
+              "document_id": "tweetsumm-92211d086007",
+              "score": 7.4278,
+              "title": "Resolved customer-care case 92211d08"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "b9f543264a3f63135d37e2b65eee99cb",
+          "source_tweet_id": "2218933",
+          "question": "[user] not sure if iOS bug or specifically relating to the X but when I’m listening to music on Spotify and accept a call. The only way to get the musi to resume is to completely force close the app and reopen it",
+          "expected_document_id": "tweetsumm-b9f543264a3f",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 11.7523,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-88bf07bf1c09",
+              "score": 11.5989,
+              "title": "Resolved customer-care case 88bf07bf"
+            },
+            {
+              "document_id": "tweetsumm-df08f761aa40",
+              "score": 10.6406,
+              "title": "Resolved customer-care case df08f761"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e95445e11b99bd833d4d1b0bbe11d302",
+          "source_tweet_id": "2513295",
+          "question": "[user] Hi team, need your help changing a flight. Instead of HKG > BKI return it now needs to be MEL > BKI > HKG. Can you help?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6540ec016e46",
+              "score": 12.0571,
+              "title": "Resolved customer-care case 6540ec01"
+            },
+            {
+              "document_id": "tweetsumm-8778a86e7f3b",
+              "score": 10.9474,
+              "title": "Resolved customer-care case 8778a86e"
+            },
+            {
+              "document_id": "tweetsumm-975cb927e70e",
+              "score": 8.3003,
+              "title": "Resolved customer-care case 975cb927"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "d8a942b75a7ad143c3454ac759e59e4c",
+          "source_tweet_id": "229136",
+          "question": "[user] I need help paying a bill. The sight to fill out ZIP code isn't working in order to text tech. I have til tomorrow",
+          "expected_document_id": "tweetsumm-d8a942b75a7a",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d8a942b75a7a",
+              "score": 9.0981,
+              "title": "Resolved customer-care case d8a942b7"
+            },
+            {
+              "document_id": "tweetsumm-6540ec016e46",
+              "score": 8.6327,
+              "title": "Resolved customer-care case 6540ec01"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 6.146,
+              "title": "Resolved customer-care case b9f54326"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "9c509e7e2dd3c6a22ed0b3083f2ead6d",
+          "source_tweet_id": "2343334",
+          "question": "Cheers [user] I've not even left Bristol Temple Meads and I've already missed my connection at Newport because you've decided to stick another carriage on just in case. I won't get home until 9pm now.",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6540ec016e46",
+              "score": 13.5324,
+              "title": "Resolved customer-care case 6540ec01"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 10.8617,
+              "title": "Resolved customer-care case b9f54326"
+            },
+            {
+              "document_id": "tweetsumm-ecd0fde1107f",
+              "score": 10.2057,
+              "title": "Resolved customer-care case ecd0fde1"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "58f174fa0f798d43029c208891b93960",
+          "source_tweet_id": "2297778",
+          "question": "[user] I'm boiling with frustration trying to send an email about an order that's failed to be delivered 😠",
+          "expected_document_id": "tweetsumm-58f174fa0f79",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 5,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-92211d086007",
+              "score": 11.2023,
+              "title": "Resolved customer-care case 92211d08"
+            },
+            {
+              "document_id": "tweetsumm-54a35e51d538",
+              "score": 10.8705,
+              "title": "Resolved customer-care case 54a35e51"
+            },
+            {
+              "document_id": "tweetsumm-b9f543264a3f",
+              "score": 7.4756,
+              "title": "Resolved customer-care case b9f54326"
+            }
+          ],
+          "label_governance_warning": null
+        }
+      ]
+    },
+    "challenge": {
+      "case_count": 180,
+      "supported_count": 80,
+      "unsupported_count": 100,
+      "failure_counts": {
+        "confidence_gate_false_reject": 6,
+        "correct_abstention": 73,
+        "correct_supported": 44,
+        "deep_ranking_failure": 10,
+        "lexical_retrieval_miss": 11,
+        "ranking_and_confidence_failure": 8,
+        "ranking_error_top3": 1,
+        "unsupported_false_accept": 27
+      },
+      "case_sha256": "d298be6f820c6512609f80101b8de0ff2b5b31d0e2ad8a46c0576b7da9a03b8c",
+      "knowledge_sha256": "7ab793379cbc607205b5486f636df724880f385627813881d611ecbd3604f2fd",
+      "failures": [
+        {
+          "case_id": "",
+          "source_conversation_id": "fed9d21027bdff0a8dc645ad0d413fcd",
+          "source_tweet_id": "213723",
+          "question": "[user] Ur app didn’t record .8 mile today. Training 4 1/2 marathon using app. Can u put mile/time back in or should I just cry now?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7ea1cdcd5b92",
+              "score": 10.1386,
+              "title": "Resolved customer-care case 7ea1cdcd"
+            },
+            {
+              "document_id": "tweetsumm-6c08b57bbb7f",
+              "score": 7.2873,
+              "title": "Resolved customer-care case 6c08b57b"
+            },
+            {
+              "document_id": "tweetsumm-3282835b87c4",
+              "score": 6.5867,
+              "title": "Resolved customer-care case 3282835b"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "d43dade8d0c960c313392118cc99937e",
+          "source_tweet_id": "1333772",
+          "question": "[user] Hi there, due to get on a train this evening from Euston to Stockport, do you know there will still be disruptions at 8pm?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 11.5406,
+              "title": "Resolved customer-care case 00c60e1f"
+            },
+            {
+              "document_id": "tweetsumm-886264c666db",
+              "score": 9.2046,
+              "title": "Resolved customer-care case 886264c6"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 8.862,
+              "title": "Resolved customer-care case d30ba2cd"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "7f7c5ebfcdfd88600c3013227bc350b4",
+          "source_tweet_id": "2930904",
+          "question": "Another [user] fail. Sat in living room, when an email comes through to say 'sorry we missed you'. No doorbell ring, no knock, no phonecall, no card through the door. Not sure I believe you were here! [user] please use a real courier!!",
+          "expected_document_id": "tweetsumm-7f7c5ebfcdfd",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 16,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 6.6335,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-bfc29fd12cc8",
+              "score": 6.5778,
+              "title": "Resolved customer-care case bfc29fd1"
+            },
+            {
+              "document_id": "tweetsumm-ec445debaad2",
+              "score": 5.9284,
+              "title": "Resolved customer-care case ec445deb"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "1f0a9949ec7c6c1755dc7059dd956fc8",
+          "source_tweet_id": "1487867",
+          "question": "[user] has supreme court passed an order to link aadhar wid mobile no.?",
+          "expected_document_id": "tweetsumm-1f0a9949ec7c",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-1f0a9949ec7c",
+              "score": 7.1379,
+              "title": "Resolved customer-care case 1f0a9949"
+            },
+            {
+              "document_id": "tweetsumm-3a7f0c86e0fe",
+              "score": 4.866,
+              "title": "Resolved customer-care case 3a7f0c86"
+            },
+            {
+              "document_id": "tweetsumm-c6722f1f7810",
+              "score": 4.5137,
+              "title": "Resolved customer-care case c6722f1f"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "ab5cbde03e2173fc452fc576827ccbcd",
+          "source_tweet_id": "426515",
+          "question": "[user] Can your people please finish escalating and resolve this issue 1-[reference],it's been pending for a week now!",
+          "expected_document_id": "tweetsumm-ab5cbde03e21",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-1f0a9949ec7c",
+              "score": 8.2995,
+              "title": "Resolved customer-care case 1f0a9949"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 8.287,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-ab5cbde03e21",
+              "score": 8.1759,
+              "title": "Resolved customer-care case ab5cbde0"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "3a7f0c86e0febc85e0e22b858831441e",
+          "source_tweet_id": "2883178",
+          "question": "[user] Nobody can figure out how to turn my trial account into a paying biz advanced plan. Maybe you can?",
+          "expected_document_id": "tweetsumm-3a7f0c86e0fe",
+          "failure_category": "ranking_error_top3",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-e4507e397aa1",
+              "score": 9.0508,
+              "title": "Resolved customer-care case e4507e39"
+            },
+            {
+              "document_id": "tweetsumm-3a7f0c86e0fe",
+              "score": 5.1468,
+              "title": "Resolved customer-care case 3a7f0c86"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 4.3912,
+              "title": "Resolved customer-care case abe8394c"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "1a9543ed5f61f289a328621ecb7ca8a8",
+          "source_tweet_id": "867170",
+          "question": "[user] The latest update to Windows 10 is causing my Dell Inspiron 17 with i7 CPU and 16 Gb ram to freeze, why!?",
+          "expected_document_id": "tweetsumm-1a9543ed5f61",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 5.9389,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-1b262849a274",
+              "score": 3.6133,
+              "title": "Resolved customer-care case 1b262849"
+            },
+            {
+              "document_id": "tweetsumm-7aecf7fc3d78",
+              "score": 2.9642,
+              "title": "Resolved customer-care case 7aecf7fc"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "f014e2b440d67c58e4077f2316f23786",
+          "source_tweet_id": "1519591",
+          "question": "[user] My Cortana search box turned white this morning, but I didn't change any settings. Any ideas how to revert it back to black?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-0c0f601f1449",
+              "score": 14.7156,
+              "title": "Resolved customer-care case 0c0f601f"
+            },
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 9.9821,
+              "title": "Resolved customer-care case 5462c3ac"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 6.2073,
+              "title": "Resolved customer-care case e7f68827"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "51423ed0d89ade7daac40961d054f3ee",
+          "source_tweet_id": "1709537",
+          "question": "[user] cancelled flight last night and now delayed flight tonight in CLT. Plane is @ gate and still delayed. #keepingtothebadservicerecord",
+          "expected_document_id": "tweetsumm-51423ed0d89a",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-8fe05ac7aca6",
+              "score": 9.0302,
+              "title": "Resolved customer-care case 8fe05ac7"
+            },
+            {
+              "document_id": "tweetsumm-7d0088ec987e",
+              "score": 8.3154,
+              "title": "Resolved customer-care case 7d0088ec"
+            },
+            {
+              "document_id": "tweetsumm-51423ed0d89a",
+              "score": 5.0141,
+              "title": "Resolved customer-care case 51423ed0"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "8fbd3f23191a21c92ebb5c19cbcc9226",
+          "source_tweet_id": "2762495",
+          "question": ".[user] no #PowerfulAnswers from you today. Thankful family member is #Teamiphone [user] allowing me to use hotspot so I can work while on call. Let's see what happens at 8am, #PowerfulAnswers then? Hope technician is competent. [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 10.5955,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-b9f8a67a3f37",
+              "score": 7.7441,
+              "title": "Resolved customer-care case b9f8a67a"
+            },
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 7.5116,
+              "title": "Resolved customer-care case 00c60e1f"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "98d4f1d2e38f936e0844162a408c7b67",
+          "source_tweet_id": "1196085",
+          "question": "[user] I'm trying to play dl games I bought on my PS3 n it's saying the licensing needs update n the store under maintenance wtd?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 10.6887,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-6688702d9855",
+              "score": 9.2241,
+              "title": "Resolved customer-care case 6688702d"
+            },
+            {
+              "document_id": "tweetsumm-7fa1d464199a",
+              "score": 5.7877,
+              "title": "Resolved customer-care case 7fa1d464"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "57bcdb54cb12d6c7e5000402e6103840",
+          "source_tweet_id": "2621526",
+          "question": "[user]’s reception and customer service lack but they do offer some pretty cool benefits. They don’t make up for the terrible customer service I receive 90% of the time when I call nor the fact that I rarely have reception.... but they’re pretty cool!",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 11.5988,
+              "title": "Resolved customer-care case d370b1e5"
+            },
+            {
+              "document_id": "tweetsumm-51423ed0d89a",
+              "score": 8.3112,
+              "title": "Resolved customer-care case 51423ed0"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 7.0665,
+              "title": "Resolved customer-care case abe8394c"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "1d84e05bf880090d1e957bec57fea6bb",
+          "source_tweet_id": "2734595",
+          "question": "[user] why when I listen on my computer do I have to be Online to get my full library of songs. Sort of an inconvenience.",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 10.778,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-bfc29fd12cc8",
+              "score": 7.409,
+              "title": "Resolved customer-care case bfc29fd1"
+            },
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 5.479,
+              "title": "Resolved customer-care case d370b1e5"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "6278817888e84869fbf050897fbaa7e7",
+          "source_tweet_id": "84262",
+          "question": "Yet again [user] [user] I'm skeptical my delivery will arrive today when it's not left Preston yet... [url]",
+          "expected_document_id": "tweetsumm-6278817888e8",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 6,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 5.9963,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 5.9882,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-925ffd7cb4f3",
+              "score": 5.6305,
+              "title": "Resolved customer-care case 925ffd7c"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "3282835b87c4db1717128fd9fe1f0370",
+          "source_tweet_id": "109066",
+          "question": "[user] Cuando agrego música en mi biblioteca/playlist de Apple Music estas no se guardan. Qué pasa ahí? Es muy molesto.",
+          "expected_document_id": "tweetsumm-3282835b87c4",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-3282835b87c4",
+              "score": 8.3311,
+              "title": "Resolved customer-care case 3282835b"
+            },
+            {
+              "document_id": "tweetsumm-b9f8a67a3f37",
+              "score": 3.8643,
+              "title": "Resolved customer-care case b9f8a67a"
+            },
+            {
+              "document_id": "tweetsumm-8f245243d901",
+              "score": 3.4546,
+              "title": "Resolved customer-care case 8f245243"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "0ef930d81651dc0c622809c293eb30ea",
+          "source_tweet_id": "2367867",
+          "question": "[user] hello can you help I can't seem to find Bisto original gravy powder in any of my local stores gave you stopped selling it?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 12.3229,
+              "title": "Resolved customer-care case 5462c3ac"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 6.2073,
+              "title": "Resolved customer-care case e7f68827"
+            },
+            {
+              "document_id": "tweetsumm-11b3fa976e76",
+              "score": 5.5147,
+              "title": "Resolved customer-care case 11b3fa97"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "d7524b389beab80bc0ef786dc9143b20",
+          "source_tweet_id": "1756077",
+          "question": "Hey [user] , my book export to pdf fails with \"indesign cannot finish export\", but doesn't tell me what is the root of the pb",
+          "expected_document_id": "tweetsumm-d7524b389bea",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 5,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6bfc5fdb4a58",
+              "score": 7.7101,
+              "title": "Resolved customer-care case 6bfc5fdb"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 7.5367,
+              "title": "Resolved customer-care case e7f68827"
+            },
+            {
+              "document_id": "tweetsumm-20327b84e8b6",
+              "score": 6.4818,
+              "title": "Resolved customer-care case 20327b84"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "20327b84e8b6c205b7ad7e56b2861c66",
+          "source_tweet_id": "1044017",
+          "question": "[user] [user] doesn’t seem like a customer’s time/money is of value to you! just because you are a low-cost carrier!? Nvr again!!",
+          "expected_document_id": "tweetsumm-20327b84e8b6",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f8a67a3f37",
+              "score": 9.9253,
+              "title": "Resolved customer-care case b9f8a67a"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 9.1647,
+              "title": "Resolved customer-care case e7f68827"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 6.7063,
+              "title": "Resolved customer-care case abe8394c"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "2511b4536a1ca50cb40ed35cbc5b6a98",
+          "source_tweet_id": "464926",
+          "question": "[user] Where do you stand on #NetNeutrality ? Have you expressed that to the FCC? What are your plans if #NetNeutraility is repealed?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 14.8973,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-65e2fc448ac0",
+              "score": 5.6114,
+              "title": "Resolved customer-care case 65e2fc44"
+            },
+            {
+              "document_id": "tweetsumm-e224ed542c49",
+              "score": 5.3649,
+              "title": "Resolved customer-care case e224ed54"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "b40163baf4326d46ca65d8da27793b9c",
+          "source_tweet_id": "2975103",
+          "question": "[user] I want to elevate my status but the link on the website doesn’t work. The FAQ’s say you can buy miles for [number] but the link given is expired. Help!",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 10.7512,
+              "title": "Resolved customer-care case e7f68827"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 8.6405,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-2e139befb270",
+              "score": 7.3907,
+              "title": "Resolved customer-care case 2e139bef"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "58e3bd95a270418d9fd823c4771f8641",
+          "source_tweet_id": "39223",
+          "question": "[user] [user] [user] I need help!!!",
+          "expected_document_id": "tweetsumm-58e3bd95a270",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "89d5e34ea1c4b5a2a5a9d38886a729cc",
+          "source_tweet_id": "1309786",
+          "question": "So my #Sprint account has been labeled as \"Fraudulent\" for a year, I just found out about this today when I went to get a new phone...",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 9.1634,
+              "title": "Resolved customer-care case 00c60e1f"
+            },
+            {
+              "document_id": "tweetsumm-ec445debaad2",
+              "score": 8.0449,
+              "title": "Resolved customer-care case ec445deb"
+            },
+            {
+              "document_id": "tweetsumm-3a7f0c86e0fe",
+              "score": 7.3097,
+              "title": "Resolved customer-care case 3a7f0c86"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "29dcd1e9d90d5814ffe4178e04abd24b",
+          "source_tweet_id": "1972359",
+          "question": "[user] - paid for two season tickets (weekly) that start tomorrow.. picked Staines as pickup location... guess what? Can’t load the ticket",
+          "expected_document_id": "tweetsumm-29dcd1e9d90d",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-bb92d103baff",
+              "score": 8.8226,
+              "title": "Resolved customer-care case bb92d103"
+            },
+            {
+              "document_id": "tweetsumm-29dcd1e9d90d",
+              "score": 6.9235,
+              "title": "Resolved customer-care case 29dcd1e9"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 6.8449,
+              "title": "Resolved customer-care case d30ba2cd"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "6bfc5fdb4a58e48463247b71798f39bc",
+          "source_tweet_id": "1647619",
+          "question": "[user] please advise why in [number] you have stopped running the 9.20 am flight from LBA to LHR . You seem to run the others .. why?",
+          "expected_document_id": "tweetsumm-6bfc5fdb4a58",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 11,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-5d6edf6f8fe3",
+              "score": 6.7987,
+              "title": "Resolved customer-care case 5d6edf6f"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 5.9009,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 5.5871,
+              "title": "Resolved customer-care case 5462c3ac"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "86a678f7826710553afd7385001d2d67",
+          "source_tweet_id": "2107160",
+          "question": "[user] I was charged 10naira for a smart subscription I never requested for, I need the refund of my money [phone] [url]",
+          "expected_document_id": "tweetsumm-86a678f78267",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 3,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b9f8a67a3f37",
+              "score": 8.7599,
+              "title": "Resolved customer-care case b9f8a67a"
+            },
+            {
+              "document_id": "tweetsumm-17f3be231950",
+              "score": 7.8248,
+              "title": "Resolved customer-care case 17f3be23"
+            },
+            {
+              "document_id": "tweetsumm-86a678f78267",
+              "score": 7.1765,
+              "title": "Resolved customer-care case 86a678f7"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "08c861e4e2ca69d9025e43812f0928d2",
+          "source_tweet_id": "1433015",
+          "question": "[user] please explain and justify why it's £55 to Exeter on 22 Nov and £135 for same journey on 22 Dec. Many thanks in advance.",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 12.8134,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 7.8526,
+              "title": "Resolved customer-care case 00c60e1f"
+            },
+            {
+              "document_id": "tweetsumm-14b2755e9cf7",
+              "score": 6.6392,
+              "title": "Resolved customer-care case 14b2755e"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "b3b4584621ad3365d95b7c1766cd54da",
+          "source_tweet_id": "1513621",
+          "question": "[user] AA does it again....can't make on line rez. Get msg to all airline. Agent untrained. Try to charge $25+ 4 Imillion mile flyer",
+          "expected_document_id": "tweetsumm-b3b4584621ad",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 10.313,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-17f3be231950",
+              "score": 6.7446,
+              "title": "Resolved customer-care case 17f3be23"
+            },
+            {
+              "document_id": "tweetsumm-b70a19b9660e",
+              "score": 6.1098,
+              "title": "Resolved customer-care case b70a19b9"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "7fa1d464199a698c8d4bcee13120b287",
+          "source_tweet_id": "628001",
+          "question": "[user] Sharing songs onto Twitter from [user] no longer shows an artwork preview and details about the music. e.g. “Listen to Controlla by Drake”. Just a link is shared. What has happened?",
+          "expected_document_id": "tweetsumm-7fa1d464199a",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7fa1d464199a",
+              "score": 11.0593,
+              "title": "Resolved customer-care case 7fa1d464"
+            },
+            {
+              "document_id": "tweetsumm-4f0f69e10c73",
+              "score": 10.5896,
+              "title": "Resolved customer-care case 4f0f69e1"
+            },
+            {
+              "document_id": "tweetsumm-6c08b57bbb7f",
+              "score": 10.2641,
+              "title": "Resolved customer-care case 6c08b57b"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "2e139befb270e81b4e3097658a6fd7a5",
+          "source_tweet_id": "317072",
+          "question": "[user] If you're bored on a quiet evening, any tips for getting the iPhone X to appear for trade-up? App and website both show 7/8",
+          "expected_document_id": "tweetsumm-2e139befb270",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 16,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-60fe8ec2badf",
+              "score": 10.5339,
+              "title": "Resolved customer-care case 60fe8ec2"
+            },
+            {
+              "document_id": "tweetsumm-4f0f69e10c73",
+              "score": 7.9547,
+              "title": "Resolved customer-care case 4f0f69e1"
+            },
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 7.3284,
+              "title": "Resolved customer-care case 00c60e1f"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "3efed57dde64456a8978b669d58048c2",
+          "source_tweet_id": "62279",
+          "question": "[user] why isn’t the weather’s widget not working no more? (Even since iOS 11.1) [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 9.8789,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-2525b5e0ff75",
+              "score": 7.479,
+              "title": "Resolved customer-care case 2525b5e0"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 6.4126,
+              "title": "Resolved customer-care case e7f68827"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "ebf68bcd09a1ce06545f9834907866b0",
+          "source_tweet_id": "2706152",
+          "question": "[user] a number of recordings on a new, almost empty DVR are unplayable: “Unable to play the selected program. Please try again.” I also get an error on the FIOS Mobile app. Other recordings work fine. Help? [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6c08b57bbb7f",
+              "score": 12.7667,
+              "title": "Resolved customer-care case 6c08b57b"
+            },
+            {
+              "document_id": "tweetsumm-4b33de3bd45a",
+              "score": 11.582,
+              "title": "Resolved customer-care case 4b33de3b"
+            },
+            {
+              "document_id": "tweetsumm-6688702d9855",
+              "score": 10.4787,
+              "title": "Resolved customer-care case 6688702d"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e4c07e473077bd46e85bdfe2b782846e",
+          "source_tweet_id": "567653",
+          "question": "[user] just brought a new charger and threw away the packaging because i never had a problem with them fresh out the box. Why won’t my charger work? And nothing is wrong with my phone port because my car charger works fine. [url]",
+          "expected_document_id": "tweetsumm-e4c07e473077",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-eca0e5520619",
+              "score": 8.7586,
+              "title": "Resolved customer-care case eca0e552"
+            },
+            {
+              "document_id": "tweetsumm-29dcd1e9d90d",
+              "score": 8.0377,
+              "title": "Resolved customer-care case 29dcd1e9"
+            },
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 8.0252,
+              "title": "Resolved customer-care case 5462c3ac"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e49a60ba9797a705d091b2a519b4c8d7",
+          "source_tweet_id": "344319",
+          "question": "[user] tried unplugging & resetting mini box but feed on 313 still in & out, freezing up & static? Any ideas? [number] last night flawless!",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7d0088ec987e",
+              "score": 14.5469,
+              "title": "Resolved customer-care case 7d0088ec"
+            },
+            {
+              "document_id": "tweetsumm-7ea1cdcd5b92",
+              "score": 8.7301,
+              "title": "Resolved customer-care case 7ea1cdcd"
+            },
+            {
+              "document_id": "tweetsumm-7aecf7fc3d78",
+              "score": 6.0316,
+              "title": "Resolved customer-care case 7aecf7fc"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e01e30c38a7c53a04355ee3e59f4d061",
+          "source_tweet_id": "767133",
+          "question": "[user] booking trip with friend she flies nyc to atl to meet me then we go to mga. Why her ticket $430 & mine is $709 I’m going half as far",
+          "expected_document_id": "tweetsumm-e01e30c38a7c",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7eaa1aa15a6a",
+              "score": 11.3239,
+              "title": "Resolved customer-care case 7eaa1aa1"
+            },
+            {
+              "document_id": "tweetsumm-e01e30c38a7c",
+              "score": 11.2543,
+              "title": "Resolved customer-care case e01e30c3"
+            },
+            {
+              "document_id": "tweetsumm-eca0e5520619",
+              "score": 9.6812,
+              "title": "Resolved customer-care case eca0e552"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "61543656a138617af0473753d7a5ae57",
+          "source_tweet_id": "380081",
+          "question": "[user] hi there, I have problem with my account keep log out automatically when I login my paypal at checkout. Is there a fix for this?",
+          "expected_document_id": "tweetsumm-61543656a138",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 8,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7d9654c27255",
+              "score": 11.1362,
+              "title": "Resolved customer-care case 7d9654c2"
+            },
+            {
+              "document_id": "tweetsumm-c4de162d5630",
+              "score": 6.4643,
+              "title": "Resolved customer-care case c4de162d"
+            },
+            {
+              "document_id": "tweetsumm-2525b5e0ff75",
+              "score": 6.3217,
+              "title": "Resolved customer-care case 2525b5e0"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "b9f8a67a3f374bedc6144aec87b73a18",
+          "source_tweet_id": "720400",
+          "question": "[user] please can you advise why the 10:38 from Liverpool to Euston is still sitting at Lime Street? How long until we leave?",
+          "expected_document_id": "tweetsumm-b9f8a67a3f37",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-ec445debaad2",
+              "score": 5.4531,
+              "title": "Resolved customer-care case ec445deb"
+            },
+            {
+              "document_id": "tweetsumm-886264c666db",
+              "score": 4.9127,
+              "title": "Resolved customer-care case 886264c6"
+            },
+            {
+              "document_id": "tweetsumm-7aecf7fc3d78",
+              "score": 4.4823,
+              "title": "Resolved customer-care case 7aecf7fc"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "f9a5857934d84f0b3701f05a09eef52a",
+          "source_tweet_id": "171723",
+          "question": "Your Amazon Prime membership isn't worth it if your cut rate delivery service can't deliver the packages on time or correctly [user] [user]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6688702d9855",
+              "score": 12.0006,
+              "title": "Resolved customer-care case 6688702d"
+            },
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 9.154,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-4f0f69e10c73",
+              "score": 6.8213,
+              "title": "Resolved customer-care case 4f0f69e1"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "8fe05ac7aca6c2c6e762db50a76a7b09",
+          "source_tweet_id": "1133856",
+          "question": "Hey [user], I hate to be the guy that complains on Twitter but you need to respond to my email about a refund for a cancelled flight",
+          "expected_document_id": "tweetsumm-8fe05ac7aca6",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-8fe05ac7aca6",
+              "score": 10.1965,
+              "title": "Resolved customer-care case 8fe05ac7"
+            },
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 9.8506,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-6bfc5fdb4a58",
+              "score": 7.9062,
+              "title": "Resolved customer-care case 6bfc5fdb"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "dfd4395ffa1fbd1184959731e7edafc9",
+          "source_tweet_id": "661257",
+          "question": "[user] hi again! My live TV stream seems to be working fine everywhere except when I try and watch Blazers basketball on [user] it says \"connection error\" seems to be the only channel with issues. Anyone else having issues?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7ea1cdcd5b92",
+              "score": 9.986,
+              "title": "Resolved customer-care case 7ea1cdcd"
+            },
+            {
+              "document_id": "tweetsumm-bfc29fd12cc8",
+              "score": 8.6885,
+              "title": "Resolved customer-care case bfc29fd1"
+            },
+            {
+              "document_id": "tweetsumm-925ffd7cb4f3",
+              "score": 8.311,
+              "title": "Resolved customer-care case 925ffd7c"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "41f441f640bf1e579e6f5f9ed21be2c0",
+          "source_tweet_id": "2520557",
+          "question": "I think my favorite thing about paying for [user] is the delayed arrivals and useless customer service",
+          "expected_document_id": "tweetsumm-41f441f640bf",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-925ffd7cb4f3",
+              "score": 3.7429,
+              "title": "Resolved customer-care case 925ffd7c"
+            },
+            {
+              "document_id": "tweetsumm-41f441f640bf",
+              "score": 3.6975,
+              "title": "Resolved customer-care case 41f441f6"
+            },
+            {
+              "document_id": "tweetsumm-8fe05ac7aca6",
+              "score": 3.4563,
+              "title": "Resolved customer-care case 8fe05ac7"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "77df15a962c3283c0aed474afaca583f",
+          "source_tweet_id": "1288495",
+          "question": "[user] , every time I think you guys can't be any worse, u prove me wrong the next time. Bad management and horrible service. #worst",
+          "expected_document_id": "tweetsumm-77df15a962c3",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 6.2836,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-e7f688277f65",
+              "score": 6.2073,
+              "title": "Resolved customer-care case e7f68827"
+            },
+            {
+              "document_id": "tweetsumm-65e2fc448ac0",
+              "score": 5.7538,
+              "title": "Resolved customer-care case 65e2fc44"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "e224ed542c49cde845a4dbb9c690c6d2",
+          "source_tweet_id": "1968553",
+          "question": "[user] #Romanian men are intimidating #Sainsburys customers in South Ruislip for cash. Please help",
+          "expected_document_id": "tweetsumm-e224ed542c49",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 13,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-6688702d9855",
+              "score": 3.2312,
+              "title": "Resolved customer-care case 6688702d"
+            },
+            {
+              "document_id": "tweetsumm-ea750639760f",
+              "score": 2.9947,
+              "title": "Resolved customer-care case ea750639"
+            },
+            {
+              "document_id": "tweetsumm-886264c666db",
+              "score": 2.4556,
+              "title": "Resolved customer-care case 886264c6"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "ec445debaad2089bbbf646907a8e2590",
+          "source_tweet_id": "321623",
+          "question": "[user] [user] please help, my new surface device has been in replacement in first 7 days and now onceagain up for replacement 1/3",
+          "expected_document_id": "tweetsumm-ec445debaad2",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-ec445debaad2",
+              "score": 8.8392,
+              "title": "Resolved customer-care case ec445deb"
+            },
+            {
+              "document_id": "tweetsumm-7d0088ec987e",
+              "score": 7.4214,
+              "title": "Resolved customer-care case 7d0088ec"
+            },
+            {
+              "document_id": "tweetsumm-90a3117bb866",
+              "score": 6.9176,
+              "title": "Resolved customer-care case 90a3117b"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "1af5365bcf2627b2532888c4a7ff9463",
+          "source_tweet_id": "495826",
+          "question": "[user] [user] waited in all day for my parcel to get this email. Next day delivery at its best I see. Absolutely fuming, what a waste of a day, I suppose I've got to wait in all day tomorrow now! [url]",
+          "expected_document_id": "tweetsumm-1af5365bcf26",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 10,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 14.3189,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-e01e30c38a7c",
+              "score": 7.8778,
+              "title": "Resolved customer-care case e01e30c3"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 6.8328,
+              "title": "Resolved customer-care case d30ba2cd"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "751caa47f21862c07d565e5ea1db1a74",
+          "source_tweet_id": "619235",
+          "question": "[user] I can no longer upload my music? Any suggestions on how to fix this? Thankyou!",
+          "expected_document_id": "tweetsumm-751caa47f218",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-3282835b87c4",
+              "score": 7.4993,
+              "title": "Resolved customer-care case 3282835b"
+            },
+            {
+              "document_id": "tweetsumm-751caa47f218",
+              "score": 7.0942,
+              "title": "Resolved customer-care case 751caa47"
+            },
+            {
+              "document_id": "tweetsumm-7d9654c27255",
+              "score": 5.5733,
+              "title": "Resolved customer-care case 7d9654c2"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "5d6edf6f8fe3191422c8abf33b04d4b6",
+          "source_tweet_id": "806511",
+          "question": "[user] great job guys. 2 hours for a call back on the silver medallion reservation line? That’s kinda shitty",
+          "expected_document_id": "tweetsumm-5d6edf6f8fe3",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-930ed47280b9",
+              "score": 9.4766,
+              "title": "Resolved customer-care case 930ed472"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 9.2473,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-17f3be231950",
+              "score": 5.8753,
+              "title": "Resolved customer-care case 17f3be23"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "14f2d18b53e607dedfd1cd5f5cd7c9f9",
+          "source_tweet_id": "166162",
+          "question": "[user] Ridiculous! Once again both lifts not working on busiest day of week. Stamford Hill branch. Replace these lifts once and for all! [url]",
+          "expected_document_id": "tweetsumm-14f2d18b53e6",
+          "failure_category": "ranking_and_confidence_failure",
+          "expected_rank_within_20": 2,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-925ffd7cb4f3",
+              "score": 5.6305,
+              "title": "Resolved customer-care case 925ffd7c"
+            },
+            {
+              "document_id": "tweetsumm-14f2d18b53e6",
+              "score": 5.4418,
+              "title": "Resolved customer-care case 14f2d18b"
+            },
+            {
+              "document_id": "tweetsumm-6bfc5fdb4a58",
+              "score": 5.2678,
+              "title": "Resolved customer-care case 6bfc5fdb"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "7d0088ec987ee7789a0767e6029015d0",
+          "source_tweet_id": "1534871",
+          "question": "[user] [user] [user] ARE YOU OUT OF YOUR EVER-LOVING MINDS?!?!",
+          "expected_document_id": "tweetsumm-7d0088ec987e",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 20,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 6.224,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-1f0a9949ec7c",
+              "score": 3.962,
+              "title": "Resolved customer-care case 1f0a9949"
+            },
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 3.6421,
+              "title": "Resolved customer-care case d370b1e5"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "a2fbd60380906eb4bee5905b5ccbe92a",
+          "source_tweet_id": "750995",
+          "question": "[user] is it truly ur policy that u reroute people to other airports, make them sit 4 delayed flights 4 hrs & don’t even give food vchrs?",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-b70a19b9660e",
+              "score": 14.6602,
+              "title": "Resolved customer-care case b70a19b9"
+            },
+            {
+              "document_id": "tweetsumm-3a7f0c86e0fe",
+              "score": 7.1132,
+              "title": "Resolved customer-care case 3a7f0c86"
+            },
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 7.0796,
+              "title": "Resolved customer-care case 5462c3ac"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "a43ba991cc0815fa0f6b614ce4a0691f",
+          "source_tweet_id": "907288",
+          "question": "How I’m paying for [user] you raised my fees and took away the one channel my mom actually watches?! My contract almost up too... #bye",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7ea1cdcd5b92",
+              "score": 12.1499,
+              "title": "Resolved customer-care case 7ea1cdcd"
+            },
+            {
+              "document_id": "tweetsumm-0c0f601f1449",
+              "score": 4.0208,
+              "title": "Resolved customer-care case 0c0f601f"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 3.962,
+              "title": "Resolved customer-care case d30ba2cd"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "02cd36a17f360de3acd4230f83cbce7d",
+          "source_tweet_id": "1108511",
+          "question": "[user] Super poor customer service displayed tonight when flight after flight was delayed with no one available to help at gates #deltasucks",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 11.3858,
+              "title": "Resolved customer-care case d370b1e5"
+            },
+            {
+              "document_id": "tweetsumm-e4c07e473077",
+              "score": 8.2993,
+              "title": "Resolved customer-care case e4c07e47"
+            },
+            {
+              "document_id": "tweetsumm-6bfc5fdb4a58",
+              "score": 7.1419,
+              "title": "Resolved customer-care case 6bfc5fdb"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "ee0c3f2a6b23aa8afb1918ef1810f352",
+          "source_tweet_id": "1694158",
+          "question": "[user] any idea when cable and internet will be up in the dr. Phillips area? It's been out all day!",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 11.4708,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 10.425,
+              "title": "Resolved customer-care case d370b1e5"
+            },
+            {
+              "document_id": "tweetsumm-bfc29fd12cc8",
+              "score": 8.7731,
+              "title": "Resolved customer-care case bfc29fd1"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "02082347b503e1793cb225af34530ca1",
+          "source_tweet_id": "1663364",
+          "question": "[user] 3 trains cancelled in WoT but I've never saw so many fast trains going by. Fixing your reliability by leaving some of us stranded?",
+          "expected_document_id": "tweetsumm-02082347b503",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-886264c666db",
+              "score": 10.8607,
+              "title": "Resolved customer-care case 886264c6"
+            },
+            {
+              "document_id": "tweetsumm-1f0a9949ec7c",
+              "score": 5.9009,
+              "title": "Resolved customer-care case 1f0a9949"
+            },
+            {
+              "document_id": "tweetsumm-7d9654c27255",
+              "score": 5.6527,
+              "title": "Resolved customer-care case 7d9654c2"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "a9fc9f6337888780314a1ddccfa545a1",
+          "source_tweet_id": "1438962",
+          "question": "[user] are u going to resolve the problem m facing already informed u for same if not tan reply me the worst service i got....",
+          "expected_document_id": "tweetsumm-a9fc9f633788",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7d9654c27255",
+              "score": 8.8062,
+              "title": "Resolved customer-care case 7d9654c2"
+            },
+            {
+              "document_id": "tweetsumm-ab5cbde03e21",
+              "score": 8.2364,
+              "title": "Resolved customer-care case ab5cbde0"
+            },
+            {
+              "document_id": "tweetsumm-65e2fc448ac0",
+              "score": 7.1915,
+              "title": "Resolved customer-care case 65e2fc44"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "8f245243d90111cd1a7a14631cf2ee1a",
+          "source_tweet_id": "2894744",
+          "question": "Dear [user]: Please fix this. If you have almost 500 \"I have this question too,\" then it's a problem. [url]",
+          "expected_document_id": "tweetsumm-8f245243d901",
+          "failure_category": "lexical_retrieval_miss",
+          "expected_rank_within_20": null,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 8.0295,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-5462c3ace2d1",
+              "score": 7.205,
+              "title": "Resolved customer-care case 5462c3ac"
+            },
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 5.9882,
+              "title": "Resolved customer-care case abe8394c"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "eb4557f3a648e33a762e5b4cac5447a6",
+          "source_tweet_id": "490961",
+          "question": "[user] assuming the 16:03 Bristol Parkway - London Paddington can’t be held?? On the delayed 15:41 BTM - Parkway, currently due into parkway 11 mins late at 16:03",
+          "expected_document_id": "tweetsumm-eb4557f3a648",
+          "failure_category": "deep_ranking_failure",
+          "expected_rank_within_20": 8,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-bfc29fd12cc8",
+              "score": 7.409,
+              "title": "Resolved customer-care case bfc29fd1"
+            },
+            {
+              "document_id": "tweetsumm-5d6edf6f8fe3",
+              "score": 6.7342,
+              "title": "Resolved customer-care case 5d6edf6f"
+            },
+            {
+              "document_id": "tweetsumm-14f2d18b53e6",
+              "score": 6.3545,
+              "title": "Resolved customer-care case 14f2d18b"
+            }
+          ],
+          "label_governance_warning": null
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "0caba9df88bbc2e5f347937a6aa1fed9",
+          "source_tweet_id": "1843794",
+          "question": "[user] Missed 3 trains due to no parking spaces because of changes! What are you going to do? #didcotstation",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 12.8574,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-886264c666db",
+              "score": 9.7996,
+              "title": "Resolved customer-care case 886264c6"
+            },
+            {
+              "document_id": "tweetsumm-ea750639760f",
+              "score": 5.5423,
+              "title": "Resolved customer-care case ea750639"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "8678dcc18049176193cf778949df5257",
+          "source_tweet_id": "272453",
+          "question": "[user] Pathetic service! It was a gift, thanks for ruining it. No update given even when the mistake was made by your courier service!! [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-d370b1e57be0",
+              "score": 9.0919,
+              "title": "Resolved customer-care case d370b1e5"
+            },
+            {
+              "document_id": "tweetsumm-2525b5e0ff75",
+              "score": 8.1791,
+              "title": "Resolved customer-care case 2525b5e0"
+            },
+            {
+              "document_id": "tweetsumm-1f0a9949ec7c",
+              "score": 7.3676,
+              "title": "Resolved customer-care case 1f0a9949"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "fc9486bebbb5149f2e816bafc4173834",
+          "source_tweet_id": "2115829",
+          "question": "[user] is there anyway of checking stock levels instore on your website? Looking at a coat for someone but they want to try on first as not sure what size is needed.",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 11.2925,
+              "title": "Resolved customer-care case 00c60e1f"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 10.2199,
+              "title": "Resolved customer-care case d30ba2cd"
+            },
+            {
+              "document_id": "tweetsumm-7aecf7fc3d78",
+              "score": 9.0254,
+              "title": "Resolved customer-care case 7aecf7fc"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "69ec96fae842e64847d333faaed8e1e7",
+          "source_tweet_id": "1502243",
+          "question": "[user] 935 Ncl to London delayed so London to Chicago will have left by the time I get there",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-51423ed0d89a",
+              "score": 11.4146,
+              "title": "Resolved customer-care case 51423ed0"
+            },
+            {
+              "document_id": "tweetsumm-4f0f69e10c73",
+              "score": 7.165,
+              "title": "Resolved customer-care case 4f0f69e1"
+            },
+            {
+              "document_id": "tweetsumm-d30ba2cdee8b",
+              "score": 6.8389,
+              "title": "Resolved customer-care case d30ba2cd"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "c27520ae8e310ea7ef115733cd29e8d4",
+          "source_tweet_id": "1562809",
+          "question": "Why does [user] at Marylebone close BEFORE station closes. 22 potential customers in 8 minutes.The delight on his face says it all [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-abe8394cdc05",
+              "score": 13.3115,
+              "title": "Resolved customer-care case abe8394c"
+            },
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 9.7232,
+              "title": "Resolved customer-care case 00c60e1f"
+            },
+            {
+              "document_id": "tweetsumm-e4c07e473077",
+              "score": 8.5783,
+              "title": "Resolved customer-care case e4c07e47"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "08ec147ea39da330c5aa064537abc525",
+          "source_tweet_id": "1646636",
+          "question": "[user], asking your passengers to stand in this line that wraps around out of sight to get to the train for the terminal at Orlando is unconscionable. You need to fix this with buses or something ASAP. It left a very bad taste in my mouth after a long trip. [url]",
+          "expected_document_id": null,
+          "failure_category": "unsupported_false_accept",
+          "expected_rank_within_20": null,
+          "retrieval_confident": true,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-7d9654c27255",
+              "score": 15.3624,
+              "title": "Resolved customer-care case 7d9654c2"
+            },
+            {
+              "document_id": "tweetsumm-3a7f0c86e0fe",
+              "score": 12.5491,
+              "title": "Resolved customer-care case 3a7f0c86"
+            },
+            {
+              "document_id": "tweetsumm-00c60e1fa387",
+              "score": 12.2652,
+              "title": "Resolved customer-care case 00c60e1f"
+            }
+          ],
+          "label_governance_warning": "blanket-approved unsupported challenge label"
+        },
+        {
+          "case_id": "",
+          "source_conversation_id": "8a507058ab6f8e88e9619175ae1c5d23",
+          "source_tweet_id": "860762",
+          "question": "Forget #ryanaircancellations, 2 wks ago [user] delayed me by a day and a half and still haven't replied to my emails. #airlinehell",
+          "expected_document_id": "tweetsumm-8a507058ab6f",
+          "failure_category": "confidence_gate_false_reject",
+          "expected_rank_within_20": 1,
+          "retrieval_confident": false,
+          "top_candidates": [
+            {
+              "document_id": "tweetsumm-8a507058ab6f",
+              "score": 7.6986,
+              "title": "Resolved customer-care case 8a507058"
+            },
+            {
+              "document_id": "tweetsumm-7f7c5ebfcdfd",
+              "score": 6.1455,
+              "title": "Resolved customer-care case 7f7c5ebf"
+            },
+            {
+              "document_id": "tweetsumm-8fe05ac7aca6",
+              "score": 4.7934,
+              "title": "Resolved customer-care case 8fe05ac7"
+            }
+          ],
+          "label_governance_warning": null
+        }
+      ]
+    }
+  }
+}

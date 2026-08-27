@@ -1,0 +1,1165 @@
+[
+  {
+    "author_display_name": "Roman R.",
+    "author_url": "https://stackoverflow.com/users/10839199/roman-r",
+    "case_id": "stackoverflow-kubernetes-79563007",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "ActiveMQ Artemis does not display console when runs in K8S",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-08T20:31:47Z",
+    "source_tags": [
+      "activemq-artemis",
+      "java",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79563007/activemq-artemis-does-not-display-console-when-runs-in-k8s"
+  },
+  {
+    "author_display_name": "voipp",
+    "author_url": "https://stackoverflow.com/users/4776486/voipp",
+    "case_id": "stackoverflow-kubernetes-79385062",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to fix CSR denial by csr-auto-approver?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-24T16:52:01Z",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79385062/how-to-fix-csr-denial-by-csr-auto-approver"
+  },
+  {
+    "author_display_name": "Rassermann",
+    "author_url": "https://stackoverflow.com/users/21680516/rassermann",
+    "case_id": "stackoverflow-kubernetes-79351826",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Kubernetes deployment issue for Camunda workflows in Spring Boot",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-13T10:16:58Z",
+    "source_tags": [
+      "camunda",
+      "hpa",
+      "kubernetes",
+      "spring-boot"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79351826/kubernetes-deployment-issue-for-camunda-workflows-in-spring-boot"
+  },
+  {
+    "author_display_name": "voipp",
+    "author_url": "https://stackoverflow.com/users/4776486/voipp",
+    "case_id": "stackoverflow-kubernetes-79391154",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Why do i need keepalived in kubernetes?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-27T14:34:39Z",
+    "source_tags": [
+      "high-availability",
+      "keepalived",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79391154/why-do-i-need-keepalived-in-kubernetes"
+  },
+  {
+    "author_display_name": "Ojs",
+    "author_url": "https://stackoverflow.com/users/4881854/ojs",
+    "case_id": "stackoverflow-kubernetes-79402469",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Ejabberd different pods produce different output on API call",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-31T10:37:51Z",
+    "source_tags": [
+      "ejabberd",
+      "google-cloud-platform",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79402469/ejabberd-different-pods-produce-different-output-on-api-call"
+  },
+  {
+    "author_display_name": "xalexander",
+    "author_url": "https://stackoverflow.com/users/5899888/xalexander",
+    "case_id": "stackoverflow-kubernetes-79423739",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "ArgoCD not recognizing ApplicationSets",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-08T18:45:55Z",
+    "source_tags": [
+      "argocd",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79423739/argocd-not-recognizing-applicationsets"
+  },
+  {
+    "author_display_name": "matdlara",
+    "author_url": "https://stackoverflow.com/users/15324697/matdlara",
+    "case_id": "stackoverflow-kubernetes-79781392",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Spatial join without Apache Sedona",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-10-03T01:35:49Z",
+    "source_tags": [
+      "apache-spark",
+      "apache-spark-sql",
+      "geospatial",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79781392/spatial-join-without-apache-sedona"
+  },
+  {
+    "author_display_name": "Vamshi Krishna",
+    "author_url": "https://stackoverflow.com/users/10267810/vamshi-krishna",
+    "case_id": "stackoverflow-kubernetes-79469477",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Localstack DynamoDB : PutItem operation exceeded maximum number of attempts",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-26T11:08:08Z",
+    "source_tags": [
+      "amazon-dynamodb",
+      "amazon-dynamodb-local",
+      "amazon-web-services",
+      "kubernetes",
+      "localstack"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79469477/localstack-dynamodb-putitem-operation-exceeded-maximum-number-of-attempts"
+  },
+  {
+    "author_display_name": "BloodFury",
+    "author_url": "https://stackoverflow.com/users/23486478/bloodfury",
+    "case_id": "stackoverflow-kubernetes-79608038",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Failed to start Kraft controller in K8s",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-05-06T05:42:26Z",
+    "source_tags": [
+      "apache-kafka",
+      "java",
+      "kraft",
+      "kubernetes",
+      "migration"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79608038/failed-to-start-kraft-controller-in-k8s"
+  },
+  {
+    "author_display_name": "BetaRide",
+    "author_url": "https://stackoverflow.com/users/671639/betaride",
+    "case_id": "stackoverflow-kubernetes-79574724",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Unable to send Kafka Message after Login",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-15T08:49:38Z",
+    "source_tags": [
+      "apache-kafka",
+      "kubernetes",
+      "rancher-desktop"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79574724/unable-to-send-kafka-message-after-login"
+  },
+  {
+    "author_display_name": "joharger",
+    "author_url": "https://stackoverflow.com/users/21077846/joharger",
+    "case_id": "stackoverflow-kubernetes-79812107",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Open resty kubernetes frontend",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-11-07T08:54:32Z",
+    "source_tags": [
+      "amazon-web-services",
+      "kubernetes",
+      "nginx-ingress",
+      "nginx-reverse-proxy",
+      "tooling-recommendation"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79812107/open-resty-kubernetes-frontend"
+  },
+  {
+    "author_display_name": "Raul Chiarella",
+    "author_url": "https://stackoverflow.com/users/8297745/raul-chiarella",
+    "case_id": "stackoverflow-kubernetes-79779172",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "My django API \u201cnext\u201d link uses a stale hostname only when receiving requests from GKE services (Like Cloud Run)",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-09-30T13:47:22Z",
+    "source_tags": [
+      "django",
+      "django-rest-framework",
+      "kubernetes",
+      "nginx-ingress",
+      "pagination"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79779172/my-django-api-next-link-uses-a-stale-hostname-only-when-receiving-requests-fro"
+  },
+  {
+    "author_display_name": "rosepalette",
+    "author_url": "https://stackoverflow.com/users/2197813/rosepalette",
+    "case_id": "stackoverflow-kubernetes-79411729",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Kustomize patching multiple path with same value",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-04T12:42:24Z",
+    "source_tags": [
+      "kubernetes",
+      "kustomize"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79411729/kustomize-patching-multiple-path-with-same-value"
+  },
+  {
+    "author_display_name": "Cameron",
+    "author_url": "https://stackoverflow.com/users/31763468/cameron",
+    "case_id": "stackoverflow-kubernetes-79801711",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to overwrite an env value with Helm",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-10-27T10:37:26Z",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-helm",
+      "mongodb"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79801711/how-to-overwrite-an-env-value-with-helm"
+  },
+  {
+    "author_display_name": "mpen",
+    "author_url": "https://stackoverflow.com/users/65387/mpen",
+    "case_id": "stackoverflow-kubernetes-79870362",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to override ClientTrafficPolicy for specific HTTPRoute or subdomain?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2026-01-18T02:58:44Z",
+    "source_tags": [
+      "envoyproxy",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79870362/how-to-override-clienttrafficpolicy-for-specific-httproute-or-subdomain"
+  },
+  {
+    "author_display_name": "E. Jaep",
+    "author_url": "https://stackoverflow.com/users/616349/e-jaep",
+    "case_id": "stackoverflow-kubernetes-79564133",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Installing packages on node from a pod",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-09T10:45:05Z",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79564133/installing-packages-on-node-from-a-pod"
+  },
+  {
+    "author_display_name": "Vishwas M.R",
+    "author_url": "https://stackoverflow.com/users/7126793/vishwas-m-r",
+    "case_id": "stackoverflow-kubernetes-79574416",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Unable to delete pod from EC2 instance",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-15T05:13:46Z",
+    "source_tags": [
+      "amazon-ec2",
+      "amazon-eks",
+      "amazon-iam",
+      "amazon-web-services",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79574416/unable-to-delete-pod-from-ec2-instance"
+  },
+  {
+    "author_display_name": "MikiBelavista",
+    "author_url": "https://stackoverflow.com/users/2819689/mikibelavista",
+    "case_id": "stackoverflow-kubernetes-79525781",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to change replica set in Helm release?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-21T14:41:06Z",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79525781/how-to-change-replica-set-in-helm-release"
+  },
+  {
+    "author_display_name": "E. Pratt",
+    "author_url": "https://stackoverflow.com/users/6525639/e-pratt",
+    "case_id": "stackoverflow-kubernetes-79569961",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Kubernetes - ValidatingAdmissionPolicy - Not Honoring Expression",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-12T02:23:04Z",
+    "source_tags": [
+      "azure-aks",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79569961/kubernetes-validatingadmissionpolicy-not-honoring-expression"
+  },
+  {
+    "author_display_name": "hrdfgn",
+    "author_url": "https://stackoverflow.com/users/23020141/hrdfgn",
+    "case_id": "stackoverflow-kubernetes-79557794",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to fix kafka connection to zookeeper (kubernetes)?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-06T04:15:09Z",
+    "source_tags": [
+      "apache-kafka",
+      "apache-zookeeper",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79557794/how-to-fix-kafka-connection-to-zookeeper-kubernetes"
+  },
+  {
+    "author_display_name": "Daniel A. White",
+    "author_url": "https://stackoverflow.com/users/23528/daniel-a-white",
+    "case_id": "stackoverflow-kubernetes-79661287",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to listen for Kubernetes DNS changes",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-06-11T01:40:57Z",
+    "source_tags": [
+      "dns",
+      "kubernetes",
+      "rust"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79661287/how-to-listen-for-kubernetes-dns-changes"
+  },
+  {
+    "author_display_name": "Erik B",
+    "author_url": "https://stackoverflow.com/users/310121/erik-b",
+    "case_id": "stackoverflow-kubernetes-79738705",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to access keys with a period in the name?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-08-18T12:29:46Z",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79738705/how-to-access-keys-with-a-period-in-the-name"
+  },
+  {
+    "author_display_name": "Disteonne",
+    "author_url": "https://stackoverflow.com/users/16262239/disteonne",
+    "case_id": "stackoverflow-kubernetes-79536604",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Java options within Kubernetes container",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-26T13:39:18Z",
+    "source_tags": [
+      "java",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79536604/java-options-within-kubernetes-container"
+  },
+  {
+    "author_display_name": "kannic",
+    "author_url": "https://stackoverflow.com/users/24196571/kannic",
+    "case_id": "stackoverflow-kubernetes-79492029",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How do I set Ingress to use WS connection in Kubernetes?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-07T10:50:12Z",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79492029/how-do-i-set-ingress-to-use-ws-connection-in-kubernetes"
+  },
+  {
+    "author_display_name": "KilyenOrs",
+    "author_url": "https://stackoverflow.com/users/759738/kilyenors",
+    "case_id": "stackoverflow-kubernetes-79943923",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Can we control the total resouces used by Spark with its Kubernetes operator?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2026-05-20T09:12:30Z",
+    "source_tags": [
+      "apache-spark",
+      "best-practices",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79943923/can-we-control-the-total-resouces-used-by-spark-with-its-kubernetes-operator"
+  },
+  {
+    "author_display_name": "Kostrahb",
+    "author_url": "https://stackoverflow.com/users/1869278/kostrahb",
+    "case_id": "stackoverflow-kubernetes-79614460",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "ingress controller does not serve pages after update to 1.12.x",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-05-09T15:42:45Z",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-ingress",
+      "nginx"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79614460/ingress-controller-does-not-serve-pages-after-update-to-1-12-x"
+  },
+  {
+    "author_display_name": "Mandar K",
+    "author_url": "https://stackoverflow.com/users/1122559/mandar-k",
+    "case_id": "stackoverflow-kubernetes-79516630",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Using Promethus adapter as custom metrics server for HPA autoscaling",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-18T07:23:48Z",
+    "source_tags": [
+      "kubernetes",
+      "prometheus",
+      "prometheus-adapter"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79516630/using-promethus-adapter-as-custom-metrics-server-for-hpa-autoscaling"
+  },
+  {
+    "author_display_name": "voipp",
+    "author_url": "https://stackoverflow.com/users/4776486/voipp",
+    "case_id": "stackoverflow-kubernetes-79469947",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to properly escape symbols in ansible command?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-26T13:41:08Z",
+    "source_tags": [
+      "ansible",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79469947/how-to-properly-escape-symbols-in-ansible-command"
+  },
+  {
+    "author_display_name": "Aharon Sambol",
+    "author_url": "https://stackoverflow.com/users/14413096/aharon-sambol",
+    "case_id": "stackoverflow-kubernetes-79791764",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Handling cleanup for tasks which might be OOMKilled",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-10-16T04:05:42Z",
+    "source_tags": [
+      "kubernetes",
+      "memory",
+      "python"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79791764/handling-cleanup-for-tasks-which-might-be-oomkilled"
+  },
+  {
+    "author_display_name": "mpen",
+    "author_url": "https://stackoverflow.com/users/65387/mpen",
+    "case_id": "stackoverflow-kubernetes-79496573",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to configure HorizontalPodAutoscaler?",
+    "review_batch": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-09T20:42:49Z",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79496573/how-to-configure-horizontalpodautoscaler"
+  },
+  {
+    "author_display_name": "infiniteloop",
+    "author_url": "https://stackoverflow.com/users/6444416/infiniteloop",
+    "case_id": "stackoverflow-kubernetes-79464712",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Image name not resolving properly during Helm Upgrade/Install for Elastic Kibana: InvalidImageName error",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-24T20:20:52Z",
+    "source_tags": [
+      "docker",
+      "kibana",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79464712/image-name-not-resolving-properly-during-helm-upgrade-install-for-elastic-kibana"
+  },
+  {
+    "author_display_name": "luacassus",
+    "author_url": "https://stackoverflow.com/users/189722/luacassus",
+    "case_id": "stackoverflow-kubernetes-79821111",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "ArgoCD ApplicationSet and Workflow to create ephemeral environments from GitHub branches",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-11-15T20:58:17Z",
+    "source_tags": [
+      "advice",
+      "argocd",
+      "cicd",
+      "github-actions",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79821111/argocd-applicationset-and-workflow-to-create-ephemeral-environments-from-github"
+  },
+  {
+    "author_display_name": "Ahmed Seddik Bouchiba",
+    "author_url": "https://stackoverflow.com/users/23372565/ahmed-seddik-bouchiba",
+    "case_id": "stackoverflow-kubernetes-79468239",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to stream from dynamically created Selenium Moon browser pods to RTMP using ffmpeg?",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-26T00:45:41Z",
+    "source_tags": [
+      "ffmpeg",
+      "kubernetes",
+      "kubernetes-helm",
+      "rtmp",
+      "video-streaming"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79468239/how-to-stream-from-dynamically-created-selenium-moon-browser-pods-to-rtmp-using"
+  },
+  {
+    "author_display_name": "Ajinkya Bapat",
+    "author_url": "https://stackoverflow.com/users/6202024/ajinkya-bapat",
+    "case_id": "stackoverflow-kubernetes-79371403",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Prometheus not showing ServiceMonitors in Targets",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-20T13:04:13Z",
+    "source_tags": [
+      "argocd",
+      "grafana",
+      "kubernetes",
+      "prometheus",
+      "prometheus-operator"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79371403/prometheus-not-showing-servicemonitors-in-targets"
+  },
+  {
+    "author_display_name": "TRS",
+    "author_url": "https://stackoverflow.com/users/5681470/trs",
+    "case_id": "stackoverflow-kubernetes-79414122",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Zen server in Unreal container has insufficient storage",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-05T08:42:16Z",
+    "source_tags": [
+      "docker",
+      "kubernetes",
+      "unreal-engine5"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79414122/zen-server-in-unreal-container-has-insufficient-storage"
+  },
+  {
+    "author_display_name": "mr.wolle",
+    "author_url": "https://stackoverflow.com/users/1981160/mr-wolle",
+    "case_id": "stackoverflow-kubernetes-79698488",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Restricting Kafka K8s Apps to Topics",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-07-11T14:28:45Z",
+    "source_tags": [
+      "apache-kafka",
+      "kubernetes",
+      "security"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79698488/restricting-kafka-k8s-apps-to-topics"
+  },
+  {
+    "author_display_name": "Emmanuel_Arreola",
+    "author_url": "https://stackoverflow.com/users/20834279/emmanuel-arreola",
+    "case_id": "stackoverflow-kubernetes-79650494",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to stream a large file on Kubernetes pod",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-06-03T00:35:47Z",
+    "source_tags": [
+      "javascript",
+      "kubernetes",
+      "large-files",
+      "minio",
+      "stream"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79650494/how-to-stream-a-large-file-on-kubernetes-pod"
+  },
+  {
+    "author_display_name": "Ken-Zheng",
+    "author_url": "https://stackoverflow.com/users/3898088/ken-zheng",
+    "case_id": "stackoverflow-kubernetes-79547914",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How Can I Use # (Pound Sign) in Yaml For Istio Path",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-01T06:56:37Z",
+    "source_tags": [
+      "argocd",
+      "istio",
+      "kubernetes",
+      "yaml"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79547914/how-can-i-use-pound-sign-in-yaml-for-istio-path"
+  },
+  {
+    "author_display_name": "nayakam",
+    "author_url": "https://stackoverflow.com/users/136054/nayakam",
+    "case_id": "stackoverflow-kubernetes-79465457",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to access environment variables defined in dockerfile in helm chart value file",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-25T05:00:44Z",
+    "source_tags": [
+      "docker",
+      "environment-variables",
+      "jvm-arguments",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79465457/how-to-access-environment-variables-defined-in-dockerfile-in-helm-chart-value-fi"
+  },
+  {
+    "author_display_name": "Lemurumschlag",
+    "author_url": "https://stackoverflow.com/users/12791861/lemurumschlag",
+    "case_id": "stackoverflow-kubernetes-79371532",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Why throws the POD an InvocationTargetException",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-20T13:49:57Z",
+    "source_tags": [
+      "docker",
+      "java",
+      "kubernetes",
+      "spring",
+      "spring-boot"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79371532/why-throws-the-pod-an-invocationtargetexception"
+  },
+  {
+    "author_display_name": "Chamisxs",
+    "author_url": "https://stackoverflow.com/users/8771322/chamisxs",
+    "case_id": "stackoverflow-kubernetes-79663394",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Helm Templates dockerconfigjson secret - Cannot unmarshal string into Go struct field Secret.data",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-06-12T10:51:30Z",
+    "source_tags": [
+      "go-templates",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79663394/helm-templates-dockerconfigjson-secret-cannot-unmarshal-string-into-go-struct"
+  },
+  {
+    "author_display_name": "venom13k",
+    "author_url": "https://stackoverflow.com/users/17606644/venom13k",
+    "case_id": "stackoverflow-kubernetes-79472167",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Zeppelin k8s dots in pod name",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-27T09:22:14Z",
+    "source_tags": [
+      "apache-zeppelin",
+      "kubernetes",
+      "trino"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79472167/zeppelin-k8s-dots-in-pod-name"
+  },
+  {
+    "author_display_name": "Eduardo Valente",
+    "author_url": "https://stackoverflow.com/users/29975399/eduardo-valente",
+    "case_id": "stackoverflow-kubernetes-79614680",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Problem with hyperledger fabric offline signing",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-05-09T18:22:10Z",
+    "source_tags": [
+      "digital-signature",
+      "hyperledger",
+      "hyperledger-bevel",
+      "hyperledger-fabric",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79614680/problem-with-hyperledger-fabric-offline-signing"
+  },
+  {
+    "author_display_name": "Nathan Greneaux",
+    "author_url": "https://stackoverflow.com/users/31015136/nathan-greneaux",
+    "case_id": "stackoverflow-kubernetes-79698910",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "I cannot get my pod to scale from 1 to 2 instances",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-07-11T23:22:01Z",
+    "source_tags": [
+      "apache-kafka",
+      "keda",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79698910/i-cannot-get-my-pod-to-scale-from-1-to-2-instances"
+  },
+  {
+    "author_display_name": "Mandar K",
+    "author_url": "https://stackoverflow.com/users/1122559/mandar-k",
+    "case_id": "stackoverflow-kubernetes-79578349",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "APISIX ingress controller on Kind cluster not routing requests correctly",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-17T02:10:07Z",
+    "source_tags": [
+      "apache-apisix",
+      "kind",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79578349/apisix-ingress-controller-on-kind-cluster-not-routing-requests-correctly"
+  },
+  {
+    "author_display_name": "Lukas Ignatavi\u010dius",
+    "author_url": "https://stackoverflow.com/users/816230/lukas-ignatavi%c4%8dius",
+    "case_id": "stackoverflow-kubernetes-79346457",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to skip helm tests deployment in Grafana Tanka",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-10T16:59:52Z",
+    "source_tags": [
+      "jsonnet",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79346457/how-to-skip-helm-tests-deployment-in-grafana-tanka"
+  },
+  {
+    "author_display_name": "furion2000",
+    "author_url": "https://stackoverflow.com/users/11856842/furion2000",
+    "case_id": "stackoverflow-kubernetes-79842171",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "ArgoCD applicationset - path and .argocd-source.yaml issues",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-12-09T16:36:00Z",
+    "source_tags": [
+      "argocd",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79842171/argocd-applicationset-path-and-argocd-source-yaml-issues"
+  },
+  {
+    "author_display_name": "ladhari",
+    "author_url": "https://stackoverflow.com/users/5792426/ladhari",
+    "case_id": "stackoverflow-kubernetes-79601222",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Cloud SQL Proxy SSL error: `certificate had CN \"\", expected \"<project>:<region>:<instance>\"` when connecting to PostgreSQL 14",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-30T23:36:44Z",
+    "source_tags": [
+      "django",
+      "gcloud",
+      "kubernetes",
+      "postgresql",
+      "ssl"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79601222/cloud-sql-proxy-ssl-error-certificate-had-cn-expected-projectregion"
+  },
+  {
+    "author_display_name": "alex kriezelman",
+    "author_url": "https://stackoverflow.com/users/18181501/alex-kriezelman",
+    "case_id": "stackoverflow-kubernetes-79934574",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Spark Structured Streaming from many S3 buckets with different customer credentials and schemas",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2026-05-01T09:12:00Z",
+    "source_tags": [
+      "apache-spark",
+      "best-practices",
+      "kubernetes",
+      "pyspark",
+      "spark-streaming"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79934574/spark-structured-streaming-from-many-s3-buckets-with-different-customer-credenti"
+  },
+  {
+    "author_display_name": "niko gher",
+    "author_url": "https://stackoverflow.com/users/28079338/niko-gher",
+    "case_id": "stackoverflow-kubernetes-79507486",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Key-Vault auth issue with AKS & external-secrets-operator",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-03-13T19:52:31Z",
+    "source_tags": [
+      "azure",
+      "azure-aks",
+      "azure-keyvault",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79507486/key-vault-auth-issue-with-aks-external-secrets-operator"
+  },
+  {
+    "author_display_name": "Maitri Dave",
+    "author_url": "https://stackoverflow.com/users/11703122/maitri-dave",
+    "case_id": "stackoverflow-kubernetes-79396885",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How Microsoft HybridCache works in a Microservice Setup with Multiple Pods",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-29T13:23:59Z",
+    "source_tags": [
+      ".net",
+      "asp.net-core",
+      "hybridcache",
+      "kubernetes",
+      "microservices"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79396885/how-microsoft-hybridcache-works-in-a-microservice-setup-with-multiple-pods"
+  },
+  {
+    "author_display_name": "Lex Man",
+    "author_url": "https://stackoverflow.com/users/1849841/lex-man",
+    "case_id": "stackoverflow-kubernetes-79598229",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Adding PEM file to Kubernetes Airflow",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-04-29T11:15:02Z",
+    "source_tags": [
+      "airflow",
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79598229/adding-pem-file-to-kubernetes-airflow"
+  },
+  {
+    "author_display_name": "wsdfgfkdl",
+    "author_url": "https://stackoverflow.com/users/8483084/wsdfgfkdl",
+    "case_id": "stackoverflow-kubernetes-79733868",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to filter recent logs with kubectl logs for a specific pattern?",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-08-13T04:55:39Z",
+    "source_tags": [
+      "kubectl",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79733868/how-to-filter-recent-logs-with-kubectl-logs-for-a-specific-pattern"
+  },
+  {
+    "author_display_name": "Meet Bedmutha",
+    "author_url": "https://stackoverflow.com/users/20795870/meet-bedmutha",
+    "case_id": "stackoverflow-kubernetes-79919400",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Handling Unexpected Disconnects in DLMS",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2026-04-03T05:00:56Z",
+    "source_tags": [
+      "dlms",
+      "iot",
+      "kubernetes",
+      "meter",
+      "python"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79919400/handling-unexpected-disconnects-in-dlms"
+  },
+  {
+    "author_display_name": "TubbyStubby",
+    "author_url": "https://stackoverflow.com/users/5758826/tubbystubby",
+    "case_id": "stackoverflow-kubernetes-79405404",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to solve HTTP01 challenge when domain is pointing to different IP?",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-01T17:40:55Z",
+    "source_tags": [
+      "cert-manager",
+      "ingress-nginx",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79405404/how-to-solve-http01-challenge-when-domain-is-pointing-to-different-ip"
+  },
+  {
+    "author_display_name": "Peter Penzov",
+    "author_url": "https://stackoverflow.com/users/1103606/peter-penzov",
+    "case_id": "stackoverflow-kubernetes-79349279",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Restrict external access to pod",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-12T03:13:15Z",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79349279/restrict-external-access-to-pod"
+  },
+  {
+    "author_display_name": "AminRana",
+    "author_url": "https://stackoverflow.com/users/12396940/aminrana",
+    "case_id": "stackoverflow-kubernetes-79924925",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Docker Project: A to Z process step by step",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2026-04-13T17:21:55Z",
+    "source_tags": [
+      "best-practices",
+      "devops",
+      "docker",
+      "jenkins",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79924925/docker-project-a-to-z-process-step-by-step"
+  },
+  {
+    "author_display_name": "ninjab3s",
+    "author_url": "https://stackoverflow.com/users/15331303/ninjab3s",
+    "case_id": "stackoverflow-kubernetes-79433005",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Kubernetes PostStartHook fails with curl",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-02-12T12:15:33Z",
+    "source_tags": [
+      "curl",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79433005/kubernetes-poststarthook-fails-with-curl"
+  },
+  {
+    "author_display_name": "guettli",
+    "author_url": "https://stackoverflow.com/users/633961/guettli",
+    "case_id": "stackoverflow-kubernetes-79375047",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to test Kubernetes validation webhook with curl?",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-21T15:48:00Z",
+    "source_tags": [
+      "curl",
+      "kubernetes",
+      "webhooks"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79375047/how-to-test-kubernetes-validation-webhook-with-curl"
+  },
+  {
+    "author_display_name": "MischievousChild",
+    "author_url": "https://stackoverflow.com/users/10846114/mischievouschild",
+    "case_id": "stackoverflow-kubernetes-79369211",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "OpenTelemetry export to Prometheus \u2013 Unsupported compression: snappy (prometheusremotewrite)",
+    "review_batch": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_created_at": "2025-01-19T15:27:22Z",
+    "source_tags": [
+      "kubernetes",
+      "open-telemetry",
+      "open-telemetry-collector",
+      "prometheus",
+      "prometheus-operator"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79369211/opentelemetry-export-to-prometheus-unsupported-compression-snappy-prometheus"
+  }
+]

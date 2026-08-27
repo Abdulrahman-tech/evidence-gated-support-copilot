@@ -1,0 +1,302 @@
+[
+  {
+    "document_id": "electronics-returns",
+    "source": "handbook/electronics/returns",
+    "text": "This policy applies only to electronic devices. Customers may return an eligible item within 30 calendar days. Support must verify the order number before applying the return item policy.",
+    "title": "Electronic Devices \u2014 Returns"
+  },
+  {
+    "document_id": "electronics-refunds",
+    "source": "handbook/electronics/refunds",
+    "text": "This policy applies only to electronic devices. Customers may receive an approved refund within 7 business days. Support must verify the order number before applying the refund timing policy.",
+    "title": "Electronic Devices \u2014 Refund timing"
+  },
+  {
+    "document_id": "electronics-shipping",
+    "source": "handbook/electronics/shipping",
+    "text": "This policy applies only to electronic devices. Customers may receive standard shipping within 5 business days after dispatch. Support must verify the order number before applying the standard shipping policy.",
+    "title": "Electronic Devices \u2014 Standard shipping"
+  },
+  {
+    "document_id": "electronics-tracking",
+    "source": "handbook/electronics/tracking",
+    "text": "This policy applies only to electronic devices. Customers may contact support when tracking has not updated for 3 business days. Support must verify the order number before applying the tracking update policy.",
+    "title": "Electronic Devices \u2014 Stalled tracking"
+  },
+  {
+    "document_id": "electronics-cancellations",
+    "source": "handbook/electronics/cancellations",
+    "text": "This policy applies only to electronic devices. Customers may cancel before the warehouse marks the order as packed. Support must verify the order number before applying the cancel order policy.",
+    "title": "Electronic Devices \u2014 Order cancellation"
+  },
+  {
+    "document_id": "electronics-warranty",
+    "source": "handbook/electronics/warranty",
+    "text": "This policy applies only to electronic devices. Customers may claim the limited warranty within 12 months for manufacturing defects. Support must verify the order number before applying the warranty defect policy.",
+    "title": "Electronic Devices \u2014 Limited warranty"
+  },
+  {
+    "document_id": "electronics-damaged",
+    "source": "handbook/electronics/damaged",
+    "text": "This policy applies only to electronic devices. Customers may report delivery damage with photos within 48 hours. Support must verify the order number before applying the damaged delivery policy.",
+    "title": "Electronic Devices \u2014 Damaged delivery"
+  },
+  {
+    "document_id": "electronics-exchanges",
+    "source": "handbook/electronics/exchanges",
+    "text": "This policy applies only to electronic devices. Customers may exchange an unused item for another size within 21 days. Support must verify the order number before applying the exchange size policy.",
+    "title": "Electronic Devices \u2014 Exchanges"
+  },
+  {
+    "document_id": "electronics-payments",
+    "source": "handbook/electronics/payments",
+    "text": "This policy applies only to electronic devices. Customers may allow up to 24 hours for a pending card payment to clear. Support must verify the order number before applying the pending payment policy.",
+    "title": "Electronic Devices \u2014 Payment review"
+  },
+  {
+    "document_id": "electronics-address",
+    "source": "handbook/electronics/address",
+    "text": "This policy applies only to electronic devices. Customers may change the delivery address before the order is dispatched. Support must verify the order number before applying the change address policy.",
+    "title": "Electronic Devices \u2014 Address changes"
+  },
+  {
+    "document_id": "furniture-returns",
+    "source": "handbook/furniture/returns",
+    "text": "This policy applies only to furniture. Customers may return an eligible item within 30 calendar days. Support must verify the order number before applying the return item policy.",
+    "title": "Furniture \u2014 Returns"
+  },
+  {
+    "document_id": "furniture-refunds",
+    "source": "handbook/furniture/refunds",
+    "text": "This policy applies only to furniture. Customers may receive an approved refund within 7 business days. Support must verify the order number before applying the refund timing policy.",
+    "title": "Furniture \u2014 Refund timing"
+  },
+  {
+    "document_id": "furniture-shipping",
+    "source": "handbook/furniture/shipping",
+    "text": "This policy applies only to furniture. Customers may receive standard shipping within 5 business days after dispatch. Support must verify the order number before applying the standard shipping policy.",
+    "title": "Furniture \u2014 Standard shipping"
+  },
+  {
+    "document_id": "furniture-tracking",
+    "source": "handbook/furniture/tracking",
+    "text": "This policy applies only to furniture. Customers may contact support when tracking has not updated for 3 business days. Support must verify the order number before applying the tracking update policy.",
+    "title": "Furniture \u2014 Stalled tracking"
+  },
+  {
+    "document_id": "furniture-cancellations",
+    "source": "handbook/furniture/cancellations",
+    "text": "This policy applies only to furniture. Customers may cancel before the warehouse marks the order as packed. Support must verify the order number before applying the cancel order policy.",
+    "title": "Furniture \u2014 Order cancellation"
+  },
+  {
+    "document_id": "furniture-warranty",
+    "source": "handbook/furniture/warranty",
+    "text": "This policy applies only to furniture. Customers may claim the limited warranty within 12 months for manufacturing defects. Support must verify the order number before applying the warranty defect policy.",
+    "title": "Furniture \u2014 Limited warranty"
+  },
+  {
+    "document_id": "furniture-damaged",
+    "source": "handbook/furniture/damaged",
+    "text": "This policy applies only to furniture. Customers may report delivery damage with photos within 48 hours. Support must verify the order number before applying the damaged delivery policy.",
+    "title": "Furniture \u2014 Damaged delivery"
+  },
+  {
+    "document_id": "furniture-exchanges",
+    "source": "handbook/furniture/exchanges",
+    "text": "This policy applies only to furniture. Customers may exchange an unused item for another size within 21 days. Support must verify the order number before applying the exchange size policy.",
+    "title": "Furniture \u2014 Exchanges"
+  },
+  {
+    "document_id": "furniture-payments",
+    "source": "handbook/furniture/payments",
+    "text": "This policy applies only to furniture. Customers may allow up to 24 hours for a pending card payment to clear. Support must verify the order number before applying the pending payment policy.",
+    "title": "Furniture \u2014 Payment review"
+  },
+  {
+    "document_id": "furniture-address",
+    "source": "handbook/furniture/address",
+    "text": "This policy applies only to furniture. Customers may change the delivery address before the order is dispatched. Support must verify the order number before applying the change address policy.",
+    "title": "Furniture \u2014 Address changes"
+  },
+  {
+    "document_id": "apparel-returns",
+    "source": "handbook/apparel/returns",
+    "text": "This policy applies only to clothing. Customers may return an eligible item within 30 calendar days. Support must verify the order number before applying the return item policy.",
+    "title": "Clothing \u2014 Returns"
+  },
+  {
+    "document_id": "apparel-refunds",
+    "source": "handbook/apparel/refunds",
+    "text": "This policy applies only to clothing. Customers may receive an approved refund within 7 business days. Support must verify the order number before applying the refund timing policy.",
+    "title": "Clothing \u2014 Refund timing"
+  },
+  {
+    "document_id": "apparel-shipping",
+    "source": "handbook/apparel/shipping",
+    "text": "This policy applies only to clothing. Customers may receive standard shipping within 5 business days after dispatch. Support must verify the order number before applying the standard shipping policy.",
+    "title": "Clothing \u2014 Standard shipping"
+  },
+  {
+    "document_id": "apparel-tracking",
+    "source": "handbook/apparel/tracking",
+    "text": "This policy applies only to clothing. Customers may contact support when tracking has not updated for 3 business days. Support must verify the order number before applying the tracking update policy.",
+    "title": "Clothing \u2014 Stalled tracking"
+  },
+  {
+    "document_id": "apparel-cancellations",
+    "source": "handbook/apparel/cancellations",
+    "text": "This policy applies only to clothing. Customers may cancel before the warehouse marks the order as packed. Support must verify the order number before applying the cancel order policy.",
+    "title": "Clothing \u2014 Order cancellation"
+  },
+  {
+    "document_id": "apparel-warranty",
+    "source": "handbook/apparel/warranty",
+    "text": "This policy applies only to clothing. Customers may claim the limited warranty within 12 months for manufacturing defects. Support must verify the order number before applying the warranty defect policy.",
+    "title": "Clothing \u2014 Limited warranty"
+  },
+  {
+    "document_id": "apparel-damaged",
+    "source": "handbook/apparel/damaged",
+    "text": "This policy applies only to clothing. Customers may report delivery damage with photos within 48 hours. Support must verify the order number before applying the damaged delivery policy.",
+    "title": "Clothing \u2014 Damaged delivery"
+  },
+  {
+    "document_id": "apparel-exchanges",
+    "source": "handbook/apparel/exchanges",
+    "text": "This policy applies only to clothing. Customers may exchange an unused item for another size within 21 days. Support must verify the order number before applying the exchange size policy.",
+    "title": "Clothing \u2014 Exchanges"
+  },
+  {
+    "document_id": "apparel-payments",
+    "source": "handbook/apparel/payments",
+    "text": "This policy applies only to clothing. Customers may allow up to 24 hours for a pending card payment to clear. Support must verify the order number before applying the pending payment policy.",
+    "title": "Clothing \u2014 Payment review"
+  },
+  {
+    "document_id": "apparel-address",
+    "source": "handbook/apparel/address",
+    "text": "This policy applies only to clothing. Customers may change the delivery address before the order is dispatched. Support must verify the order number before applying the change address policy.",
+    "title": "Clothing \u2014 Address changes"
+  },
+  {
+    "document_id": "beauty-returns",
+    "source": "handbook/beauty/returns",
+    "text": "This policy applies only to beauty products. Customers may return an eligible item within 30 calendar days. Support must verify the order number before applying the return item policy.",
+    "title": "Beauty Products \u2014 Returns"
+  },
+  {
+    "document_id": "beauty-refunds",
+    "source": "handbook/beauty/refunds",
+    "text": "This policy applies only to beauty products. Customers may receive an approved refund within 7 business days. Support must verify the order number before applying the refund timing policy.",
+    "title": "Beauty Products \u2014 Refund timing"
+  },
+  {
+    "document_id": "beauty-shipping",
+    "source": "handbook/beauty/shipping",
+    "text": "This policy applies only to beauty products. Customers may receive standard shipping within 5 business days after dispatch. Support must verify the order number before applying the standard shipping policy.",
+    "title": "Beauty Products \u2014 Standard shipping"
+  },
+  {
+    "document_id": "beauty-tracking",
+    "source": "handbook/beauty/tracking",
+    "text": "This policy applies only to beauty products. Customers may contact support when tracking has not updated for 3 business days. Support must verify the order number before applying the tracking update policy.",
+    "title": "Beauty Products \u2014 Stalled tracking"
+  },
+  {
+    "document_id": "beauty-cancellations",
+    "source": "handbook/beauty/cancellations",
+    "text": "This policy applies only to beauty products. Customers may cancel before the warehouse marks the order as packed. Support must verify the order number before applying the cancel order policy.",
+    "title": "Beauty Products \u2014 Order cancellation"
+  },
+  {
+    "document_id": "beauty-warranty",
+    "source": "handbook/beauty/warranty",
+    "text": "This policy applies only to beauty products. Customers may claim the limited warranty within 12 months for manufacturing defects. Support must verify the order number before applying the warranty defect policy.",
+    "title": "Beauty Products \u2014 Limited warranty"
+  },
+  {
+    "document_id": "beauty-damaged",
+    "source": "handbook/beauty/damaged",
+    "text": "This policy applies only to beauty products. Customers may report delivery damage with photos within 48 hours. Support must verify the order number before applying the damaged delivery policy.",
+    "title": "Beauty Products \u2014 Damaged delivery"
+  },
+  {
+    "document_id": "beauty-exchanges",
+    "source": "handbook/beauty/exchanges",
+    "text": "This policy applies only to beauty products. Customers may exchange an unused item for another size within 21 days. Support must verify the order number before applying the exchange size policy.",
+    "title": "Beauty Products \u2014 Exchanges"
+  },
+  {
+    "document_id": "beauty-payments",
+    "source": "handbook/beauty/payments",
+    "text": "This policy applies only to beauty products. Customers may allow up to 24 hours for a pending card payment to clear. Support must verify the order number before applying the pending payment policy.",
+    "title": "Beauty Products \u2014 Payment review"
+  },
+  {
+    "document_id": "beauty-address",
+    "source": "handbook/beauty/address",
+    "text": "This policy applies only to beauty products. Customers may change the delivery address before the order is dispatched. Support must verify the order number before applying the change address policy.",
+    "title": "Beauty Products \u2014 Address changes"
+  },
+  {
+    "document_id": "grocery-returns",
+    "source": "handbook/grocery/returns",
+    "text": "This policy applies only to groceries. Customers may return an eligible item within 30 calendar days. Support must verify the order number before applying the return item policy.",
+    "title": "Groceries \u2014 Returns"
+  },
+  {
+    "document_id": "grocery-refunds",
+    "source": "handbook/grocery/refunds",
+    "text": "This policy applies only to groceries. Customers may receive an approved refund within 7 business days. Support must verify the order number before applying the refund timing policy.",
+    "title": "Groceries \u2014 Refund timing"
+  },
+  {
+    "document_id": "grocery-shipping",
+    "source": "handbook/grocery/shipping",
+    "text": "This policy applies only to groceries. Customers may receive standard shipping within 5 business days after dispatch. Support must verify the order number before applying the standard shipping policy.",
+    "title": "Groceries \u2014 Standard shipping"
+  },
+  {
+    "document_id": "grocery-tracking",
+    "source": "handbook/grocery/tracking",
+    "text": "This policy applies only to groceries. Customers may contact support when tracking has not updated for 3 business days. Support must verify the order number before applying the tracking update policy.",
+    "title": "Groceries \u2014 Stalled tracking"
+  },
+  {
+    "document_id": "grocery-cancellations",
+    "source": "handbook/grocery/cancellations",
+    "text": "This policy applies only to groceries. Customers may cancel before the warehouse marks the order as packed. Support must verify the order number before applying the cancel order policy.",
+    "title": "Groceries \u2014 Order cancellation"
+  },
+  {
+    "document_id": "grocery-warranty",
+    "source": "handbook/grocery/warranty",
+    "text": "This policy applies only to groceries. Customers may claim the limited warranty within 12 months for manufacturing defects. Support must verify the order number before applying the warranty defect policy.",
+    "title": "Groceries \u2014 Limited warranty"
+  },
+  {
+    "document_id": "grocery-damaged",
+    "source": "handbook/grocery/damaged",
+    "text": "This policy applies only to groceries. Customers may report delivery damage with photos within 48 hours. Support must verify the order number before applying the damaged delivery policy.",
+    "title": "Groceries \u2014 Damaged delivery"
+  },
+  {
+    "document_id": "grocery-exchanges",
+    "source": "handbook/grocery/exchanges",
+    "text": "This policy applies only to groceries. Customers may exchange an unused item for another size within 21 days. Support must verify the order number before applying the exchange size policy.",
+    "title": "Groceries \u2014 Exchanges"
+  },
+  {
+    "document_id": "grocery-payments",
+    "source": "handbook/grocery/payments",
+    "text": "This policy applies only to groceries. Customers may allow up to 24 hours for a pending card payment to clear. Support must verify the order number before applying the pending payment policy.",
+    "title": "Groceries \u2014 Payment review"
+  },
+  {
+    "document_id": "grocery-address",
+    "source": "handbook/grocery/address",
+    "text": "This policy applies only to groceries. Customers may change the delivery address before the order is dispatched. Support must verify the order number before applying the change address policy.",
+    "title": "Groceries \u2014 Address changes"
+  }
+]

@@ -1,0 +1,990 @@
+[
+  {
+    "case_id": "medusa-discussion-10594",
+    "expected_document_id": "medusa-18192a7a7890a7f1",
+    "question": "How to use a Secret API Key?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10594",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10646",
+    "expected_document_id": null,
+    "question": "Model called \"relay\" creates methods such as \"createRelaies\" and \"deleteRelaies\"",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10646",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10750",
+    "expected_document_id": "medusa-299f6f8b9b21f5d7",
+    "question": "Enforce single execution of scheduled job per environment?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10750",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10766",
+    "expected_document_id": "medusa-662a23bc3340fb2d",
+    "question": "What event is emitted when an admin clicks \u201cMark as shipped\u201d in Medusa v2?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10766",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11251",
+    "expected_document_id": null,
+    "question": "Distributing File Module Provider as Plugin",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11251",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11320",
+    "expected_document_id": null,
+    "question": "Add Medusa (2) Docs to Cursor",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11320",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11521",
+    "expected_document_id": null,
+    "question": "Unauthorized error on production",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11521",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11554",
+    "expected_document_id": "medusa-351c386a0f76b7da",
+    "question": "Could not resolve 'remoteQuery' when using useRemoteQueryStep in step",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11554",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-12125",
+    "expected_document_id": null,
+    "question": "Thumbnail URL set to localhost",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/12125",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-12466",
+    "expected_document_id": null,
+    "question": "Why are we not generating the `.medusa/types` folder in production mode ?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/12466",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-12638",
+    "expected_document_id": null,
+    "question": "How do I disable core modules?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/12638",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-12680",
+    "expected_document_id": null,
+    "question": "How to debug a custom workflow",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/12680",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-13239",
+    "expected_document_id": null,
+    "question": "61 vulnerabilities (8 low, 3 moderate, 50 high)",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/13239",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-13369",
+    "expected_document_id": "medusa-f3b491f07ed6c7fb",
+    "question": "How can I get OrderId before payment.initiatePaymentSession?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/13369",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-1339",
+    "expected_document_id": null,
+    "question": "How to configure the development environment",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/1339",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-14208",
+    "expected_document_id": null,
+    "question": "Why can't `store/products` filter based on product status?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/14208",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-15550",
+    "expected_document_id": null,
+    "question": "Regression Analysis: Race condition risk in compensatePaymentIfNeededStep (PR #15527)",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/15550",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-15884",
+    "expected_document_id": null,
+    "question": "Connection error with Medusa Doc MCP even after re-authentication.",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/15884",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2251",
+    "expected_document_id": "medusa-2b00d2f607765289",
+    "question": "How does the Medusa backend scale horizontally?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2251",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2407",
+    "expected_document_id": null,
+    "question": "Why billing address is null when create draft order via API?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2407",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2606",
+    "expected_document_id": null,
+    "question": "Customer with a list of orders in the authorization response",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2606",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2624",
+    "expected_document_id": "medusa-4a0ed8d25b387feb",
+    "question": "How can I sort products returned by the API?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2624",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2755",
+    "expected_document_id": null,
+    "question": "Memory Leak on Server with Railway",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2755",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2826",
+    "expected_document_id": null,
+    "question": "How to link registered customer and their previous orders ?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2826",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2848",
+    "expected_document_id": null,
+    "question": "How should I connect Medusa Admin, the Medusa backend, the Next.js starter, and MinIO?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2848",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-3530",
+    "expected_document_id": null,
+    "question": "In which field should I fill the reference product?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3530",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-3677",
+    "expected_document_id": "medusa-0534a3eefb4b44ba",
+    "question": "Send email with sendgrid.",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3677",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-3823",
+    "expected_document_id": null,
+    "question": "Should medusa.customers.listOrders() return all orders?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3823",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4325",
+    "expected_document_id": "medusa-707ce5efda3f5fff",
+    "question": "How to get product by handle",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4325",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4387",
+    "expected_document_id": null,
+    "question": "How can I recover cart after a user logout and login again?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4387",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4432",
+    "expected_document_id": null,
+    "question": "Not possible to run medusa-cli without global install?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4432",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4575",
+    "expected_document_id": null,
+    "question": "in-person payments and payment_method_types with stripe",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4575",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4742",
+    "expected_document_id": null,
+    "question": "Is PostgreSQL required, and can I use Neon with Medusa?",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4742",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4743",
+    "expected_document_id": "medusa-e70e11f375ef11f2",
+    "question": "I couldn't connect to PostgreSQL while installing Medusa.",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4743",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4811",
+    "expected_document_id": null,
+    "question": "Uploading the import csv for products.",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4811",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5006",
+    "expected_document_id": null,
+    "question": "Multi-vendor marketplace inventory management",
+    "review_batch": "medusa_supported_label_audit_12",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5006",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5175",
+    "expected_document_id": null,
+    "question": "Custom widget works fine in dev mode, doesn't load in production",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5175",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5987",
+    "expected_document_id": null,
+    "question": "Reserve product via deposit. Then pay the rest at a future point",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5987",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-7163",
+    "expected_document_id": null,
+    "question": "Only query in-stock products",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/7163",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-8660",
+    "expected_document_id": null,
+    "question": "Concern about Admin Dependency in Medusa V2",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/8660",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-9996",
+    "expected_document_id": null,
+    "question": "How to Translate the Admin Dashboard to Spanish?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/9996",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10089",
+    "expected_document_id": null,
+    "question": "Promotion is not working with sales channel conditions",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "B2B recipe overview, doesn't confirm sales-channel condition bug",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10089",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10146",
+    "expected_document_id": null,
+    "question": "Fail to update customer email address",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is a React Native checkout component, unrelated",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10146",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10163",
+    "expected_document_id": null,
+    "question": "Docs(Code Issue): Missing import of Heading Component from @medusajs/ui",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "tutorial doesn't show the specific missing-import line",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10163",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10238",
+    "expected_document_id": null,
+    "question": "Free order appears as awaiting after \"capturing\" free amount",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "generic transaction/order-totals docs, nothing on the zero-amount \"awaiting\" status bug",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10238",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10283",
+    "expected_document_id": null,
+    "question": "Not able redirect to a different custom page after login.",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10283",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10332",
+    "expected_document_id": null,
+    "question": "Admin UI allows an Order to be cancelled multiple times",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10332",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10501",
+    "expected_document_id": null,
+    "question": "Query api for price entity's filtering does not work as API outlines.",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is about tax lines, unrelated",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10501",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10541",
+    "expected_document_id": null,
+    "question": "Create fulfilment creates partial fulfilment in case there are more than one line item in the order.",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "custom-reservations doc unrelated to partial-fulfillment splitting",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10541",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10746",
+    "expected_document_id": null,
+    "question": "Docs: page can't be scrolled down by arrow keys or shortcuts of Chrome Vim plugin",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10746",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-10783",
+    "expected_document_id": null,
+    "question": "Automatically applied Promotion only for customer group always applied",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/10783",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11069",
+    "expected_document_id": null,
+    "question": "Date inconsistency between order details and order list views",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is a ticket-booking date picker, unrelated",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11069",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11201",
+    "expected_document_id": null,
+    "question": "Admin Products List Response Mapping prices incorrectly",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "generic list-products doc, no pricing-mapping detail",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11201",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11232",
+    "expected_document_id": null,
+    "question": "Incorrect tanstack version in customize admin widget docs",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "tutorial uses Tanstack Query but shows no version number to confirm/deny",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11232",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11321",
+    "expected_document_id": null,
+    "question": "Tiered pricing disappears when editing",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11321",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11587",
+    "expected_document_id": null,
+    "question": "Custom line items cause error in shipping options retrieval",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "explains shipping-options logic generally, not the custom-line-item error",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11587",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11590",
+    "expected_document_id": null,
+    "question": "Parameters and Returns type in Payment provider doc",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11590",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11648",
+    "expected_document_id": null,
+    "question": "[Bug] / [FEATURE]: Custom Line Items Disappear When Changing Cart Region",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "generic cart feature list, no region-change behavior",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11648",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11649",
+    "expected_document_id": "medusa-c8c272172e58ee46",
+    "question": "Delete customer address doesn't work",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "doc directly documents the Delete Customer Address flow being reported as broken",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11649",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11654",
+    "expected_document_id": null,
+    "question": "Incomplete API Route Documentation for Custom Modules \u2013 Missing GET, Service, and Model Setup",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "Sanity integration example, not general custom-module API docs",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11654",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11659",
+    "expected_document_id": "medusa-c8339144e67407a6",
+    "question": "Setup OpenTelemetry with Sentry",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11659",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11681",
+    "expected_document_id": null,
+    "question": "v2.5.1 breaks in production ubuntu server",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11681",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11691",
+    "expected_document_id": null,
+    "question": "Inventory updates do not emit Events, preventing Cache Revalidation",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "revalidation guide assumes events fire, doesn't confirm inventory emits them",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11691",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11703",
+    "expected_document_id": null,
+    "question": "Cancelling fulfillment does not recreate the first reservation",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11703",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11860",
+    "expected_document_id": null,
+    "question": "Auth reset password event",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11860",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-11882",
+    "expected_document_id": null,
+    "question": "fix: incorrect migration command for marketplaceModuleService",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is Subscriptions module migrations, not Marketplace",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11882",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-12085",
+    "expected_document_id": null,
+    "question": "docs: amendments for the instructions when creating a plugin and generating migrations",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/12085",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-12389",
+    "expected_document_id": null,
+    "question": "createPaymentSession not working with stripe as provider id.",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/12389",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-12789",
+    "expected_document_id": null,
+    "question": "Rounding Issue when capturing payment from stripe webhook",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/12789",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-12876",
+    "expected_document_id": null,
+    "question": "Product attribute fields (width/length/height) reject decimal values due to HTML input validation",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/12876",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-12959",
+    "expected_document_id": null,
+    "question": "payment_sessions Missing from Order.payment_collections",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/12959",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-13066",
+    "expected_document_id": null,
+    "question": "Unable to refund shipping amount",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is generic claim-refund, not shipping-specific",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/13066",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-13337",
+    "expected_document_id": null,
+    "question": "baseUrl \"/\" in draft order plugin causes problems when backend is on a different domain than dashboard",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/13337",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-13403",
+    "expected_document_id": null,
+    "question": "Shipping cost is not added to the total",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/13403",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-13877",
+    "expected_document_id": null,
+    "question": "1.2 Install Medusa section doesn't mention that PostgreSQL is needed to be running in the background and that user needs to create a database and provide it in the CLI",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "db reset doc, not the install-prereqs gap being reported",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/13877",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-13892",
+    "expected_document_id": null,
+    "question": "Complete Cart Workflow Fails at reserve-inventory-step Despite \"Allow Backorders\" Setting",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/13892",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-14057",
+    "expected_document_id": null,
+    "question": "Fetching shipping options does not include the shipping option type in all cases",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/14057",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-14249",
+    "expected_document_id": null,
+    "question": "Inventory level table not refreshing after update in Admin UI",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/14249",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-14304",
+    "expected_document_id": null,
+    "question": "Orders created in admin panel have incorrect `requires_shipping` when fulfillment is created",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "ShipStation guide doesn't cover requires_shipping",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/14304",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-14347",
+    "expected_document_id": null,
+    "question": "Current documentation on docker installation produces not functional medusa.js instances",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is Next.js install steps, not Docker/backend install",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/14347",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-14965",
+    "expected_document_id": null,
+    "question": "query.index filter on second linked module entity returns empty \u2014 inSchemaRef missing from parent registration",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/14965",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15077",
+    "expected_document_id": null,
+    "question": "plugin:db:generate crashes when model files export TypeScript enums",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "generic db:generate steps, no enum-crash detail",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15077",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15207",
+    "expected_document_id": null,
+    "question": "Price list create page crashes due to unrecognized customer_group_ids schema key",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "Price List concept doc, no mention of customer_group_ids",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15207",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15508",
+    "expected_document_id": "medusa-1746fb462448d5d2",
+    "question": "DELETE /auth/session does not clear connect.sid cookie",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "doc explicitly states DELETE /auth/session removes the session cookie \u2014 directly relevant to the reported failure",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15508",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15589",
+    "expected_document_id": null,
+    "question": "Each cart total change during checkout creates a new Stripe PaymentIntent (refreshPaymentCollectionForCartWorkflow deletes + recreates payment sessions)",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence is the ChatGPT Instant Checkout tutorial, unrelated workflow",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15589",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15658",
+    "expected_document_id": null,
+    "question": "Module DB connections force SSL for any non-localhost host (breaks Docker Compose); regresses to silent db:migrate hang in 2.15.x",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15658",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15960",
+    "expected_document_id": null,
+    "question": "Promotion incorrectly shown as \"Campaign expired\" for per-attribute (use_by_attribute) campaign budgets",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15960",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-16232",
+    "expected_document_id": null,
+    "question": "Quadratic variant lookup in prepareVariantsAndItemsWithPricesStep (cart refresh path)",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/16232",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-16300",
+    "expected_document_id": null,
+    "question": "Numeric shipping option rule values are compared as dates",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/16300",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-16310",
+    "expected_document_id": null,
+    "question": "bug(framework): prepareRetrieveQuery drops entity from remote query config",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "Settings Module doc unrelated to query-builder bug",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/16310",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9468",
+    "expected_document_id": null,
+    "question": "`createProductVariantsWorkflow` fails if inventory item with sku already exists",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9468",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9540",
+    "expected_document_id": null,
+    "question": "GPay button doesn't process payment",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "generic checkout step doc, no Google Pay specifics",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9540",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9546",
+    "expected_document_id": null,
+    "question": "Auth Module v2 - Login with google breaks cart and customer cookie on Firefox only, until tab is closed and reopened",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "cache/OAuth doc is topically close but doesn't cover the Firefox-only cookie bug",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9546",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9569",
+    "expected_document_id": null,
+    "question": "Error Starting Server Due to mappedBy reference in module models",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "evidence (order exchange) is unrelated",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9569",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9764",
+    "expected_document_id": null,
+    "question": "Variant price not saved, order with lower prices took place.",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9764",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9881",
+    "expected_document_id": null,
+    "question": "Unable to find the plugin \"medusa-payment-razorpay\", when updating medusa to v2.",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9881",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9883",
+    "expected_document_id": null,
+    "question": "Missing store entity in remote query entry points",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9883",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9896",
+    "expected_document_id": null,
+    "question": "Error: An error occurred while processing payment. Webhook_received: TypeError: Cannot read properties of undefined (reading 'type')",
+    "review_batch": "medusa_development_manual_batch_02",
+    "review_method": "user_reviewed_codex_applied",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9896",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-9997",
+    "expected_document_id": null,
+    "question": "Event Bus Services do not log subscription errors properly",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "describes Local Event Module generally, not logging behavior",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/9997",
+    "tenant_id": "medusa"
+  }
+]

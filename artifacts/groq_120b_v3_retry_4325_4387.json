@@ -1,0 +1,29 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "verifier_version": "direct_evidence_v3",
+  "split": "development",
+  "case_count": 2,
+  "development_sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 0,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-4325",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-707ce5efda3f5fff",
+          "quote": "To retrieve a product by its handle, send a request to the List Products API route passing the handle query parameter"
+        }
+      ],
+      "reason": "The passage explicitly describes how to get a product by its handle, directly answering the question."
+    },
+    {
+      "case_id": "medusa-discussion-4387",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly explain how to recover a cart specifically after a user logs out and then logs back in; they either discuss logout mechanics, login flows, or generic cart recovery without tying it to the logout/login scenario."
+    }
+  ]
+}

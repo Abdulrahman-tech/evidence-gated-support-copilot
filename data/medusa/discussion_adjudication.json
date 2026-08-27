@@ -1,0 +1,813 @@
+[
+  {
+    "case_id": "medusa-discussion-15884",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-15550",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-15015",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "Is it possible to use a Unix socket connection?"
+  },
+  {
+    "case_id": "medusa-discussion-14946",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-14863",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-3bdd5225c0947296",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-14792",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-14575",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-bc743b805428be29",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-14208",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-13369",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-f3b491f07ed6c7fb",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-13239",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-12680",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-12638",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-12466",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-12125",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-12087",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11557",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-558af52bf2c3e52c",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11554",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-351c386a0f76b7da",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11521",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11457",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-17ba933ebb1ea709",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11411",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-3f6d591a6dd5692b",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11320",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11251",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-11036",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10854",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-24b206cac5a6c969",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10824",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-82cf837437298377",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10766",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-662a23bc3340fb2d",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "What event is emitted when an admin clicks “Mark as shipped” in Medusa v2?"
+  },
+  {
+    "case_id": "medusa-discussion-10750",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-299f6f8b9b21f5d7",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10646",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10594",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-18192a7a7890a7f1",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10550",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-10239",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-9996",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-9831",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-9421",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-9196",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-8660",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-8369",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-7840",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-7365",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-7163",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-7106",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-6968",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-6303",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-6054",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-6053",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-6011",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-a1d1a17bdd3676d5",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5987",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5942",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-7bbc2860083a7b72",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5520",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5443",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "What is the recommended maximum number of products?"
+  },
+  {
+    "case_id": "medusa-discussion-5416",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5175",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5020",
+    "reviewer_decision": "ambiguous",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: there is insufficient technical context for a reliable label, so the case is excluded.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-5006",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-8fca65c2997ba646",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4811",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4743",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-7201dabc2992f44a",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "I couldn't connect to PostgreSQL while installing Medusa."
+  },
+  {
+    "case_id": "medusa-discussion-4742",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-e70e11f375ef11f2",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "Is PostgreSQL required, and can I use Neon with Medusa?"
+  },
+  {
+    "case_id": "medusa-discussion-4575",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4533",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-771785ef3fb48afb",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4513",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "How can I filter products by a metadata attribute?"
+  },
+  {
+    "case_id": "medusa-discussion-4495",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-4eaec58824b17477",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4480",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-b89b970a101bbfb3",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4432",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-a059a8efd250cecd",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4427",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "How can I debug a custom service method with a VS Code breakpoint?"
+  },
+  {
+    "case_id": "medusa-discussion-4387",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4377",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4371",
+    "reviewer_decision": "ambiguous",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: there is insufficient technical context for a reliable label, so the case is excluded.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4325",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-707ce5efda3f5fff",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4185",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-4031",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3949",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3823",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3805",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3801",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3712",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3677",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-0534a3eefb4b44ba",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3671",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3530",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-75b5f7a3f85c4b12",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3430",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-92e2fe55b3ff23a7",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-3103",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2848",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-607f809746dc6f30",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "How should I connect Medusa Admin, the Medusa backend, the Next.js starter, and MinIO?"
+  },
+  {
+    "case_id": "medusa-discussion-2826",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-7fc5ef835fc9e42f",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2775",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2760",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2755",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-8bc08a90091ce938",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2715",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "Why do I receive a 401 Unauthorized response when checking whether a customer exists?"
+  },
+  {
+    "case_id": "medusa-discussion-2624",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-4a0ed8d25b387feb",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "How can I sort products returned by the API?"
+  },
+  {
+    "case_id": "medusa-discussion-2606",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2600",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2534",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2472",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2419",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2407",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2406",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2251",
+    "reviewer_decision": "supported",
+    "expected_document_id": "medusa-2b00d2f607765289",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the cited pinned official section directly answers the core question.",
+    "review_method": "ai_assisted_user_authorized",
+    "reviewed_question": "How does the Medusa backend scale horizontally?"
+  },
+  {
+    "case_id": "medusa-discussion-2203",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-2050",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-1339",
+    "reviewer_decision": "unsupported",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: the pinned official corpus does not directly answer this question.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-1160",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  },
+  {
+    "case_id": "medusa-discussion-980",
+    "reviewer_decision": "outdated",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "review_notes": "AI-assisted review: this is version-specific or obsolete and is excluded from the benchmark.",
+    "review_method": "ai_assisted_user_authorized"
+  }
+]

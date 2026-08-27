@@ -1,0 +1,12 @@
+{
+  "benchmark_review_status": "sampled_human_review",
+  "evaluated_on": "2026-08-21",
+  "evaluator": "local lexical retrieval baseline",
+  "knowledge_document_count": 80,
+  "minimum_retrieval_score": 5.0,
+  "retrieval_recall_at_1": 0.6875,
+  "retrieval_recall_at_3": 0.7625,
+  "supported_case_count": 80,
+  "unsupported_abstention_rate": 0.25,
+  "unsupported_case_count": 20
+}

@@ -1,0 +1,30 @@
+{
+  "baseline": {
+    "coverage": 0.7,
+    "minimum_score": 9.0,
+    "minimum_score_ratio": 1.1,
+    "recall_at_1": 0.75,
+    "recall_at_3": 0.7875,
+    "unsupported_abstention": 0.7
+  },
+  "calibration_scope": "real development plus diagnostic challenge regressions",
+  "candidate": "bm25_v2_confidence",
+  "development_case_count": 100,
+  "development_knowledge_sha256": "1434ecc3d597b234da5b90580ac5434a07177df7084a2eaf499e8bd0f6e65683",
+  "development_selection_status": "selected_for_independent_validation",
+  "development_sha256": "cd00725430e4423bfe98fa7fd06c13bedaaef2077c16bf5998b9e918b8c552d5",
+  "diagnostic_false_accept_count": 15,
+  "diagnostic_overlay_sha256": "b17b6831a09c8fe813375f2489aabc2f7424e43e34b7f4ed7257a609ca17781f",
+  "protected_splits_evaluated": [],
+  "selected": {
+    "coverage": 0.72,
+    "diagnostic_false_accept_abstention": 0.26666666666666666,
+    "minimum_score": 10.0,
+    "minimum_score_ratio": 1.0,
+    "recall_at_1": 0.7625,
+    "recall_at_3": 0.8,
+    "unsupported_abstention": 0.75
+  },
+  "selection_rule": "preserve development Recall@1 and Recall@3, then maximize development unsupported abstention",
+  "test_set_rerun": false
+}

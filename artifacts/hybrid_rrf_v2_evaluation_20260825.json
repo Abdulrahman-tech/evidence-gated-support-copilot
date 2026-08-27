@@ -1,0 +1,41 @@
+{
+  "candidate": "hybrid_rrf_v2",
+  "configuration": {
+    "confidence_gate": "bm25_v1 score >= 9.0 and top-to-second ratio >= 1.1",
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "rank_constant": 0,
+    "semantic_weight": 0.75
+  },
+  "decision": "retain_as_leading_candidate",
+  "decision_reason": "Recall improved without reducing abstention, but confidence intervals overlap, development-validation gaps remain above five points, and the embedding model is not packaged in the production image.",
+  "locked_test_evaluated": false,
+  "results": {
+    "development": {
+      "recall_at_1": 0.775,
+      "recall_at_1_95ci": [0.6721300467523076, 0.8526690983021762],
+      "recall_at_3": 0.7875,
+      "recall_at_3_95ci": [0.6857763938182242, 0.8628772578296451],
+      "unsupported_abstention": 0.7,
+      "unsupported_abstention_95ci": [0.4810232237710206, 0.854524726031006]
+    },
+    "validation": {
+      "recall_at_1": 0.675,
+      "recall_at_1_95ci": [0.5664032172496735, 0.7675598750577254],
+      "recall_at_3": 0.7125,
+      "recall_at_3_95ci": [0.6053944721715182, 0.8001321399160374],
+      "unsupported_abstention": 0.85,
+      "unsupported_abstention_95ci": [0.6395767041130426, 0.9476322080405041]
+    },
+    "challenge_with_diagnostic_overlay": {
+      "case_count": 176,
+      "supported_count": 71,
+      "unsupported_count": 105,
+      "recall_at_1": 0.6338028169014085,
+      "recall_at_1_95ci": [0.5175700445451693, 0.7362994611842647],
+      "recall_at_3": 0.6619718309859155,
+      "recall_at_3_95ci": [0.5461640065219604, 0.7611517109399859],
+      "unsupported_abstention": 0.7333333333333333,
+      "unsupported_abstention_95ci": [0.64161109764051, 0.8085844158396298]
+    }
+  }
+}

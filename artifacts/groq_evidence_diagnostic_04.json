@@ -1,0 +1,40 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "split": "development",
+  "case_count": 4,
+  "development_sha256": "0c65389640ffe5fbeb2f18b69d780b073aac9d48b68c699b59daa2f9777be161",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 2,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-10594",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-18192a7a7890a7f1",
+          "quote": "To authenticate using a secret API key, pass it with HTTP Basic authentication in the Authorization header: Secret API keys must be sent using HTTP Basic authentication, not as a Bearer token."
+        }
+      ],
+      "reason": "The passage explicitly explains how to use a secret API key by sending it via HTTP Basic authentication in the Authorization header and warns against using it as a Bearer token."
+    },
+    {
+      "case_id": "medusa-discussion-11521",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: BadRequestError"
+    },
+    {
+      "case_id": "medusa-discussion-12466",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages contain information that directly addresses why the `.medusa/types` folder is not generated in production mode."
+    },
+    {
+      "case_id": "medusa-discussion-1339",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: BadRequestError"
+    }
+  ]
+}

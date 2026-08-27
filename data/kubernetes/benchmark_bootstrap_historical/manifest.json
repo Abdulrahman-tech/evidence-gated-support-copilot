@@ -1,0 +1,18 @@
+{
+  "answer_bodies_redistributed": false,
+  "answer_count": 892,
+  "candidate_sha256": "1d280bb0c5f4daec918dff41a2bd84e2d49f3e9dc8497cfcb50269c92306735d",
+  "corpus_mapped_candidate_count": 90,
+  "hosted_model_calls": 0,
+  "knowledge_sha256": "941ced01adaf2483caa74280a2a776f867538d5c4ea94a693b34c6940812e8e9",
+  "method": "accepted_answer_explicit_official_document_link",
+  "official_link_candidate_count": 103,
+  "pilot_excluded_count": 30,
+  "pilot_sha256": "9c69bb29d6c820f98c87977387f28a369668789d2363bc7a66a11ff1d4d4fe23",
+  "question_count": 892,
+  "questions_sha256": "318c1f8bb71ee4d4ec0aa6dd054d3ac7c4746a3ecbb80396844bac1899dd7e2b",
+  "quota_remaining": 270,
+  "review_policy": "External accepted-answer links are candidate evidence only. A human must confirm the exact official section before any evaluation label is created.",
+  "role": "benchmark_bootstrap_candidates_not_ground_truth",
+  "single_anchor_candidate_count": 28
+}

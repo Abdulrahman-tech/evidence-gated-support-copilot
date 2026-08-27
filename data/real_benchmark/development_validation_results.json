@@ -1,0 +1,36 @@
+{
+  "bm25_v1": {
+    "development": {
+      "retrieval_recall_at_1": 0.7625,
+      "retrieval_recall_at_3": 0.8125,
+      "unsupported_abstention_rate": 0.75
+    },
+    "minimum_retrieval_score": 9.0,
+    "minimum_top_to_second_score_ratio": 1.1,
+    "validation": {
+      "retrieval_recall_at_1": 0.675,
+      "retrieval_recall_at_3": 0.6875,
+      "unsupported_abstention_rate": 0.9
+    }
+  },
+  "evaluated_on": "2026-08-21",
+  "lexical_v2_before_bm25": {
+    "development": {
+      "retrieval_recall_at_1": 0.7125,
+      "retrieval_recall_at_3": 0.825,
+      "unsupported_abstention_rate": 0.05
+    },
+    "validation": {
+      "retrieval_recall_at_1": 0.65,
+      "retrieval_recall_at_3": 0.7,
+      "unsupported_abstention_rate": 0.0
+    }
+  },
+  "split_design": {
+    "conversation_overlap": 0,
+    "source": "TweetSumm final_train_tweetsum.jsonl",
+    "supported_cases_per_split": 80,
+    "unsupported_real_messages_per_split": 20
+  },
+  "test_set_rerun": false
+}

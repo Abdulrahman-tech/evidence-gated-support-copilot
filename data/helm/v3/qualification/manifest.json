@@ -1,0 +1,19 @@
+{
+  "audit_id": "helm_v3_pilot_source_audit_20260826",
+  "audit_sha256": "810a108033198de18e58d017f4dacb329f62b0c97632fa9a97c78f88bf84f1e5",
+  "blocking_reason": "The sample is tiny, Recall@3 is below a production gate, unsupported abstention is low, and the labels are AI-assisted diagnostics rather than independent validation.",
+  "case_count": 6,
+  "decision_counts": {
+    "supported": 2,
+    "unsupported": 4
+  },
+  "helm_knowledge_sha256": "8725fb089ecd21268bf05e12aa6fa7401325f0d899f818932070cb57c570dd0b",
+  "hosted_model_calls": 0,
+  "retrieval_diagnostic_sha256": "253df0eb3170d162118769ec9a6b069ccd90b426982622f1813d707aae70061b",
+  "review_provenance": "Codex opened all six Stack Overflow sources and compared them with the pinned Helm 3 corpus. This is not independent human ground truth.",
+  "role": "ai_assisted_diagnostic_excluded_from_evaluation",
+  "runtime_integration_allowed": false,
+  "supported_recall_at_1": 0.0,
+  "supported_recall_at_3": 0.5,
+  "unsupported_legacy_threshold_abstention": 0.5
+}

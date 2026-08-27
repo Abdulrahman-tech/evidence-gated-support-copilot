@@ -1,0 +1,8 @@
+{
+  "sample_count": 30,
+  "seed": "medusa-development-automation-audit-v1",
+  "selection_policy": "Stable hash sample selected before audit outcomes are known.",
+  "sha256": "9165147fe6a28038f22f953412bf7389f391af45670f321bd4913becec126fb5",
+  "supported": 15,
+  "unsupported": 15
+}

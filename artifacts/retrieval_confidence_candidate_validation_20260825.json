@@ -1,0 +1,40 @@
+{
+  "candidate": "bm25_v2_confidence",
+  "candidate_configuration": {
+    "minimum_score": 10.0,
+    "minimum_score_ratio": 1.0
+  },
+  "candidate_validation": {
+    "recall_at_1": 0.6625,
+    "recall_at_1_95ci": [
+      0.5535631838362329,
+      0.7565454018777802
+    ],
+    "recall_at_3": 0.675,
+    "recall_at_3_95ci": [
+      0.5664032172496735,
+      0.7675598750577254
+    ],
+    "unsupported_abstention": 0.9,
+    "unsupported_abstention_95ci": [
+      0.6989617935882066,
+      0.9721341060158468
+    ]
+  },
+  "baseline_validation": {
+    "recall_at_1": 0.6625,
+    "recall_at_3": 0.6875,
+    "unsupported_abstention": 0.85
+  },
+  "development_validation_gap": {
+    "recall_at_1": 0.1,
+    "recall_at_3": 0.125
+  },
+  "promotion_status": "rejected",
+  "rejection_reason": "Recall@3 regressed and the development-validation gaps widened despite improved abstention.",
+  "runtime_configuration_retained": {
+    "minimum_score": 9.0,
+    "minimum_score_ratio": 1.1
+  },
+  "locked_test_evaluated": false
+}

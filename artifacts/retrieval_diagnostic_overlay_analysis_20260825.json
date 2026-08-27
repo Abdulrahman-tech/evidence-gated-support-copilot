@@ -1,0 +1,84 @@
+{
+  "analysis_scope": "challenge diagnostic only",
+  "benchmark_mutated": false,
+  "excluded_ambiguous_count": 4,
+  "overlay_counts": {
+    "ambiguous": 4,
+    "reviewed": 20,
+    "supported": 1,
+    "unsupported": 15
+  },
+  "protected_split_hashes": {
+    "test": "6d0d6a3c299b40648c04aa126f4f2fb557a97e1d0e4f0d936132f06b1c10d1b7",
+    "validation": "7f577981dfb7c4a47109a6977d27b8b99ed95e9bdcfce255c0d0f7c7b20fd922"
+  },
+  "provenance": "user_approved_ai_assisted_diagnostic_audit",
+  "reviewed_sample": {
+    "after_overlay": {
+      "case_count": 16,
+      "recall_at_1": 0.0,
+      "recall_at_1_lower_95": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_3_lower_95": 0.0,
+      "supported_count": 1,
+      "unsupported_abstention": 0.26666666666666666,
+      "unsupported_abstention_lower_95": 0.1089727610318281,
+      "unsupported_count": 15
+    },
+    "before": {
+      "case_count": 20,
+      "recall_at_1": 0.0,
+      "recall_at_1_lower_95": -2.7755575615628914e-17,
+      "recall_at_3": 0.0,
+      "recall_at_3_lower_95": -2.7755575615628914e-17,
+      "supported_count": 10,
+      "unsupported_abstention": 0.0,
+      "unsupported_abstention_lower_95": -2.7755575615628914e-17,
+      "unsupported_count": 10
+    }
+  },
+  "whole_challenge": {
+    "after_overlay": {
+      "case_count": 176,
+      "recall_at_1": 0.6197183098591549,
+      "recall_at_1_lower_95": 0.5034164223889828,
+      "recall_at_3": 0.6338028169014085,
+      "recall_at_3_lower_95": 0.5175700445451693,
+      "supported_count": 71,
+      "unsupported_abstention": 0.7333333333333333,
+      "unsupported_abstention_lower_95": 0.64161109764051,
+      "unsupported_count": 105
+    },
+    "before": {
+      "case_count": 180,
+      "recall_at_1": 0.55,
+      "recall_at_1_lower_95": 0.4411931301173402,
+      "recall_at_3": 0.5625,
+      "recall_at_3_lower_95": 0.4534093786865696,
+      "supported_count": 80,
+      "unsupported_abstention": 0.73,
+      "unsupported_abstention_lower_95": 0.6356769977376873,
+      "unsupported_count": 100
+    },
+    "failure_counts_after_overlay": {
+      "confidence_gate_false_reject": 6,
+      "correct_abstention": 77,
+      "correct_supported": 44,
+      "deep_ranking_failure": 6,
+      "lexical_retrieval_miss": 6,
+      "ranking_and_confidence_failure": 8,
+      "ranking_error_top3": 1,
+      "unsupported_false_accept": 28
+    },
+    "failure_counts_before": {
+      "confidence_gate_false_reject": 6,
+      "correct_abstention": 73,
+      "correct_supported": 44,
+      "deep_ranking_failure": 10,
+      "lexical_retrieval_miss": 11,
+      "ranking_and_confidence_failure": 8,
+      "ranking_error_top3": 1,
+      "unsupported_false_accept": 27
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "candidate": "hybrid_rrf_v1",
+  "decision": "retain_as_experiment",
+  "decision_reason": "Validation ranking improved while challenge Recall@1 regressed; evidence is insufficient to replace bm25_v1.",
+  "final_test_evaluated": false,
+  "method": {
+    "confidence_gate": "bm25_v1 score >= 9.0 and top-to-second ratio >= 1.1",
+    "ranking": "reciprocal rank fusion of BM25 and all-MiniLM-L6-v2 semantic ranks",
+    "rrf_rank_constant": 60
+  },
+  "results": {
+    "development": {
+      "recall_at_1": 0.7625,
+      "recall_at_3": 0.8125,
+      "unsupported_abstention": 0.75
+    },
+    "validation": {
+      "recall_at_1": 0.6875,
+      "recall_at_3": 0.7125,
+      "unsupported_abstention": 0.9
+    },
+    "challenge": {
+      "label_warning": "All proposed unsupported labels were blanket-approved, not case-by-case adjudicated.",
+      "recall_at_1": 0.5375,
+      "recall_at_3": 0.5875,
+      "unsupported_abstention": 0.78
+    }
+  }
+}

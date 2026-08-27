@@ -1,0 +1,14 @@
+{
+  "answer_bodies_redistributed": false,
+  "answer_count": 100,
+  "candidate_sha256": "7b59370c0dc3d0ed74a845efa4f0320bcf2830ca6d1db958ab6323667b9f9dfa",
+  "corpus_mapped_candidate_count": 9,
+  "hosted_model_calls": 0,
+  "method": "accepted_answer_explicit_official_document_link",
+  "official_link_candidate_count": 9,
+  "pilot_excluded_count": 30,
+  "question_count": 100,
+  "quota_remaining": 299,
+  "review_policy": "External accepted-answer links are candidate evidence only. A human must confirm the exact official section before any evaluation label is created.",
+  "role": "benchmark_bootstrap_candidates_not_ground_truth"
+}

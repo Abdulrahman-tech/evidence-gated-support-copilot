@@ -1,0 +1,428 @@
+[
+  {
+    "accepted_answer_author": "Fariya Rahmat",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/15745105/fariya-rahmat",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79457830,
+    "accepted_answer_url": "https://stackoverflow.com/a/79457830",
+    "candidate_document_ids": [
+      "kubernetes-36f16584ac6796c5",
+      "kubernetes-3d705c83b39e0824",
+      "kubernetes-514ab4b86423aa79",
+      "kubernetes-639f0dc435249c9c",
+      "kubernetes-643c57a17a0e3861",
+      "kubernetes-78f7f465c24035f4",
+      "kubernetes-882c4769cc1589a9",
+      "kubernetes-946564ba4d372f01",
+      "kubernetes-aa12a3597c75b5c4",
+      "kubernetes-bb2191a956d740f6",
+      "kubernetes-e2845d2838b236a5",
+      "kubernetes-f58b720d80fc3868"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/tasks/access-application-cluster/configure-access-multiple-clusters.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79457479",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/tasks/access-application-cluster/configure-access-multiple-clusters/"
+    ],
+    "question": "How to set multiple kubeconfigs using powershell",
+    "review_status": "pending",
+    "source_tags": [
+      "kubeconfig",
+      "kubectl",
+      "kubernetes",
+      "powershell"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79457479/how-to-set-multiple-kubeconfigs-using-powershell"
+  },
+  {
+    "accepted_answer_author": "David N",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/29782980/david-n",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79464639,
+    "accepted_answer_url": "https://stackoverflow.com/a/79464639",
+    "candidate_document_ids": [
+      "kubernetes-1ff0fbdd2955b4a4",
+      "kubernetes-22ae61187e1b1400",
+      "kubernetes-7a9f366ae26aaac9",
+      "kubernetes-b5fed073aa94c553"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/tasks/inject-data-application/define-command-argument-container.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79464533",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/"
+    ],
+    "question": "passing env variable to docker image from k8 secret store",
+    "review_status": "pending",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79464533/passing-env-variable-to-docker-image-from-k8-secret-store"
+  },
+  {
+    "accepted_answer_author": "ralphyjade",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/26772028/ralphyjade",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79515925,
+    "accepted_answer_url": "https://stackoverflow.com/a/79515925",
+    "candidate_document_ids": [
+      "kubernetes-04a83b50e4e33d36",
+      "kubernetes-089e7bab8b2e0540",
+      "kubernetes-091e83ce3262cdc2",
+      "kubernetes-0caa34424a7ed666",
+      "kubernetes-0f83bae3b64a1f9b",
+      "kubernetes-1e21699e2279700c",
+      "kubernetes-2a9bb5fbad6e82a6",
+      "kubernetes-2b2f0f0774fcf647",
+      "kubernetes-2ec453aec6d2f837",
+      "kubernetes-405e8733eb2b54db",
+      "kubernetes-411fb4f28232e093",
+      "kubernetes-4de2618e5fbcd2dd",
+      "kubernetes-5782894aa795c641",
+      "kubernetes-5a8abc0517de0313",
+      "kubernetes-6d5e6c05aac06f4f",
+      "kubernetes-72a1778c3e2dcd1e",
+      "kubernetes-7f1c0ae30d920753",
+      "kubernetes-8682a0b26835bd2e",
+      "kubernetes-910977434a9c73f0",
+      "kubernetes-ae1ca459e4e10d64",
+      "kubernetes-b205805bbc084e31",
+      "kubernetes-b41af8519f5a3f41",
+      "kubernetes-c461b900f5324f6b",
+      "kubernetes-d00e9d29ad51a35f",
+      "kubernetes-db6289d15d3ba38b",
+      "kubernetes-e1e309d93ee0b56a",
+      "kubernetes-e4d9530ede3faccc",
+      "kubernetes-ef27e0a3179e7833",
+      "kubernetes-fe5ed9c2be79a716",
+      "kubernetes-ff6d16131ae0b9ca"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/services-networking/service.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79515635",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/services-networking/service/"
+    ],
+    "question": "How the K8s service port mapping works?",
+    "review_status": "pending",
+    "source_tags": [
+      "kind",
+      "kubernetes",
+      "port"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79515635/how-the-k8s-service-port-mapping-works"
+  },
+  {
+    "accepted_answer_author": "\u30c8\u30c8\u30ed",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/26409206/%e3%83%88%e3%83%88%e3%83%ad",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79526354,
+    "accepted_answer_url": "https://stackoverflow.com/a/79526354",
+    "candidate_document_ids": [
+      "kubernetes-0c1600fec53fa509",
+      "kubernetes-1635faa4387d75ca",
+      "kubernetes-16e86b9420719160",
+      "kubernetes-216922ee50746179",
+      "kubernetes-22dfd063c28281e9",
+      "kubernetes-2df53792de06bf95",
+      "kubernetes-46044691cc97e1c5",
+      "kubernetes-5a3d6708a369a707",
+      "kubernetes-67b5d3243f613a4f",
+      "kubernetes-6988ef87c9b853a5",
+      "kubernetes-8f7e712855bdb372",
+      "kubernetes-9fd2fcd876bb7d40"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/cluster-administration/system-logs.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79523213",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/cluster-administration/system-logs/"
+    ],
+    "question": "NGINX reload triggered due to a change in configuration",
+    "review_status": "pending",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-ingress",
+      "ubuntu-24.04",
+      "yaml"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79523213/nginx-reload-triggered-due-to-a-change-in-configuration"
+  },
+  {
+    "accepted_answer_author": "Sal",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/1458738/sal",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79533769,
+    "accepted_answer_url": "https://stackoverflow.com/a/79533769",
+    "candidate_document_ids": [
+      "kubernetes-04a83b50e4e33d36",
+      "kubernetes-089e7bab8b2e0540",
+      "kubernetes-091e83ce3262cdc2",
+      "kubernetes-0caa34424a7ed666",
+      "kubernetes-0f83bae3b64a1f9b",
+      "kubernetes-1e21699e2279700c",
+      "kubernetes-2a9bb5fbad6e82a6",
+      "kubernetes-2b2f0f0774fcf647",
+      "kubernetes-2ec453aec6d2f837",
+      "kubernetes-405e8733eb2b54db",
+      "kubernetes-411fb4f28232e093",
+      "kubernetes-4de2618e5fbcd2dd",
+      "kubernetes-5782894aa795c641",
+      "kubernetes-5a8abc0517de0313",
+      "kubernetes-6d5e6c05aac06f4f",
+      "kubernetes-72a1778c3e2dcd1e",
+      "kubernetes-7f1c0ae30d920753",
+      "kubernetes-8682a0b26835bd2e",
+      "kubernetes-910977434a9c73f0",
+      "kubernetes-ae1ca459e4e10d64",
+      "kubernetes-b205805bbc084e31",
+      "kubernetes-b41af8519f5a3f41",
+      "kubernetes-c461b900f5324f6b",
+      "kubernetes-d00e9d29ad51a35f",
+      "kubernetes-db6289d15d3ba38b",
+      "kubernetes-e1e309d93ee0b56a",
+      "kubernetes-e4d9530ede3faccc",
+      "kubernetes-ef27e0a3179e7833",
+      "kubernetes-fe5ed9c2be79a716",
+      "kubernetes-ff6d16131ae0b9ca"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/services-networking/service.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79533768",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/services-networking/service/"
+    ],
+    "question": "How to fetch pod endpoints from a headless service in Kubernetes",
+    "review_status": "pending",
+    "source_tags": [
+      "c#",
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79533768/how-to-fetch-pod-endpoints-from-a-headless-service-in-kubernetes"
+  },
+  {
+    "accepted_answer_author": "David Maze",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/10008173/david-maze",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79555369,
+    "accepted_answer_url": "https://stackoverflow.com/a/79555369",
+    "candidate_document_ids": [
+      "kubernetes-0b4d7c562b353333",
+      "kubernetes-180f3a7b1a50888d",
+      "kubernetes-2c89aa3c6c65840c",
+      "kubernetes-7901f4a33705e187",
+      "kubernetes-7fbd1a8a71626946",
+      "kubernetes-af1536ffb17ae3e8",
+      "kubernetes-baa4ea25dc6f1cf6"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/containers/container-lifecycle-hooks.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79554394",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/"
+    ],
+    "question": "Running Ollama as a k8s STS with external script as entrypoint to load models",
+    "review_status": "pending",
+    "source_tags": [
+      "docker-entrypoint",
+      "dockerfile",
+      "kubernetes",
+      "ollama",
+      "py-langchain"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79554394/running-ollama-as-a-k8s-sts-with-external-script-as-entrypoint-to-load-models"
+  },
+  {
+    "accepted_answer_author": "\u30c8\u30c8\u30ed",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/26409206/%e3%83%88%e3%83%88%e3%83%ad",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79682505,
+    "accepted_answer_url": "https://stackoverflow.com/a/79682505",
+    "candidate_document_ids": [
+      "kubernetes-0a0d51093a85967d",
+      "kubernetes-0f85772943a6ded4",
+      "kubernetes-120c2df9a71dc9ae",
+      "kubernetes-129e7e99fa8389c9",
+      "kubernetes-149bc748982cc989",
+      "kubernetes-17f9fa061d3c3089",
+      "kubernetes-1ce8c7abc496604a",
+      "kubernetes-22edb4e92cd4a11e",
+      "kubernetes-25a854fb64019239",
+      "kubernetes-2cc0c8a2ec82500e",
+      "kubernetes-34d9c63ab99f855f",
+      "kubernetes-43b8b602101b93a8",
+      "kubernetes-496c632539eda02a",
+      "kubernetes-4ce7af535b4b9b57",
+      "kubernetes-4f09bb3e712de98f",
+      "kubernetes-556279977e08bc6f",
+      "kubernetes-683f562e8461d376",
+      "kubernetes-6c9bbd71cd75ff6d",
+      "kubernetes-7778876a29bb8a54",
+      "kubernetes-8b12149cb2558947",
+      "kubernetes-8c8694d0eedb4c86",
+      "kubernetes-8dbb0cde64015bd9",
+      "kubernetes-9b0b43ea2ab3595c",
+      "kubernetes-a35003dd7ff6c0d5",
+      "kubernetes-a6c2622fbc3079d1",
+      "kubernetes-ba5cfe664123a27f",
+      "kubernetes-bd0b539958127515",
+      "kubernetes-c43451f3a51b0690",
+      "kubernetes-c4ac3e1309b3f313",
+      "kubernetes-c811358e9e103aaa",
+      "kubernetes-d47c95b74628188e",
+      "kubernetes-d7ece2d59eb562e8",
+      "kubernetes-d9218eaa99c69414",
+      "kubernetes-e8648207480b0745",
+      "kubernetes-f2bea3e8ccfdfb75",
+      "kubernetes-ffc885b73acb2f2a",
+      "kubernetes-ffd3511debf39705"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/workloads/controllers/deployment.md",
+      "content/en/docs/tasks/administer-cluster/safely-drain-node.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79680098",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/",
+      "https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/"
+    ],
+    "question": "draining a node - surge replica up and not down",
+    "review_status": "pending",
+    "source_tags": [
+      "kubernetes"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79680098/draining-a-node-surge-replica-up-and-not-down"
+  },
+  {
+    "accepted_answer_author": "Jiri Kremser",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/1594980/jiri-kremser",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79695435,
+    "accepted_answer_url": "https://stackoverflow.com/a/79695435",
+    "candidate_document_ids": [
+      "kubernetes-048cabf166adfe7f",
+      "kubernetes-0619700fefe8cc0a",
+      "kubernetes-06648850d2324b24",
+      "kubernetes-0bc53f4288071e5a",
+      "kubernetes-0e14889342e780a4",
+      "kubernetes-14c1f1e34a8ffe70",
+      "kubernetes-15b245ce7d36644b",
+      "kubernetes-1cde29b3843aebbc",
+      "kubernetes-1e9232a0b21a9ef4",
+      "kubernetes-220542a1ea142b4d",
+      "kubernetes-26f76f8e72002918",
+      "kubernetes-2b767d6f4d6a577c",
+      "kubernetes-347ce1bb955d433f",
+      "kubernetes-40f01ee9e0bb7246",
+      "kubernetes-42eec685bebd1019",
+      "kubernetes-4345388a72764188",
+      "kubernetes-44a7b459ecacfe9a",
+      "kubernetes-4d6ee2324b643064",
+      "kubernetes-507266f99d49a421",
+      "kubernetes-57d1cd776818bc4e",
+      "kubernetes-6469bf1af9b9b1ca",
+      "kubernetes-6f0e303900fc5d31",
+      "kubernetes-7e0716ce47da8fe1",
+      "kubernetes-7ed11adaf4d7a6f7",
+      "kubernetes-899be43c05eba3f5",
+      "kubernetes-8abc4ba318c0afb9",
+      "kubernetes-91596cc7077cd435",
+      "kubernetes-96405c082a9cb82c",
+      "kubernetes-a157b0666c7ffe0d",
+      "kubernetes-a3d50fb5c82765db",
+      "kubernetes-a7131861bc1ea302",
+      "kubernetes-af580d097224db3e",
+      "kubernetes-b860c9f8bbabdffe",
+      "kubernetes-b9d87cea02f8c7e2",
+      "kubernetes-bb56c373e9985065",
+      "kubernetes-c73223f4d963e0ec",
+      "kubernetes-d11512e854100859",
+      "kubernetes-e6fe0b712e2fc867",
+      "kubernetes-eab9f20faba01702",
+      "kubernetes-f286c4f90f6a7dc8"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/reference/setup-tools/kubeadm/implementation-details.md",
+      "content/en/docs/setup/production-environment/tools/kubeadm/install-kubeadm.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79693471",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/reference/setup-tools/kubeadm/implementation-details/",
+      "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/"
+    ],
+    "question": "How are Kubernetes control plane components started when they run as static Pods?",
+    "review_status": "pending",
+    "source_tags": [
+      "boot",
+      "kubeadm",
+      "kubernetes",
+      "process"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79693471/how-are-kubernetes-control-plane-components-started-when-they-run-as-static-pods"
+  },
+  {
+    "accepted_answer_author": "David Maze",
+    "accepted_answer_author_url": "https://stackoverflow.com/users/10008173/david-maze",
+    "accepted_answer_content_license": "CC BY-SA 4.0",
+    "accepted_answer_id": 79714720,
+    "accepted_answer_url": "https://stackoverflow.com/a/79714720",
+    "candidate_document_ids": [
+      "kubernetes-2b07e3b86d90f47c",
+      "kubernetes-2c9edd1dc5095734",
+      "kubernetes-2f0080591105fd82",
+      "kubernetes-321082991203f5e8",
+      "kubernetes-35cb66f302672c84",
+      "kubernetes-38e22a204dfee8b8",
+      "kubernetes-3e66b5d946bad2c4",
+      "kubernetes-45217d70b0efb3ab",
+      "kubernetes-5541be3fab24efed",
+      "kubernetes-579da5c4aa4d0b67",
+      "kubernetes-6cbbfce4af5fe979",
+      "kubernetes-73138c7a381ae08c",
+      "kubernetes-83ac7644618a1a58",
+      "kubernetes-83f900f818b5649c",
+      "kubernetes-86259355fd3aa918",
+      "kubernetes-923a4e5a9de4c79e",
+      "kubernetes-9c63bf382ab921cd",
+      "kubernetes-a842900b90566d16",
+      "kubernetes-b3b21ef20fa0e25c",
+      "kubernetes-b7ce58eb83854179",
+      "kubernetes-cb8ff83367efaa50",
+      "kubernetes-d64ecf864173da8c",
+      "kubernetes-f8136d20fa5f30c0"
+    ],
+    "candidate_source_paths": [
+      "content/en/docs/concepts/overview/kubernetes-api.md",
+      "content/en/docs/reference/using-api/deprecation-policy.md"
+    ],
+    "case_id": "stackoverflow-kubernetes-79714626",
+    "label_status": "external_link_requires_human_section_audit",
+    "official_document_urls": [
+      "https://kubernetes.io/docs/concepts/overview/kubernetes-api/",
+      "https://kubernetes.io/docs/reference/using-api/",
+      "https://kubernetes.io/docs/reference/using-api/deprecation-policy/"
+    ],
+    "question": "Why k8s resource doesn't increase apiVersion?",
+    "review_status": "pending",
+    "source_tags": [
+      "kubernetes",
+      "kubernetes-helm"
+    ],
+    "source_url": "https://stackoverflow.com/questions/79714626/why-k8s-resource-doesnt-increase-apiversion"
+  }
+]

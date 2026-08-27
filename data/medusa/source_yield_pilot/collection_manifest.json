@@ -1,0 +1,12 @@
+{
+  "discussion_answered_count": 118,
+  "discussion_candidate_count": 101,
+  "discussion_content_policy": "Titles, source URLs, accepted-answer URLs, word counts, and content hashes only; discussion bodies and answers remain in the local cache.",
+  "discussion_duplicate_count": 0,
+  "discussion_failure_count": 1,
+  "discussion_link_count": 119,
+  "discussion_listing_pages_requested": 100,
+  "discussion_listing_source": "https://github.com/medusajs/medusa/discussions/categories/q-a?discussions_q=category%3AQ%26A+is%3Aanswered&page=1",
+  "discussion_official_document_link_count": 16,
+  "discussion_sources_sha256": "f0aecec2bbfc1ac08ac58d7657a14e6f8a3c79b1033f57bc9e4632b69dad8d21"
+}

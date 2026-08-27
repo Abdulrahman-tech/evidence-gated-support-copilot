@@ -1,0 +1,152 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "verifier_version": "direct_evidence_v2",
+  "split": "development",
+  "case_count": 20,
+  "development_sha256": "0c65389640ffe5fbeb2f18b69d780b073aac9d48b68c699b59daa2f9777be161",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 0,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-2606",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a statement that a customer's list of orders appears in the authorization response."
+    },
+    {
+      "case_id": "medusa-discussion-2624",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-4a0ed8d25b387feb",
+          "quote": "To sort products by a field, use the order query parameter. Its value is a comma-separated list of fields to sort by, and each field is optionally prefixed by - to indicate descending order."
+        }
+      ],
+      "reason": "The passage explicitly explains that sorting products is done via the order query parameter with comma-separated fields and optional '-' for descending order, directly answering the question."
+    },
+    {
+      "case_id": "medusa-discussion-2755",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate directly addresses the memory leak on Railway; they only note that in‑memory modules are not recommended for production."
+    },
+    {
+      "case_id": "medusa-discussion-2826",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents describe how to link a registered customer with their previous orders."
+    },
+    {
+      "case_id": "medusa-discussion-2848",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents describe how to connect Medusa Admin, the Medusa backend, the Next.js starter, and MinIO together; they only cover linking Medusa Admin/backend with the Next.js starter and do not mention MinIO."
+    },
+    {
+      "case_id": "medusa-discussion-3530",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages contain information about which field should be used to fill the reference product."
+    },
+    {
+      "case_id": "medusa-discussion-3677",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-0534a3eefb4b44ba",
+          "quote": "You can also send an email using SendGrid in any workflow. This allows you to send emails within your custom flows. You can use the sendNotificationsStep in your workflow to send an email using SendGrid."
+        }
+      ],
+      "reason": "The candidate provides a direct description of how to send an email with SendGrid, referencing the sendNotificationsStep in a workflow."
+    },
+    {
+      "case_id": "medusa-discussion-3823",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages directly answer whether medusa.customers.listOrders() should return all orders."
+    },
+    {
+      "case_id": "medusa-discussion-4325",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-707ce5efda3f5fff",
+          "quote": "To retrieve a product by its handle, send a request to the List Products API route passing the handle query parameter: ]"
+        }
+      ],
+      "reason": "The candidate directly explains how to get a product by handle by sending a request to the List Products API route with the handle query parameter."
+    },
+    {
+      "case_id": "medusa-discussion-4387",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly describe how to recover a cart specifically after a user logs out and then logs in again. The only mention of cart recovery refers to using a setCartId function in a general abandoned cart recovery flow, which does not address the logout/login scenario."
+    },
+    {
+      "case_id": "medusa-discussion-4432",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents address whether medusa-cli can be run without a global install; they only describe command options and usage."
+    },
+    {
+      "case_id": "medusa-discussion-4533",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "The question is vague and does not specify a concrete issue or request; none of the provided documents directly answer a specific frontend starter question."
+    },
+    {
+      "case_id": "medusa-discussion-4575",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents directly address in-person payments or the use of payment_method_types with Stripe, so there is no sufficient evidence to support the question."
+    },
+    {
+      "case_id": "medusa-discussion-4742",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state whether PostgreSQL is required for Medusa or whether Neon can be used with Medusa."
+    },
+    {
+      "case_id": "medusa-discussion-4743",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-e70e11f375ef11f2",
+          "quote": "To use a PostgreSQL database hosted on Vercel, use the --db-url option and add to the end of your connection URL ?sslmode=require."
+        }
+      ],
+      "reason": "The passage explicitly instructs how to connect to PostgreSQL during Medusa installation by using the --db-url option with ?sslmode=require, directly addressing the connection failure."
+    },
+    {
+      "case_id": "medusa-discussion-4811",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents directly answer the question about uploading an import CSV for products."
+    },
+    {
+      "case_id": "medusa-discussion-5006",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly answer how to manage inventory in a multi-vendor marketplace; they only describe generic inventory features, multi-warehouse support for merchants, and vendor admin creation, which do not directly address the core question."
+    },
+    {
+      "case_id": "medusa-discussion-5175",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain information that directly addresses why a custom widget works in dev mode but fails to load in production."
+    },
+    {
+      "case_id": "medusa-discussion-5987",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly describe reserving a product with a deposit and paying the remaining balance later."
+    },
+    {
+      "case_id": "medusa-discussion-7163",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages provide a direct answer to how to query only in-stock products; they only describe retrieving related data via Query fields."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "case_id": "medusa-discussion-11036",
+    "expected_document_id": "medusa-ce36afadc21777d0",
+    "manual_review_status": "approved",
+    "question": "[TEST] How to assert than an event was emitted ?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11036",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-14575",
+    "expected_document_id": "medusa-1f978311066650a6",
+    "manual_review_status": "approved",
+    "question": "Medusa v2 backend won\u2019t start as a service (Framework Mode vs Server Mode confusion)",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/14575",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-14863",
+    "expected_document_id": "medusa-71b935c0c4c87191",
+    "manual_review_status": "approved",
+    "question": "What is the recommended path forward for existing Medusa v2 projects that relied on Search/Meilisearch?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/14863",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-15015",
+    "expected_document_id": "medusa-bc13b1d933b22ecb",
+    "manual_review_status": "approved",
+    "question": "Is it possible to use a Unix socket connection?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/15015",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2050",
+    "expected_document_id": null,
+    "manual_review_status": "approved",
+    "question": "Tutorial on Flutter Web & Mobile",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2050",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2203",
+    "expected_document_id": "medusa-0bf01859936e6ed6",
+    "manual_review_status": "approved",
+    "question": "Why the peculiar choice of session cookies?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2203",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4480",
+    "expected_document_id": "medusa-b89b970a101bbfb3",
+    "manual_review_status": "approved",
+    "question": "expands fields are not added into include_descendants_tree",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4480",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4495",
+    "expected_document_id": "medusa-76b12255d589b06b",
+    "manual_review_status": "approved",
+    "question": "How to manage product price in admin Dashboard",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4495",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5520",
+    "expected_document_id": "medusa-f7f591878c037c95",
+    "manual_review_status": "approved",
+    "question": "Error: The server does not support SSL connections",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5520",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-6011",
+    "expected_document_id": "medusa-6a44d7444b221eec",
+    "manual_review_status": "approved",
+    "question": "Adding Brands to products",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/6011",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-7365",
+    "expected_document_id": "medusa-8eaabcfaacf9b25c",
+    "manual_review_status": "approved",
+    "question": "How to setup Medusa monorepo properly ?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/7365",
+    "tenant_id": "medusa"
+  }
+]

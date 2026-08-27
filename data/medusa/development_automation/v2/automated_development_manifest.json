@@ -1,0 +1,16 @@
+{
+  "blind_roles_touched": false,
+  "candidate_count": 1,
+  "case_count": 521,
+  "decision_counts": {
+    "deferred": 520,
+    "supported": 1
+  },
+  "deferred_count": 520,
+  "import_allowed": false,
+  "requires_new_quality_audit": true,
+  "review_method": "automated_direct_answer_candidate_development_only",
+  "rule_version": "development_direct_answer_v2",
+  "sha256": "dce0e143ba681aaa4815bde7ad5c939624588ef7eb230bab41c98fcd47d6c35d",
+  "usable_count": 0
+}

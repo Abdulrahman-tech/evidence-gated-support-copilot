@@ -1,0 +1,33 @@
+{
+  "audience": "merchants and developers operating Medusa stores",
+  "discussion_answered_count": 117,
+  "discussion_candidate_count": 100,
+  "discussion_content_policy": "Titles, source URLs, accepted-answer URLs, word counts, and content hashes only; discussion bodies and answers remain in the local cache.",
+  "discussion_duplicate_count": 0,
+  "discussion_failure_count": 1,
+  "discussion_link_count": 118,
+  "discussion_listing_pages": 5,
+  "discussion_listing_source": "https://github.com/medusajs/medusa/discussions/categories/q-a?discussions_q=category%3AQ%26A+is%3Aanswered&page=1",
+  "discussion_sources_sha256": "ea06e1b11005eca3cfc03ddb5194d478476e2d26fb21c69ea32695d003da70f3",
+  "document_count": 488,
+  "duplicate_section_count": 17,
+  "issue_candidate_count": 120,
+  "issue_candidate_sha256": "9efe2be166a0876c3c81c7ae95d0b090b31be9583fd3aefb7280dc13bdefe5a8",
+  "issue_candidate_source": "Public issues from https://github.com/medusajs/medusa; titles only, pending human review and document mapping",
+  "knowledge_sha256": "43bf32109496bb9ac638e5f0a3cf59d49750d25814cee9bd0b529dec6f90bf09",
+  "license": "MIT; Enterprise Edition paths are excluded",
+  "product_areas": [
+    "auth",
+    "customer",
+    "fulfillment",
+    "inventory",
+    "order",
+    "payment",
+    "product"
+  ],
+  "review_status": "machine_ingested_unreviewed",
+  "source_commit": "c4a823a19e4787bb69f2c3238a3cb5cb0918d7cc",
+  "source_page_count": 85,
+  "source_repository": "https://github.com/medusajs/medusa",
+  "tenant_id": "medusa"
+}

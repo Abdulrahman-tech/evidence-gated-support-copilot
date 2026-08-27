@@ -1,0 +1,200 @@
+{
+  "audit_id": "retrieval_diagnostic_audit_20260825",
+  "purpose": "development-only retrieval diagnosis",
+  "provenance": "user_approved_ai_assisted_diagnostic_audit",
+  "benchmark_mutation_authorized": false,
+  "protected_splits": [
+    "validation",
+    "test"
+  ],
+  "workbook": "retrieval_diagnostic_audit_20.xlsx",
+  "workbook_sha256": "c39a3fe386b7b05be11d424de9e4b821e9d368b81d90af3b91329a663e5062d5",
+  "counts": {
+    "reviewed": 20,
+    "supported": 1,
+    "unsupported": 15,
+    "ambiguous": 4
+  },
+  "decisions": [
+    {
+      "source_conversation_id": "c27520ae8e310ea7ef115733cd29e8d4",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "Why does [user] at Marylebone close BEFORE station closes. 22 potential customers in 8 minutes.The delight on his face says it all [url]",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "fed9d21027bdff0a8dc645ad0d413fcd",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] Ur app didn’t record .8 mile today. Training 4 1/2 marathon using app. Can u put mile/time back in or should I just cry now?",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "a43ba991cc0815fa0f6b614ce4a0691f",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "How I’m paying for [user] you raised my fees and took away the one channel my mom actually watches?! My contract almost up too... #bye",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "f014e2b440d67c58e4077f2316f23786",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] My Cortana search box turned white this morning, but I didn't change any settings. Any ideas how to revert it back to black?",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "ebf68bcd09a1ce06545f9834907866b0",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] a number of recordings on a new, almost empty DVR are unplayable: “Unable to play the selected program. Please try again.” I also get an error on the FIOS Mobile app. Other recordings work fine. Help? [url]",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "57bcdb54cb12d6c7e5000402e6103840",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user]’s reception and customer service lack but they do offer some pretty cool benefits. They don’t make up for the terrible customer service I receive 90% of the time when I call nor the fact that I rarely have reception.... but they’re pretty cool!",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "2511b4536a1ca50cb40ed35cbc5b6a98",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] Where do you stand on #NetNeutrality ? Have you expressed that to the FCC? What are your plans if #NetNeutraility is repealed?",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "ee0c3f2a6b23aa8afb1918ef1810f352",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] any idea when cable and internet will be up in the dr. Phillips area? It's been out all day!",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "0caba9df88bbc2e5f347937a6aa1fed9",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "[user] Missed 3 trains due to no parking spaces because of changes! What are you going to do? #didcotstation",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "f9a5857934d84f0b3701f05a09eef52a",
+      "diagnostic_cohort": "unsupported false accept",
+      "question": "Your Amazon Prime membership isn't worth it if your cut rate delivery service can't deliver the packages on time or correctly [user] [user]",
+      "prior_expected_document_id": null,
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "1a9543ed5f61f289a328621ecb7ca8a8",
+      "diagnostic_cohort": "lexical miss",
+      "question": "[user] The latest update to Windows 10 is causing my Dell Inspiron 17 with i7 CPU and 16 Gb ram to freeze, why!?",
+      "prior_expected_document_id": "tweetsumm-1a9543ed5f61",
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "a9fc9f6337888780314a1ddccfa545a1",
+      "diagnostic_cohort": "lexical miss",
+      "question": "[user] are u going to resolve the problem m facing already informed u for same if not tan reply me the worst service i got....",
+      "prior_expected_document_id": "tweetsumm-a9fc9f633788",
+      "reviewer_decision": "ambiguous",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "8f245243d90111cd1a7a14631cf2ee1a",
+      "diagnostic_cohort": "lexical miss",
+      "question": "Dear [user]: Please fix this. If you have almost 500 \"I have this question too,\" then it's a problem. [url]",
+      "prior_expected_document_id": "tweetsumm-8f245243d901",
+      "reviewer_decision": "ambiguous",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "5d6edf6f8fe3191422c8abf33b04d4b6",
+      "diagnostic_cohort": "lexical miss",
+      "question": "[user] great job guys. 2 hours for a call back on the silver medallion reservation line? That’s kinda shitty",
+      "prior_expected_document_id": "tweetsumm-5d6edf6f8fe3",
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "77df15a962c3283c0aed474afaca583f",
+      "diagnostic_cohort": "lexical miss",
+      "question": "[user] , every time I think you guys can't be any worse, u prove me wrong the next time. Bad management and horrible service. #worst",
+      "prior_expected_document_id": "tweetsumm-77df15a962c3",
+      "reviewer_decision": "ambiguous",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "d7524b389beab80bc0ef786dc9143b20",
+      "diagnostic_cohort": "deep-ranking miss",
+      "question": "Hey [user] , my book export to pdf fails with \"indesign cannot finish export\", but doesn't tell me what is the root of the pb",
+      "prior_expected_document_id": "tweetsumm-d7524b389bea",
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "7d0088ec987ee7789a0767e6029015d0",
+      "diagnostic_cohort": "deep-ranking miss",
+      "question": "[user] [user] [user] ARE YOU OUT OF YOUR EVER-LOVING MINDS?!?!",
+      "prior_expected_document_id": "tweetsumm-7d0088ec987e",
+      "reviewer_decision": "ambiguous",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "6278817888e84869fbf050897fbaa7e7",
+      "diagnostic_cohort": "deep-ranking miss",
+      "question": "Yet again [user] [user] I'm skeptical my delivery will arrive today when it's not left Preston yet... [url]",
+      "prior_expected_document_id": "tweetsumm-6278817888e8",
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "7f7c5ebfcdfd88600c3013227bc350b4",
+      "diagnostic_cohort": "deep-ranking miss",
+      "question": "Another [user] fail. Sat in living room, when an email comes through to say 'sorry we missed you'. No doorbell ring, no knock, no phonecall, no card through the door. Not sure I believe you were here! [user] please use a real courier!!",
+      "prior_expected_document_id": "tweetsumm-7f7c5ebfcdfd",
+      "reviewer_decision": "supported",
+      "reviewer_document_id": "tweetsumm-7f7c5ebfcdfd",
+      "review_status": "approved"
+    },
+    {
+      "source_conversation_id": "61543656a138617af0473753d7a5ae57",
+      "diagnostic_cohort": "deep-ranking miss",
+      "question": "[user] hi there, I have problem with my account keep log out automatically when I login my paypal at checkout. Is there a fix for this?",
+      "prior_expected_document_id": "tweetsumm-61543656a138",
+      "reviewer_decision": "unsupported",
+      "reviewer_document_id": null,
+      "review_status": "approved"
+    }
+  ]
+}

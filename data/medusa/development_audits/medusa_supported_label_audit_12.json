@@ -1,0 +1,74 @@
+[
+  {
+    "case_id": "medusa-discussion-2624",
+    "expected_document_id": "medusa-4a0ed8d25b387feb",
+    "review_status": "approved",
+    "reviewer_decision": "supported"
+  },
+  {
+    "case_id": "medusa-discussion-2755",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-2826",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-2848",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-3530",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-3677",
+    "expected_document_id": "medusa-0534a3eefb4b44ba",
+    "review_status": "approved",
+    "reviewer_decision": "supported"
+  },
+  {
+    "case_id": "medusa-discussion-4325",
+    "expected_document_id": "medusa-707ce5efda3f5fff",
+    "review_status": "approved",
+    "reviewer_decision": "supported"
+  },
+  {
+    "case_id": "medusa-discussion-4432",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-4533",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "ambiguous"
+  },
+  {
+    "case_id": "medusa-discussion-4742",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  },
+  {
+    "case_id": "medusa-discussion-4743",
+    "expected_document_id": "medusa-e70e11f375ef11f2",
+    "review_status": "approved",
+    "reviewer_decision": "supported"
+  },
+  {
+    "case_id": "medusa-discussion-5006",
+    "expected_document_id": "",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported"
+  }
+]

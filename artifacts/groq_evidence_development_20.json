@@ -1,0 +1,141 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "split": "development",
+  "case_count": 20,
+  "development_sha256": "0c65389640ffe5fbeb2f18b69d780b073aac9d48b68c699b59daa2f9777be161",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 2,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-10594",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-18192a7a7890a7f1",
+          "quote": "To authenticate using a secret API key, pass it with HTTP Basic authentication in the Authorization header: Secret API keys must be sent using HTTP Basic authentication, not as a Bearer token. Sending a secret API key as Authorization: Bearer {secret_api_key} returns a 401 error."
+        }
+      ],
+      "reason": "The passage explicitly states how to use a secret API key by including it in the Authorization header via HTTP Basic authentication."
+    },
+    {
+      "case_id": "medusa-discussion-10646",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents mention a model named 'relay' or methods such as 'createRelaies' or 'deleteRelaies'."
+    },
+    {
+      "case_id": "medusa-discussion-10750",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidates explicitly addresses enforcing a single execution of a scheduled job per environment. They all describe how to create scheduled jobs and set cron schedules, but do not mention any mechanism or policy for ensuring a scheduled job runs only once per environment."
+    },
+    {
+      "case_id": "medusa-discussion-10766",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state the event emitted when an admin clicks “Mark as shipped” in Medusa v2."
+    },
+    {
+      "case_id": "medusa-discussion-11251",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate passage explicitly explains how to distribute a File Module Provider as a plugin."
+    },
+    {
+      "case_id": "medusa-discussion-11320",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages directly answer how to add Medusa (2) Docs to Cursor."
+    },
+    {
+      "case_id": "medusa-discussion-11521",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-0ecb206415b66738",
+          "quote": "An example of handling the error is to check if the error's statusText is Unauthorized. If so, you can redirect the customer to the login page."
+        }
+      ],
+      "reason": "The passage explicitly addresses handling an Unauthorized error by checking the statusText and redirecting to the login page, directly answering the question."
+    },
+    {
+      "case_id": "medusa-discussion-11554",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages directly address the 'remoteQuery' resolution error."
+    },
+    {
+      "case_id": "medusa-discussion-12125",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided passages explicitly state that a thumbnail URL is set to localhost."
+    },
+    {
+      "case_id": "medusa-discussion-12466",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: BadRequestError"
+    },
+    {
+      "case_id": "medusa-discussion-12638",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidates contain a direct answer to how to disable core modules."
+    },
+    {
+      "case_id": "medusa-discussion-12680",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate directly addresses debugging a custom workflow."
+    },
+    {
+      "case_id": "medusa-discussion-13239",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain information about vulnerabilities, so the question cannot be answered based on the given evidence."
+    },
+    {
+      "case_id": "medusa-discussion-13369",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents directly answer how to get OrderId before calling payment.initiatePaymentSession."
+    },
+    {
+      "case_id": "medusa-discussion-1339",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: ValueError"
+    },
+    {
+      "case_id": "medusa-discussion-14208",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidates explicitly explain why the `store/products` API does not support filtering by product status."
+    },
+    {
+      "case_id": "medusa-discussion-15550",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate passage explicitly and directly addresses the race condition risk in compensatePaymentIfNeededStep as mentioned in the question."
+    },
+    {
+      "case_id": "medusa-discussion-15884",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages directly address a connection error with Medusa Doc MCP after re-authentication."
+    },
+    {
+      "case_id": "medusa-discussion-2251",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate document explicitly explains how the Medusa backend scales horizontally."
+    },
+    {
+      "case_id": "medusa-discussion-2407",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "No candidate passage explicitly explains why the billing address is null when creating a draft order via API."
+    }
+  ]
+}

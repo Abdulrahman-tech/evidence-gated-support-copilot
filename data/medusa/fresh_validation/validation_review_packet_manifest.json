@@ -1,0 +1,48 @@
+{
+  "assignment_sha256": "2d8b624dc911b6a6f3b5edeeb71b210b949aebecb59e8da4a12180c8da6697ad",
+  "batch_counts": {
+    "1": 97,
+    "2": 97,
+    "3": 97,
+    "4": 97
+  },
+  "case_count": 388,
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "packet_id": "medusa_fresh_validation_20260825",
+  "packet_sha256": "7ed802c8404750dd9f77e73b2c1d9023f7a16640429a5c0e342794dd2a064646",
+  "product_area_counts": {
+    "admin": 25,
+    "api": 19,
+    "auth": 15,
+    "cart": 25,
+    "customer": 5,
+    "database": 13,
+    "deployment": 15,
+    "fulfillment": 11,
+    "inventory": 8,
+    "localization": 1,
+    "observability": 2,
+    "order": 38,
+    "other": 108,
+    "payment": 25,
+    "plugins": 11,
+    "pricing": 14,
+    "product": 48,
+    "promotion": 5
+  },
+  "protected_benchmark_hashes": {
+    "development": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+    "test": "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+    "validation": "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a"
+  },
+  "review_method": "independent_manual_blind",
+  "review_policy": "No retriever output, model prediction, suggested label, or AI evidence is included. Reviewers use source pages and the pinned official corpus.",
+  "role": "validation",
+  "source_sha256": "313ab4d754d352c7101083e7aa500d32806f126474c7d901ac40468131cdefd7",
+  "support_intent_counts": {
+    "bug_report": 114,
+    "documentation_gap": 48,
+    "support_question": 15,
+    "technical_request": 211
+  }
+}

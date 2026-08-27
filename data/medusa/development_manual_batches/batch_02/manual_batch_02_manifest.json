@@ -1,0 +1,43 @@
+{
+  "case_count": 30,
+  "cohort_counts": {
+    "automation_deferred": 10,
+    "high_confidence_match": 10,
+    "low_confidence_explicit_issue": 10
+  },
+  "labels_included": true,
+  "prior_audit_overlap": false,
+  "product_area_counts": {
+    "api": 2,
+    "auth": 2,
+    "cart": 2,
+    "deployment": 2,
+    "fulfillment": 3,
+    "inventory": 3,
+    "observability": 1,
+    "order": 4,
+    "payment": 5,
+    "plugins": 2,
+    "pricing": 1,
+    "product": 1,
+    "promotion": 2
+  },
+  "review_method": "user_reviewed_codex_applied",
+  "review_status": "approved",
+  "reviewer_decision_counts": {
+    "supported": 1,
+    "unsupported": 29
+  },
+  "role": "development",
+  "seed": "medusa-development-manual-batch-02-v1",
+  "selection_sha256": "a27b9422dc9f866fa98e6f96250c30f6ad3e51760d367df63a27e8bcf5190730",
+  "sha256": "45eadea7234e469ed1bbead3d6b0f1a1b8f405abdae05558699a684eb3544f97",
+  "support_intent_counts": {
+    "bug_report": 10,
+    "documentation_gap": 3,
+    "technical_request": 17
+  },
+  "unique_leakage_groups": 30,
+  "usable_count": 30,
+  "workbook_sha256": "ce9a44db596eca7cedcb77ced86b7da06e8b3f225474c4fe7e7b151a99eea424"
+}

@@ -1,0 +1,644 @@
+[
+  {
+    "case_id": "stackoverflow-kubernetes-79516630",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-05e6fdbbd9e9a774",
+    "top_score": 31.9881
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79601222",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "tutorials",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-98cadab49dbe39e6",
+    "top_score": 26.2281
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79385062",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-41dc8119cb4f815e",
+    "top_score": 25.0128
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79433005",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-4f6ff8bac997e180",
+    "top_score": 22.9811
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79369211",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-f2f38f0f56e27916",
+    "top_score": 21.5512
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79733868",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-2df53792de06bf95",
+    "top_score": 21.1793
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79396885",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-70a2a5042138d737",
+    "top_score": 20.4768
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79564133",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "setup",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-507266f99d49a421",
+    "top_score": 20.0052
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79375047",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-c803db95c378a7b8",
+    "top_score": 19.5652
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79405404",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-50cc2449935a0197",
+    "top_score": 19.0711
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79411729",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-c922aaabbb75b76f",
+    "top_score": 18.1324
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79391154",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-bf45fa4cbe66125a",
+    "top_score": 18.1237
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79661287",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-bb407aae9ead30ca",
+    "top_score": 17.9111
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79492029",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-83bc28ae4344dd83",
+    "top_score": 17.0896
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79870362",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-64f3cb1307970c41",
+    "top_score": 16.7594
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79469947",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-b7ce58eb83854179",
+    "top_score": 16.1825
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79496573",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-d8afb467ce3deb7b",
+    "top_score": 12.9557
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79614680",
+    "external_tags": [],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-51541814d8f9ccea",
+    "top_score": 12.9033
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79663394",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-4635d814af5f1727",
+    "top_score": 30.349
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79578349",
+    "external_tags": [
+      "apache-apisix"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-fd79646c87ec5cd3",
+    "top_score": 28.6389
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79779172",
+    "external_tags": [
+      "nginx-ingress"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-483469b84d8fa21c",
+    "top_score": 25.575
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79698910",
+    "external_tags": [
+      "apache-kafka"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tutorials",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-d30a24ac9ec8adae",
+    "top_score": 23.6267
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79346457",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "setup",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-b1a0c46fbb90d3ba",
+    "top_score": 22.0275
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79525781",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-cbbdebe4df8da717",
+    "top_score": 20.6445
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79614460",
+    "external_tags": [
+      "nginx"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-f0a79d3b94a0d533",
+    "top_score": 18.8372
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79563007",
+    "external_tags": [
+      "java"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tutorials",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-fcfb4fabace2fee3",
+    "top_score": 18.6213
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79414122",
+    "external_tags": [
+      "docker"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-499e5e58cc6ec84f",
+    "top_score": 16.4122
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79465457",
+    "external_tags": [
+      "docker",
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-cbbdebe4df8da717",
+    "top_score": 31.5307
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79464712",
+    "external_tags": [
+      "docker",
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-cbbdebe4df8da717",
+    "top_score": 24.082
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79536604",
+    "external_tags": [
+      "java",
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_supported",
+    "top_document_id": "kubernetes-3223435950d954bd",
+    "top_score": 15.8712
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79919400",
+    "external_tags": [
+      "python"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-7ff7d96d33a51432",
+    "top_score": 9.8314
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79402469",
+    "external_tags": [
+      "google-cloud-platform"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-0d48f32d7e1468ec",
+    "top_score": 10.8529
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79371532",
+    "external_tags": [
+      "docker",
+      "java",
+      "spring-boot"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-c6927eb6a864a8f4",
+    "top_score": 11.2212
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79842171",
+    "external_tags": [
+      "argocd",
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-34c6923b7aaeaa43",
+    "top_score": 11.3186
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79371403",
+    "external_tags": [
+      "argocd"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-46044691cc97e1c5",
+    "top_score": 11.4812
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79698488",
+    "external_tags": [
+      "apache-kafka"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-6bbfa81a165d28cd",
+    "top_score": 11.7758
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79738705",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "setup",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-62ee47566460652c",
+    "top_score": 12.5917
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79574416",
+    "external_tags": [
+      "amazon-ec2",
+      "amazon-eks",
+      "amazon-iam",
+      "amazon-web-services"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-481acdfe127cae7f",
+    "top_score": 12.679
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79821111",
+    "external_tags": [
+      "argocd"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-fea3a34ecd1382c5",
+    "top_score": 12.6983
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79650494",
+    "external_tags": [
+      "javascript"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-43214f4fca07f5aa",
+    "top_score": 12.8421
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79812107",
+    "external_tags": [
+      "amazon-web-services",
+      "nginx-ingress",
+      "nginx-reverse-proxy"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-065bbeef1950dc95",
+    "top_score": 13.0678
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79781392",
+    "external_tags": [
+      "apache-spark",
+      "apache-spark-sql"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-c25ec775c55a92db",
+    "top_score": 13.3749
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79472167",
+    "external_tags": [
+      "apache-zeppelin"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-72e402247caea28c",
+    "top_score": 13.4862
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79608038",
+    "external_tags": [
+      "apache-kafka",
+      "java"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-0365409bda06e2e3",
+    "top_score": 13.4866
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79468239",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-ef27e0a3179e7833",
+    "top_score": 13.7004
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79469477",
+    "external_tags": [
+      "amazon-dynamodb",
+      "amazon-dynamodb-local",
+      "amazon-web-services"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-8ed6aebb1acfecce",
+    "top_score": 13.8039
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79574724",
+    "external_tags": [
+      "apache-kafka"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-4cd7802b20ac18c1",
+    "top_score": 13.8935
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79349279",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tutorials",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-b0b14982dfc96c92",
+    "top_score": 14.3267
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79791764",
+    "external_tags": [
+      "python"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-fe5d24d9678b1087",
+    "top_score": 14.3456
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79924925",
+    "external_tags": [
+      "docker"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-552231f655add26c",
+    "top_score": 14.4344
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79351826",
+    "external_tags": [
+      "spring-boot"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tasks",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-eb5c44bbc096a236",
+    "top_score": 14.5076
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79934574",
+    "external_tags": [
+      "apache-spark"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-6d3ef3860a2e2a0b",
+    "top_score": 15.0325
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79423739",
+    "external_tags": [
+      "argocd"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-a0cc82407be23ac1",
+    "top_score": 15.2062
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79557794",
+    "external_tags": [
+      "apache-kafka",
+      "apache-zookeeper"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "tutorials",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-605d4e3632b4feb0",
+    "top_score": 15.2788
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79801711",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-1b3082030547beb0",
+    "top_score": 15.2813
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79547914",
+    "external_tags": [
+      "argocd",
+      "istio"
+    ],
+    "retrieval_confident": true,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-e4055f8fc9b8208c",
+    "top_score": 15.3414
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79598229",
+    "external_tags": [
+      "kubernetes-helm"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-cbfbd75c5c971019",
+    "top_score": 15.3916
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79943923",
+    "external_tags": [
+      "apache-spark"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-0a9a1cfeaff47591",
+    "top_score": 15.4509
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79507486",
+    "external_tags": [
+      "azure-aks",
+      "azure-keyvault"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "concepts",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-63cad8f3b6756d3f",
+    "top_score": 15.5116
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79569961",
+    "external_tags": [
+      "azure-aks"
+    ],
+    "retrieval_confident": false,
+    "retrieved_area": "reference",
+    "screening_stratum": "likely_unsupported",
+    "top_document_id": "kubernetes-26332eba73134e45",
+    "top_score": 15.814
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "audience": "platform engineers, SREs, and developers operating Kubernetes",
+  "document_count": 7341,
+  "duplicate_section_count": 302,
+  "knowledge_sha256": "941ced01adaf2483caa74280a2a776f867538d5c4ea94a693b34c6940812e8e9",
+  "license": "CC-BY-4.0",
+  "product_area_counts": {
+    "concepts": 1737,
+    "reference": 3449,
+    "setup": 165,
+    "tasks": 1653,
+    "tutorials": 337
+  },
+  "review_status": "machine_ingested_unreviewed",
+  "source_areas": [
+    "concepts",
+    "setup",
+    "tasks",
+    "tutorials",
+    "reference"
+  ],
+  "source_commit": "25f3dcbed7429ebe20174ccc7000428d0f0aedda",
+  "source_page_count": 1460,
+  "source_repository": "https://github.com/kubernetes/website",
+  "tenant_id": "kubernetes"
+}

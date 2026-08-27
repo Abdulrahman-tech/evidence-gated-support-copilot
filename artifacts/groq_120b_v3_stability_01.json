@@ -1,0 +1,133 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "verifier_version": "direct_evidence_v3",
+  "split": "development",
+  "case_count": 20,
+  "development_sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 20,
+  "system_fingerprint": null,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-2606",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-2624",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-2755",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-2826",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-2848",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-3530",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-3677",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-3823",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4325",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4387",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4432",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4575",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4742",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4743",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-4811",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-5006",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-5175",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-5987",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-7163",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    },
+    {
+      "case_id": "medusa-discussion-8660",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RateLimitError"
+    }
+  ]
+}

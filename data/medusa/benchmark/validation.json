@@ -1,0 +1,128 @@
+[
+  {
+    "case_id": "medusa-discussion-10239",
+    "expected_document_id": null,
+    "question": "Why does create and update methods from MedusaService class have any type",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10239",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10550",
+    "expected_document_id": null,
+    "question": "Issue with Resend Integration for Notifications (Workflows & useQueryGraphStep)",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10550",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10824",
+    "expected_document_id": "medusa-82cf837437298377",
+    "question": "How to perform CRUD on new modules/service?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10824",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-10854",
+    "expected_document_id": "medusa-24b206cac5a6c969",
+    "question": "How to configure the relationship of 2 custom modules?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/10854",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11411",
+    "expected_document_id": "medusa-3f6d591a6dd5692b",
+    "question": "Is it now always required to use shipping?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11411",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-11457",
+    "expected_document_id": "medusa-17ba933ebb1ea709",
+    "question": "Login as an Actor Type",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11457",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-14946",
+    "expected_document_id": null,
+    "question": "Customer Authentication Persistence Issues in Medusa v2 with Next.js 15: Session lost after successful 200 Login",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/14946",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-3430",
+    "expected_document_id": "medusa-92e2fe55b3ff23a7",
+    "question": "Subscribers not running with Dockerised application",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3430",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-4427",
+    "expected_document_id": null,
+    "question": "How can I debug a custom service method with a VS Code breakpoint?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4427",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5443",
+    "expected_document_id": null,
+    "question": "What is the recommended maximum number of products?",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5443",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-5942",
+    "expected_document_id": "medusa-7bbc2860083a7b72",
+    "question": "[Admin UI] Edit style of login page",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/5942",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-6968",
+    "expected_document_id": null,
+    "question": "How does Redis new licensing policy works with Medusa since it's no longer Open Source",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/6968",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-7840",
+    "expected_document_id": null,
+    "question": "Custom font isn't working - please help! \ud83d\ude2c",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/7840",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-9421",
+    "expected_document_id": null,
+    "question": "Implementing Dynamic Pricing for Jewelry Based on Daily Gold Rates.",
+    "review_method": "ai_assisted_user_authorized",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/9421",
+    "tenant_id": "medusa"
+  }
+]

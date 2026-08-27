@@ -1,0 +1,80 @@
+[
+  {
+    "case_id": "stackoverflow-kubernetes-79801711",
+    "evidence_quote": null,
+    "expected_document_id": null,
+    "question": "How to overwrite an env value with Helm",
+    "retrieval_rank": null,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported",
+    "reviewer_notes": "The full source is resolved by Kubernetes Service DNS/FQDN behavior and Mongo connectivity; Helm documentation only helps render the template for inspection.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79801711/how-to-overwrite-an-env-value-with-helm"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79525781",
+    "evidence_quote": null,
+    "expected_document_id": null,
+    "question": "How to change replica set in Helm release?",
+    "retrieval_rank": null,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported",
+    "reviewer_notes": "The fix requires the GoCD chart-specific agent.replicaCount value path, which is not documented in the official Helm corpus.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79525781/how-to-change-replica-set-in-helm-release"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79464712",
+    "evidence_quote": "More complex expressions are supported. For example, --set outer.inner=value\nis translated into this:",
+    "expected_document_id": "helm3-88f12d32e97a3e2e",
+    "question": "Image name not resolving properly during Helm Upgrade/Install for Elastic Kibana: InvalidImageName error",
+    "retrieval_rank": 3,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "supported",
+    "reviewer_notes": "The official --set documentation directly explains that a dotted key creates a nested value, which is why image.registry changed image from a string into a map.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79464712/image-name-not-resolving-properly-during-helm-upgrade-install-for-elastic-kibana"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79465457",
+    "evidence_quote": null,
+    "expected_document_id": null,
+    "question": "How to access environment variables defined in dockerfile in helm chart value file",
+    "retrieval_rank": null,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported",
+    "reviewer_notes": "The answer requires container entrypoint or Tomcat environment-variable composition; the pinned Helm corpus does not directly document that runtime behavior.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79465457/how-to-access-environment-variables-defined-in-dockerfile-in-helm-chart-value-fi"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79663394",
+    "evidence_quote": "{{-  (with\nthe dash and space added) indicates that whitespace should be chomped left,\nwhile  -}} means whitespace to the right should be consumed.",
+    "expected_document_id": "helm3-21e4076d6bc030ce",
+    "question": "Helm Templates dockerconfigjson secret - Cannot unmarshal string into Go struct field Secret.data",
+    "retrieval_rank": null,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "supported",
+    "reviewer_notes": "The official whitespace-control section directly explains that {{- removes left whitespace, causing the malformed YAML after the colon.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79663394/helm-templates-dockerconfigjson-secret-cannot-unmarshal-string-into-go-struct"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79346457",
+    "evidence_quote": null,
+    "expected_document_id": null,
+    "question": "How to skip helm tests deployment in Grafana Tanka",
+    "retrieval_rank": null,
+    "review_method": "ai_source_content_audit_codex",
+    "review_status": "approved",
+    "reviewer_decision": "unsupported",
+    "reviewer_notes": "The working configuration is Tanka's skipTests wrapper option. Helm documents the CLI --skip-tests flag but not the required Tanka/Jsonnet syntax.",
+    "source_content_checked": true,
+    "source_url": "https://stackoverflow.com/questions/79346457/how-to-skip-helm-tests-deployment-in-grafana-tanka"
+  }
+]

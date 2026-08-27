@@ -1,0 +1,28 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "split": "development",
+  "case_count": 2,
+  "development_sha256": "0c65389640ffe5fbeb2f18b69d780b073aac9d48b68c699b59daa2f9777be161",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 1,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-11521",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-0ecb206415b66738",
+          "quote": "error object of type FetchError. An example of handling the error is to check if the error's statusText is Unauthorized. If so, you can redirect the customer to the login page. Otherwise, you can handle other errors by showing an alert, for example."
+        }
+      ],
+      "reason": "The candidate passage explicitly describes handling an Unauthorized error by checking the statusText and redirecting the user to the login page, which directly addresses the issue of an Unauthorized error on production."
+    },
+    {
+      "case_id": "medusa-discussion-1339",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: RuntimeError"
+    }
+  ]
+}

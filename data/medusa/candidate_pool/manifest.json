@@ -1,0 +1,45 @@
+{
+  "clean_count_before_sampling": 1703,
+  "excluded": {
+    "automation_or_maintenance": 24,
+    "existing_benchmark_source": 100,
+    "insufficient_source_context": 4,
+    "near_duplicate": 5
+  },
+  "input_count": 1836,
+  "label_policy": "Authentic public candidates only; no evaluation label or retriever prediction is included.",
+  "leakage_group_count": 1482,
+  "output_count": 1500,
+  "product_area_counts": {
+    "admin": 115,
+    "api": 66,
+    "auth": 69,
+    "cart": 73,
+    "customer": 19,
+    "database": 42,
+    "deployment": 61,
+    "fulfillment": 44,
+    "inventory": 22,
+    "localization": 10,
+    "observability": 6,
+    "order": 132,
+    "other": 445,
+    "payment": 114,
+    "plugins": 38,
+    "pricing": 53,
+    "product": 175,
+    "promotion": 16
+  },
+  "seed": "medusa-large-candidate-pool-v1",
+  "sha256": "313ab4d754d352c7101083e7aa500d32806f126474c7d901ac40468131cdefd7",
+  "source_type_counts": {
+    "github_issue_report": 1500
+  },
+  "support_intent_counts": {
+    "bug_report": 386,
+    "documentation_gap": 192,
+    "support_question": 75,
+    "technical_request": 847
+  },
+  "target_count": 1500
+}

@@ -1,0 +1,99 @@
+{
+  "development_label_audits": [
+    {
+      "ambiguous": 1,
+      "audit_id": "medusa_supported_label_audit_12",
+      "audit_sha256": "6e09b33c8df1bd84f8a8705d744d065b6188248638d4294a9aac96cc32de95d9",
+      "excluded": 1,
+      "excluded_cases": [
+        {
+          "case_id": "medusa-discussion-4533",
+          "decision": "ambiguous",
+          "question": "Question for the MedusaJS team about frontend starter",
+          "source_url": "https://github.com/medusajs/medusa/discussions/4533"
+        }
+      ],
+      "included": 11,
+      "outdated": 0,
+      "review_method": "user_reviewed_codex_applied",
+      "reviewed": 12,
+      "supported": 4,
+      "unsupported": 7,
+      "workbook_sha256": "998a6fa2639bc67e40dd72f68321a89855fb2b5efb95ea849ecdb7532ac2ee61"
+    }
+  ],
+  "development_manual_reviews": [
+    {
+      "batch_id": "medusa_development_manual_batch_02",
+      "included": 30,
+      "review_method": "user_reviewed_codex_applied",
+      "reviewed": 30,
+      "reviewed_batch_sha256": "45eadea7234e469ed1bbead3d6b0f1a1b8f405abdae05558699a684eb3544f97",
+      "supported": 1,
+      "unsupported": 29,
+      "workbook_sha256": "ce9a44db596eca7cedcb77ced86b7da06e8b3f225474c4fe7e7b151a99eea424"
+    },
+    {
+      "ambiguous": 2,
+      "batch_id": "medusa_development_manual_batch_03",
+      "excluded": 2,
+      "excluded_sha256": "5e07bd8d88f99323ddbf852b6e423a75861a6520433cd8e7ab7923fee4ecfff2",
+      "included": 28,
+      "outdated": 0,
+      "review_method": "user_reviewed_codex_applied",
+      "reviewed": 30,
+      "reviewed_batch_sha256": "3b3d2fae16f45829c7fed0cf051c62cd6129a86f6277fd182ea46c8d8a766f9f",
+      "supported": 2,
+      "unsupported": 26,
+      "workbook_sha256": "5d8ea9b5dc33e096b055b0a9423be22040fc88570cf53f25e003f8d30506fb63"
+    }
+  ],
+  "excluded": {
+    "ambiguous": 2,
+    "outdated": 28
+  },
+  "review_method": "mixed",
+  "review_warning": "Development combines AI-assisted labels with user-reviewed manual batches. Validation labels remain AI-assisted. The locked test was independently reviewed.",
+  "reviewed_candidates_sha256": "8fbd3d8339aadc3305d6e2afb3d0a7d4db7ab9f5c3f2b2f4757968315636529b",
+  "seed": "medusa-discussions-v1",
+  "source_commit": "c4a823a19e4787bb69f2c3238a3cb5cb0918d7cc",
+  "split_review_methods": {
+    "development": "mixed",
+    "test": "independent_manual_human_review",
+    "validation": "ai_assisted_user_authorized"
+  },
+  "splits": {
+    "development": {
+      "count": 99,
+      "sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+      "supported": 13,
+      "unsupported": 86
+    },
+    "test": {
+      "count": 11,
+      "sha256": "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+      "supported": 10,
+      "unsupported": 1
+    },
+    "validation": {
+      "count": 14,
+      "sha256": "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a",
+      "supported": 6,
+      "unsupported": 8
+    }
+  },
+  "tenant_id": "medusa",
+  "test_locked": true,
+  "test_manual_review": {
+    "ambiguous": 2,
+    "excluded": 3,
+    "excluded_sha256": "2874d6d657976c746244f927781d1bf8e9c68798e1de18029954d5a94096d03b",
+    "included": 11,
+    "outdated": 1,
+    "reviewed": 14,
+    "supported": 10,
+    "unsupported": 1,
+    "workbook_sha256": "555b0464adc5e232b16bb945586c59e20dca89dd85ccc36fffa536eb2fd2f5de"
+  },
+  "test_status": "locked_independent_manual_human_review"
+}

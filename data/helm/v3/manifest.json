@@ -1,0 +1,31 @@
+{
+  "audience": "developers and platform engineers using Helm 3 with Kubernetes",
+  "corpus_id": "helm_v3_official",
+  "document_count": 712,
+  "documentation_license": "CC-BY-4.0",
+  "duplicate_section_count": 94,
+  "hosted_model_calls": 0,
+  "integration_status": "isolated_not_enabled_for_runtime_routing",
+  "knowledge_sha256": "8725fb089ecd21268bf05e12aa6fa7401325f0d899f818932070cb57c570dd0b",
+  "license_source": "https://helm.sh/",
+  "product_area_counts": {
+    "chart_best_practices": 42,
+    "chart_template_guide": 247,
+    "faq": 33,
+    "glossary": 16,
+    "helm": 109,
+    "howto": 25,
+    "intro": 56,
+    "overview": 2,
+    "sdk": 14,
+    "topics": 168
+  },
+  "repository_license": "MIT",
+  "review_status": "machine_ingested_unreviewed",
+  "source_commit": "dde63e420fc8f492be46f2637411cf2a805fc4f9",
+  "source_docs_path": "versioned_docs/version-3",
+  "source_page_count": 126,
+  "source_repository": "https://github.com/helm/helm-www",
+  "source_version": "3.19.0",
+  "tenant_id": "helm-v3"
+}

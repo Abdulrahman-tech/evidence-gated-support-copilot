@@ -1,0 +1,10 @@
+{
+  "policy_count": 50,
+  "split_sizes": {
+    "test": 100,
+    "train": 300,
+    "validation": 100
+  },
+  "test_review_status": "synthetic_unreviewed",
+  "test_sha256": "74030ffbe16b8f9d73cd89bf20d70d4a01967cf3374e83a1893db5b80ee1068d"
+}

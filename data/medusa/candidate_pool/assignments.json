@@ -1,0 +1,7502 @@
+[
+  {
+    "case_id": "medusa-issue-10000",
+    "leakage_group_id": "topic-3d97158ad9a1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10001",
+    "leakage_group_id": "topic-71cd93fb8036",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10002",
+    "leakage_group_id": "topic-11f86944f0e8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10003",
+    "leakage_group_id": "topic-843a5bbfdc12",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10004",
+    "leakage_group_id": "topic-5e34283269b3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10007",
+    "leakage_group_id": "topic-7b79cbe6e314",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10025",
+    "leakage_group_id": "topic-9c4971eb1606",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10032",
+    "leakage_group_id": "topic-419ddec0c4f8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10035",
+    "leakage_group_id": "topic-441517a29e63",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10036",
+    "leakage_group_id": "topic-2818e99c4f41",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10037",
+    "leakage_group_id": "topic-2ad7f8e91099",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10038",
+    "leakage_group_id": "topic-8ea344fdfa8f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10048",
+    "leakage_group_id": "topic-755654bbcd79",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10049",
+    "leakage_group_id": "topic-c2811d4f71c1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10054",
+    "leakage_group_id": "topic-9f987c6a9fe8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10055",
+    "leakage_group_id": "topic-12d77ffc66ba",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10057",
+    "leakage_group_id": "topic-083abedb18dc",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10062",
+    "leakage_group_id": "topic-a5d377f85b9c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10066",
+    "leakage_group_id": "topic-f3843aa88797",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10067",
+    "leakage_group_id": "topic-122e3d7deb21",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10068",
+    "leakage_group_id": "topic-8767369d1d10",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10075",
+    "leakage_group_id": "topic-bbf584dd8bef",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10076",
+    "leakage_group_id": "topic-627198c6a679",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10086",
+    "leakage_group_id": "topic-a2b86898100b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10089",
+    "leakage_group_id": "topic-46020c555deb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10093",
+    "leakage_group_id": "topic-ca00b04fc284",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10096",
+    "leakage_group_id": "topic-f5b981828455",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10099",
+    "leakage_group_id": "topic-6cadcbae9b3c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10105",
+    "leakage_group_id": "topic-0c8953207921",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10110",
+    "leakage_group_id": "topic-d2565a4d4b28",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10115",
+    "leakage_group_id": "topic-cafdafd2d0c3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10124",
+    "leakage_group_id": "topic-a8caac6f373d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10127",
+    "leakage_group_id": "topic-a5d377f85b9c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10128",
+    "leakage_group_id": "topic-7f572357d62a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10129",
+    "leakage_group_id": "topic-a5d377f85b9c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10130",
+    "leakage_group_id": "topic-1fac0ae0f794",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10131",
+    "leakage_group_id": "topic-4209dd473ed3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10133",
+    "leakage_group_id": "topic-6ebca4a355f1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10137",
+    "leakage_group_id": "topic-0f8d4319a365",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10146",
+    "leakage_group_id": "topic-0aa396f750ce",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10148",
+    "leakage_group_id": "topic-7ab4dae59701",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10149",
+    "leakage_group_id": "topic-a5d377f85b9c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10162",
+    "leakage_group_id": "topic-54fdb969c660",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10163",
+    "leakage_group_id": "topic-ce1974f8ca6d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10171",
+    "leakage_group_id": "topic-f3dba4d8ffc6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10174",
+    "leakage_group_id": "topic-6c5eb35485ac",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10178",
+    "leakage_group_id": "topic-5a3ef01bb2f8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10180",
+    "leakage_group_id": "topic-c41dcde704cb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10190",
+    "leakage_group_id": "topic-b7aff457aed2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10191",
+    "leakage_group_id": "topic-4a4d31528b8f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10194",
+    "leakage_group_id": "topic-2b76ee9a3c0f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10196",
+    "leakage_group_id": "topic-569b3a286917",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10201",
+    "leakage_group_id": "topic-71811168d898",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10212",
+    "leakage_group_id": "topic-dd3dca53be3e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10214",
+    "leakage_group_id": "topic-58c4837c46ae",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10215",
+    "leakage_group_id": "topic-51f85f1d6197",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10216",
+    "leakage_group_id": "topic-b52c9ab735a5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10217",
+    "leakage_group_id": "topic-bb7aeb3da379",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10221",
+    "leakage_group_id": "topic-52f5ba942a26",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10229",
+    "leakage_group_id": "topic-43e84af7a89e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10230",
+    "leakage_group_id": "topic-ee008f5ba23e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10237",
+    "leakage_group_id": "topic-685a9465377d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10238",
+    "leakage_group_id": "topic-76bd63da65b4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10242",
+    "leakage_group_id": "topic-438bf5ffce01",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10243",
+    "leakage_group_id": "topic-960acc3d67dc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10251",
+    "leakage_group_id": "topic-1593bc7c1047",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10252",
+    "leakage_group_id": "topic-f0ff83868eb4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10272",
+    "leakage_group_id": "topic-11ebc57caa3d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10273",
+    "leakage_group_id": "topic-87b6d15760c8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10283",
+    "leakage_group_id": "topic-32a6105ab5ad",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10289",
+    "leakage_group_id": "topic-850edf7030a1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10290",
+    "leakage_group_id": "topic-6a6c39f09402",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10293",
+    "leakage_group_id": "topic-889db8e9a59f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10295",
+    "leakage_group_id": "topic-9c2852c30aa3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10299",
+    "leakage_group_id": "topic-846a989beb74",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10300",
+    "leakage_group_id": "topic-7c3203aef19a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10302",
+    "leakage_group_id": "topic-9ed0fa6627e1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10303",
+    "leakage_group_id": "topic-f8e2f05c0439",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10304",
+    "leakage_group_id": "topic-637b5c396a03",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10328",
+    "leakage_group_id": "topic-d3cefdbf6cc9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10331",
+    "leakage_group_id": "topic-cab2dba3c6ac",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10332",
+    "leakage_group_id": "topic-3e3b35d01ee4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10333",
+    "leakage_group_id": "topic-559d28b5de45",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10334",
+    "leakage_group_id": "topic-63430cf60991",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10347",
+    "leakage_group_id": "topic-886b16602655",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10351",
+    "leakage_group_id": "topic-6c1c941b5139",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10358",
+    "leakage_group_id": "topic-f6676357034a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10365",
+    "leakage_group_id": "topic-c4858201a17d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10367",
+    "leakage_group_id": "topic-ac4db6871639",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10378",
+    "leakage_group_id": "topic-1d5d937d88b9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10380",
+    "leakage_group_id": "topic-ee2860a0bba9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10384",
+    "leakage_group_id": "topic-d9fc388b1473",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10392",
+    "leakage_group_id": "topic-afd58b268818",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10395",
+    "leakage_group_id": "topic-a2855774330a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10396",
+    "leakage_group_id": "topic-18639db9a8f3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10397",
+    "leakage_group_id": "topic-742fccbfcf87",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10398",
+    "leakage_group_id": "topic-7bcd1b66115e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10399",
+    "leakage_group_id": "topic-0597dc7c44b3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10401",
+    "leakage_group_id": "topic-ed4dd4b3fc04",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10403",
+    "leakage_group_id": "topic-3bb39dcdce53",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10404",
+    "leakage_group_id": "topic-f7ad03067fa5",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10407",
+    "leakage_group_id": "topic-56fd604c7216",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10409",
+    "leakage_group_id": "topic-5d664ebb8cb9",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10411",
+    "leakage_group_id": "topic-5d664ebb8cb9",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10417",
+    "leakage_group_id": "topic-d8f97a755dd7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10421",
+    "leakage_group_id": "topic-d3df43c7a8c5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10424",
+    "leakage_group_id": "topic-48fca3d22525",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10427",
+    "leakage_group_id": "topic-fb3c1267b218",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10451",
+    "leakage_group_id": "topic-cea3472bf6d4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10453",
+    "leakage_group_id": "topic-ca46dac9f642",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10460",
+    "leakage_group_id": "topic-866dcb54398c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10461",
+    "leakage_group_id": "topic-ad5a5f976466",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10462",
+    "leakage_group_id": "topic-c062232f7a64",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10465",
+    "leakage_group_id": "topic-3d731e345cce",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10470",
+    "leakage_group_id": "topic-a64a9feb343e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10487",
+    "leakage_group_id": "topic-a0e26a5e9144",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10488",
+    "leakage_group_id": "topic-4ded874c91b9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10490",
+    "leakage_group_id": "topic-9eefc3c82745",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10491",
+    "leakage_group_id": "topic-9f50bbde353c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10492",
+    "leakage_group_id": "topic-b4e72389a3c2",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10494",
+    "leakage_group_id": "topic-158e6663c496",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10498",
+    "leakage_group_id": "topic-3a560d2922f5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10500",
+    "leakage_group_id": "topic-4ce27c49e391",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10501",
+    "leakage_group_id": "topic-d63556401a65",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10504",
+    "leakage_group_id": "topic-97de26bfeb6b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10515",
+    "leakage_group_id": "topic-49138984100d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10519",
+    "leakage_group_id": "topic-4d26d7add7ad",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10539",
+    "leakage_group_id": "topic-85349ea9abc3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10540",
+    "leakage_group_id": "topic-7824efefd9ab",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10541",
+    "leakage_group_id": "topic-8dc08d2eacb4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10542",
+    "leakage_group_id": "topic-a602e28f2f13",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10544",
+    "leakage_group_id": "topic-5c842b1220dd",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10554",
+    "leakage_group_id": "topic-9ed545230b9e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10560",
+    "leakage_group_id": "topic-3c2c0ce05da0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10561",
+    "leakage_group_id": "topic-fd0230d85ec3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10562",
+    "leakage_group_id": "topic-a7cff98fce4e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10568",
+    "leakage_group_id": "topic-11675c374e5d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10572",
+    "leakage_group_id": "topic-729cb5a5c4d9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10573",
+    "leakage_group_id": "topic-158e6663c496",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10574",
+    "leakage_group_id": "topic-80a98369af4b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10580",
+    "leakage_group_id": "topic-9466564ae298",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10584",
+    "leakage_group_id": "topic-6b12bc843fbf",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10593",
+    "leakage_group_id": "topic-835d45b4c184",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10595",
+    "leakage_group_id": "topic-0f30feba6fe9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10598",
+    "leakage_group_id": "topic-0e1f349bb1f7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10607",
+    "leakage_group_id": "topic-9f3da558f1fa",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10608",
+    "leakage_group_id": "topic-bc71224860ec",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10611",
+    "leakage_group_id": "topic-db5db0b435e4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10612",
+    "leakage_group_id": "topic-ff9d1062232c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10613",
+    "leakage_group_id": "topic-325ea4900838",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10615",
+    "leakage_group_id": "topic-4800f3b2a4b0",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10625",
+    "leakage_group_id": "topic-8febaa2938b2",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10638",
+    "leakage_group_id": "topic-cf4c33871c45",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10645",
+    "leakage_group_id": "topic-e59bd95b6ef1",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10654",
+    "leakage_group_id": "topic-ff1831c19705",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10656",
+    "leakage_group_id": "topic-5aae11b75503",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10658",
+    "leakage_group_id": "topic-b6b3f7e20327",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10663",
+    "leakage_group_id": "topic-25fb69140790",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10664",
+    "leakage_group_id": "topic-65bc94676c3a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10669",
+    "leakage_group_id": "topic-8877afd1c8a9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10670",
+    "leakage_group_id": "topic-02cabe032614",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10679",
+    "leakage_group_id": "topic-248263e01636",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10682",
+    "leakage_group_id": "topic-579a157e5ffa",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10686",
+    "leakage_group_id": "topic-c29712d8be32",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10690",
+    "leakage_group_id": "topic-4b5c2fa58d51",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10691",
+    "leakage_group_id": "topic-461aabb14e88",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10692",
+    "leakage_group_id": "topic-4bbb42189959",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10693",
+    "leakage_group_id": "topic-9c4971eb1606",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10694",
+    "leakage_group_id": "topic-685dc55ceb7a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10695",
+    "leakage_group_id": "topic-b1957f95c18e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10696",
+    "leakage_group_id": "topic-cdf784935cbd",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10701",
+    "leakage_group_id": "topic-8df5afd02fd3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10704",
+    "leakage_group_id": "topic-57ee1fec1b65",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10706",
+    "leakage_group_id": "topic-e5871b9b7431",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10714",
+    "leakage_group_id": "topic-79cfd5ea9d01",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10718",
+    "leakage_group_id": "topic-c49fc566d79d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10720",
+    "leakage_group_id": "topic-964f16960c5d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10721",
+    "leakage_group_id": "topic-48fa989eeb97",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10723",
+    "leakage_group_id": "topic-35a547f81619",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10729",
+    "leakage_group_id": "topic-3f118e98212e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10730",
+    "leakage_group_id": "topic-fa933408b230",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10735",
+    "leakage_group_id": "topic-b7dec14b708a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10741",
+    "leakage_group_id": "topic-02972dd7a606",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10746",
+    "leakage_group_id": "topic-794bb58db59d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10749",
+    "leakage_group_id": "topic-d7f771cf97b7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10751",
+    "leakage_group_id": "topic-4734e798a4ea",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10758",
+    "leakage_group_id": "topic-34ba3e5fa224",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10760",
+    "leakage_group_id": "topic-08374ff43ad2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10762",
+    "leakage_group_id": "topic-b2cea1c41fb4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10763",
+    "leakage_group_id": "topic-4236e71eb55f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10769",
+    "leakage_group_id": "topic-75b33917971f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10774",
+    "leakage_group_id": "topic-ee80a41d87a1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10776",
+    "leakage_group_id": "topic-c46e6ae8ff43",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10781",
+    "leakage_group_id": "topic-931f3c4a818a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10782",
+    "leakage_group_id": "topic-e3151c3d9f06",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10783",
+    "leakage_group_id": "topic-85d3274fa24d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10797",
+    "leakage_group_id": "topic-488d2747cad1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10799",
+    "leakage_group_id": "topic-62601b283875",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10800",
+    "leakage_group_id": "topic-b5863afa4ec4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10804",
+    "leakage_group_id": "topic-6ed9e9f597fb",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10805",
+    "leakage_group_id": "topic-ea32d6ac31d2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10814",
+    "leakage_group_id": "topic-9a140b98c0a4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10816",
+    "leakage_group_id": "topic-228bf7f94adf",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10818",
+    "leakage_group_id": "topic-ea894950d6f7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10819",
+    "leakage_group_id": "topic-e7a54762f4d1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10820",
+    "leakage_group_id": "topic-88ac0ea1253d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10822",
+    "leakage_group_id": "topic-755594816ba7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10826",
+    "leakage_group_id": "topic-833c653d0eea",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10827",
+    "leakage_group_id": "topic-21347c394c1a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10828",
+    "leakage_group_id": "topic-68b8b8667584",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10839",
+    "leakage_group_id": "topic-c21c48d184dc",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10842",
+    "leakage_group_id": "topic-799d664fa006",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10844",
+    "leakage_group_id": "topic-915c34789450",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10848",
+    "leakage_group_id": "topic-4cac64b3488f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10849",
+    "leakage_group_id": "topic-aeb822ea8b8f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10852",
+    "leakage_group_id": "topic-0885a94f7917",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10855",
+    "leakage_group_id": "topic-df75123cc2f6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10860",
+    "leakage_group_id": "topic-ed0ac71d8be2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10863",
+    "leakage_group_id": "topic-7b9ba519a237",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10871",
+    "leakage_group_id": "topic-f84da50714f8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10872",
+    "leakage_group_id": "topic-bb1114369fa3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10877",
+    "leakage_group_id": "topic-bd35a08a8dae",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10879",
+    "leakage_group_id": "topic-b1192625e63d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10884",
+    "leakage_group_id": "topic-84fcf6c38e44",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10885",
+    "leakage_group_id": "topic-d4c2d9cbee54",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10889",
+    "leakage_group_id": "topic-0fcb54ac452d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10901",
+    "leakage_group_id": "topic-df64edfbe1c7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10903",
+    "leakage_group_id": "topic-0e5e981bee32",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10917",
+    "leakage_group_id": "topic-86095ee6c67d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10919",
+    "leakage_group_id": "topic-f54457c4d196",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10921",
+    "leakage_group_id": "topic-104f7b1d8584",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10929",
+    "leakage_group_id": "topic-36ae89973463",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10946",
+    "leakage_group_id": "topic-95c2d8278a9a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-10947",
+    "leakage_group_id": "topic-49096c374a15",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-10948",
+    "leakage_group_id": "topic-a8fd84068d47",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-10965",
+    "leakage_group_id": "topic-2b75fc945c5b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10969",
+    "leakage_group_id": "topic-67aad1fe392e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10976",
+    "leakage_group_id": "topic-7b47d6e639da",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-10977",
+    "leakage_group_id": "topic-edb93fcc18f8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11003",
+    "leakage_group_id": "topic-51677d0bf0f3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11020",
+    "leakage_group_id": "topic-73f1c40b2a7e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11023",
+    "leakage_group_id": "topic-4201760efbb6",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11029",
+    "leakage_group_id": "topic-800434ffa351",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11031",
+    "leakage_group_id": "topic-44e9115d1705",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11033",
+    "leakage_group_id": "topic-e431c79c2c4a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11038",
+    "leakage_group_id": "topic-00c77a7d1a84",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11040",
+    "leakage_group_id": "topic-ee42d98a6dd5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11044",
+    "leakage_group_id": "topic-298a08f4c040",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11050",
+    "leakage_group_id": "topic-983e7aea5a76",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11064",
+    "leakage_group_id": "topic-a38c3ce6d32e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11066",
+    "leakage_group_id": "topic-274fcaa51897",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11067",
+    "leakage_group_id": "topic-8f346ec24fca",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11069",
+    "leakage_group_id": "topic-66a28c005ab6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11070",
+    "leakage_group_id": "topic-3c5563f9c976",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11080",
+    "leakage_group_id": "topic-e180509615ff",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11090",
+    "leakage_group_id": "topic-ebf4bc54bb1b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11099",
+    "leakage_group_id": "topic-7a80e0a6fffa",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11101",
+    "leakage_group_id": "topic-3351ea75941f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11102",
+    "leakage_group_id": "topic-99cfc1711cad",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11103",
+    "leakage_group_id": "topic-d0310ffc5eb5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11104",
+    "leakage_group_id": "topic-ab94cab43b76",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11115",
+    "leakage_group_id": "topic-f4f81eea319c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11124",
+    "leakage_group_id": "topic-64f6ffc72c54",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11126",
+    "leakage_group_id": "topic-81928632eee1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11130",
+    "leakage_group_id": "topic-c1a38b02b8b8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11131",
+    "leakage_group_id": "topic-b39f46e0d932",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11135",
+    "leakage_group_id": "topic-402132064865",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11137",
+    "leakage_group_id": "topic-6ebca4a355f1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11141",
+    "leakage_group_id": "topic-3e3da94a7c17",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11142",
+    "leakage_group_id": "topic-fe328fbfd833",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11144",
+    "leakage_group_id": "topic-f51453a5aef7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11145",
+    "leakage_group_id": "topic-59a6935c9443",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11147",
+    "leakage_group_id": "topic-5d17d02b41cb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11157",
+    "leakage_group_id": "topic-138c6a41a5c7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11158",
+    "leakage_group_id": "topic-184343be7322",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11159",
+    "leakage_group_id": "topic-37847341061c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11160",
+    "leakage_group_id": "topic-10ccd4f5ae90",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11168",
+    "leakage_group_id": "topic-4ea9ffcd43c8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11175",
+    "leakage_group_id": "topic-26d49f6b1334",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11177",
+    "leakage_group_id": "topic-1c0b3b465a2f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11191",
+    "leakage_group_id": "topic-68f9050828c4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11192",
+    "leakage_group_id": "topic-9d033189774c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11193",
+    "leakage_group_id": "topic-46c905d65dbf",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11197",
+    "leakage_group_id": "topic-3ab2b7482bc2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11201",
+    "leakage_group_id": "topic-1a2fb87e082f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11202",
+    "leakage_group_id": "topic-0749e3937b65",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11203",
+    "leakage_group_id": "topic-37811d07980e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11204",
+    "leakage_group_id": "topic-1beb6816a693",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11205",
+    "leakage_group_id": "topic-60e453b3093e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11218",
+    "leakage_group_id": "topic-1cc31c6aad78",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11222",
+    "leakage_group_id": "topic-c987d7b879a6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11228",
+    "leakage_group_id": "topic-501d810be953",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11229",
+    "leakage_group_id": "topic-845fd20d2c4f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11232",
+    "leakage_group_id": "topic-80417bc34ac4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11234",
+    "leakage_group_id": "topic-8900e0126cd2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11235",
+    "leakage_group_id": "topic-b65bcb6a282a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11236",
+    "leakage_group_id": "topic-604437cb76d0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11237",
+    "leakage_group_id": "topic-e19a3beb1ac8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11239",
+    "leakage_group_id": "topic-c3aaf4726dbb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11247",
+    "leakage_group_id": "topic-51dbfec35d16",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11248",
+    "leakage_group_id": "topic-845fd20d2c4f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11253",
+    "leakage_group_id": "topic-a3537da0b5d3",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11255",
+    "leakage_group_id": "topic-f08b1122fc51",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11256",
+    "leakage_group_id": "topic-e68e783f21ea",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11258",
+    "leakage_group_id": "topic-d271ed90e129",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11259",
+    "leakage_group_id": "topic-d844fe4af396",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11260",
+    "leakage_group_id": "topic-1dcb442a2bbe",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11261",
+    "leakage_group_id": "topic-aea3b59eb741",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11262",
+    "leakage_group_id": "topic-ad08b130ab1b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11264",
+    "leakage_group_id": "topic-c12e28923eb6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11265",
+    "leakage_group_id": "topic-2e036caf71fd",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11266",
+    "leakage_group_id": "topic-445355a6eba1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11269",
+    "leakage_group_id": "topic-a06c2aa25b61",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11277",
+    "leakage_group_id": "topic-8bc343b0a97f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11284",
+    "leakage_group_id": "topic-2c6778427e81",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11286",
+    "leakage_group_id": "topic-9dcd99fadc8a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11287",
+    "leakage_group_id": "topic-367c7f44968d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11290",
+    "leakage_group_id": "topic-97de69a141e0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11291",
+    "leakage_group_id": "topic-b16f39984a04",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11297",
+    "leakage_group_id": "topic-36dd4f2c023f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11301",
+    "leakage_group_id": "topic-c3ca9700f9f8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11311",
+    "leakage_group_id": "topic-a52137724a0a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11314",
+    "leakage_group_id": "topic-93d71b3c2d5a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11318",
+    "leakage_group_id": "topic-07ef6293ba8f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11321",
+    "leakage_group_id": "topic-8615d3106147",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11326",
+    "leakage_group_id": "topic-1222a3167c3b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11330",
+    "leakage_group_id": "topic-3db06452dcca",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11331",
+    "leakage_group_id": "topic-0cf7122bd50a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11332",
+    "leakage_group_id": "topic-626c476b69cf",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11333",
+    "leakage_group_id": "topic-a86263a8e10d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11337",
+    "leakage_group_id": "topic-6cf944c15638",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11339",
+    "leakage_group_id": "topic-1b0b64a1c377",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11341",
+    "leakage_group_id": "topic-e24bbe29f77a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11350",
+    "leakage_group_id": "topic-1c8adba0dc47",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11355",
+    "leakage_group_id": "topic-ace99fd55ee3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11367",
+    "leakage_group_id": "topic-ea6a95fa9803",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11373",
+    "leakage_group_id": "topic-09f1aca5bbb5",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11375",
+    "leakage_group_id": "topic-d6785c66068c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11377",
+    "leakage_group_id": "topic-335680cf4179",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11380",
+    "leakage_group_id": "topic-ffd6eefef45c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11383",
+    "leakage_group_id": "topic-e3e6080ca9fc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11384",
+    "leakage_group_id": "topic-74444dd8e4e0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11386",
+    "leakage_group_id": "topic-1f301d163548",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11389",
+    "leakage_group_id": "topic-de758c9e1e72",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11401",
+    "leakage_group_id": "topic-4190a0c09eba",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11406",
+    "leakage_group_id": "topic-409f979c1e4c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11408",
+    "leakage_group_id": "topic-f0eda97c552a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11409",
+    "leakage_group_id": "topic-c1cc0fc6d888",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11420",
+    "leakage_group_id": "topic-6a09417ce4ca",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11425",
+    "leakage_group_id": "topic-ec0b64d6436c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11429",
+    "leakage_group_id": "topic-86d13369d274",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11430",
+    "leakage_group_id": "topic-c2adefa60561",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11437",
+    "leakage_group_id": "topic-9754c18687c9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11438",
+    "leakage_group_id": "topic-ade4d4df634f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11440",
+    "leakage_group_id": "topic-1e27de4c869f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11444",
+    "leakage_group_id": "topic-c7b4a3465c83",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11445",
+    "leakage_group_id": "topic-402479dd6b27",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11450",
+    "leakage_group_id": "topic-8c690255f9cb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11456",
+    "leakage_group_id": "topic-2eeffbfdd5c0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11470",
+    "leakage_group_id": "topic-141d2a92f7b9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11479",
+    "leakage_group_id": "topic-27b2f1d3545e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11480",
+    "leakage_group_id": "topic-a64e7a9e103d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11481",
+    "leakage_group_id": "topic-4bd3759246a5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11483",
+    "leakage_group_id": "topic-6926d6aab0e0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11484",
+    "leakage_group_id": "topic-4a11dad5ec37",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11486",
+    "leakage_group_id": "topic-7ab254f9136e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11500",
+    "leakage_group_id": "topic-1c21521932cf",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11502",
+    "leakage_group_id": "topic-0a62477ea649",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11503",
+    "leakage_group_id": "topic-2cb26b621aa7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11505",
+    "leakage_group_id": "topic-1720ef17a68f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11513",
+    "leakage_group_id": "topic-087bcb7b7278",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11515",
+    "leakage_group_id": "topic-116919a85cea",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11535",
+    "leakage_group_id": "topic-83acdba07008",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11540",
+    "leakage_group_id": "topic-3fe702ec3351",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11542",
+    "leakage_group_id": "topic-f760293d5c28",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11548",
+    "leakage_group_id": "topic-fcde7b96eae3",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11550",
+    "leakage_group_id": "topic-ad91fae6a321",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11552",
+    "leakage_group_id": "topic-3f9697abd78f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11558",
+    "leakage_group_id": "topic-d1afa9e83479",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11559",
+    "leakage_group_id": "topic-2fdfb064c361",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11561",
+    "leakage_group_id": "topic-7c87c8f0a218",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11566",
+    "leakage_group_id": "topic-47e673fbc834",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11570",
+    "leakage_group_id": "topic-f6b9ecea31b9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11573",
+    "leakage_group_id": "topic-7cd212c4a0e7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11582",
+    "leakage_group_id": "topic-5c497665fb1d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11587",
+    "leakage_group_id": "topic-9be173563679",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11590",
+    "leakage_group_id": "topic-ad916ddaf4c1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11591",
+    "leakage_group_id": "topic-c38292f5bf5f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11593",
+    "leakage_group_id": "topic-30e24861d854",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11595",
+    "leakage_group_id": "topic-878d78fa38ce",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11600",
+    "leakage_group_id": "topic-4397b6880a5a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11605",
+    "leakage_group_id": "topic-9e492ca7051c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11606",
+    "leakage_group_id": "topic-2bc7bb8bd380",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11608",
+    "leakage_group_id": "topic-79253276f2c0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11609",
+    "leakage_group_id": "topic-eb0afc04168c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11614",
+    "leakage_group_id": "topic-ccaae840f1fc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11620",
+    "leakage_group_id": "topic-9945e3d10415",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11623",
+    "leakage_group_id": "topic-620f3256b7b4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11633",
+    "leakage_group_id": "topic-ed316f59989f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11635",
+    "leakage_group_id": "topic-78c355c180b9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11637",
+    "leakage_group_id": "topic-f5e1f1890a7b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11640",
+    "leakage_group_id": "topic-9234e946ef8c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11645",
+    "leakage_group_id": "topic-1bb89b2bbdba",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11647",
+    "leakage_group_id": "topic-58534a954151",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11648",
+    "leakage_group_id": "topic-b92edbd0828b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11649",
+    "leakage_group_id": "topic-3f442691b416",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11654",
+    "leakage_group_id": "topic-9d295221ea9d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11656",
+    "leakage_group_id": "topic-89c9f9d0c226",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11659",
+    "leakage_group_id": "topic-69ea6caa0614",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11662",
+    "leakage_group_id": "topic-fe657f67334c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11663",
+    "leakage_group_id": "topic-1990b31cdc98",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11672",
+    "leakage_group_id": "topic-23c59394a05a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11673",
+    "leakage_group_id": "topic-75a117c23522",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11678",
+    "leakage_group_id": "topic-58c4837c46ae",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11679",
+    "leakage_group_id": "topic-38bdce0ac4cb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11681",
+    "leakage_group_id": "topic-ea7e2af0aa2b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11682",
+    "leakage_group_id": "topic-db512212f491",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11684",
+    "leakage_group_id": "topic-00ff78d9883c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11685",
+    "leakage_group_id": "topic-a318cd75dc5b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11686",
+    "leakage_group_id": "topic-b72fc1977bb5",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11687",
+    "leakage_group_id": "topic-0bfcc3a72ffe",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11691",
+    "leakage_group_id": "topic-cba3a4a99356",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11702",
+    "leakage_group_id": "topic-3b16973d2962",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11703",
+    "leakage_group_id": "topic-d7b3679a6245",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11706",
+    "leakage_group_id": "topic-3b0197812519",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11709",
+    "leakage_group_id": "topic-58c4837c46ae",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11721",
+    "leakage_group_id": "topic-7bb9170f2376",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11723",
+    "leakage_group_id": "topic-fc733f15f07e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11725",
+    "leakage_group_id": "topic-21b399200a91",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11729",
+    "leakage_group_id": "topic-faba078ec8c5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11739",
+    "leakage_group_id": "topic-4547af134d14",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11745",
+    "leakage_group_id": "topic-8c80bc71995d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11749",
+    "leakage_group_id": "topic-aec60a5a5d2d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11757",
+    "leakage_group_id": "topic-fc4fff483d1c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11762",
+    "leakage_group_id": "topic-9f538411dc77",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11763",
+    "leakage_group_id": "topic-90feaa22095e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11764",
+    "leakage_group_id": "topic-96c961259096",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11766",
+    "leakage_group_id": "topic-c4fe0e8e720b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11769",
+    "leakage_group_id": "topic-40296224cf1d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11777",
+    "leakage_group_id": "topic-163459d5a1ab",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11779",
+    "leakage_group_id": "topic-af66f925db3c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11784",
+    "leakage_group_id": "topic-5f151631ab4c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11786",
+    "leakage_group_id": "topic-0b1ad358e709",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11787",
+    "leakage_group_id": "topic-1b4e18d19b88",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11801",
+    "leakage_group_id": "topic-bd45a0e50136",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11807",
+    "leakage_group_id": "topic-45e14a41273c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11811",
+    "leakage_group_id": "topic-c1763b90c078",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11813",
+    "leakage_group_id": "topic-96b9689f0fe7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11815",
+    "leakage_group_id": "topic-a6f4e18de82e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11816",
+    "leakage_group_id": "topic-9426d78018e6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11817",
+    "leakage_group_id": "topic-b8bb591eee6b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11819",
+    "leakage_group_id": "topic-1875350db194",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11820",
+    "leakage_group_id": "topic-e0f79d7ec207",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11827",
+    "leakage_group_id": "topic-03519dac78a3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11828",
+    "leakage_group_id": "topic-aeb9b3afe1a9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11830",
+    "leakage_group_id": "topic-1b634662af18",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11834",
+    "leakage_group_id": "topic-049b1b58c481",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11835",
+    "leakage_group_id": "topic-93481afa9677",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11837",
+    "leakage_group_id": "topic-e531e2f0cf02",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11840",
+    "leakage_group_id": "topic-4feba7dd7797",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11843",
+    "leakage_group_id": "topic-56eb80135c8d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11848",
+    "leakage_group_id": "topic-d46b5f22709e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11849",
+    "leakage_group_id": "topic-4e6685b8762a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11853",
+    "leakage_group_id": "topic-bcd8e0022d04",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11854",
+    "leakage_group_id": "topic-c987fe79b1ab",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11860",
+    "leakage_group_id": "topic-65e5851280dd",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11861",
+    "leakage_group_id": "topic-0557097b0197",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11863",
+    "leakage_group_id": "topic-3417b17e7627",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11865",
+    "leakage_group_id": "topic-fa3a1db13909",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11867",
+    "leakage_group_id": "topic-d4bb39258984",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11869",
+    "leakage_group_id": "topic-2a47d8e8c21a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11875",
+    "leakage_group_id": "topic-6e213bd0d42a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11882",
+    "leakage_group_id": "topic-c9ed63cae567",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11890",
+    "leakage_group_id": "topic-d92432d028c4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11892",
+    "leakage_group_id": "topic-4c5717ec0d8b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11897",
+    "leakage_group_id": "topic-09deca73e340",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11899",
+    "leakage_group_id": "topic-25831e96bce7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11901",
+    "leakage_group_id": "topic-08efea3785b3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11906",
+    "leakage_group_id": "topic-a8012c39724b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11912",
+    "leakage_group_id": "topic-8b95c0f0559f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11915",
+    "leakage_group_id": "topic-8453e63e0afe",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11916",
+    "leakage_group_id": "topic-a0e91bada765",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11920",
+    "leakage_group_id": "topic-406616cce686",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11921",
+    "leakage_group_id": "topic-e239dd02c4b5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11922",
+    "leakage_group_id": "topic-d21c5e63282b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11938",
+    "leakage_group_id": "topic-1d3067883d3f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11939",
+    "leakage_group_id": "topic-6e1846c49614",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11940",
+    "leakage_group_id": "topic-d70aea8517e8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11941",
+    "leakage_group_id": "topic-e8636505ff76",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11942",
+    "leakage_group_id": "topic-831c49e5f1b6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11945",
+    "leakage_group_id": "topic-44bda03f6dff",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11946",
+    "leakage_group_id": "topic-f5266d074af8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11948",
+    "leakage_group_id": "topic-697c6cf69dc3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11949",
+    "leakage_group_id": "topic-0d06cd9ea94b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11950",
+    "leakage_group_id": "topic-127baeefc469",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11952",
+    "leakage_group_id": "topic-30dfe2275ec4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11961",
+    "leakage_group_id": "topic-710b6fab13d7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11962",
+    "leakage_group_id": "topic-0789ebd13496",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11968",
+    "leakage_group_id": "topic-7d6cc0f96ab7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-11970",
+    "leakage_group_id": "topic-9f5441c7ebf9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11973",
+    "leakage_group_id": "topic-bb65aa891552",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11974",
+    "leakage_group_id": "topic-2598f337c378",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11979",
+    "leakage_group_id": "topic-39fa186a92b7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-11988",
+    "leakage_group_id": "topic-ffa69c405ae3",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-11996",
+    "leakage_group_id": "topic-b526a44bea52",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-11998",
+    "leakage_group_id": "topic-301e7bbcda16",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12000",
+    "leakage_group_id": "topic-863a0c4a0d0f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12001",
+    "leakage_group_id": "topic-02945d637616",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12002",
+    "leakage_group_id": "topic-d9e966523741",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12005",
+    "leakage_group_id": "topic-5425e488c220",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12014",
+    "leakage_group_id": "topic-27540862d5f7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12016",
+    "leakage_group_id": "topic-4669f4b26ff2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12019",
+    "leakage_group_id": "topic-cac06e5592b4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12023",
+    "leakage_group_id": "topic-46188bc808f1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12031",
+    "leakage_group_id": "topic-a103c3376100",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12034",
+    "leakage_group_id": "topic-9c80ede50ede",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12036",
+    "leakage_group_id": "topic-0aa95916ef86",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12043",
+    "leakage_group_id": "topic-57e812ab8acc",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12045",
+    "leakage_group_id": "topic-c0f8a2a0d180",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12046",
+    "leakage_group_id": "topic-ece9a21ec03b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12047",
+    "leakage_group_id": "topic-4f101197c6e7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12050",
+    "leakage_group_id": "topic-612023149ed9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12054",
+    "leakage_group_id": "topic-e3921c2406a5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12055",
+    "leakage_group_id": "topic-7140e8cf473e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12059",
+    "leakage_group_id": "topic-e56c3fd16ced",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12063",
+    "leakage_group_id": "topic-7e2536b3c265",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12064",
+    "leakage_group_id": "topic-4b37574f591c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12067",
+    "leakage_group_id": "topic-39cbbffa0aac",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12068",
+    "leakage_group_id": "topic-ecb5d2e2a27d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12071",
+    "leakage_group_id": "topic-d3c4b38c8eb1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12074",
+    "leakage_group_id": "topic-0749f67aeb9e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12077",
+    "leakage_group_id": "topic-b16dbc0e42e2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12078",
+    "leakage_group_id": "topic-a86cdbbc503f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12079",
+    "leakage_group_id": "topic-b5de352c0bb2",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12080",
+    "leakage_group_id": "topic-083787ee6161",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12081",
+    "leakage_group_id": "topic-d857e35d45ef",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12082",
+    "leakage_group_id": "topic-70ba8baae5ed",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12084",
+    "leakage_group_id": "topic-6d8aceb8d8e3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12085",
+    "leakage_group_id": "topic-8c2765ef9016",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12086",
+    "leakage_group_id": "topic-895b2757ed94",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12089",
+    "leakage_group_id": "topic-734ebcd6bb03",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12090",
+    "leakage_group_id": "topic-59a906bdc3a4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12093",
+    "leakage_group_id": "topic-889d229bf55c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12095",
+    "leakage_group_id": "topic-a5a500efca5b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12105",
+    "leakage_group_id": "topic-2042ef668bd9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12109",
+    "leakage_group_id": "topic-1fd64e361585",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12112",
+    "leakage_group_id": "topic-c357054e8177",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12117",
+    "leakage_group_id": "topic-5c6d63a7f72a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12118",
+    "leakage_group_id": "topic-c6563fee5622",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12122",
+    "leakage_group_id": "topic-ecffcffa5f2a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12123",
+    "leakage_group_id": "topic-74835c75d10e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12132",
+    "leakage_group_id": "topic-6132cf90fe3c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12133",
+    "leakage_group_id": "topic-de79bba0a0dc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12136",
+    "leakage_group_id": "topic-2b6c26c93c13",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12142",
+    "leakage_group_id": "topic-851d4c6053a8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12146",
+    "leakage_group_id": "topic-0ffe891c08c2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12148",
+    "leakage_group_id": "topic-d58084be31f5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12163",
+    "leakage_group_id": "topic-946b2de4e91f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12164",
+    "leakage_group_id": "topic-7f046c0a372b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12166",
+    "leakage_group_id": "topic-7c75821af62a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12168",
+    "leakage_group_id": "topic-c70e2fd09339",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12173",
+    "leakage_group_id": "topic-b7f4c9512493",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12174",
+    "leakage_group_id": "topic-e73fe94b2df5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12175",
+    "leakage_group_id": "topic-68b815ce1816",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12179",
+    "leakage_group_id": "topic-b9240072f138",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12180",
+    "leakage_group_id": "topic-e9d4d799bfae",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12184",
+    "leakage_group_id": "topic-166712736db7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12189",
+    "leakage_group_id": "topic-abe343b07b3b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12192",
+    "leakage_group_id": "topic-5c47864564e1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12195",
+    "leakage_group_id": "topic-bee4b0082bb2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12199",
+    "leakage_group_id": "topic-dd789a673880",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12200",
+    "leakage_group_id": "topic-cfee75a37863",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12203",
+    "leakage_group_id": "topic-549cd1003895",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12204",
+    "leakage_group_id": "topic-45e96e901cf1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12210",
+    "leakage_group_id": "topic-2ccd6b1c7f55",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12219",
+    "leakage_group_id": "topic-333467d9d7ca",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12226",
+    "leakage_group_id": "topic-5a89393c608d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12231",
+    "leakage_group_id": "topic-f8c4a4e8ad5b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12236",
+    "leakage_group_id": "topic-03ca8e647afc",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12237",
+    "leakage_group_id": "topic-8a95aec27ef5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12245",
+    "leakage_group_id": "topic-9c5b2cf3b488",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12246",
+    "leakage_group_id": "topic-c92d8e2a3025",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12249",
+    "leakage_group_id": "topic-03ca8e647afc",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12250",
+    "leakage_group_id": "topic-6e1bb56ad06a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12253",
+    "leakage_group_id": "topic-5f65d7087b12",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12256",
+    "leakage_group_id": "topic-3eac15aab5ac",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12258",
+    "leakage_group_id": "topic-24b21159abae",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12262",
+    "leakage_group_id": "topic-b1607a037ff2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12276",
+    "leakage_group_id": "topic-1f3d4e682d1c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12281",
+    "leakage_group_id": "topic-18a3a9a347c8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12286",
+    "leakage_group_id": "topic-e78a3eea57d6",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12287",
+    "leakage_group_id": "topic-cb511f9ca0ee",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12298",
+    "leakage_group_id": "topic-b603e004a6bb",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12299",
+    "leakage_group_id": "topic-5ced46bba58d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12301",
+    "leakage_group_id": "topic-0a5627caccb6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12303",
+    "leakage_group_id": "topic-8c7f3e33ce1d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12314",
+    "leakage_group_id": "topic-580ce851562f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12327",
+    "leakage_group_id": "topic-68d7157306b3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12329",
+    "leakage_group_id": "topic-ad3f1ef49ec6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12330",
+    "leakage_group_id": "topic-37906e944c5d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12348",
+    "leakage_group_id": "topic-81ddf8fc1beb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12349",
+    "leakage_group_id": "topic-e7919b0b884a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12351",
+    "leakage_group_id": "topic-3ff1aec815db",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12352",
+    "leakage_group_id": "topic-b2645f253c05",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12368",
+    "leakage_group_id": "topic-1fcaf7db9247",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12369",
+    "leakage_group_id": "topic-8feeff93faca",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12370",
+    "leakage_group_id": "topic-2dbe3c892e1d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12388",
+    "leakage_group_id": "topic-08313d5e49de",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12389",
+    "leakage_group_id": "topic-6ffe012d95ec",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12399",
+    "leakage_group_id": "topic-a13e30d8297a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12401",
+    "leakage_group_id": "topic-d8cfbebc7688",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12402",
+    "leakage_group_id": "topic-e04fc87cadd4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12408",
+    "leakage_group_id": "topic-ee2f436c3389",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12410",
+    "leakage_group_id": "topic-a285a04baab8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12420",
+    "leakage_group_id": "topic-e44e946f99b9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12421",
+    "leakage_group_id": "topic-29fafd1dc445",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12429",
+    "leakage_group_id": "topic-05b96e21d632",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12443",
+    "leakage_group_id": "topic-a31a487d3d61",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12448",
+    "leakage_group_id": "topic-59df4827518d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12452",
+    "leakage_group_id": "topic-41d185e8870e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12453",
+    "leakage_group_id": "topic-efdb9fef3c2d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12454",
+    "leakage_group_id": "topic-7c9ad770bba3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12465",
+    "leakage_group_id": "topic-37cdae15cb55",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12469",
+    "leakage_group_id": "topic-679dd89b4f4e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12471",
+    "leakage_group_id": "topic-17d2820d0266",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12474",
+    "leakage_group_id": "topic-cabbac47a537",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12477",
+    "leakage_group_id": "topic-99568784b5db",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12481",
+    "leakage_group_id": "topic-a6c1f7833635",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12482",
+    "leakage_group_id": "topic-fd060f4af1a1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12483",
+    "leakage_group_id": "topic-d58f2f68396d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12488",
+    "leakage_group_id": "topic-3dd90a2be7ab",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12519",
+    "leakage_group_id": "topic-3eaf4f299e89",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12521",
+    "leakage_group_id": "topic-eb817ee3c0da",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12524",
+    "leakage_group_id": "topic-9174e93c0c52",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12525",
+    "leakage_group_id": "topic-bc99256e274b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12526",
+    "leakage_group_id": "topic-922f936d0c32",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12532",
+    "leakage_group_id": "topic-af2932dfd969",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12534",
+    "leakage_group_id": "topic-fa02dfc81608",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12536",
+    "leakage_group_id": "topic-856330b1ee8d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12548",
+    "leakage_group_id": "topic-06c91119380c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12549",
+    "leakage_group_id": "topic-b055ecf16e24",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12553",
+    "leakage_group_id": "topic-28c0df935757",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12556",
+    "leakage_group_id": "topic-5b2cbae034f9",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12559",
+    "leakage_group_id": "topic-66be802b38d5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12561",
+    "leakage_group_id": "topic-5b68404b4fcf",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12562",
+    "leakage_group_id": "topic-eed3202a130f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12570",
+    "leakage_group_id": "topic-21b54a01b3c0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12585",
+    "leakage_group_id": "topic-e9276eb1fc21",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12586",
+    "leakage_group_id": "topic-a85aabe67646",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12587",
+    "leakage_group_id": "topic-ca964f592ffe",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12588",
+    "leakage_group_id": "topic-42d1db30c231",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12589",
+    "leakage_group_id": "topic-d4d61b513a75",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12602",
+    "leakage_group_id": "topic-4e53e577fa15",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12604",
+    "leakage_group_id": "topic-53a16e067af3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12608",
+    "leakage_group_id": "topic-5107d8b3595d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12609",
+    "leakage_group_id": "topic-0c292e89a473",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12613",
+    "leakage_group_id": "topic-841b2f592e59",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12621",
+    "leakage_group_id": "topic-a30023f02a3e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12626",
+    "leakage_group_id": "topic-0d9d86a65153",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12631",
+    "leakage_group_id": "topic-54df48eacc8e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12635",
+    "leakage_group_id": "topic-d43b49df57af",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12641",
+    "leakage_group_id": "topic-3f6fd0646f64",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12651",
+    "leakage_group_id": "topic-7c8ee4a7a443",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12653",
+    "leakage_group_id": "topic-4d47d80e9b19",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12655",
+    "leakage_group_id": "topic-ca78afdd356d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12660",
+    "leakage_group_id": "topic-1f4a04d399c0",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12662",
+    "leakage_group_id": "topic-0cce38f16b4f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12664",
+    "leakage_group_id": "topic-da99179c8ca9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12665",
+    "leakage_group_id": "topic-78b1ab99a251",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12666",
+    "leakage_group_id": "topic-89ec2782f08f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12667",
+    "leakage_group_id": "topic-6c42e482da6c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12668",
+    "leakage_group_id": "topic-9ee41ec06f5f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12669",
+    "leakage_group_id": "topic-ac116a571a9a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12674",
+    "leakage_group_id": "topic-973a72bdce30",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12676",
+    "leakage_group_id": "topic-ea8182a8e9a4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12678",
+    "leakage_group_id": "topic-6eec3561224c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12681",
+    "leakage_group_id": "topic-e7199490fcb7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12683",
+    "leakage_group_id": "topic-53f69120506c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12685",
+    "leakage_group_id": "topic-62c49464c2be",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12686",
+    "leakage_group_id": "topic-e120759f50df",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12687",
+    "leakage_group_id": "topic-4ccffae3c4f4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12688",
+    "leakage_group_id": "topic-92726997b1f7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12690",
+    "leakage_group_id": "topic-d0f264588cc8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12695",
+    "leakage_group_id": "topic-3016f71e3e32",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12702",
+    "leakage_group_id": "topic-17e679e9e13a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12706",
+    "leakage_group_id": "topic-9ccfb1828b4d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12709",
+    "leakage_group_id": "topic-61bec358465d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12710",
+    "leakage_group_id": "topic-f84da50714f8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12718",
+    "leakage_group_id": "topic-c680fb78f271",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12727",
+    "leakage_group_id": "topic-e1ba1f1ce740",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12728",
+    "leakage_group_id": "topic-12ab31c47404",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12733",
+    "leakage_group_id": "topic-1b7cd7666373",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12738",
+    "leakage_group_id": "topic-6557370c444a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12743",
+    "leakage_group_id": "topic-f55cba88b5cb",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12770",
+    "leakage_group_id": "topic-0bbafde86c02",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12771",
+    "leakage_group_id": "topic-63698363496f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12785",
+    "leakage_group_id": "topic-6090c0ddac5a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12787",
+    "leakage_group_id": "topic-f878ac290521",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12789",
+    "leakage_group_id": "topic-aea5f24e6df8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12790",
+    "leakage_group_id": "topic-6d55f8dcffca",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12793",
+    "leakage_group_id": "topic-0a9488c0c121",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12794",
+    "leakage_group_id": "topic-5b439ae57f0c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12796",
+    "leakage_group_id": "topic-aca0c6904525",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12797",
+    "leakage_group_id": "topic-43f2b81df918",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12798",
+    "leakage_group_id": "topic-cdbd7ecf3433",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12804",
+    "leakage_group_id": "topic-5425ccd816e1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12817",
+    "leakage_group_id": "topic-b338b0278f01",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12818",
+    "leakage_group_id": "topic-4392ccdcd7d8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12819",
+    "leakage_group_id": "topic-762bb330a8bc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12850",
+    "leakage_group_id": "topic-911e8dcbb297",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12853",
+    "leakage_group_id": "topic-3075bc983f2a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12854",
+    "leakage_group_id": "topic-585670262b8a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12863",
+    "leakage_group_id": "topic-f38bac67bbd5",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12869",
+    "leakage_group_id": "topic-f297645d2261",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12872",
+    "leakage_group_id": "topic-33c6cc3b8d11",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12873",
+    "leakage_group_id": "topic-8886d349e50e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12874",
+    "leakage_group_id": "topic-bc3f680cc04d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12876",
+    "leakage_group_id": "topic-66ef4ffdea61",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12884",
+    "leakage_group_id": "topic-e0e7b51a559e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12890",
+    "leakage_group_id": "topic-552dd6a87fb4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12891",
+    "leakage_group_id": "topic-f60618abe3bb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12892",
+    "leakage_group_id": "topic-3ceed9d7e2b0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12895",
+    "leakage_group_id": "topic-a0efb6f70af8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12898",
+    "leakage_group_id": "topic-0a815d0cc443",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12900",
+    "leakage_group_id": "topic-e695785230f2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12901",
+    "leakage_group_id": "topic-af06b6ddce42",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12906",
+    "leakage_group_id": "topic-2bfd1d9c4d76",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12909",
+    "leakage_group_id": "topic-ccca8b535c78",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12910",
+    "leakage_group_id": "topic-8cddfa84ee98",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12912",
+    "leakage_group_id": "topic-a06b068ae88f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12913",
+    "leakage_group_id": "topic-f241285369b9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12914",
+    "leakage_group_id": "topic-3f2c5cd7087a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12915",
+    "leakage_group_id": "topic-0f70817c4545",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12916",
+    "leakage_group_id": "topic-ac1033f30cba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12918",
+    "leakage_group_id": "topic-371718651e92",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12921",
+    "leakage_group_id": "topic-38d3db8bbdc0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12929",
+    "leakage_group_id": "topic-14a9a6d8a3de",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12955",
+    "leakage_group_id": "topic-f1c384bbf3f8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12959",
+    "leakage_group_id": "topic-18b235a17ff0",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12964",
+    "leakage_group_id": "topic-c66e6da6e096",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-12966",
+    "leakage_group_id": "topic-1c2a8c2d6b44",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12967",
+    "leakage_group_id": "topic-533283030978",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12968",
+    "leakage_group_id": "topic-eef4d9734d4c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-12971",
+    "leakage_group_id": "topic-28605519ef2c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12972",
+    "leakage_group_id": "topic-bbc5312e82e4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12977",
+    "leakage_group_id": "topic-68670e89d43f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-12978",
+    "leakage_group_id": "topic-ce03f9946b28",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12979",
+    "leakage_group_id": "topic-acfed2ccedeb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12980",
+    "leakage_group_id": "topic-9b1b40ccc196",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-12986",
+    "leakage_group_id": "topic-f2b1d8391945",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13003",
+    "leakage_group_id": "topic-d3e491807157",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13011",
+    "leakage_group_id": "topic-35736e0615d8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13014",
+    "leakage_group_id": "topic-26d087771d44",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13015",
+    "leakage_group_id": "topic-5e8149e4533c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13016",
+    "leakage_group_id": "topic-c1cc0fc6d888",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13021",
+    "leakage_group_id": "topic-46b64744ed84",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13029",
+    "leakage_group_id": "topic-b1b9c18a479d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13034",
+    "leakage_group_id": "topic-d17391d42286",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13036",
+    "leakage_group_id": "topic-c84938c329e5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13039",
+    "leakage_group_id": "topic-7aa532791b8b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13043",
+    "leakage_group_id": "topic-15b12e8ec3ed",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13047",
+    "leakage_group_id": "topic-68b000bd9bc1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13057",
+    "leakage_group_id": "topic-7b3780504178",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13059",
+    "leakage_group_id": "topic-3f89c34f171f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13062",
+    "leakage_group_id": "topic-857a38746cc7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13066",
+    "leakage_group_id": "topic-37d93bc48b9f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13067",
+    "leakage_group_id": "topic-c7834a45a35c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13068",
+    "leakage_group_id": "topic-68abd6b2a202",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13069",
+    "leakage_group_id": "topic-b06f0784d029",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13071",
+    "leakage_group_id": "topic-87bb450b2e2e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13072",
+    "leakage_group_id": "topic-622544d35b7a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13073",
+    "leakage_group_id": "topic-4cde64b6a1f7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13074",
+    "leakage_group_id": "topic-bc1828ba33e4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13080",
+    "leakage_group_id": "topic-3f9697abd78f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13083",
+    "leakage_group_id": "topic-95f08d1df45f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13089",
+    "leakage_group_id": "topic-1161530f7c66",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13091",
+    "leakage_group_id": "topic-24d59c93b5e3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13096",
+    "leakage_group_id": "topic-1d667755df29",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13121",
+    "leakage_group_id": "topic-c4d6ac855d51",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13123",
+    "leakage_group_id": "topic-e6ed654d9524",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13129",
+    "leakage_group_id": "topic-ae3c58fee67b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13130",
+    "leakage_group_id": "topic-c84eb22a8ab8",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13132",
+    "leakage_group_id": "topic-5f37f7f38858",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13135",
+    "leakage_group_id": "topic-0f39fc8b5e8a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13138",
+    "leakage_group_id": "topic-bfc2508d8c02",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13139",
+    "leakage_group_id": "topic-06565600a430",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13142",
+    "leakage_group_id": "topic-7becc38673a1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13144",
+    "leakage_group_id": "topic-470d2d3bb44a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13146",
+    "leakage_group_id": "topic-bff253c4c345",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13149",
+    "leakage_group_id": "topic-587786b490fb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13153",
+    "leakage_group_id": "topic-76f95c4f5245",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13154",
+    "leakage_group_id": "topic-651ac92b7a99",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13160",
+    "leakage_group_id": "topic-950e371a4f7c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13165",
+    "leakage_group_id": "topic-6fd843bd60e7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13168",
+    "leakage_group_id": "topic-4b5e4cc3feec",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13172",
+    "leakage_group_id": "topic-c16ad4668f05",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13173",
+    "leakage_group_id": "topic-735789f0b833",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13187",
+    "leakage_group_id": "topic-6f06b6de7577",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13188",
+    "leakage_group_id": "topic-528b9ffd85af",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13194",
+    "leakage_group_id": "topic-f5ab3b19dbd8",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13201",
+    "leakage_group_id": "topic-326dda4af651",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13227",
+    "leakage_group_id": "topic-11f6a17fe47b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13230",
+    "leakage_group_id": "topic-854a53ba5dd9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13234",
+    "leakage_group_id": "topic-e57d90a7cca3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13235",
+    "leakage_group_id": "topic-4b72ce0fdae2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13255",
+    "leakage_group_id": "topic-3e4bdc00dd7e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13262",
+    "leakage_group_id": "topic-730923b4b711",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13265",
+    "leakage_group_id": "topic-cd1432027b33",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13277",
+    "leakage_group_id": "topic-74d9ace2c826",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13278",
+    "leakage_group_id": "topic-638650885198",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13284",
+    "leakage_group_id": "topic-310ee780b244",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13286",
+    "leakage_group_id": "topic-345ca93ac3a3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13301",
+    "leakage_group_id": "topic-9d2e4b390cab",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13308",
+    "leakage_group_id": "topic-d39c16b03d8f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13310",
+    "leakage_group_id": "topic-3dda2f03198e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13326",
+    "leakage_group_id": "topic-54eebf410a1f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13335",
+    "leakage_group_id": "topic-4b0c21850357",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13337",
+    "leakage_group_id": "topic-a4dac27438c9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13347",
+    "leakage_group_id": "topic-d341f661e7ea",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13348",
+    "leakage_group_id": "topic-f6309781d35b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13349",
+    "leakage_group_id": "topic-f49da3cecf3c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13352",
+    "leakage_group_id": "topic-91ffdf8dcea4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13356",
+    "leakage_group_id": "topic-6de8daadf4c8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13358",
+    "leakage_group_id": "topic-7f0f3cdeef34",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13378",
+    "leakage_group_id": "topic-ba98b0f21704",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13380",
+    "leakage_group_id": "topic-bcd745b3a688",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13383",
+    "leakage_group_id": "topic-95b7d04f99b4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13384",
+    "leakage_group_id": "topic-f152193b26e9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13386",
+    "leakage_group_id": "topic-bf579e706721",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13387",
+    "leakage_group_id": "topic-164765abe07b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13393",
+    "leakage_group_id": "topic-d5aac1853b99",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13395",
+    "leakage_group_id": "topic-6e172e8b0407",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13397",
+    "leakage_group_id": "topic-140724d30cbf",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13400",
+    "leakage_group_id": "topic-ce7169530e3f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13403",
+    "leakage_group_id": "topic-40fe4024ece6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13405",
+    "leakage_group_id": "topic-c7363e3565bb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13411",
+    "leakage_group_id": "topic-d9737a181a84",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13427",
+    "leakage_group_id": "topic-348fc26b1f20",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13430",
+    "leakage_group_id": "topic-5c640f385c6a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13433",
+    "leakage_group_id": "topic-41f403194403",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13437",
+    "leakage_group_id": "topic-7104a2295527",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13441",
+    "leakage_group_id": "topic-fc0dd7f0f279",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13442",
+    "leakage_group_id": "topic-2a5de5b6d9ae",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13443",
+    "leakage_group_id": "topic-cfd910937bf8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13452",
+    "leakage_group_id": "topic-4599950933c5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13453",
+    "leakage_group_id": "topic-c14a60bbc204",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13454",
+    "leakage_group_id": "topic-a8387854f4e0",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13464",
+    "leakage_group_id": "topic-a0ac6f233226",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13470",
+    "leakage_group_id": "topic-1815ea0b0ca1",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13478",
+    "leakage_group_id": "topic-a7198ff1d2c9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13486",
+    "leakage_group_id": "topic-6805131389e8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13489",
+    "leakage_group_id": "topic-d37a03596e90",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13493",
+    "leakage_group_id": "topic-97f897722aa7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13498",
+    "leakage_group_id": "topic-812a3a9d4ac0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13504",
+    "leakage_group_id": "topic-fe215b28b877",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13512",
+    "leakage_group_id": "topic-4b27377a3b0f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13517",
+    "leakage_group_id": "topic-ac2265ffca4a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13518",
+    "leakage_group_id": "topic-f547e11ad21c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13553",
+    "leakage_group_id": "topic-f29bef1cd7ac",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13563",
+    "leakage_group_id": "topic-391fc3e0d89d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13576",
+    "leakage_group_id": "topic-4df8f1a991d0",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13584",
+    "leakage_group_id": "topic-21d0e0062836",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13586",
+    "leakage_group_id": "topic-56ede99e2698",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13590",
+    "leakage_group_id": "topic-ab068c582e93",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13595",
+    "leakage_group_id": "topic-d0c32b361047",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13600",
+    "leakage_group_id": "topic-b3ceb428950a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13602",
+    "leakage_group_id": "topic-df01747c6eda",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13607",
+    "leakage_group_id": "topic-add31841bf6c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13608",
+    "leakage_group_id": "topic-9cb0a8e3de65",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13610",
+    "leakage_group_id": "topic-60fc6590e505",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13612",
+    "leakage_group_id": "topic-9c7f23bb8461",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13613",
+    "leakage_group_id": "topic-760832915b8c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13614",
+    "leakage_group_id": "topic-9825c8600bd7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13615",
+    "leakage_group_id": "topic-0597364ecbdc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13625",
+    "leakage_group_id": "topic-d71cba586506",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13635",
+    "leakage_group_id": "topic-cbbef54cd90c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13636",
+    "leakage_group_id": "topic-a000b833e1ea",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13639",
+    "leakage_group_id": "topic-5d3db6fa7033",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13644",
+    "leakage_group_id": "topic-43873eeb67d5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13654",
+    "leakage_group_id": "topic-87b3f4390587",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13665",
+    "leakage_group_id": "topic-da07b01f479a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13666",
+    "leakage_group_id": "topic-368d19ab53c4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13667",
+    "leakage_group_id": "topic-6c42e482da6c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13672",
+    "leakage_group_id": "topic-42decb707c8f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13674",
+    "leakage_group_id": "topic-c9e768465913",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13685",
+    "leakage_group_id": "topic-bd7e1a174532",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13689",
+    "leakage_group_id": "topic-2b22244d6a1e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13705",
+    "leakage_group_id": "topic-f822783302f2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13708",
+    "leakage_group_id": "topic-c16b4335cd60",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13732",
+    "leakage_group_id": "topic-e569eb125c65",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13734",
+    "leakage_group_id": "topic-be0396215067",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13735",
+    "leakage_group_id": "topic-39756112f802",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13750",
+    "leakage_group_id": "topic-07c0b72b05f7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13751",
+    "leakage_group_id": "topic-eab7db22c994",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13773",
+    "leakage_group_id": "topic-1ac8f4c28e4e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13779",
+    "leakage_group_id": "topic-43d6ca3c661b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13783",
+    "leakage_group_id": "topic-289b6f0be54a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13799",
+    "leakage_group_id": "topic-4c908de6c939",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13806",
+    "leakage_group_id": "topic-bc790449f121",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13807",
+    "leakage_group_id": "topic-ed451509b293",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13816",
+    "leakage_group_id": "topic-587bda1e4f53",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13818",
+    "leakage_group_id": "topic-cebe6f903aff",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13829",
+    "leakage_group_id": "topic-f5a68dbd90a5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13837",
+    "leakage_group_id": "topic-9a8ec03823e6",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13842",
+    "leakage_group_id": "topic-18a0955a4cda",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13859",
+    "leakage_group_id": "topic-2b1f3432c606",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13865",
+    "leakage_group_id": "topic-799e7780ba00",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13867",
+    "leakage_group_id": "topic-be1fdbce5097",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13868",
+    "leakage_group_id": "topic-db59be687df4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13877",
+    "leakage_group_id": "topic-41639a89f1c2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13878",
+    "leakage_group_id": "topic-1dba98edcaea",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13880",
+    "leakage_group_id": "topic-2bdef9076edd",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13882",
+    "leakage_group_id": "topic-b4f2a3bd1e51",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13883",
+    "leakage_group_id": "topic-4cd10b6c57fb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13884",
+    "leakage_group_id": "topic-4f9c34ab3791",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13890",
+    "leakage_group_id": "topic-15147070c5b4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13891",
+    "leakage_group_id": "topic-68c4e26f2aa3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13892",
+    "leakage_group_id": "topic-6cfd756f4433",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13895",
+    "leakage_group_id": "topic-39a1d920b31a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13900",
+    "leakage_group_id": "topic-b4b27b1ca25f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13906",
+    "leakage_group_id": "topic-24f303afd905",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13929",
+    "leakage_group_id": "topic-20275342c1da",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13934",
+    "leakage_group_id": "topic-dd3bc5043ddd",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13936",
+    "leakage_group_id": "topic-9d687cb9953d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13941",
+    "leakage_group_id": "topic-40e6b34a5038",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13943",
+    "leakage_group_id": "topic-fb137e7e5de2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13956",
+    "leakage_group_id": "topic-c0ff7881ffa7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13970",
+    "leakage_group_id": "topic-1d1b5aa08a7f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13971",
+    "leakage_group_id": "topic-fbe76b8a5d40",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13972",
+    "leakage_group_id": "topic-adf27d2684f3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13976",
+    "leakage_group_id": "topic-c45fd03d3059",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13985",
+    "leakage_group_id": "topic-75163a7dff8b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-13988",
+    "leakage_group_id": "topic-ae6c631dae75",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-13989",
+    "leakage_group_id": "topic-2788e3deaa35",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-13990",
+    "leakage_group_id": "topic-1650d393c937",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-13998",
+    "leakage_group_id": "topic-7e71f85ff6d4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14008",
+    "leakage_group_id": "topic-6835d0b743da",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14009",
+    "leakage_group_id": "topic-96fc790c1e21",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14014",
+    "leakage_group_id": "topic-3ce0e1c64fc9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14016",
+    "leakage_group_id": "topic-91e1eb8f24d5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14018",
+    "leakage_group_id": "topic-45f262f10312",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14019",
+    "leakage_group_id": "topic-7d8d5bbb8ac1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14020",
+    "leakage_group_id": "topic-6a63b49dfa17",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14027",
+    "leakage_group_id": "topic-553d3f1ea96d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14029",
+    "leakage_group_id": "topic-822f83e5f9f1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14030",
+    "leakage_group_id": "topic-b31c31197648",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14032",
+    "leakage_group_id": "topic-0d01044dbe4d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14033",
+    "leakage_group_id": "topic-45aed911e0cd",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14035",
+    "leakage_group_id": "topic-2101fb95a55d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14038",
+    "leakage_group_id": "topic-bfd478b8a924",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14039",
+    "leakage_group_id": "topic-e8e0b01177cc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14046",
+    "leakage_group_id": "topic-7f91fe8248ec",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14047",
+    "leakage_group_id": "topic-7b491f80b740",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14050",
+    "leakage_group_id": "topic-4651dc778ea0",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14057",
+    "leakage_group_id": "topic-b8610831f8e2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14065",
+    "leakage_group_id": "topic-d6a43181280f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14069",
+    "leakage_group_id": "topic-5288391607a8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14070",
+    "leakage_group_id": "topic-fbd993153b70",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14071",
+    "leakage_group_id": "topic-63e47abeb033",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14078",
+    "leakage_group_id": "topic-36d2955d7370",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14079",
+    "leakage_group_id": "topic-7df807fbe8e2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14080",
+    "leakage_group_id": "topic-2e2e127d9619",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14089",
+    "leakage_group_id": "topic-477e2a0879e2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14091",
+    "leakage_group_id": "topic-07e6bccaab65",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14094",
+    "leakage_group_id": "topic-36d9c4693e9a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14095",
+    "leakage_group_id": "topic-36b6ece67a63",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14103",
+    "leakage_group_id": "topic-94413f91a68d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14106",
+    "leakage_group_id": "topic-df065fc7441d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14107",
+    "leakage_group_id": "topic-784c64da9c7e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14113",
+    "leakage_group_id": "topic-7347b0f505a8",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14114",
+    "leakage_group_id": "topic-e4ee2a402da4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14116",
+    "leakage_group_id": "topic-403cdb873b3b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14117",
+    "leakage_group_id": "topic-a215c43a65bd",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14120",
+    "leakage_group_id": "topic-cc4291da5e96",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14125",
+    "leakage_group_id": "topic-0fc93368c295",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14126",
+    "leakage_group_id": "topic-e260e25f66a9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14134",
+    "leakage_group_id": "topic-7a1fbbe9ac2f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14136",
+    "leakage_group_id": "topic-4fcb92b44338",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14137",
+    "leakage_group_id": "topic-b1bb7acbbd30",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14149",
+    "leakage_group_id": "topic-9e9b482e50a7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14152",
+    "leakage_group_id": "topic-b39dcae21ede",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14158",
+    "leakage_group_id": "topic-83f57adec7e9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14161",
+    "leakage_group_id": "topic-6647f9634d00",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14165",
+    "leakage_group_id": "topic-d0d4ecc899a0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14168",
+    "leakage_group_id": "topic-fa289b218fd9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14183",
+    "leakage_group_id": "topic-b9fec9031503",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14192",
+    "leakage_group_id": "topic-2a483ac41c42",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14205",
+    "leakage_group_id": "topic-e8174c147ef2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14211",
+    "leakage_group_id": "topic-5cbae517cc98",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14213",
+    "leakage_group_id": "topic-ca9b57c4706f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14214",
+    "leakage_group_id": "topic-2cbda0adcbb0",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14219",
+    "leakage_group_id": "topic-f830d128f9ba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14227",
+    "leakage_group_id": "topic-b1d9b5d469f6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14229",
+    "leakage_group_id": "topic-1461540951a8",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14231",
+    "leakage_group_id": "topic-5f65d7087b12",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14235",
+    "leakage_group_id": "topic-951b25d4c86c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14242",
+    "leakage_group_id": "topic-f8a7cb4c796b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14249",
+    "leakage_group_id": "topic-a7ecd9b4dd44",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14251",
+    "leakage_group_id": "topic-32b8a4705635",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14252",
+    "leakage_group_id": "topic-2debdd1319b1",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14255",
+    "leakage_group_id": "topic-b36d10d7332c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14258",
+    "leakage_group_id": "topic-50d6bb730fa5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14260",
+    "leakage_group_id": "topic-7e5cb849c534",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14291",
+    "leakage_group_id": "topic-6cc7e54f3b0f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14304",
+    "leakage_group_id": "topic-fd4f59b56f85",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14317",
+    "leakage_group_id": "topic-69a419a40952",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14328",
+    "leakage_group_id": "topic-a2635f62d5e6",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14332",
+    "leakage_group_id": "topic-0356fb4512c6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14347",
+    "leakage_group_id": "topic-e4dca74566a5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14349",
+    "leakage_group_id": "topic-652342570631",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14357",
+    "leakage_group_id": "topic-28ad718ab824",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14362",
+    "leakage_group_id": "topic-781849b9629d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14365",
+    "leakage_group_id": "topic-bb4059582dfc",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14370",
+    "leakage_group_id": "topic-f8c9c05f12f7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14371",
+    "leakage_group_id": "topic-ab873f9b1398",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14373",
+    "leakage_group_id": "topic-e4a5ea50d80f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14374",
+    "leakage_group_id": "topic-574caa347fae",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14377",
+    "leakage_group_id": "topic-f451571ceb08",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14378",
+    "leakage_group_id": "topic-1458e3c8cd1f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14379",
+    "leakage_group_id": "topic-d65d8ea09c6b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14392",
+    "leakage_group_id": "topic-724197b92674",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14393",
+    "leakage_group_id": "topic-6ea2f6eeed33",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14397",
+    "leakage_group_id": "topic-8c236494fcba",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14403",
+    "leakage_group_id": "topic-0f91fd534e57",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14407",
+    "leakage_group_id": "topic-4f8a5ab0d5d4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14409",
+    "leakage_group_id": "topic-4d4e65c09398",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14411",
+    "leakage_group_id": "topic-483b1352be08",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14423",
+    "leakage_group_id": "topic-67cd55a006cb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14429",
+    "leakage_group_id": "topic-1e825c0f7636",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14430",
+    "leakage_group_id": "topic-41d393801fe1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14432",
+    "leakage_group_id": "topic-345b87145269",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14434",
+    "leakage_group_id": "topic-9dde0ad3a1f5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14437",
+    "leakage_group_id": "topic-a7fdfabc3720",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14442",
+    "leakage_group_id": "topic-5e88ca27fff1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14479",
+    "leakage_group_id": "topic-80468192d2ba",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14481",
+    "leakage_group_id": "topic-b5b68f03c169",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14484",
+    "leakage_group_id": "topic-e1f7419e9dd6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14492",
+    "leakage_group_id": "topic-2ed7fd57e1d1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14498",
+    "leakage_group_id": "topic-9aaa865a2ef0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14499",
+    "leakage_group_id": "topic-13b3fe59b1df",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14500",
+    "leakage_group_id": "topic-9fd5e1042144",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14501",
+    "leakage_group_id": "topic-06fca1f3f507",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14516",
+    "leakage_group_id": "topic-7825c8074ebc",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14522",
+    "leakage_group_id": "topic-35814087e3a3",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14531",
+    "leakage_group_id": "topic-a6b0abaf7b1e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14534",
+    "leakage_group_id": "topic-bd7a0f65d057",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14535",
+    "leakage_group_id": "topic-480077ea0399",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14537",
+    "leakage_group_id": "topic-89c86d9714ba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14545",
+    "leakage_group_id": "topic-b622ef386e41",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14550",
+    "leakage_group_id": "topic-ddb623b8c35f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14551",
+    "leakage_group_id": "topic-30627bdbf008",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14552",
+    "leakage_group_id": "topic-a897cbb5980c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14554",
+    "leakage_group_id": "topic-fe262b2747b6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14559",
+    "leakage_group_id": "topic-b963c77dd29c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14563",
+    "leakage_group_id": "topic-81cb7228b23e",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14580",
+    "leakage_group_id": "topic-8f693a9a8cfe",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14581",
+    "leakage_group_id": "topic-37c0bc3f67e8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14582",
+    "leakage_group_id": "topic-ad65f34090bf",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14585",
+    "leakage_group_id": "topic-84a00e90bafa",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14592",
+    "leakage_group_id": "topic-a95d0f7d4a49",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14602",
+    "leakage_group_id": "topic-8f866402c7d3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14603",
+    "leakage_group_id": "topic-317e82dab1aa",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14613",
+    "leakage_group_id": "topic-1a2e4198d564",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14615",
+    "leakage_group_id": "topic-deb4a9920019",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14621",
+    "leakage_group_id": "topic-776d6e6f1824",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14622",
+    "leakage_group_id": "topic-9f0436e3633a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14625",
+    "leakage_group_id": "topic-50e8ad81828e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14628",
+    "leakage_group_id": "topic-1f0b9933b8c7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14630",
+    "leakage_group_id": "topic-8875b90eae45",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14632",
+    "leakage_group_id": "topic-071fc81f7c4a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14637",
+    "leakage_group_id": "topic-e4fcc6e05999",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14640",
+    "leakage_group_id": "topic-b6098d689bab",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14653",
+    "leakage_group_id": "topic-70f70d3ef64c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14654",
+    "leakage_group_id": "topic-fab90dc0873f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14655",
+    "leakage_group_id": "topic-02e16d4f12bf",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14659",
+    "leakage_group_id": "topic-10dd16adbc51",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14668",
+    "leakage_group_id": "topic-53f8418eedd8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14671",
+    "leakage_group_id": "topic-e72136a582e7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14672",
+    "leakage_group_id": "topic-fc2aee82eea6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14675",
+    "leakage_group_id": "topic-8aced81a055f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14678",
+    "leakage_group_id": "topic-b1fca61b0738",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14683",
+    "leakage_group_id": "topic-af4160c8191c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14688",
+    "leakage_group_id": "topic-4f681a7c548a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14692",
+    "leakage_group_id": "topic-53d40edb76d3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14693",
+    "leakage_group_id": "topic-09da5f01aee0",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14697",
+    "leakage_group_id": "topic-a99d083da8d1",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14706",
+    "leakage_group_id": "topic-f6555bdd486c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14708",
+    "leakage_group_id": "topic-c6e803d61aac",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14709",
+    "leakage_group_id": "topic-cecf7414041a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14717",
+    "leakage_group_id": "topic-673edd25e63a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14723",
+    "leakage_group_id": "topic-4a4e6e32cbcf",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14727",
+    "leakage_group_id": "topic-8ef132e52a49",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14745",
+    "leakage_group_id": "topic-69f838cc1cbe",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14748",
+    "leakage_group_id": "topic-6ebca4a355f1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14754",
+    "leakage_group_id": "topic-04dce5c92db2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14756",
+    "leakage_group_id": "topic-68e082bb0224",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14758",
+    "leakage_group_id": "topic-dd4e676119a8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14763",
+    "leakage_group_id": "topic-c4cab7435a6c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14765",
+    "leakage_group_id": "topic-93572cf3fd6b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14774",
+    "leakage_group_id": "topic-89ac44ebfec3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14775",
+    "leakage_group_id": "topic-b6e9567a7c7d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14782",
+    "leakage_group_id": "topic-cea0a78a8b9b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14784",
+    "leakage_group_id": "topic-8527b6167e6a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14787",
+    "leakage_group_id": "topic-9d7a8c1ef8fa",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14790",
+    "leakage_group_id": "topic-84fe12f34e9b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14793",
+    "leakage_group_id": "topic-918ee2e3d89e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14795",
+    "leakage_group_id": "topic-bcc544583d6b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14796",
+    "leakage_group_id": "topic-2857923c9112",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14803",
+    "leakage_group_id": "topic-2edf1a70ed95",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14804",
+    "leakage_group_id": "topic-d2e8219f3104",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14811",
+    "leakage_group_id": "topic-a6a784943e71",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14812",
+    "leakage_group_id": "topic-0392b0550076",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14814",
+    "leakage_group_id": "topic-0903c1a31a14",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14818",
+    "leakage_group_id": "topic-12edfae9ea32",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14819",
+    "leakage_group_id": "topic-6bd075ac0048",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14820",
+    "leakage_group_id": "topic-7afe6838a5de",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14825",
+    "leakage_group_id": "topic-c885ed015924",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14827",
+    "leakage_group_id": "topic-7c58cd731208",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14828",
+    "leakage_group_id": "topic-53921c057e74",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14830",
+    "leakage_group_id": "topic-faf534186bc8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14832",
+    "leakage_group_id": "topic-8f66c3874f06",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14833",
+    "leakage_group_id": "topic-80cedfe94350",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14843",
+    "leakage_group_id": "topic-a8d44efea640",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14851",
+    "leakage_group_id": "topic-8cce29f69a88",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14854",
+    "leakage_group_id": "topic-4c3210b0e976",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14856",
+    "leakage_group_id": "topic-951b05e4d03e",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14861",
+    "leakage_group_id": "topic-e2bc56c70f07",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14876",
+    "leakage_group_id": "topic-381be22ae3c3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14880",
+    "leakage_group_id": "topic-13cc6ef108e3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14882",
+    "leakage_group_id": "topic-98924bf5d130",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14883",
+    "leakage_group_id": "topic-193dd07fa294",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14884",
+    "leakage_group_id": "topic-fdb2b3f5ac37",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14889",
+    "leakage_group_id": "topic-9d67290f4a33",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14897",
+    "leakage_group_id": "topic-7c2a9fe918d8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14899",
+    "leakage_group_id": "topic-2626be77bb56",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14903",
+    "leakage_group_id": "topic-330eb5f3f543",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14904",
+    "leakage_group_id": "topic-a63d317ecbb3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14905",
+    "leakage_group_id": "topic-e2507fe42ad2",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14910",
+    "leakage_group_id": "topic-bacae2c6bb9b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-14921",
+    "leakage_group_id": "topic-1db55609f7c5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14923",
+    "leakage_group_id": "topic-bd9e8d634ac6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14934",
+    "leakage_group_id": "topic-ad23cd549ca8",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14936",
+    "leakage_group_id": "topic-9e2ce5f937d3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14940",
+    "leakage_group_id": "topic-8624760c6bd9",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14942",
+    "leakage_group_id": "topic-a5c316820c96",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14945",
+    "leakage_group_id": "topic-e52e22f2fbe2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14962",
+    "leakage_group_id": "topic-47f6ee50f8f8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14963",
+    "leakage_group_id": "topic-2a28d6ecec74",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14965",
+    "leakage_group_id": "topic-40c8502a823f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14967",
+    "leakage_group_id": "topic-2bd794110528",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14971",
+    "leakage_group_id": "topic-335e24a9aee2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14972",
+    "leakage_group_id": "topic-71f252a223e3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-14984",
+    "leakage_group_id": "topic-5abe9526c7fa",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-14987",
+    "leakage_group_id": "topic-73ae66cf3ce1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-14995",
+    "leakage_group_id": "topic-3157cf8281f9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15010",
+    "leakage_group_id": "topic-7ed96e8267e5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15028",
+    "leakage_group_id": "topic-5da703a87004",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15035",
+    "leakage_group_id": "topic-988261f5516f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15042",
+    "leakage_group_id": "topic-9f89dc6a6d52",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15043",
+    "leakage_group_id": "topic-73e84712f9c5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15051",
+    "leakage_group_id": "topic-4a2098cac9ed",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15056",
+    "leakage_group_id": "topic-843215555fd2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15057",
+    "leakage_group_id": "topic-b3aa1d118fe2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15061",
+    "leakage_group_id": "topic-21157ad82900",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15068",
+    "leakage_group_id": "topic-0d2464e433bd",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15070",
+    "leakage_group_id": "topic-87b5c24a83df",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15077",
+    "leakage_group_id": "topic-bd37f201802c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15098",
+    "leakage_group_id": "topic-de8ba338d562",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15116",
+    "leakage_group_id": "topic-815f011f300f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15122",
+    "leakage_group_id": "topic-386e78a59146",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15125",
+    "leakage_group_id": "topic-2ffac7d57d14",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15128",
+    "leakage_group_id": "topic-1a9c5abe9ed4",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15129",
+    "leakage_group_id": "topic-6213c4e497da",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15132",
+    "leakage_group_id": "topic-f20b221f8548",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15135",
+    "leakage_group_id": "topic-5d2480a1a517",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15136",
+    "leakage_group_id": "topic-addf2b91cf4e",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15143",
+    "leakage_group_id": "topic-1601f9150049",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15152",
+    "leakage_group_id": "topic-87de2e2d5b8c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15161",
+    "leakage_group_id": "topic-69ebdfe4712e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15162",
+    "leakage_group_id": "topic-5fc582e76dba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15177",
+    "leakage_group_id": "topic-2f296df34da5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15178",
+    "leakage_group_id": "topic-125119af818b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15205",
+    "leakage_group_id": "topic-769c4f9fc9fa",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15207",
+    "leakage_group_id": "topic-d287816c784b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15226",
+    "leakage_group_id": "topic-75a63343ca86",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15229",
+    "leakage_group_id": "topic-842840dee258",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15239",
+    "leakage_group_id": "topic-cb75d49dbd51",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15240",
+    "leakage_group_id": "topic-e3c8836a488b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15265",
+    "leakage_group_id": "topic-030aaebaec1b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15279",
+    "leakage_group_id": "topic-66ac79816d87",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15280",
+    "leakage_group_id": "topic-c3a170a3fe2f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15283",
+    "leakage_group_id": "topic-49fa7e053555",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15300",
+    "leakage_group_id": "topic-c43cf29de557",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15306",
+    "leakage_group_id": "topic-b57365761e8c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15315",
+    "leakage_group_id": "topic-aaa190e0dfa4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15321",
+    "leakage_group_id": "topic-e7c91a0280ed",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15330",
+    "leakage_group_id": "topic-890502818e49",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15331",
+    "leakage_group_id": "topic-aab3997c0826",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15343",
+    "leakage_group_id": "topic-383870fff275",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15353",
+    "leakage_group_id": "topic-aa156a9968ab",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15357",
+    "leakage_group_id": "topic-fc0e07a67303",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15360",
+    "leakage_group_id": "topic-2559df224b25",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15371",
+    "leakage_group_id": "topic-ce8f81ed772b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15398",
+    "leakage_group_id": "topic-d8bda1aac20a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15406",
+    "leakage_group_id": "topic-f8f8c8678aa6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15415",
+    "leakage_group_id": "topic-4a6209937c50",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15416",
+    "leakage_group_id": "topic-d446673ab935",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15442",
+    "leakage_group_id": "topic-13719125f1db",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15443",
+    "leakage_group_id": "topic-223dbbbfb260",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15450",
+    "leakage_group_id": "topic-3c64a3d21c8b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15491",
+    "leakage_group_id": "topic-61aed07ab169",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15505",
+    "leakage_group_id": "topic-b4cd5073dfcf",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15508",
+    "leakage_group_id": "topic-380442ac24e8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15512",
+    "leakage_group_id": "topic-819f5a4a2432",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15513",
+    "leakage_group_id": "topic-193052bb1322",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15519",
+    "leakage_group_id": "topic-9e04e933898d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15522",
+    "leakage_group_id": "topic-2efb5f19919c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15535",
+    "leakage_group_id": "topic-9985bc0825f2",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15537",
+    "leakage_group_id": "topic-2d5032b2907a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15539",
+    "leakage_group_id": "topic-4afa2bb9011a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15544",
+    "leakage_group_id": "topic-13df7d71157c",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15562",
+    "leakage_group_id": "topic-f1314d77a03f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15589",
+    "leakage_group_id": "topic-792e5daccce9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15593",
+    "leakage_group_id": "topic-7d3301de09c2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15594",
+    "leakage_group_id": "topic-b74d65922d88",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15596",
+    "leakage_group_id": "topic-4d86bd25582a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15615",
+    "leakage_group_id": "topic-3d7fcf9b908f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15621",
+    "leakage_group_id": "topic-fddca5238dc5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15624",
+    "leakage_group_id": "topic-bc06b4aff743",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15625",
+    "leakage_group_id": "topic-0b803e652bd3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15636",
+    "leakage_group_id": "topic-5a27344900a5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15658",
+    "leakage_group_id": "topic-fd8421571af7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15659",
+    "leakage_group_id": "topic-a1fbf60757ca",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15660",
+    "leakage_group_id": "topic-e73a05dfeab5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15661",
+    "leakage_group_id": "topic-53a7617c3904",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15709",
+    "leakage_group_id": "topic-3f2bec73e0eb",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15710",
+    "leakage_group_id": "topic-688666289827",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15724",
+    "leakage_group_id": "topic-0464c4a733e7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15737",
+    "leakage_group_id": "topic-47edcc2b5050",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15742",
+    "leakage_group_id": "topic-f5d57fa765d5",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15763",
+    "leakage_group_id": "topic-9acbc9471c55",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15778",
+    "leakage_group_id": "topic-80c83ed7601f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15781",
+    "leakage_group_id": "topic-da3175de403a",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15789",
+    "leakage_group_id": "topic-71f81b0278c1",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15803",
+    "leakage_group_id": "topic-8b4cdf19a97c",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15808",
+    "leakage_group_id": "topic-c32c32fedd55",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15821",
+    "leakage_group_id": "topic-56cba1ee5c16",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15823",
+    "leakage_group_id": "topic-7ef410b44f95",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15835",
+    "leakage_group_id": "topic-efa4e473f3b9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15849",
+    "leakage_group_id": "topic-0821e003ec35",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15868",
+    "leakage_group_id": "topic-1384e2675c2a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15876",
+    "leakage_group_id": "topic-6d8bd4d59368",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15878",
+    "leakage_group_id": "topic-21d51992d63f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15885",
+    "leakage_group_id": "topic-d38893ed733d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15892",
+    "leakage_group_id": "topic-58bbcaa4f140",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15901",
+    "leakage_group_id": "topic-f7e3dfa2b3ae",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15919",
+    "leakage_group_id": "topic-807fe16a696e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15921",
+    "leakage_group_id": "topic-d60cb30e5294",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15927",
+    "leakage_group_id": "topic-870ac3070514",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15932",
+    "leakage_group_id": "topic-6c02365eec81",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15940",
+    "leakage_group_id": "topic-8aaef1f2b11e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15945",
+    "leakage_group_id": "topic-4e7927c8991b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15947",
+    "leakage_group_id": "topic-6015b344861b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-15954",
+    "leakage_group_id": "topic-1246cf80ad09",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15959",
+    "leakage_group_id": "topic-1bf14baff15b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-15960",
+    "leakage_group_id": "topic-0aa2c3523540",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15967",
+    "leakage_group_id": "topic-bdcf28c0d817",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-15987",
+    "leakage_group_id": "topic-237df90a21f9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-15994",
+    "leakage_group_id": "topic-6570eeeeaba8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16008",
+    "leakage_group_id": "topic-ac091bb3fb6e",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16011",
+    "leakage_group_id": "topic-5946466caf3a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16012",
+    "leakage_group_id": "topic-c8b874594060",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16017",
+    "leakage_group_id": "topic-35fb34c9bb46",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16024",
+    "leakage_group_id": "topic-2aea930fda11",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16026",
+    "leakage_group_id": "topic-8643d02daf73",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16045",
+    "leakage_group_id": "topic-25e2484ec6f1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16053",
+    "leakage_group_id": "topic-333f4a1b1e63",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16084",
+    "leakage_group_id": "topic-028c39f29afb",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16099",
+    "leakage_group_id": "topic-9c9254ed9ab5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16115",
+    "leakage_group_id": "topic-264ac63662c4",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16135",
+    "leakage_group_id": "topic-f98e380048a6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16151",
+    "leakage_group_id": "topic-fe0d1f79ab3e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16163",
+    "leakage_group_id": "topic-0839d6d8af0b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16169",
+    "leakage_group_id": "topic-cdb2ae6860ce",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16190",
+    "leakage_group_id": "topic-da863a284ee3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16199",
+    "leakage_group_id": "topic-fb22faa22704",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16200",
+    "leakage_group_id": "topic-5fee48e7d73b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16206",
+    "leakage_group_id": "topic-bcdb6b405852",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16209",
+    "leakage_group_id": "topic-ec1bf6087664",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16219",
+    "leakage_group_id": "topic-d501cedf3497",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16222",
+    "leakage_group_id": "topic-d79fcb496350",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16232",
+    "leakage_group_id": "topic-46613a1d3cb2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16240",
+    "leakage_group_id": "topic-47949a3b1144",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16252",
+    "leakage_group_id": "topic-c1db0bac16cc",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16266",
+    "leakage_group_id": "topic-8c80665d3886",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16271",
+    "leakage_group_id": "topic-2918203a7eca",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16272",
+    "leakage_group_id": "topic-040d48fd6007",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16274",
+    "leakage_group_id": "topic-1e49f439d6d4",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16275",
+    "leakage_group_id": "topic-fa02bdc0cf30",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16276",
+    "leakage_group_id": "topic-7187c9ecde50",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16282",
+    "leakage_group_id": "topic-c39e4a56a09d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16285",
+    "leakage_group_id": "topic-8d7cbc803a36",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16287",
+    "leakage_group_id": "topic-f25df6df0740",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16292",
+    "leakage_group_id": "topic-fcfbb5746496",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16294",
+    "leakage_group_id": "topic-833654c7f86a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16296",
+    "leakage_group_id": "topic-754f027be4c3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16300",
+    "leakage_group_id": "topic-477e3dcb39a9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16304",
+    "leakage_group_id": "topic-f7f2eca9b0c8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16310",
+    "leakage_group_id": "topic-91ea62c92fd7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16322",
+    "leakage_group_id": "topic-6505719d0786",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16338",
+    "leakage_group_id": "topic-1818461ea494",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16339",
+    "leakage_group_id": "topic-d7516afdd15f",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16353",
+    "leakage_group_id": "topic-6d79bce866c5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16355",
+    "leakage_group_id": "topic-3b341e97929d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16363",
+    "leakage_group_id": "topic-faa79ee832ec",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16365",
+    "leakage_group_id": "topic-db27a039c2e2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16368",
+    "leakage_group_id": "topic-01973ece5e96",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16376",
+    "leakage_group_id": "topic-e4a34327cca6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16377",
+    "leakage_group_id": "topic-cf3ddeb07b87",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16392",
+    "leakage_group_id": "topic-320f256927b9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16396",
+    "leakage_group_id": "topic-99689175e0e1",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16398",
+    "leakage_group_id": "topic-83f4ad5ebbbf",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16406",
+    "leakage_group_id": "topic-021272191b91",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16407",
+    "leakage_group_id": "topic-8dc7fa25d8b0",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16417",
+    "leakage_group_id": "topic-b50ccd8c5ea6",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16431",
+    "leakage_group_id": "topic-7e51d5a9f9ac",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16440",
+    "leakage_group_id": "topic-5b1e0cb56fdc",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16445",
+    "leakage_group_id": "topic-3cae988fbc23",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16446",
+    "leakage_group_id": "topic-808d4b94d414",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16452",
+    "leakage_group_id": "topic-bec78a857915",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16458",
+    "leakage_group_id": "topic-46d4085070e3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16463",
+    "leakage_group_id": "topic-bffb9dc26a7b",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16473",
+    "leakage_group_id": "topic-ff51c2239b6b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16474",
+    "leakage_group_id": "topic-c9abe894223d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16486",
+    "leakage_group_id": "topic-0d7ef40597a2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16487",
+    "leakage_group_id": "topic-d10838145e8c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16488",
+    "leakage_group_id": "topic-e0019559f2ba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16498",
+    "leakage_group_id": "topic-e6171ab486bb",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16502",
+    "leakage_group_id": "topic-719de2fb6953",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16511",
+    "leakage_group_id": "topic-4684f8054591",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16518",
+    "leakage_group_id": "topic-58736687c818",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16519",
+    "leakage_group_id": "topic-ef1880ae610d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16521",
+    "leakage_group_id": "topic-58942a7c9cb8",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-16522",
+    "leakage_group_id": "topic-4014f5b7b203",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16523",
+    "leakage_group_id": "topic-2aac7265e11b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-16532",
+    "leakage_group_id": "topic-65099b9741ea",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-16535",
+    "leakage_group_id": "topic-28d620578e64",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-16555",
+    "leakage_group_id": "topic-771669ade15d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9409",
+    "leakage_group_id": "topic-c60b84cf2443",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9416",
+    "leakage_group_id": "topic-db41f7e3c26f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9420",
+    "leakage_group_id": "topic-c82ed9eaab2c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9424",
+    "leakage_group_id": "topic-d62e7f4742f0",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9432",
+    "leakage_group_id": "topic-ffae68b3de06",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9460",
+    "leakage_group_id": "topic-17cd312c20b4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9468",
+    "leakage_group_id": "topic-5c077a18c396",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9470",
+    "leakage_group_id": "topic-2ec589c398e3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9483",
+    "leakage_group_id": "topic-f74c5692ce19",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9490",
+    "leakage_group_id": "topic-05e2cd58726a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9494",
+    "leakage_group_id": "topic-6cbe73321c2b",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9503",
+    "leakage_group_id": "topic-117b6e028504",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9506",
+    "leakage_group_id": "topic-aa083ab84b44",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9516",
+    "leakage_group_id": "topic-406ac93907b5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9526",
+    "leakage_group_id": "topic-19aa4de24f6b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9527",
+    "leakage_group_id": "topic-90e814fe1ff9",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9536",
+    "leakage_group_id": "topic-73c5848968e8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9540",
+    "leakage_group_id": "topic-380e9b3f89ed",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9541",
+    "leakage_group_id": "topic-739ebcb42b6d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9546",
+    "leakage_group_id": "topic-d9e3e3d965a3",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9548",
+    "leakage_group_id": "topic-3ec90d0c03a2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9556",
+    "leakage_group_id": "topic-7fd2c7d6a382",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9569",
+    "leakage_group_id": "topic-d34268e77bf7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9571",
+    "leakage_group_id": "topic-5a71d986d52f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9572",
+    "leakage_group_id": "topic-d70074819cb7",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9573",
+    "leakage_group_id": "topic-223b8a5886f4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9574",
+    "leakage_group_id": "topic-64dbecbb0b42",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9577",
+    "leakage_group_id": "topic-cad452891b9c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9578",
+    "leakage_group_id": "topic-b3bf39ba0327",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9583",
+    "leakage_group_id": "topic-796a11a3dd22",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9597",
+    "leakage_group_id": "topic-9e4cd18322b7",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9598",
+    "leakage_group_id": "topic-702d3ecb0743",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9599",
+    "leakage_group_id": "topic-6694a7fa6277",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9600",
+    "leakage_group_id": "topic-e5f2b9b4a703",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9607",
+    "leakage_group_id": "topic-a28f073c62d9",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9609",
+    "leakage_group_id": "topic-6709573d2ee9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9617",
+    "leakage_group_id": "topic-d0af5801ab78",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9620",
+    "leakage_group_id": "topic-ef7b2759379d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9625",
+    "leakage_group_id": "topic-92b55933970d",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9626",
+    "leakage_group_id": "topic-9ade5a5d07ec",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9629",
+    "leakage_group_id": "topic-89dfb5de4f5f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9639",
+    "leakage_group_id": "topic-3f8432e96572",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9659",
+    "leakage_group_id": "topic-eb8f7bc54de4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9660",
+    "leakage_group_id": "topic-5162c1dea571",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9673",
+    "leakage_group_id": "topic-e144482a305a",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9674",
+    "leakage_group_id": "topic-d224d0cac6f5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9678",
+    "leakage_group_id": "topic-36fce5eafbf9",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9680",
+    "leakage_group_id": "topic-25bb2dda32a8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9698",
+    "leakage_group_id": "topic-b6e80db48166",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9706",
+    "leakage_group_id": "topic-918b0420350e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9720",
+    "leakage_group_id": "topic-5f500717d6de",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9738",
+    "leakage_group_id": "topic-6dcff5e6bf40",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9740",
+    "leakage_group_id": "topic-6bfc1759084f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9751",
+    "leakage_group_id": "topic-f5b8f00af9d5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9754",
+    "leakage_group_id": "topic-69636e6ce523",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9755",
+    "leakage_group_id": "topic-ffa87042d955",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9756",
+    "leakage_group_id": "topic-83beb485a16d",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9758",
+    "leakage_group_id": "topic-52718a4cef91",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9764",
+    "leakage_group_id": "topic-b44e9abbf9e5",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9767",
+    "leakage_group_id": "topic-8ebcdedb6a68",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9768",
+    "leakage_group_id": "topic-2f3555b54058",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9769",
+    "leakage_group_id": "topic-abb940cd79fd",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9774",
+    "leakage_group_id": "topic-580bdd0c187f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9776",
+    "leakage_group_id": "topic-1f8ea805e5ee",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9779",
+    "leakage_group_id": "topic-1aa61f4d88d7",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9783",
+    "leakage_group_id": "topic-7a4f234d2642",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9784",
+    "leakage_group_id": "topic-81861f41aa56",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9786",
+    "leakage_group_id": "topic-d810efa9fb69",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9787",
+    "leakage_group_id": "topic-f6339bc0d674",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9791",
+    "leakage_group_id": "topic-a3f3b8fc94cc",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9793",
+    "leakage_group_id": "topic-4c5e42923e9d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9794",
+    "leakage_group_id": "topic-0b667f00e1cf",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9797",
+    "leakage_group_id": "topic-dc6138803826",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9802",
+    "leakage_group_id": "topic-792437bdb880",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9806",
+    "leakage_group_id": "topic-9b8c1e15f864",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9809",
+    "leakage_group_id": "topic-e72b8820db5d",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9810",
+    "leakage_group_id": "topic-e949b91a292f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9813",
+    "leakage_group_id": "topic-015f6990744c",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9814",
+    "leakage_group_id": "topic-8b80e970b40f",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9816",
+    "leakage_group_id": "topic-5849deb6ee55",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9819",
+    "leakage_group_id": "topic-c8b01a638cac",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9821",
+    "leakage_group_id": "topic-e50d5d24c5bf",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9823",
+    "leakage_group_id": "topic-d9b9d40f7f93",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9824",
+    "leakage_group_id": "topic-46f370ceef92",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9826",
+    "leakage_group_id": "topic-2c097738b6d1",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9827",
+    "leakage_group_id": "topic-96c83a775c37",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9834",
+    "leakage_group_id": "topic-89162c9c0f5f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9835",
+    "leakage_group_id": "topic-990f7296287a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9837",
+    "leakage_group_id": "topic-ba1439546174",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9846",
+    "leakage_group_id": "topic-e4a8abc3d678",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9847",
+    "leakage_group_id": "topic-5048933ffa68",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9849",
+    "leakage_group_id": "topic-560b2aca7108",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9851",
+    "leakage_group_id": "topic-e02ba3844da4",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9853",
+    "leakage_group_id": "topic-84498987bd24",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9855",
+    "leakage_group_id": "topic-f48ee231af74",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9856",
+    "leakage_group_id": "topic-dbbf480ed42d",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9857",
+    "leakage_group_id": "topic-2713479e59c1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9858",
+    "leakage_group_id": "topic-675bd6635e42",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9863",
+    "leakage_group_id": "topic-98efda845c0e",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9864",
+    "leakage_group_id": "topic-253b22f59b3b",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9865",
+    "leakage_group_id": "topic-b3b63a9ebcb8",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9871",
+    "leakage_group_id": "topic-b9365726558c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9874",
+    "leakage_group_id": "topic-429226fd4d85",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9875",
+    "leakage_group_id": "topic-477d39291c34",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9876",
+    "leakage_group_id": "topic-96c83a775c37",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9877",
+    "leakage_group_id": "topic-4a00e591fee2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9878",
+    "leakage_group_id": "topic-b461e910955c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9879",
+    "leakage_group_id": "topic-161ec8020399",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9881",
+    "leakage_group_id": "topic-91b9984506af",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9882",
+    "leakage_group_id": "topic-f9958da7f6f2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9883",
+    "leakage_group_id": "topic-a7a36d353752",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9887",
+    "leakage_group_id": "topic-1845e589849b",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9890",
+    "leakage_group_id": "topic-e9d97ed8076a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9891",
+    "leakage_group_id": "topic-1d6fb438d943",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9893",
+    "leakage_group_id": "topic-fb96dd7414d0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9894",
+    "leakage_group_id": "topic-e6ff3de6d019",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9895",
+    "leakage_group_id": "topic-45d147a99d47",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9896",
+    "leakage_group_id": "topic-3e55e9cfae11",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9897",
+    "leakage_group_id": "topic-afc11e544637",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9900",
+    "leakage_group_id": "topic-3780303b5fe7",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9904",
+    "leakage_group_id": "topic-d8895f7d1371",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9905",
+    "leakage_group_id": "topic-8f88145da10e",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9906",
+    "leakage_group_id": "topic-117692d8c0b3",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9907",
+    "leakage_group_id": "topic-c381a197f8a6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9911",
+    "leakage_group_id": "topic-6a79cffd29c2",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9918",
+    "leakage_group_id": "topic-2341124a683a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9922",
+    "leakage_group_id": "topic-9311a64753e0",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9925",
+    "leakage_group_id": "topic-4f9bc72a0fb6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9926",
+    "leakage_group_id": "topic-92ff41183981",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9927",
+    "leakage_group_id": "topic-90afc6638ae3",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9931",
+    "leakage_group_id": "topic-b1698518e9e6",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9937",
+    "leakage_group_id": "topic-bfa7604e7d13",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9943",
+    "leakage_group_id": "topic-6c24209d6aeb",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9945",
+    "leakage_group_id": "topic-2694adf0a30a",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9946",
+    "leakage_group_id": "topic-f8e48a0b6030",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9950",
+    "leakage_group_id": "topic-0cb420fa5b8f",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9952",
+    "leakage_group_id": "topic-78693cb84f03",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9954",
+    "leakage_group_id": "topic-329829058f69",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9964",
+    "leakage_group_id": "topic-efeb9b3aaa70",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9968",
+    "leakage_group_id": "topic-b006aa9e00e6",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9975",
+    "leakage_group_id": "topic-381bbfda6840",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9976",
+    "leakage_group_id": "topic-15d85b86b60a",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9978",
+    "leakage_group_id": "topic-f2bb3b0f40fb",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9982",
+    "leakage_group_id": "topic-e85bbda60efd",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9983",
+    "leakage_group_id": "topic-24ef1fcc46ba",
+    "role": "validation"
+  },
+  {
+    "case_id": "medusa-issue-9984",
+    "leakage_group_id": "topic-656fc03941f2",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9985",
+    "leakage_group_id": "topic-a06d87033e5c",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9990",
+    "leakage_group_id": "topic-98787b0843e1",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9995",
+    "leakage_group_id": "topic-0f1fc85e08e2",
+    "role": "reserve"
+  },
+  {
+    "case_id": "medusa-issue-9997",
+    "leakage_group_id": "topic-901c1545034f",
+    "role": "development"
+  },
+  {
+    "case_id": "medusa-issue-9998",
+    "leakage_group_id": "topic-1decb845b4d5",
+    "role": "locked_test"
+  },
+  {
+    "case_id": "medusa-issue-9999",
+    "leakage_group_id": "topic-fa7fa27cf69b",
+    "role": "development"
+  }
+]

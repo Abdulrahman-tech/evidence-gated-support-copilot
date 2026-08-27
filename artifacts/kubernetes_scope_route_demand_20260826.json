@@ -1,0 +1,707 @@
+{
+  "analysis_id": "kubernetes_scope_route_demand_20260826",
+  "analysis_role": "diagnostic_on_source_yield_pilot_excluded_from_evaluation",
+  "case_count": 60,
+  "cases": [
+    {
+      "case_id": "stackoverflow-kubernetes-79563007",
+      "passed_to_core_retrieval": true,
+      "question": "ActiveMQ Artemis does not display console when runs in K8S",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "activemq-artemis",
+        "java",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79385062",
+      "passed_to_core_retrieval": true,
+      "question": "How to fix CSR denial by csr-auto-approver?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79351826",
+      "passed_to_core_retrieval": true,
+      "question": "Kubernetes deployment issue for Camunda workflows in Spring Boot",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "camunda",
+        "hpa",
+        "kubernetes",
+        "spring-boot"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79391154",
+      "passed_to_core_retrieval": true,
+      "question": "Why do i need keepalived in kubernetes?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "high-availability",
+        "keepalived",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79402469",
+      "passed_to_core_retrieval": true,
+      "question": "Ejabberd different pods produce different output on API call",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "ejabberd",
+        "google-cloud-platform",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79423739",
+      "passed_to_core_retrieval": false,
+      "question": "ArgoCD not recognizing ApplicationSets",
+      "scope_route": "argocd",
+      "source_tags": [
+        "argocd",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79781392",
+      "passed_to_core_retrieval": true,
+      "question": "Spatial join without Apache Sedona",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-spark",
+        "apache-spark-sql",
+        "geospatial",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79469477",
+      "passed_to_core_retrieval": false,
+      "question": "Localstack DynamoDB : PutItem operation exceeded maximum number of attempts",
+      "scope_route": "application_ecosystem",
+      "source_tags": [
+        "amazon-dynamodb",
+        "amazon-dynamodb-local",
+        "amazon-web-services",
+        "kubernetes",
+        "localstack"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79608038",
+      "passed_to_core_retrieval": true,
+      "question": "Failed to start Kraft controller in K8s",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-kafka",
+        "java",
+        "kraft",
+        "kubernetes",
+        "migration"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79574724",
+      "passed_to_core_retrieval": true,
+      "question": "Unable to send Kafka Message after Login",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-kafka",
+        "kubernetes",
+        "rancher-desktop"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79812107",
+      "passed_to_core_retrieval": true,
+      "question": "Open resty kubernetes frontend",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "amazon-web-services",
+        "kubernetes",
+        "nginx-ingress",
+        "nginx-reverse-proxy",
+        "tooling-recommendation"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79779172",
+      "passed_to_core_retrieval": false,
+      "question": "My django API \u201cnext\u201d link uses a stale hostname only when receiving requests from GKE services (Like Cloud Run)",
+      "scope_route": "google_gke",
+      "source_tags": [
+        "django",
+        "django-rest-framework",
+        "kubernetes",
+        "nginx-ingress",
+        "pagination"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79411729",
+      "passed_to_core_retrieval": true,
+      "question": "Kustomize patching multiple path with same value",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "kustomize"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79801711",
+      "passed_to_core_retrieval": false,
+      "question": "How to overwrite an env value with Helm",
+      "scope_route": "helm",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm",
+        "mongodb"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79870362",
+      "passed_to_core_retrieval": true,
+      "question": "How to override ClientTrafficPolicy for specific HTTPRoute or subdomain?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "envoyproxy",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79564133",
+      "passed_to_core_retrieval": true,
+      "question": "Installing packages on node from a pod",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79574416",
+      "passed_to_core_retrieval": true,
+      "question": "Unable to delete pod from EC2 instance",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "amazon-ec2",
+        "amazon-eks",
+        "amazon-iam",
+        "amazon-web-services",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79525781",
+      "passed_to_core_retrieval": false,
+      "question": "How to change replica set in Helm release?",
+      "scope_route": "helm",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79569961",
+      "passed_to_core_retrieval": true,
+      "question": "Kubernetes - ValidatingAdmissionPolicy - Not Honoring Expression",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "azure-aks",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79557794",
+      "passed_to_core_retrieval": true,
+      "question": "How to fix kafka connection to zookeeper (kubernetes)?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-kafka",
+        "apache-zookeeper",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79661287",
+      "passed_to_core_retrieval": true,
+      "question": "How to listen for Kubernetes DNS changes",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "dns",
+        "kubernetes",
+        "rust"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79738705",
+      "passed_to_core_retrieval": true,
+      "question": "How to access keys with a period in the name?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79536604",
+      "passed_to_core_retrieval": true,
+      "question": "Java options within Kubernetes container",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "java",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79492029",
+      "passed_to_core_retrieval": true,
+      "question": "How do I set Ingress to use WS connection in Kubernetes?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79943923",
+      "passed_to_core_retrieval": true,
+      "question": "Can we control the total resouces used by Spark with its Kubernetes operator?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-spark",
+        "best-practices",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79614460",
+      "passed_to_core_retrieval": true,
+      "question": "ingress controller does not serve pages after update to 1.12.x",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-ingress",
+        "nginx"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79516630",
+      "passed_to_core_retrieval": true,
+      "question": "Using Promethus adapter as custom metrics server for HPA autoscaling",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "prometheus",
+        "prometheus-adapter"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79469947",
+      "passed_to_core_retrieval": true,
+      "question": "How to properly escape symbols in ansible command?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "ansible",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79791764",
+      "passed_to_core_retrieval": true,
+      "question": "Handling cleanup for tasks which might be OOMKilled",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "memory",
+        "python"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79496573",
+      "passed_to_core_retrieval": true,
+      "question": "How to configure HorizontalPodAutoscaler?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79464712",
+      "passed_to_core_retrieval": false,
+      "question": "Image name not resolving properly during Helm Upgrade/Install for Elastic Kibana: InvalidImageName error",
+      "scope_route": "helm",
+      "source_tags": [
+        "docker",
+        "kibana",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79821111",
+      "passed_to_core_retrieval": false,
+      "question": "ArgoCD ApplicationSet and Workflow to create ephemeral environments from GitHub branches",
+      "scope_route": "argocd",
+      "source_tags": [
+        "advice",
+        "argocd",
+        "cicd",
+        "github-actions",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79468239",
+      "passed_to_core_retrieval": true,
+      "question": "How to stream from dynamically created Selenium Moon browser pods to RTMP using ffmpeg?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "ffmpeg",
+        "kubernetes",
+        "kubernetes-helm",
+        "rtmp",
+        "video-streaming"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79371403",
+      "passed_to_core_retrieval": false,
+      "question": "Prometheus not showing ServiceMonitors in Targets",
+      "scope_route": "prometheus_ecosystem",
+      "source_tags": [
+        "argocd",
+        "grafana",
+        "kubernetes",
+        "prometheus",
+        "prometheus-operator"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79414122",
+      "passed_to_core_retrieval": true,
+      "question": "Zen server in Unreal container has insufficient storage",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "docker",
+        "kubernetes",
+        "unreal-engine5"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79698488",
+      "passed_to_core_retrieval": true,
+      "question": "Restricting Kafka K8s Apps to Topics",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-kafka",
+        "kubernetes",
+        "security"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79650494",
+      "passed_to_core_retrieval": true,
+      "question": "How to stream a large file on Kubernetes pod",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "javascript",
+        "kubernetes",
+        "large-files",
+        "minio",
+        "stream"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79547914",
+      "passed_to_core_retrieval": false,
+      "question": "How Can I Use # (Pound Sign) in Yaml For Istio Path",
+      "scope_route": "service_mesh",
+      "source_tags": [
+        "argocd",
+        "istio",
+        "kubernetes",
+        "yaml"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79465457",
+      "passed_to_core_retrieval": false,
+      "question": "How to access environment variables defined in dockerfile in helm chart value file",
+      "scope_route": "helm",
+      "source_tags": [
+        "docker",
+        "environment-variables",
+        "jvm-arguments",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79371532",
+      "passed_to_core_retrieval": true,
+      "question": "Why throws the POD an InvocationTargetException",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "docker",
+        "java",
+        "kubernetes",
+        "spring",
+        "spring-boot"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79663394",
+      "passed_to_core_retrieval": false,
+      "question": "Helm Templates dockerconfigjson secret - Cannot unmarshal string into Go struct field Secret.data",
+      "scope_route": "helm",
+      "source_tags": [
+        "go-templates",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79472167",
+      "passed_to_core_retrieval": true,
+      "question": "Zeppelin k8s dots in pod name",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-zeppelin",
+        "kubernetes",
+        "trino"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79614680",
+      "passed_to_core_retrieval": false,
+      "question": "Problem with hyperledger fabric offline signing",
+      "scope_route": "application_ecosystem",
+      "source_tags": [
+        "digital-signature",
+        "hyperledger",
+        "hyperledger-bevel",
+        "hyperledger-fabric",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79698910",
+      "passed_to_core_retrieval": true,
+      "question": "I cannot get my pod to scale from 1 to 2 instances",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-kafka",
+        "keda",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79578349",
+      "passed_to_core_retrieval": true,
+      "question": "APISIX ingress controller on Kind cluster not routing requests correctly",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "apache-apisix",
+        "kind",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79346457",
+      "passed_to_core_retrieval": false,
+      "question": "How to skip helm tests deployment in Grafana Tanka",
+      "scope_route": "helm",
+      "source_tags": [
+        "jsonnet",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79842171",
+      "passed_to_core_retrieval": false,
+      "question": "ArgoCD applicationset - path and .argocd-source.yaml issues",
+      "scope_route": "argocd",
+      "source_tags": [
+        "argocd",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79601222",
+      "passed_to_core_retrieval": true,
+      "question": "Cloud SQL Proxy SSL error: `certificate had CN \"\", expected \"<project>:<region>:<instance>\"` when connecting to PostgreSQL 14",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "django",
+        "gcloud",
+        "kubernetes",
+        "postgresql",
+        "ssl"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79934574",
+      "passed_to_core_retrieval": false,
+      "question": "Spark Structured Streaming from many S3 buckets with different customer credentials and schemas",
+      "scope_route": "application_ecosystem",
+      "source_tags": [
+        "apache-spark",
+        "best-practices",
+        "kubernetes",
+        "pyspark",
+        "spark-streaming"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79507486",
+      "passed_to_core_retrieval": false,
+      "question": "Key-Vault auth issue with AKS & external-secrets-operator",
+      "scope_route": "azure_aks",
+      "source_tags": [
+        "azure",
+        "azure-aks",
+        "azure-keyvault",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79396885",
+      "passed_to_core_retrieval": true,
+      "question": "How Microsoft HybridCache works in a Microservice Setup with Multiple Pods",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        ".net",
+        "asp.net-core",
+        "hybridcache",
+        "kubernetes",
+        "microservices"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79598229",
+      "passed_to_core_retrieval": true,
+      "question": "Adding PEM file to Kubernetes Airflow",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "airflow",
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79733868",
+      "passed_to_core_retrieval": true,
+      "question": "How to filter recent logs with kubectl logs for a specific pattern?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubectl",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79919400",
+      "passed_to_core_retrieval": true,
+      "question": "Handling Unexpected Disconnects in DLMS",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "dlms",
+        "iot",
+        "kubernetes",
+        "meter",
+        "python"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79405404",
+      "passed_to_core_retrieval": true,
+      "question": "How to solve HTTP01 challenge when domain is pointing to different IP?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "cert-manager",
+        "ingress-nginx",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79349279",
+      "passed_to_core_retrieval": true,
+      "question": "Restrict external access to pod",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79924925",
+      "passed_to_core_retrieval": true,
+      "question": "Docker Project: A to Z process step by step",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "best-practices",
+        "devops",
+        "docker",
+        "jenkins",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79433005",
+      "passed_to_core_retrieval": true,
+      "question": "Kubernetes PostStartHook fails with curl",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "curl",
+        "kubernetes"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79375047",
+      "passed_to_core_retrieval": true,
+      "question": "How to test Kubernetes validation webhook with curl?",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "curl",
+        "kubernetes",
+        "webhooks"
+      ]
+    },
+    {
+      "case_id": "stackoverflow-kubernetes-79369211",
+      "passed_to_core_retrieval": true,
+      "question": "OpenTelemetry export to Prometheus \u2013 Unsupported compression: snappy (prometheusremotewrite)",
+      "scope_route": "kubernetes_core",
+      "source_tags": [
+        "kubernetes",
+        "open-telemetry",
+        "open-telemetry-collector",
+        "prometheus",
+        "prometheus-operator"
+      ]
+    }
+  ],
+  "explicitly_routed_out_count": 16,
+  "explicitly_routed_out_rate": 0.26666666666666666,
+  "hosted_model_calls": 0,
+  "input_sha256": "9c69bb29d6c820f98c87977387f28a369668789d2363bc7a66a11ff1d4d4fe23",
+  "interpretation": "Title-only explicit-route demand, not a population prevalence or corpus-coverage estimate. kubernetes_core means the case proceeds to retrieval and evidence verification; it does not mean supported.",
+  "passed_to_core_retrieval_count": 44,
+  "route_counts": {
+    "application_ecosystem": 3,
+    "argocd": 3,
+    "azure_aks": 1,
+    "google_gke": 1,
+    "helm": 6,
+    "kubernetes_core": 44,
+    "prometheus_ecosystem": 1,
+    "service_mesh": 1
+  },
+  "router_version": "kubernetes_scope_v1"
+}

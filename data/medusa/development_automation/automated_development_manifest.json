@@ -1,0 +1,14 @@
+{
+  "blind_roles_touched": false,
+  "case_count": 521,
+  "decision_counts": {
+    "deferred": 378,
+    "supported": 27,
+    "unsupported": 116
+  },
+  "deferred_count": 378,
+  "review_method": "automated_high_precision_development_only",
+  "rule_version": "development_high_precision_v1",
+  "sha256": "8a81a5477b2cc3834ef3da8d50102af9d8021ae5f4d087d05c8e4276b30a1fc3",
+  "usable_count": 143
+}

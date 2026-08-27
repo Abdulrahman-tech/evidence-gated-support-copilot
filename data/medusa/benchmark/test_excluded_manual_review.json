@@ -1,0 +1,32 @@
+[
+  {
+    "case_id": "medusa-discussion-11557",
+    "manual_decision": "ambiguous",
+    "manual_review_status": "approved",
+    "question": "How to merge guest customer when registering with email?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/11557",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-2600",
+    "manual_decision": "outdated",
+    "manual_review_status": "approved",
+    "question": "How to optimize startup time?",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/2600",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-discussion-3103",
+    "manual_decision": "ambiguous",
+    "manual_review_status": "approved",
+    "question": "Question on data immutability, audit logs, bookkeeping and reconciling PSP payment transactions with sales data",
+    "review_method": "independent_manual_human_review",
+    "source_type": "github_discussion_answered_q_and_a",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3103",
+    "tenant_id": "medusa"
+  }
+]

@@ -1,0 +1,902 @@
+[
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-9eddfd4a42fe",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I have left my scarf on a rail replacement bus last night, may I know how I can contact the coach company?",
+    "source_conversation_id": "9eddfd4a42fea346488bdd57bf4e8269",
+    "source_tweet_id": "1045783"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-2b75b8e37d6c",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi, I need some help. This evening I redeemed a code via Psn for Fifa points. They haven't arrived into my EA Account.",
+    "source_conversation_id": "2b75b8e37d6c825e52441e53b83dbbf2",
+    "source_tweet_id": "1359729"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-08e9e6fcdc85",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "# [user] hi quick question what time train is there to get to Swindon from Bristol parkway to Swindon?",
+    "source_conversation_id": "08e9e6fcdc854c5e966c08a32b7a3a90",
+    "source_tweet_id": "2181784"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f2e402724e87",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "What am I suppose to do about about [user] failure to update the app? [user] [user] how do I turn off these alerts? \ud83d\ude21 [url]",
+    "source_conversation_id": "f2e402724e8750584a70ac535ae821f2",
+    "source_tweet_id": "2069887"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-07d8535b2d41",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] is there a reason why ALL my endurance drills this week are 45 minutes? \ud83d\ude16 [url]",
+    "source_conversation_id": "07d8535b2d415be455b4c3b9f0e5a2ce",
+    "source_tweet_id": "744005"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-92211d086007",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] dreadful service. Have spent the last hour trying to contact after sales to sort out a problem with an m ticket. Waited 30 mins on phone and got cut of from live chat. #notfastandimfurious",
+    "source_conversation_id": "92211d08600723b38fcd02d4ebf8d012",
+    "source_tweet_id": "2362527"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-98a00a7295c3",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I am regretting taking a decision to book Airbnb for my vacation to goa after almost a month of booking my host cancel led the booking and there was no notification from airbnb to confirm the same and it's like a huge task to get through customer service.",
+    "source_conversation_id": "98a00a7295c3be69f7e516226ceafae1",
+    "source_tweet_id": "2128764"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-0a362d1098c0",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Item No. 631/[number] - is this discontinued, or when will it be available in London again?",
+    "source_conversation_id": "0a362d1098c0a2a5b6fc6ad17a518bde",
+    "source_tweet_id": "1147439"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] updated to latest iOS. When charging without adapter, the phone freezes?? #bug #ios #[number] [url]",
+    "source_conversation_id": "5266f1526b09d6fe93861f58d0e8d8fa",
+    "source_tweet_id": "1456461"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-66d05230797b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Hey [user] you gotta fix these bugs where the show reverts to the segment just watched after the ads. #annoying",
+    "source_conversation_id": "66d05230797bf468e004a3a7993a7fdd",
+    "source_tweet_id": "1510906"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-88bf07bf1c09",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] There is a bug when i am setting up my artist page through spotify",
+    "source_conversation_id": "88bf07bf1c09b499543d42c453767b27",
+    "source_tweet_id": "249724"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] My Lumia 950 is constantly uploading, but I have no idea what. No OneDrive/backup. Busy all day, battery draining. Any idea?",
+    "source_conversation_id": "f5e6ca64b1772c3e92335768d212cf16",
+    "source_tweet_id": "2871467"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f64aad327798",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi I'm add 100 $ dollars on my account its amarican id and i have a Saudi Arabia game but I don't get the poynts ...?",
+    "source_conversation_id": "f64aad3277982635583f662b8ea7c5d4",
+    "source_tweet_id": "1478973"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-b06526221078",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "So neither my iPhone nor my Apple Watch are recording my steps/activity, and Health doesn\u2019t recognise either source anymore for some reason. Any ideas? [url]",
+    "source_conversation_id": "b065262210783596c1fe79466b8f8985",
+    "source_tweet_id": "87076"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-bb43c1641a4b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] am I able to travel with a brand new sealed laptop through TSA without unboxing it? Flight from Oregon to San Francisco..",
+    "source_conversation_id": "bb43c1641a4bbf4cdee223f455b710e7",
+    "source_tweet_id": "1036896"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-5271e8ed5dc4",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] - way too many husks in your organic oats; putting the bairns off porridge! Quality control issue maybe? [url]",
+    "source_conversation_id": "5271e8ed5dc449a18001f6c44f25583f",
+    "source_tweet_id": "853221"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "BAD: [user] - sends emails about accounts long closed, you can't reply to the email and it says \"you can't unsubscribe\". Endless SPAM!",
+    "source_conversation_id": "f9568962737f91782cece36caef049d4",
+    "source_tweet_id": "2091917"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-9fdc34315a8c",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi, placed order promised delivery today, told order 'stuck in fulfilment centre' can you just get it 'un-stuck' this isn't my fault. I'm sure you're sending other orders fine.",
+    "source_conversation_id": "9fdc34315a8c5cf8ae1b0ab055e9bf10",
+    "source_tweet_id": "2240619"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-1d330a4bd28f",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Its been 4-hours and I\u2019m at 57% of the latest Microsoft update \ud83d\udc83\ud83c\udffb\ud83e\udd37\ud83c\udffb\u200d\u2640\ufe0f\ud83e\udd26\ud83c\udffb\u200d\u2640\ufe0f",
+    "source_conversation_id": "1d330a4bd28f067454a9dd8f1d0e6cd7",
+    "source_tweet_id": "736903"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-c94352a6e267",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "I hv requested from Idea postpaid to Idea prepaid its been more thn 24hrs n my number is switched off, visited three idea stores and nobody is giving me proper reply,is this ur level of service #Idea_CARES if u cannot provide proper service then i should switch to other operator",
+    "source_conversation_id": "c94352a6e267dcb02a6560df9483d87e",
+    "source_tweet_id": "2820210"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-eccfb40c8b6a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] why is fast track slower than just ordering? Placed order Sunday, still waiting for 2 items. One missing in store, one still not delivered. Annoying to say the least",
+    "source_conversation_id": "eccfb40c8b6a002ed01961b24d0ed554",
+    "source_tweet_id": "2116061"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-8661046dac03",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] any update on restoring cable/internet to Warren RI? [number]",
+    "source_conversation_id": "8661046dac03946ffcd5d002cf54835b",
+    "source_tweet_id": "2626238"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-bb351d26154e",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] did divide get taken down from Spotify? It's the only [user] album that doesn't play",
+    "source_conversation_id": "bb351d26154e3c406515066a7db2810b",
+    "source_tweet_id": "1225425"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-1a75853e2641",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] why isnt Verizon Live Chat working in app?",
+    "source_conversation_id": "1a75853e26410e26fb78f46500ce4526",
+    "source_tweet_id": "2121413"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-e22e5d465682",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] so u like Verizon? I don't have any other options at this point. [user] can't solve the problem. Once again my service is down!",
+    "source_conversation_id": "e22e5d465682653d10c0c206ded1c2b7",
+    "source_tweet_id": "2615035"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-c2a3096e285a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] All TVs pixelated. Audio as well. Can't get help",
+    "source_conversation_id": "c2a3096e285ac728e26a218c7941ef45",
+    "source_tweet_id": "2156857"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-8778a86e7f3b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hai air asia!! I need help \ud83d\ude05 i can't cont with my check in as it said due to balanced due. Someone help meeeee \ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+    "source_conversation_id": "8778a86e7f3bd35f323ac7847752da0a",
+    "source_tweet_id": "1651187"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] I can play several albums, including this one in Chrome, but the application won't play it [url] [url]",
+    "source_conversation_id": "6cc6d10052f4ec6e6f5837a1a6310dc8",
+    "source_tweet_id": "888603"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-35efc17afc94",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Oh no [user] please tell us you\u2019re not discontinuing your guinea pig muesli? We won\u2019t eat anything else & will starve!\ud83d\ude25",
+    "source_conversation_id": "35efc17afc944f7a720d83d5046b7ea3",
+    "source_tweet_id": "899642"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-47251e24638f",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] arrived at FLL only to find hotel I booked through you is closed and I wasn\u2019t notified. Not how I expected to start my vac!!",
+    "source_conversation_id": "47251e24638f787e37d700999e309e1a",
+    "source_tweet_id": "1017196"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-bcc847cdbb1a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Hi BA on flight [reference] from incheon today and am not going to make bag check. Is there anyone i can contact to speed thru?",
+    "source_conversation_id": "bcc847cdbb1a196e72401f6ab77b68f6",
+    "source_tweet_id": "1917235"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "Hi [user] why was my parcel given to my neighbour when im in and no one has called at my door? [url]",
+    "source_conversation_id": "ad0e81aa1463e4dd05e8652a33a5df76",
+    "source_tweet_id": "2343950"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] i paid money to a wrong till number please help to reverse..id [reference]",
+    "source_conversation_id": "2a1822958d9ccfb5673a4ae0d78c4b20",
+    "source_tweet_id": "471728"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-dba981bf6580",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] how do i go about purchasing cargo on the same flight coming back from bintulu",
+    "source_conversation_id": "dba981bf6580c8a31cf896c5c7d2ca16",
+    "source_tweet_id": "2262939"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-5bef9fb7a050",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Sence [user] OTR update my #GalaxyNote8 won't work with [user] even on [user] HELP! [user] [user] [user] [user] [user] [url]",
+    "source_conversation_id": "5bef9fb7a05078847a771ca934cbcf31",
+    "source_tweet_id": "2741040"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-d6d66b74b26c",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] traveling to Singapore from Bali on 4th January. Want to cancel. How can we apply for refund given the situation is out of our control?",
+    "source_conversation_id": "d6d66b74b26c0e5ba7c8441f92746172",
+    "source_tweet_id": "452649"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-54a35e51d538",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi. Any way anyone can tell me whether my iPhone X will be delivered on Friday and if not when I might expect it?",
+    "source_conversation_id": "54a35e51d538534efa34d3b81d5f347c",
+    "source_tweet_id": "35000"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] submitted a claim on the 19/09 and was told I'd get a response within 20 days. Silence ever since. When will I hear from you?",
+    "source_conversation_id": "75a8d105b4900a80c49878c1cd5705d3",
+    "source_tweet_id": "1855194"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] I\u2019ve fully updated my phone and it is still freezing for 10 or so seconds when switching to and from the emoji keyboard. Anything I can do to fix this???",
+    "source_conversation_id": "18c93a1f1c4d4cbe69a975950ebb4dcb",
+    "source_tweet_id": "2784614"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] why can\u2019t I change songs from my home screen or control center??",
+    "source_conversation_id": "3949b3da58316f824ac0f5b7d84b176e",
+    "source_tweet_id": "1337472"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-9968f1140b2c",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi. I had to swap trains to Glasgow in Lancaster due to delay. Left my new blue scarf in overhead near luggage coach b. (15:53 Preston train) Heading to Glasgow 5 mins behind, can someone grab it for me please. Was a gift!",
+    "source_conversation_id": "9968f1140b2c8e7b5dda02f5fc656d86",
+    "source_tweet_id": "2689104"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-4d2c436995db",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] So which stores in Central Scotland are stocking this ? Tried 3 stores in Edinburgh several times. Nada #volcanicvindaloo",
+    "source_conversation_id": "4d2c436995dba0d2a9bef69e1874dc8a",
+    "source_tweet_id": "956424"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-4ac7e3146b81",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] bonjour, suite a des conneries de [user] je suis bloqu\u00e9 en Angleterre et je vais rater mon bus. Comment je peux faire?",
+    "source_conversation_id": "4ac7e3146b8191666b77a8292baacba4",
+    "source_tweet_id": "1630430"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f49e5d96dfd2",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] UPS Belgium is terrible. Delivery planed for Thursday 19, shipped it to the wrong town twice and u tell me I've to wait Monday 23 ?",
+    "source_conversation_id": "f49e5d96dfd255e852cd8ad5f73fce29",
+    "source_tweet_id": "917479"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-29ffb696b7ea",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] had problem after problem trying to set up my Clubcard app still not getting anywhere! \ud83d\ude21as a member of staff is like to say I use it!",
+    "source_conversation_id": "29ffb696b7ea986b0ad05ca97d72c08e",
+    "source_tweet_id": "839505"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-c472e3f71cc6",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] my iPhone 7 is few days out of warranty and it is having screen bleeding issues but ur store wants $149 to fix!!! No physical damage or cracked screen. This is MFG defect #apple #iphone #iphone7 [url]",
+    "source_conversation_id": "c472e3f71cc64ecdcd6f08ce8c9e2755",
+    "source_tweet_id": "2234472"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-975cb927e70e",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] T1 I booked a flight with you, through [user] I missed my flight due to an incident at Euston, Opodo say to get a refunds are only authorised + given by the airlines, ie you is this true?",
+    "source_conversation_id": "975cb927e70e4ea536d96d719c125971",
+    "source_tweet_id": "2178275"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f880087978ec",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] hi, I\u2019ve items selling on buy it now, good till it ends. Do you take fee at time of sale or am I invoices at a later date?",
+    "source_conversation_id": "f880087978eceb02a39033b77bbdcad8",
+    "source_tweet_id": "1922368"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-790942daee4d",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Continuous error of \"paper jam. Clear paper then press OK.\" #HPcpIN",
+    "source_conversation_id": "790942daee4d33c186698a0c5f0a1665",
+    "source_tweet_id": "243742"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] [user] Is it standard industry practice to call your customer liars? I send products back, there's proof they are returned",
+    "source_conversation_id": "4d918e49d21849edbd7da2c8cf155670",
+    "source_tweet_id": "1524293"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-b2226a4702d1",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] [user] who\u2019s in the office this morning? And also, is the timetable from London Waterloo to Weymouth back to normal again?",
+    "source_conversation_id": "b2226a4702d16c6ac5b2fc929ef901dd",
+    "source_tweet_id": "969516"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-a9657cc81ad2",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "I wanna know why Este Corazon is the only RBD song I can find on [user]",
+    "source_conversation_id": "a9657cc81ad2272943945304b46a73e9",
+    "source_tweet_id": "1517695"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-ec524b0632d0",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] my fios ONT box has red \u2018fail\u2019 and \u2018vid\u2019 lights on. Battery power is fine. Unplugged red and black wires and didn\u2019t help.",
+    "source_conversation_id": "ec524b0632d08d0c75c1631827ccfa2b",
+    "source_tweet_id": "1200138"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-8a90c4603e96",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] live tv keeps freezing. My internet connection is fine, and I have zero problems streaming shows. How can I fix this?",
+    "source_conversation_id": "8a90c4603e9618ca7cb05ea26ab9c46a",
+    "source_tweet_id": "1023438"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-92b2626b60b8",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] my ps 4 just stopped working and won't let me out of safe mode",
+    "source_conversation_id": "92b2626b60b8d0ec6225512206a28a25",
+    "source_tweet_id": "174625"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-3561bc843e4b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Wow [user], you literally suck as a bank, cant even hold a conversation via twitter message. I\u2019d like my issue resolved by today so if you could respond like now, that would be great. #shittyasscustomerservice #terriblebank #cantwaittoswitch",
+    "source_conversation_id": "3561bc843e4b310a407d6997f9aabdba",
+    "source_tweet_id": "2735538"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-df08f761aa40",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "After many hours researching, troubleshooting and [user] support, still can not access my #AppleMusic playlists on my #iphones. What next!?!",
+    "source_conversation_id": "df08f761aa40b2dc96d39476d1f62e78",
+    "source_tweet_id": "934489"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-1e0070a4371b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "When your sandwich, crisps and drink are all in the [user] lunch deal - but it doesn't apply the discount \ud83d\ude26\ud83d\ude29",
+    "source_conversation_id": "1e0070a4371bd5787eb5dcf58ef16a7c",
+    "source_tweet_id": "1632982"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] [user] I thought the issue with icons not displaying correctly was a bug fix for watchOS 4.1? #AppleWatch [url]",
+    "source_conversation_id": "30bcda452f1de2b6199a2a0f0582ea09",
+    "source_tweet_id": "35336"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-9e4ee6f513a0",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] devastated that I booked a ticket for the wrong time and now I have 9 hours to burn \ud83d\ude10",
+    "source_conversation_id": "9e4ee6f513a0ed46bc40b330430d3a39",
+    "source_tweet_id": "1046865"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-32aad42d89af",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] ive been trying to use youre support chat but it wont work and im having problems starting up some games i need help",
+    "source_conversation_id": "32aad42d89af6b0d9c34463456145bbd",
+    "source_tweet_id": "1533560"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-2165ced38382",
+    "provenance": "tweetsumm_real_conversation",
+    "question": ".[user] JS Excellent No Added Sugar #CreamSoda in perpetual supply issue at Torquay Nicholson Road Store. What\u2019s the problem there?",
+    "source_conversation_id": "2165ced383827bc306922ff99a225460",
+    "source_tweet_id": "1048524"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-dbfec27dac2d",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] your San Antonio baggage agents are kinda terrible. And the text for my delayed flight from Dallas to Detroit pissed me off! This mean I won't get home till about 2 am and I work tomorrow. What is wrong with you that's over a 2 hour delay",
+    "source_conversation_id": "dbfec27dac2dbe10f6373bf0be308995",
+    "source_tweet_id": "682245"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] Will the 6.33 from Sheffield to York be on time. Your journey planner is showing no delay",
+    "source_conversation_id": "5785ce672f25f7641207ba90a77079a9",
+    "source_tweet_id": "1564781"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-a434f21d0a39",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "NO SERVICE - AGAIN!!! EMERGENCY CALLS ONLY?!?! *FIX IT! PERMANENT FIX WOULD BE APPRECIATED. [user] [user] #sprint #infuriating",
+    "source_conversation_id": "a434f21d0a39b245366344753e3977a7",
+    "source_tweet_id": "1169177"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-6540ec016e46",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I cancelled a payment to a scammy listing, the seller won\u2019t communicate, and now it says I need to pay now. help?",
+    "source_conversation_id": "6540ec016e46729a03025a80032c3218",
+    "source_tweet_id": "281836"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] hello Size! I would like to cancel order #[number] because I picked the wrong size. Or if you could change the size from UK10 (UK 10.5) to UK 9.5 (US10) , it will be a huge help. Please let me know, the order is made 35mins ago. Thank you in advance!",
+    "source_conversation_id": "b94a375ed62b95c379329a560294670b",
+    "source_tweet_id": "129133"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f9377f9f6659",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Arlington VA here\u2014Internet okay, Internet TV guide okay, but no TV channels\u2014none. When is service going to be restored?",
+    "source_conversation_id": "f9377f9f66599f68d014b3de647f4391",
+    "source_tweet_id": "2323607"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-6fd6f04d7d7e",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] your new iOS SUCKS. Battery drain is absurd on my 7, now, and Messages doesn\u2019t display names half the time, just a number. Fix it!!",
+    "source_conversation_id": "6fd6f04d7d7eed52683aad3e66f6039b",
+    "source_tweet_id": "1301301"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-28591f175c5f",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] internet and fios down 5 hours when message told it would be on in 1 hour. Unable reach support online. Could you help",
+    "source_conversation_id": "28591f175c5fa4a72bd88514aa3e6b76",
+    "source_tweet_id": "2809185"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-ecd0fde1107f",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "shocking service at Twyford Station this pm - no ticket staff on & automated machine unable to issue group save tickets!!? [user] #cheated",
+    "source_conversation_id": "ecd0fde1107f9eba68c3b25b05d67e08",
+    "source_tweet_id": "1569419"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-3e37b7f60cc2",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Good morning. When did your policy on carrying guitars on board change?",
+    "source_conversation_id": "3e37b7f60cc23265c203780c0890cc98",
+    "source_tweet_id": "1585276"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-42b59e617f52",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Pretty neat how [user]\u2019s \u2018live\u2019 stream of the ballgame is two batters behind Twitter. \ud83d\ude11",
+    "source_conversation_id": "42b59e617f527d33f0b0b3caa340e3ac",
+    "source_tweet_id": "12246"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-9e3699859927",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Hey [user] your delivery drivers said they don't take bed and mattress upstairs. What did I pay delivery \"to room of your choice\" for",
+    "source_conversation_id": "9e369985992793f1372a45300226ce09",
+    "source_tweet_id": "1497806"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-eff170b9cd3b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] my wifi is down and the troubleshooter is broken",
+    "source_conversation_id": "eff170b9cd3b7fee97b075af8e009196",
+    "source_tweet_id": "2600050"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-ba7524faa4d0",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] this jimenez dude smh..whole team cheating but he loves those team kills...n points you reward for cheating? [url]",
+    "source_conversation_id": "ba7524faa4d091aad806ab3dd15aabfb",
+    "source_tweet_id": "726908"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] [user] Are you anywhere near a fix for the masking glitches in both Photoshop and Lightroom? It's happening daily.",
+    "source_conversation_id": "33d77efe8fbe6813a8cf1d72d10d3413",
+    "source_tweet_id": "185430"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] where would I send a Charity request to? Would live to get you onboard for our Charity event in aid of [user]. Thanks xx",
+    "source_conversation_id": "87e35a7f73eb1a630d75427e92b94f26",
+    "source_tweet_id": "1626776"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-0f46b4e4672b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Hello, i have a problem since halo 3 goes retrocompatible i\u2019m not able to install the game and i have it",
+    "source_conversation_id": "0f46b4e4672be42891e2ccfbe3b610a4",
+    "source_tweet_id": "339600"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-cf3d7dc5fe57",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] a bit about missing the 11:30 vintage train at Totnes - only hope of getting the rest of my trains. How long delayed expected? 2/2",
+    "source_conversation_id": "cf3d7dc5fe571b372873ccf23020e6cc",
+    "source_tweet_id": "1424666"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-95b2aa1e4ccf",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I\u2019m not going to make my connection from Preston to Penrith because my train from Liverpool\u2019s late. I\u2019m unsure what to do?",
+    "source_conversation_id": "95b2aa1e4ccf5be3bc771654ff43d229",
+    "source_tweet_id": "2681034"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] hi! I've had a problem with my Spotify for over a month now. The app for my phone keeps telling me I'm offline. Please help me",
+    "source_conversation_id": "a750409471aea269d8a8c8feb939c465",
+    "source_tweet_id": "244333"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] when will the dark choc digestives be rolled out to all stores? I need teh chokky bikkez!! :)",
+    "source_conversation_id": "1c776e8dddfd9a0a73c2337586a1d0fd",
+    "source_tweet_id": "848625"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-b9f543264a3f",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] not sure if iOS bug or specifically relating to the X but when I\u2019m listening to music on Spotify and accept a call. The only way to get the musi to resume is to completely force close the app and reopen it",
+    "source_conversation_id": "b9f543264a3f63135d37e2b65eee99cb",
+    "source_tweet_id": "2218933"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-36686816af9b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] morning - when's the next train at Fulwell? Info board is frozen on 'delayed '..website shows on time!",
+    "source_conversation_id": "36686816af9b1c053d72b68acc2311a6",
+    "source_tweet_id": "1429152"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-ca9b0d7069e0",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] when I shopped online this morning the code you sent me didn\u2019t work. Spoke to shop assistant she advised to contact you.",
+    "source_conversation_id": "ca9b0d7069e0eb98f33da88063fbbe6e",
+    "source_tweet_id": "2539960"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-a2e7b671025d",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] [user] [user] can I have my [number] credits back in Ww2?, I got robbed for me and I\u2019m kinda angry about it",
+    "source_conversation_id": "a2e7b671025d4a770a9460eaec0a47af",
+    "source_tweet_id": "492098"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-1a57c10dc1ca",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Upgraded to economy plus. Won't assign seat forSecond flight. Shrug & say it may be a middle seat. What did I pay for? #Deltastinks",
+    "source_conversation_id": "1a57c10dc1caaca5f93e825ae5e8883a",
+    "source_tweet_id": "868502"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-1d3fc6302795",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I need to do an grocery online order is there a maximum number of an individual item I can order? I need lots of flour and shaving foam for a show I\u2019m working on",
+    "source_conversation_id": "1d3fc630279543c8f91a4290a9a1724e",
+    "source_tweet_id": "672228"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-4cf81f761f94",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] #azTechHelp do Verizon CDN endpoints cache files differently in different locations? I get Hits in EU and misses on AU edges",
+    "source_conversation_id": "4cf81f761f94e0b5a2324c06fe917273",
+    "source_tweet_id": "2530687"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] Hi team, need your help changing a flight. Instead of HKG > BKI return it now needs to be MEL > BKI > HKG. Can you help?",
+    "source_conversation_id": "e95445e11b99bd833d4d1b0bbe11d302",
+    "source_tweet_id": "2513295"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-f1b036c4eb1b",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] #azTechHelp Hi Azure, how ca I can I create a new user for ftp access to my virtual machine which is hosted by Azure?",
+    "source_conversation_id": "f1b036c4eb1be22f005640ec4a99742e",
+    "source_tweet_id": "2720265"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-d8a942b75a7a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I need help paying a bill. The sight to fill out ZIP code isn't working in order to text tech. I have til tomorrow",
+    "source_conversation_id": "d8a942b75a7ad143c3454ac759e59e4c",
+    "source_tweet_id": "229136"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-820b8e1b945a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] Why have you changed recipe for BramleyApple Pie?Used to be so goodNow it\u2019s got mushy apples&awful crunchyDemerara sugar on it?\ud83e\udd22 [url]",
+    "source_conversation_id": "820b8e1b945a656ff65235a91160d8b1",
+    "source_tweet_id": "1987351"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "[user] again restricting limits in spend.. \u00a380! How is this helping the lower wage families?! #Disgusting [url]",
+    "source_conversation_id": "6d5a723880ac58019d18d73d40466582",
+    "source_tweet_id": "2105586"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-4d1fa7d646e6",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "When [user] make a playlist for you. Is there anyway to save it. Or just save individual?",
+    "source_conversation_id": "4d1fa7d646e6a5493bc893f4ee1c0acb",
+    "source_tweet_id": "1217803"
+  },
+  {
+    "category": "real_world_unsupported",
+    "difficulty": "hard",
+    "expected_document_id": null,
+    "provenance": "tweetsumm_real_conversation_without_corpus_resolution",
+    "question": "Cheers [user] I've not even left Bristol Temple Meads and I've already missed my connection at Newport because you've decided to stick another carriage on just in case. I won't get home until 9pm now.",
+    "source_conversation_id": "9c509e7e2dd3c6a22ed0b3083f2ead6d",
+    "source_tweet_id": "2343334"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-58f174fa0f79",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "[user] I'm boiling with frustration trying to send an email about an order that's failed to be delivered \ud83d\ude20",
+    "source_conversation_id": "58f174fa0f798d43029c208891b93960",
+    "source_tweet_id": "2297778"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-0f639da0f78a",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "According to your website the following countries Turkey, Lebanon, Jordan, Egypt and Saudi Arabia have specific regulations of electronics that can go into hand luggage. Why are the Maldives not on this list as that is what [user] states? [url]",
+    "source_conversation_id": "0f639da0f78aaf552ecc9d3921978dd2",
+    "source_tweet_id": "2169480"
+  },
+  {
+    "category": "real_world",
+    "difficulty": "natural",
+    "expected_document_id": "tweetsumm-e81c170a60aa",
+    "provenance": "tweetsumm_real_conversation",
+    "question": "Oooookay, why isn't Google Play reading my SD card anymore?",
+    "source_conversation_id": "e81c170a60aaa77ff71cdebce278ea7a",
+    "source_tweet_id": "204459"
+  }
+]

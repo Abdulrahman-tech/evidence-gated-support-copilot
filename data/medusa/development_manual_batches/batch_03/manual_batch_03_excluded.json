@@ -1,0 +1,24 @@
+[
+  {
+    "case_id": "medusa-issue-11915",
+    "manual_decision": "ambiguous",
+    "question": "Discount code is not recognized by Draft Order",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "top2 (Promotion Concepts) hints at an Admin UI limitation on applying certain promotions, but the text is cut off and never mentions draft orders specifically \u2014 not enough to confirm",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/11915",
+    "tenant_id": "medusa"
+  },
+  {
+    "case_id": "medusa-issue-15868",
+    "manual_decision": "ambiguous",
+    "question": "Marking fulfillment as delivered fails (\"Cannot deliver more items than what was fulfilled\") when a variant's inventory kit changed after fulfillment",
+    "review_batch": "medusa_development_manual_batch_03",
+    "review_method": "user_reviewed_codex_applied",
+    "review_notes": "inventory-kit reservation doc is plausibly the root cause, but doesn't explicitly confirm the post-fulfillment kit-change scenario",
+    "source_type": "github_issue_manual_review",
+    "source_url": "https://github.com/medusajs/medusa/issues/15868",
+    "tenant_id": "medusa"
+  }
+]

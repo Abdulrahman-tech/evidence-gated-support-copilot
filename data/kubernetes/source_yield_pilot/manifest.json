@@ -1,0 +1,22 @@
+{
+  "accepted_pool_sha256": "57d49cbff5000d82e9458ca4498d30c9ce7f64d880a0245e03a8cde4be63df36",
+  "batch_counts": {
+    "1": 30,
+    "2": 30
+  },
+  "case_count": 60,
+  "challenge_pool_sha256": "6d7a6194866d1a62663c087aa714f7e99236383347ac65e7028924656aff9d1b",
+  "hosted_model_calls": 0,
+  "knowledge_sha256": "941ced01adaf2483caa74280a2a776f867538d5c4ea94a693b34c6940812e8e9",
+  "packet_sha256": "9c69bb29d6c820f98c87977387f28a369668789d2363bc7a66a11ff1d4d4fe23",
+  "pilot_id": "kubernetes_source_yield_pilot_v1",
+  "private_screening_sha256": "055477da4fabf8f6be5c5244628919a508710e54ee96f292e9ba9ded7da9d358",
+  "private_stratum_counts": {
+    "likely_supported": 30,
+    "likely_unsupported": 30
+  },
+  "review_method": "manual_blind_against_pinned_official_corpus",
+  "review_policy": "The review packet contains no retriever result, suggested document, AI label, or screening stratum. Private screening assignments must remain hidden.",
+  "role": "source_yield_pilot_excluded_from_all_evaluation",
+  "selection_seed": "kubernetes-source-yield-pilot-v1"
+}

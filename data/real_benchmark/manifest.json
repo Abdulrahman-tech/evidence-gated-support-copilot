@@ -1,0 +1,53 @@
+{
+  "benchmark_type": "80 real-world customer messages plus 20 human-authored safety cases",
+  "challenge_ambiguous_excluded_count": 0,
+  "challenge_case_count": 180,
+  "challenge_judged_case_count": 180,
+  "challenge_judged_sha256": "d298be6f820c6512609f80101b8de0ff2b5b31d0e2ad8a46c0576b7da9a03b8c",
+  "challenge_knowledge_sha256": "7ab793379cbc607205b5486f636df724880f385627813881d611ecbd3604f2fd",
+  "challenge_review_method": "blanket_approval",
+  "challenge_review_status": "user_blanket_approved",
+  "challenge_sha256": "f20c0211b1313a91c00a2cf4e7f302f16a6c88e82d4d6ac833bc3ae2b98e6aff",
+  "challenge_supported_count": 80,
+  "challenge_unsupported_count": 100,
+  "development_case_count": 100,
+  "development_knowledge_sha256": "1434ecc3d597b234da5b90580ac5434a07177df7084a2eaf499e8bd0f6e65683",
+  "development_sha256": "cd00725430e4423bfe98fa7fd06c13bedaaef2077c16bf5998b9e918b8c552d5",
+  "development_supported_count": 80,
+  "development_unsupported_count": 20,
+  "development_validation_review_status": "source_filtered_unreviewed",
+  "development_validation_source": "TweetSumm final_train_tweetsum.jsonl",
+  "knowledge_count": 80,
+  "knowledge_sha256": "d6c7262c0442ffdb3568285f7fc96eb5bf37a5a2543976ec3fdf41c0c04e3b1b",
+  "real_world_case_count": 80,
+  "review_method": {
+    "automated_check_only_count": 60,
+    "manual_case_count": 40,
+    "manual_scope": "all 20 safety cases and a deterministic sample of 20 real-world cases"
+  },
+  "safety_case_count": 20,
+  "sources": [
+    {
+      "license": "CDLA-Sharing-1.0",
+      "name": "TweetSumm",
+      "url": "https://github.com/guyfe/Tweetsumm"
+    },
+    {
+      "license": "CC-BY-NC-SA-4.0",
+      "name": "Customer Support on Twitter",
+      "url": "https://www.kaggle.com/datasets/thoughtvector/customer-support-on-twitter"
+    }
+  ],
+  "tenant_assignment_count": 460,
+  "tenant_assignment_sha256": "715fecdd1e8bbd7f4e3cb3949a08a7118906a81e738716118085de679a6bef9e",
+  "tenant_assignment_source": "outbound support author_id recovered from the recorded TweetSumm/TWCS conversation",
+  "test_case_count": 100,
+  "test_review_status": "sampled_human_review",
+  "test_sha256": "6d0d6a3c299b40648c04aa126f4f2fb557a97e1d0e4f0d936132f06b1c10d1b7",
+  "text_treatment": "user handles, URLs, contact details, long numbers, booking references, and obvious signatures are masked; original wording is otherwise preserved",
+  "validation_case_count": 100,
+  "validation_knowledge_sha256": "ed1fce29030ca215817250609b0b08bd68e8d30a9fb0cbd841c8e30affbadc28",
+  "validation_sha256": "7f577981dfb7c4a47109a6977d27b8b99ed95e9bdcfce255c0d0f7c7b20fd922",
+  "validation_supported_count": 80,
+  "validation_unsupported_count": 20
+}

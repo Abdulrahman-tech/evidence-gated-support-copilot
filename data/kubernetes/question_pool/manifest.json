@@ -1,0 +1,21 @@
+{
+  "accepted_count": 100,
+  "accepted_request_metadata": {
+    "quota_remaining": 294,
+    "request_count": 2
+  },
+  "accepted_sha256": "57d49cbff5000d82e9458ca4498d30c9ce7f64d880a0245e03a8cde4be63df36",
+  "challenge_count": 310,
+  "challenge_request_metadata": {
+    "quota_remaining": 290,
+    "request_count": 4
+  },
+  "challenge_sha256": "6d7a6194866d1a62663c087aa714f7e99236383347ac65e7028924656aff9d1b",
+  "collected_at": "2026-08-26T11:23:19.030469Z",
+  "content_policy": "Question titles and attribution metadata only; bodies and answers are not redistributed. Each row preserves its source URL and content license.",
+  "from_date": "2025-01-01",
+  "label_policy": "Authentic candidates only; no evaluation or AI label is included.",
+  "site": "stackoverflow",
+  "source": "https://api.stackexchange.com/2.3/search/advanced",
+  "tag": "kubernetes"
+}

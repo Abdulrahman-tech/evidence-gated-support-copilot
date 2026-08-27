@@ -1,0 +1,10 @@
+.git
+.venv
+__pycache__
+*.pyc
+review
+tests
+data/*
+!data/kubernetes
+data/kubernetes/*
+!data/kubernetes/knowledge.json

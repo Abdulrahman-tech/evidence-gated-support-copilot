@@ -1,0 +1,238 @@
+{
+  "case_count": 6,
+  "cases": [
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-24119342eedd0d52",
+          "passage": "Env prints out all the environment information in use by Helm. helm env [flags]",
+          "score": 10.3411,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/helm/helm_env.md",
+          "tenant_id": "helm-v3",
+          "title": "helm env: Synopsis"
+        },
+        {
+          "document_id": "helm3-9659589519579c6c",
+          "passage": "When you are working with string data, you are always safer quoting the strings than leaving them as bare words: name: {{ .Values.MyName | quote }} But when working with integers _do not quote the values._ That can, in many cases, cause parsing errors inside of Kubernetes. port: {{ .Values.Port }} This remark does not apply to env variables values which are expected to be string, even if they represent integers: env: name: HOST value: \"http://host\" name: PORT value: \"1234\"",
+          "score": 10.2445,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/howto/charts_tips_and_tricks.md",
+          "tenant_id": "helm-v3",
+          "title": "Chart Development Tips and Tricks: Quote Strings, Don't Quote Integers"
+        },
+        {
+          "document_id": "helm3-0973999f020c0884",
+          "passage": "Merge two or more dictionaries into one, giving precedence from **right to left**, effectively overwriting values in the dest dictionary: Given: dest: default: default overwrite: me key: true src: overwrite: overwritten key: false will result in: newdict: default: default overwrite: overwritten key: false $newdict := mergeOverwrite $dest $source1 $source2 This is a deep merge operation but not a deep copy operation. Nested objects that are merged are the same instance on both dicts. If you want a deep copy along with the merge then use the deepCopy function along with merging. For example, deepCopy $source | mergeOverwrite $dest mustMergeOverwrite will return an error in case of unsuccessful merge.",
+          "score": 9.7229,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/chart_template_guide/function_list.md",
+          "tenant_id": "helm-v3",
+          "title": "Template Function List: mergeOverwrite, mustMergeOverwrite"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79801711",
+      "legacy_threshold_confident": false,
+      "question": "How to overwrite an env value with Helm",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm",
+        "mongodb"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79801711/how-to-overwrite-an-env-value-with-helm"
+    },
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-eb40834c26ff23bf",
+          "passage": "and decides to rollback the release to its previous state: $ helm rollback myapp What happens? In Helm 2, it would generate a patch, comparing the old manifest against the new manifest. Because this is a rollback, it's the same manifest. Helm would determine that there is nothing to change because there is no difference between the old manifest and the new manifest. The replica count continues to stay at zero. Panic ensues. In Helm 3, the patch is generated using the old manifest, the live state, and the new manifest. Helm recognizes that the old state was at three, the live state is at zero and the new manifest wishes to change it back to three, so it generates",
+          "score": 12.4728,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/faq/changes_since_helm2.md",
+          "tenant_id": "helm-v3",
+          "title": "Changes Since Helm 2: Improved Upgrade Strategy: 3-way Strategic Merge Patches"
+        },
+        {
+          "document_id": "helm3-41ea50502138b13f",
+          "passage": "Helm 3 changed the default release information storage to Secrets in the namespace of the release. Helm 2 by default stores release information as ConfigMaps in the namespace of the Tiller instance. The subsections which follow show how to configure different backends. This configuration is based on the HELM_DRIVER environment variable. It can be set to one of the values: [configmap, secret, sql].",
+          "score": 9.7967,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/topics/advanced.md",
+          "tenant_id": "helm-v3",
+          "title": "Advanced Helm Techniques: Storage backends"
+        },
+        {
+          "document_id": "helm3-bb1695538622ab94",
+          "passage": "this command as well via the '--reuse-values' flag. The 'RELEASE' and 'CHART' arguments should be set to the original parameters, and existing values will be merged with any values set via '--values'/'-f' or '--set' flags. Priority is given to new values. $ helm upgrade --reuse-values --set foo=bar --set foo=newbar redis ./redis The --dry-run flag will output all generated chart manifests, including Secrets which can contain sensitive values. To hide Kubernetes Secrets use the --hide-secret flag. Please carefully consider how and when these flags are used. helm upgrade [RELEASE] [CHART] [flags]",
+          "score": 8.9094,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/helm/helm_upgrade.md",
+          "tenant_id": "helm-v3",
+          "title": "helm upgrade: Synopsis"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79525781",
+      "legacy_threshold_confident": true,
+      "question": "How to change replica set in Helm release?",
+      "source_tags": [
+        "kubernetes",
+        "kubernetes-helm"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79525781/how-to-change-replica-set-in-helm-release"
+    },
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-eb40834c26ff23bf",
+          "passage": "manifest. The cluster's live state is not considered during the patch generation. The cluster's live state is modified to look like the following: containers: name: server image: nginx:2.1.0 The sidecar pod is removed from live state. More panic ensues. In Helm 3, Helm generates a patch of the containers object between the old manifest, the live state, and the new manifest. It notices that the new manifest changes the image tag to 2.1.0, but live state contains a sidecar container. The cluster's live state is modified to look like the following: containers: name: server image: nginx:2.1.0 name: my-injected-sidecar image: my-cool-mesh:1.0.0",
+          "score": 15.453,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/faq/changes_since_helm2.md",
+          "tenant_id": "helm-v3",
+          "title": "Changes Since Helm 2: Improved Upgrade Strategy: 3-way Strategic Merge Patches"
+        },
+        {
+          "document_id": "helm3-0a13ee5c6c1fd77d",
+          "passage": "object is found, an empty value is returned. This can be used to check for the existence of an object. The lookup function uses Helm's existing Kubernetes connection configuration to query Kubernetes. If any error is returned when interacting with calling the API server (for example due to lack of permission to access a resource), Helm's template processing will fail. Keep in mind that Helm is not supposed to contact the Kubernetes API Server during a helm template|install|upgrade|delete|rollback --dry-run operation. To test lookup against a running cluster, helm template|install|upgrade|delete|rollback --dry-run=server should be used instead to allow cluster connection.",
+          "score": 12.8758,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/chart_template_guide/functions_and_pipelines.md",
+          "tenant_id": "helm-v3",
+          "title": "Template Functions and Pipelines: Using the lookup function"
+        },
+        {
+          "document_id": "helm3-88f12d32e97a3e2e",
+          "passage": "registry: docker.io repository: bitnami/wordpress tag: 5.6.0-debian-10-r35 [..] You can then override any of these settings in a YAML formatted file, and then pass that file during installation. $ echo '{mariadb.auth.database: user0db, mariadb.auth.username: user0}' > values.yaml $ helm install -f values.yaml bitnami/wordpress --generate-name The above will create a default MariaDB user with the name user0, and grant this user access to a newly created user0db database, but will accept all the rest of the defaults for that chart. There are two ways to pass configuration data during install: --values (or -f): Specify a YAML file with overrides. This can be specified multiple times and the rightmost file will take precedence --set: Specify overrides on the command line. If both are used,",
+          "score": 12.6618,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/intro/using_helm.md",
+          "tenant_id": "helm-v3",
+          "title": "Using Helm: image:"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79464712",
+      "legacy_threshold_confident": true,
+      "question": "Image name not resolving properly during Helm Upgrade/Install for Elastic Kibana: InvalidImageName error",
+      "source_tags": [
+        "docker",
+        "kibana",
+        "kubernetes",
+        "kubernetes-helm"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79464712/image-name-not-resolving-properly-during-helm-upgrade-install-for-elastic-kibana"
+    },
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-153060f24df1e03b",
+          "passage": "When Helm executes a plugin, it passes the outer environment to the plugin, and also injects some additional environment variables. Variables like KUBECONFIG are set for the plugin if they are set in the outer environment. The following variables are guaranteed to be set: HELM_PLUGINS: The path to the plugins directory. HELM_PLUGIN_NAME: The name of the plugin, as invoked by helm. So helm myplug will have the short name myplug. HELM_PLUGIN_DIR: The directory that contains the plugin. HELM_BIN: The path to the helm command (as executed by the user). HELM_DEBUG: Indicates if the debug flag was set by helm. HELM_REGISTRY_CONFIG: The location for the registry configuration (if using). Note that the use of Helm with registries is an experimental feature.",
+          "score": 14.3447,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/topics/plugins.md",
+          "tenant_id": "helm-v3",
+          "title": "The Helm Plugins Guide: Environment Variables"
+        },
+        {
+          "document_id": "helm3-f2a18f68bd6d955b",
+          "passage": "Values files can declare values for the top-level chart, as well as for any of the charts that are included in that chart's charts/ directory. Or, to phrase it differently, a values file can supply values to the chart as well as to any of its dependencies. For example, the demonstration WordPress chart above has both mysql and apache as dependencies. The values file could supply values to all of these components: title: \"My WordPress Site\" # Sent to the WordPress template mysql: max_connections: 100 # Sent to MySQL password: \"secret\" apache: port: 8080 # Passed to Apache Charts at a higher level have access to all of the variables defined beneath. So the WordPress chart can access the MySQL",
+          "score": 13.0581,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/topics/charts.md",
+          "tenant_id": "helm-v3",
+          "title": "Charts: Scope, Dependencies, and Values"
+        },
+        {
+          "document_id": "helm3-298047a2d3febd97",
+          "passage": "app.kubernetes.io/version: \"{{ $.Chart.AppVersion }}\" app.kubernetes.io/managed-by: \"{{ $.Release.Service }}\" type: kubernetes.io/tls data: tls.crt: {{ .certificate }} tls.key: {{ .key }} {{- end }} So far we have looked at just one template declared in just one file. But one of the powerful features of the Helm template language is its ability to declare multiple templates and use them together. We'll turn to that in the next section.",
+          "score": 12.6505,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/chart_template_guide/variables.md",
+          "tenant_id": "helm-v3",
+          "title": "Variables: Value from appVersion in Chart.yaml"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79465457",
+      "legacy_threshold_confident": false,
+      "question": "How to access environment variables defined in dockerfile in helm chart value file",
+      "source_tags": [
+        "docker",
+        "environment-variables",
+        "jvm-arguments",
+        "kubernetes",
+        "kubernetes-helm"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79465457/how-to-access-environment-variables-defined-in-dockerfile-in-helm-chart-value-fi"
+    },
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-5c0feee31f8a2335",
+          "passage": "the helper template in a larger template to create the Secret manifest: apiVersion: v1 kind: Secret metadata: name: myregistrykey type: kubernetes.io/dockerconfigjson data: .dockerconfigjson: {{ template \"imagePullSecret\" . }}",
+          "score": 18.9037,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/howto/charts_tips_and_tricks.md",
+          "tenant_id": "helm-v3",
+          "title": "Chart Development Tips and Tricks: Creating Image Pull Secrets"
+        },
+        {
+          "document_id": "helm3-b510bc90bbad44c3",
+          "passage": "The Helm template language is implemented in the strongly typed Go programming language. For that reason, variables in templates are _typed_. For the most part, variables will be exposed as one of the following types: string: A string of text bool: a true or false int: An integer value (there are also 8, 16, 32, and 64 bit signed and unsigned variants of this) float64: a 64-bit floating point value (there are also 8, 16, and 32 bit varieties of this) a byte slice ([]byte), often used to hold (potentially) binary data struct: an object with properties and methods a slice (indexed list) of one of the previous types a string-keyed map (map[string]interface{}) where the value is one of the",
+          "score": 18.0125,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/chart_template_guide/data_types.md",
+          "tenant_id": "helm-v3",
+          "title": "Appendix: Go Data Types and Templates"
+        },
+        {
+          "document_id": "helm3-734657898b05a9f5",
+          "passage": "The toToml function encodes an item into a TOML string. If the item cannot be converted to TOML, the function will return an error. config: {{ toToml .Values.config | nindent 2 }} The above returns a TOML string representation of .Values.config. > Note: TOML does not support nil values. Passing a map or struct that > contains nil fields will cause toToml to return an error.",
+          "score": 15.2847,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/chart_template_guide/function_list.md",
+          "tenant_id": "helm-v3",
+          "title": "Template Function List: toToml"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79663394",
+      "legacy_threshold_confident": false,
+      "question": "Helm Templates dockerconfigjson secret - Cannot unmarshal string into Go struct field Secret.data",
+      "source_tags": [
+        "go-templates",
+        "kubernetes",
+        "kubernetes-helm"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79663394/helm-templates-dockerconfigjson-secret-cannot-unmarshal-string-into-go-struct"
+    },
+    {
+      "candidates": [
+        {
+          "document_id": "helm3-aa5bb8efa3548a87",
+          "passage": "on the command line (can specify multiple or separate values with commas: key1=val1,key2=val2) -s, --show-only stringArray only show manifests rendered from the given templates --skip-crds if set, no CRDs will be installed. By default, CRDs are installed if not already present --skip-schema-validation if set, disables JSON schema validation --skip-tests skip tests from templated output --take-ownership if set, install will ignore the check for helm annotations and take ownership of the existing resources --timeout duration time to wait for any individual Kubernetes operation (like Jobs for hooks) (default 5m0s) --username string chart repository username where to locate the requested chart --validate validate your manifests against the Kubernetes cluster you are currently pointing at. This is the same validation performed on an",
+          "score": 11.0402,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/helm/helm_template.md",
+          "tenant_id": "helm-v3",
+          "title": "helm template: Options"
+        },
+        {
+          "document_id": "helm3-913779f470ca4fe8",
+          "passage": "You can define as many tests as you would like in a single yaml file or spread across several yaml files in the templates/ directory. You are welcome to nest your test suite under a tests/ directory like /templates/tests/ for more isolation. A test is a Helm hook, so annotations like helm.sh/hook-weight and helm.sh/hook-delete-policy may be used with test resources.",
+          "score": 9.9754,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/topics/chart_tests.md",
+          "tenant_id": "helm-v3",
+          "title": "Chart Tests: Notes"
+        },
+        {
+          "document_id": "helm3-8524a102897d8f7b",
+          "passage": "The test command runs the tests for a release. The argument this command takes is the name of a deployed release. The tests to be run are defined in the chart that was installed. helm test [RELEASE] [flags]",
+          "score": 9.0212,
+          "source": "https://github.com/helm/helm-www/blob/dde63e420fc8f492be46f2637411cf2a805fc4f9/versioned_docs/version-3/helm/helm_test.md",
+          "tenant_id": "helm-v3",
+          "title": "helm test: Synopsis"
+        }
+      ],
+      "case_id": "stackoverflow-kubernetes-79346457",
+      "legacy_threshold_confident": true,
+      "question": "How to skip helm tests deployment in Grafana Tanka",
+      "source_tags": [
+        "jsonnet",
+        "kubernetes",
+        "kubernetes-helm"
+      ],
+      "source_url": "https://stackoverflow.com/questions/79346457/how-to-skip-helm-tests-deployment-in-grafana-tanka"
+    }
+  ],
+  "diagnostic_id": "helm_v3_pilot_retrieval_diagnostic_20260826",
+  "helm_knowledge_sha256": "8725fb089ecd21268bf05e12aa6fa7401325f0d899f818932070cb57c570dd0b",
+  "helm_source_commit": "dde63e420fc8f492be46f2637411cf2a805fc4f9",
+  "helm_source_version": "3.19.0",
+  "hosted_model_calls": 0,
+  "interpretation": "Candidate ranking only. Confidence uses the existing uncalibrated global threshold and must not be interpreted as Helm accuracy or approval.",
+  "legacy_threshold_confident_count": 3,
+  "pilot_sha256": "9c69bb29d6c820f98c87977387f28a369668789d2363bc7a66a11ff1d4d4fe23",
+  "role": "unlabelled_diagnostic_excluded_from_evaluation"
+}

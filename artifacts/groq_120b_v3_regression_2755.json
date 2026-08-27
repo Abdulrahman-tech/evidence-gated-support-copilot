@@ -1,0 +1,18 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "verifier_version": "direct_evidence_v3",
+  "split": "development",
+  "case_count": 1,
+  "development_sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "verifier_failures": 0,
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-2755",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that the in‑memory cache module causes a memory leak on Railway or any production environment; they only note that the module is not recommended for production, which does not directly answer the specific memory‑leak symptom."
+    }
+  ]
+}
