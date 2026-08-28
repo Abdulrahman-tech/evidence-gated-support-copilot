@@ -821,6 +821,7 @@ the period as a nested lookup. This is useful for annotations and settings.
             client.get("/readyz").json(),
             {
                 "status": "ready",
+                "release": "local",
                 "tenant_count": 1,
                 "evidence_verifier": "fail_closed",
                 "minimum_score": DEFAULT_MINIMUM_SCORE,
@@ -949,6 +950,12 @@ the period as a nested lookup. This is useful for annotations and settings.
                 knowledge_base(),
                 {"secret": "default"},
                 allowed_hosts=(),
+            )
+        with self.assertRaisesRegex(ValueError, "release_id"):
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                release_id="unsafe release",
             )
 
     def test_local_demo_verifier_requires_direct_term_overlap(self) -> None:

@@ -9,7 +9,11 @@ class Stage3OperationsTests(unittest.TestCase):
         metrics = "\n".join(f"{name} 0" for name in REQUIRED_METRICS)
         failures = validate_probe(
             {"status": "ok"},
-            {"status": "ready", "evidence_verifier": "fail_closed"},
+            {
+                "status": "ready",
+                "release": "abc1234",
+                "evidence_verifier": "fail_closed",
+            },
             metrics,
             {
                 "cache-control": "no-store",
@@ -33,6 +37,31 @@ class Stage3OperationsTests(unittest.TestCase):
 
         self.assertIn("sensitive metric label detected: tenant", failures)
         self.assertIn("missing or invalid security header: cache-control", failures)
+
+    def test_live_probe_detects_release_drift(self) -> None:
+        metrics = "\n".join(f"{name} 0" for name in REQUIRED_METRICS)
+        failures = validate_probe(
+            {"status": "ok"},
+            {
+                "status": "ready",
+                "release": "old-release",
+                "evidence_verifier": "fail_closed",
+            },
+            metrics,
+            {
+                "cache-control": "no-store",
+                "content-security-policy": "frame-ancestors 'none'",
+                "referrer-policy": "no-referrer",
+                "x-content-type-options": "nosniff",
+                "x-frame-options": "DENY",
+            },
+            expected_release="new-release",
+        )
+
+        self.assertEqual(
+            failures,
+            ["release mismatch: observed old-release, expected new-release"],
+        )
 
     def test_load_test_rejects_remote_targets_without_explicit_opt_in(self) -> None:
         self.assertEqual(

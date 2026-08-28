@@ -151,6 +151,7 @@ def create_app(
     rate_limit_requests: int = DEFAULT_RATE_LIMIT_REQUESTS,
     rate_limit_window_seconds: int = DEFAULT_RATE_LIMIT_WINDOW_SECONDS,
     allowed_hosts: Sequence[str] = DEFAULT_ALLOWED_HOSTS,
+    release_id: str = "local",
 ) -> FastAPI:
     if not api_keys:
         raise ValueError("at least one API key is required")
@@ -165,6 +166,8 @@ def create_app(
         raise ValueError("rate limit values must be positive")
     if not allowed_hosts or any(not host.strip() for host in allowed_hosts):
         raise ValueError("allowed_hosts must contain non-empty host names")
+    if not REQUEST_ID_PATTERN.fullmatch(release_id):
+        raise ValueError("release_id must be a safe identifier of at most 128 characters")
     key_hashes = (
         load_api_key_hashes(json.dumps(dict(api_keys)))
         if api_keys_are_sha256
@@ -286,6 +289,7 @@ def create_app(
     def ready() -> dict[str, object]:
         return {
             "status": "ready",
+            "release": release_id,
             "tenant_count": len(knowledge_base.tenant_ids),
             "evidence_verifier": verifier_mode,
             "minimum_score": minimum_score,
@@ -452,6 +456,10 @@ def create_app_from_env() -> FastAPI:
         ).split(",")
         if host.strip()
     )
+    release_id = os.environ.get(
+        "SUPPORT_COPILOT_RELEASE",
+        os.environ.get("RENDER_GIT_COMMIT", "local"),
+    )
     verifier_name = os.environ.get(
         "SUPPORT_COPILOT_EVIDENCE_VERIFIER",
         "fail_closed",
@@ -492,4 +500,5 @@ def create_app_from_env() -> FastAPI:
         rate_limit_requests=rate_limit_requests,
         rate_limit_window_seconds=rate_limit_window_seconds,
         allowed_hosts=allowed_hosts,
+        release_id=release_id,
     )

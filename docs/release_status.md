@@ -65,10 +65,11 @@ open work is:
 3. Qualify a semantic evidence verifier; the public `local_demo` lexical verifier
    is deliberately non-production.
 4. Add shared gateway rate limiting, production metrics/log collection and
-   paging alerts, sustained load and failure-injection tests, rollback
-   verification, and managed secret delivery. Application-level rate limiting,
-   aggregate metrics, structured logs, a six-hour smoke monitor, and a bounded
-   load check are implemented; they do not replace the remaining controls.
+   paging alerts, sustained load and platform-level failure tests, and managed
+   secret delivery. Application-level rate limiting, aggregate metrics,
+   structured logs, a six-hour smoke monitor, bounded failure injection, exact
+   release verification, and a bounded load check are implemented; they do not
+   replace the remaining controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
 6. Add a review-first support integration without autonomous posting.
 

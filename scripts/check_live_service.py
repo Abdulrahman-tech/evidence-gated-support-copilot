@@ -45,6 +45,7 @@ def validate_probe(
     readiness: Mapping[str, object],
     metrics: str,
     headers: Mapping[str, str],
+    expected_release: str | None = None,
 ) -> list[str]:
     failures: list[str] = []
     if health != {"status": "ok"}:
@@ -53,6 +54,13 @@ def validate_probe(
         failures.append("readiness contract failed")
     if not readiness.get("evidence_verifier"):
         failures.append("readiness omitted evidence verifier")
+    release = readiness.get("release")
+    if not isinstance(release, str) or not release:
+        failures.append("readiness omitted release identifier")
+    elif expected_release and release != expected_release:
+        failures.append(
+            f"release mismatch: observed {release[:12]}, expected {expected_release[:12]}"
+        )
     for name, expected_fragment in REQUIRED_SECURITY_HEADERS.items():
         if expected_fragment not in headers.get(name, ""):
             failures.append(f"missing or invalid security header: {name}")
@@ -67,7 +75,11 @@ def validate_probe(
     return failures
 
 
-def probe(base_url: str, timeout: float) -> list[str]:
+def probe(
+    base_url: str,
+    timeout: float,
+    expected_release: str | None = None,
+) -> list[str]:
     base = base_url.rstrip("/")
     health_body, _ = fetch(f"{base}/healthz", timeout)
     readiness_body, _ = fetch(f"{base}/readyz", timeout)
@@ -77,6 +89,7 @@ def probe(base_url: str, timeout: float) -> list[str]:
         json.loads(readiness_body),
         metrics,
         headers,
+        expected_release,
     )
 
 
@@ -89,6 +102,10 @@ def main() -> int:
     parser.add_argument("--attempts", type=int, default=6)
     parser.add_argument("--retry-delay", type=float, default=10)
     parser.add_argument("--timeout", type=float, default=20)
+    parser.add_argument(
+        "--expected-release",
+        help="Fail unless /readyz reports this exact release identifier.",
+    )
     args = parser.parse_args()
     if args.attempts <= 0 or args.retry_delay < 0 or args.timeout <= 0:
         parser.error("attempts and timeout must be positive; retry-delay cannot be negative")
@@ -96,7 +113,7 @@ def main() -> int:
     last_error = "monitor did not run"
     for attempt in range(1, args.attempts + 1):
         try:
-            failures = probe(args.base_url, args.timeout)
+            failures = probe(args.base_url, args.timeout, args.expected_release)
             if not failures:
                 print(
                     json.dumps(

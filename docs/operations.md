@@ -52,6 +52,33 @@ This is a zero-cost portfolio monitor, not real-time availability monitoring.
 Its six-hour interval, GitHub scheduling delays, and the Render free-tier cold
 start make it unsuitable for an SLA.
 
+The monitor also compares `/readyz.release` with the commit that triggered the
+workflow. Render supplies this value through its documented
+`RENDER_GIT_COMMIT` runtime variable. A healthy process running the wrong
+release therefore fails the operational contract instead of appearing healthy.
+
+## Failure injection and rollback drill
+
+`tests/test_failure_injection.py` injects three bounded failures without calling
+paid providers: a verifier timeout, a verifier response containing an invalid
+quote, and authenticated request overload. The expected outcomes are safe
+abstention for evidence failures, HTTP 429 with `Retry-After` for overload, and
+continued health/readiness responses.
+
+Verify a deployed or restored release explicitly with:
+
+```bash
+python scripts/check_live_service.py \
+  --expected-release FULL_COMMIT_SHA
+```
+
+For a Render rollback drill, record the current and previous known-good commit
+SHAs, deploy the current release, verify its exact SHA, select **Rollback** on
+the previous successful Render deploy, and verify the previous SHA. Finally,
+redeploy the current commit and verify its SHA again. Stop and investigate if
+any contract check fails; do not continue customer traffic on an unidentified
+release. The drill is complete only when the current release has been restored.
+
 ## Bounded load check
 
 Run the load check locally with a dedicated non-production key:
@@ -99,8 +126,9 @@ documentation. The corpus source commit and SHA-256 checksum remain recorded in
 
 Before handling confidential or customer support data, add a shared edge rate
 limiter, managed secrets, a production metrics/log backend with paging alerts,
-larger sustained and failure-injection tests, deployment rollback verification,
-and an availability target. The current structured logs, external smoke check,
-and bounded load command are operational foundations, not substitutes for
-those platform controls. Passing the current CI gate does not by itself qualify
-answer accuracy or make the Render free-tier demo a production service.
+larger sustained load and platform-level dependency failure tests, and an
+availability target. The current structured logs, external smoke check, bounded
+failure injection, release identity, and load command are operational
+foundations, not substitutes for those platform controls. Passing the current
+CI gate does not by itself qualify answer accuracy or make the Render free-tier
+demo a production service.
