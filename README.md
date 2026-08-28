@@ -38,9 +38,9 @@ a reviewable draft.
 |---|---|---|
 | Runtime | FastAPI service, authenticated tenant boundary, non-root Docker image | Public demo key is demonstration access, not production authentication |
 | Evidence | Exact document IDs, quotes, source URLs, and fail-closed verifier contract | Hosted demo uses deterministic lexical overlap, not a qualified semantic verifier |
-| Safety | Injection tests, oversized-input rejection, application rate limiting, security headers, dependency audit, and secret scan | A shared gateway limiter and production security monitoring remain open |
+| Safety | Injection tests, input limits, application rate limiting, security headers, dependency audit, and secret scan | A shared gateway limiter and production security monitoring remain open |
 | Evaluation | Frozen splits, leakage groups, Wilson intervals, trajectory regressions | Kubernetes independent development, validation, and locked-test gates have not passed |
-| Delivery | Public HTTPS demo and GitHub Actions tests on Python 3.10/3.12 plus container checks | Render free tier is a portfolio environment without a production SLA |
+| Delivery | Public HTTPS demo, structured request logs, external smoke monitor, bounded load check, and GitHub quality gates | Render free tier and six-hour monitoring provide no production SLA |
 
 The historical mixed-support benchmark remains useful as engineering evidence,
 but it is not a Kubernetes production claim:

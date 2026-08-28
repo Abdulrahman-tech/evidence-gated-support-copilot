@@ -9,7 +9,7 @@ from types import SimpleNamespace
 
 from fastapi.testclient import TestClient
 
-from support_copilot.api import create_app, load_api_key_hashes
+from support_copilot.api import create_app, load_api_key_hashes, safe_request_id
 from support_copilot.copilot import SupportCopilot
 from support_copilot.challenge_review import (
     export_challenge_review,
@@ -763,6 +763,7 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertEqual(response.status_code, 200)
         payload = response.json()
         self.assertEqual(payload["request_id"], "test-request")
+        self.assertEqual(response.headers["x-request-id"], "test-request")
         self.assertNotIn("seven days", payload["answer"])
         self.assertTrue(
             all(citation["document_id"] == "alpha-refunds" for citation in payload["citations"])
@@ -848,6 +849,46 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertEqual(limited.status_code, 429)
         self.assertEqual(limited.json(), {"detail": "rate limit exceeded"})
         self.assertGreaterEqual(int(limited.headers["retry-after"]), 1)
+        self.assertIn(
+            "support_copilot_rate_limited_total 1",
+            client.get("/metrics").text,
+        )
+
+    def test_api_correlates_safe_request_ids_and_structured_logs(self) -> None:
+        client = TestClient(create_app(knowledge_base(), {"secret": "default"}))
+
+        with self.assertLogs("support_copilot.audit", level="INFO") as captured:
+            response = client.get(
+                "/healthz",
+                headers={"X-Request-ID": "support-case:123"},
+            )
+
+        self.assertEqual(response.headers["x-request-id"], "support-case:123")
+        event = json.loads(captured.records[-1].getMessage())
+        self.assertEqual(
+            event,
+            {
+                "event": "http_request_completed",
+                "request_id": "support-case:123",
+                "method": "GET",
+                "path": "/healthz",
+                "status_code": 200,
+                "duration_ms": event["duration_ms"],
+            },
+        )
+        self.assertGreaterEqual(event["duration_ms"], 0)
+
+    def test_api_replaces_unsafe_request_ids(self) -> None:
+        client = TestClient(create_app(knowledge_base(), {"secret": "default"}))
+
+        response = client.get(
+            "/healthz",
+            headers={"X-Request-ID": "unsafe request id"},
+        )
+
+        replacement = response.headers["x-request-id"]
+        self.assertNotEqual(replacement, "unsafe request id")
+        self.assertEqual(replacement, safe_request_id(replacement))
 
     def test_api_rejects_untrusted_hosts_and_sets_security_headers(self) -> None:
         client = TestClient(
@@ -892,6 +933,7 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertIn("support_copilot_http_request_duration_seconds_sum", metrics.text)
         self.assertIn("support_copilot_drafts_supported_total 1", metrics.text)
         self.assertIn("support_copilot_drafts_abstained_total 0", metrics.text)
+        self.assertIn("support_copilot_rate_limited_total 0", metrics.text)
         self.assertNotIn("refund policy", metrics.text)
         self.assertNotIn('tenant="default"', metrics.text)
 

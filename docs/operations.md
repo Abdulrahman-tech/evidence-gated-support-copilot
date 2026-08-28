@@ -28,6 +28,48 @@ uses ticket text, tenant IDs, or API keys as metric labels. Restrict this route
 at the production gateway and configure dashboards and alerts before accepting
 customer traffic.
 
+## Correlated logs
+
+Every HTTP response includes `X-Request-ID`. A caller-supplied ID is retained
+only when it contains safe ASCII identifier characters and is at most 128
+characters; otherwise the service generates a UUID. Each request emits a
+single-line JSON `http_request_completed` event with the request ID, method,
+path, status, and duration. Draft completion events use the same request ID.
+These events omit ticket text and bearer keys.
+
+Render captures the process output, providing one central log stream for this
+single-instance demo. A production deployment still needs defined retention,
+access controls, export, queries, and alerts in a proper log platform.
+
+## External smoke monitor
+
+`.github/workflows/live-smoke.yml` checks the public health, readiness, metrics,
+privacy, and security-header contracts every six hours and on manual dispatch.
+A failed workflow is visible in GitHub Actions and can notify maintainers when
+their GitHub Actions notification settings are enabled.
+
+This is a zero-cost portfolio monitor, not real-time availability monitoring.
+Its six-hour interval, GitHub scheduling delays, and the Render free-tier cold
+start make it unsuitable for an SLA.
+
+## Bounded load check
+
+Run the load check locally with a dedicated non-production key:
+
+```bash
+export SUPPORT_COPILOT_LOAD_TEST_API_KEY='replace-with-a-test-key'
+python scripts/load_test_api.py \
+  --base-url http://127.0.0.1:8000 \
+  --requests 20 \
+  --concurrency 4 \
+  --max-p95-seconds 2
+```
+
+The command fails when its error-rate or p95-latency threshold is exceeded. It
+refuses remote targets unless `--allow-remote` is supplied, and reads the key
+from the environment rather than a command-line argument. Remote tests must be
+authorized and sized below the deployment's rate and capacity limits.
+
 ## Locked dependencies and scans
 
 `requirements.lock` contains the hash-locked runtime environment and
@@ -56,8 +98,9 @@ documentation. The corpus source commit and SHA-256 checksum remain recorded in
 ## Remaining production controls
 
 Before handling confidential or customer support data, add a shared edge rate
-limiter, managed secrets, centralized metrics and alerting, structured log
-collection with retention controls, load and failure testing, deployment
-rollback verification, and an availability target. Passing the current CI gate
-does not by itself qualify answer accuracy or make the Render free-tier demo a
-production service.
+limiter, managed secrets, a production metrics/log backend with paging alerts,
+larger sustained and failure-injection tests, deployment rollback verification,
+and an availability target. The current structured logs, external smoke check,
+and bounded load command are operational foundations, not substitutes for
+those platform controls. Passing the current CI gate does not by itself qualify
+answer accuracy or make the Render free-tier demo a production service.

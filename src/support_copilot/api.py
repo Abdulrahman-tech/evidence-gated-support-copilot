@@ -8,6 +8,7 @@ import json
 import logging
 import math
 import os
+import re
 import time
 import uuid
 from collections import Counter, defaultdict, deque
@@ -39,6 +40,7 @@ DEFAULT_MAX_TICKET_CHARACTERS = 8_000
 DEFAULT_RATE_LIMIT_REQUESTS = 60
 DEFAULT_RATE_LIMIT_WINDOW_SECONDS = 60
 DEFAULT_ALLOWED_HOSTS = ("localhost", "127.0.0.1", "testserver")
+REQUEST_ID_PATTERN = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._:-]{0,127}$")
 SECURITY_HEADERS = {
     "Cache-Control": "no-store",
     "Content-Security-Policy": (
@@ -76,6 +78,21 @@ class DraftResponseBody(BaseModel):
     evidence_decision: str
     scope_route: str
     trajectory: list[str]
+
+
+def safe_request_id(value: str | None) -> str:
+    if value and REQUEST_ID_PATTERN.fullmatch(value):
+        return value
+    return str(uuid.uuid4())
+
+
+def configure_audit_logging() -> None:
+    if not LOGGER.handlers:
+        handler = logging.StreamHandler()
+        handler.setFormatter(logging.Formatter("%(message)s"))
+        LOGGER.addHandler(handler)
+    LOGGER.setLevel(logging.INFO)
+    LOGGER.propagate = False
 
 
 def load_knowledge(path: Path) -> KnowledgeBase:
@@ -178,6 +195,8 @@ def create_app(
     async def observe_and_secure(request: Request, call_next):
         started = time.monotonic()
         response_status = 500
+        request_id = safe_request_id(request.headers.get("X-Request-ID"))
+        request.state.request_id = request_id
         try:
             response = await call_next(request)
             response_status = response.status_code
@@ -192,8 +211,22 @@ def create_app(
                 if response_status >= 400:
                     metrics["http_errors_total"] += 1
             if "response" in locals():
+                response.headers["X-Request-ID"] = request_id
                 for name, value in SECURITY_HEADERS.items():
                     response.headers[name] = value
+            LOGGER.info(
+                json.dumps(
+                    {
+                        "event": "http_request_completed",
+                        "request_id": request_id,
+                        "method": request.method,
+                        "path": request.url.path,
+                        "status_code": response_status,
+                        "duration_ms": round(elapsed * 1000, 2),
+                    },
+                    separators=(",", ":"),
+                )
+            )
 
     def increment_metric(name: str) -> None:
         with metrics_lock:
@@ -207,6 +240,7 @@ def create_app(
             while bucket and bucket[0] <= cutoff:
                 bucket.popleft()
             if len(bucket) >= rate_limit_requests:
+                increment_metric("rate_limited_total")
                 retry_after = max(
                     1,
                     math.ceil(bucket[0] + rate_limit_window_seconds - now),
@@ -286,6 +320,9 @@ def create_app(
                 "# HELP support_copilot_draft_failures_total Unhandled draft-generation failures.",
                 "# TYPE support_copilot_draft_failures_total counter",
                 f"support_copilot_draft_failures_total {snapshot['draft_failures_total']}",
+                "# HELP support_copilot_rate_limited_total Authenticated requests rejected by the application limiter.",
+                "# TYPE support_copilot_rate_limited_total counter",
+                f"support_copilot_rate_limited_total {snapshot['rate_limited_total']}",
                 "",
             )
         )
@@ -293,19 +330,15 @@ def create_app(
     @app.post("/v1/drafts", response_model=DraftResponseBody)
     def draft(
         payload: DraftRequest,
+        request: Request,
         tenant_id: str = Depends(authenticate),
-        x_request_id: str | None = Header(default=None),
     ) -> DraftResponseBody:
         ticket = payload.ticket.strip()
         if not ticket:
             raise HTTPException(status_code=422, detail="ticket cannot be blank")
         if len(ticket) > max_ticket_characters:
             raise HTTPException(status_code=413, detail="ticket is too large")
-        request_id = (
-            x_request_id
-            if x_request_id and len(x_request_id) <= 128
-            else str(uuid.uuid4())
-        )
+        request_id = request.state.request_id
         started = time.monotonic()
         try:
             response = SupportCopilot(
@@ -362,6 +395,7 @@ def create_app(
 
 
 def create_app_from_env() -> FastAPI:
+    configure_audit_logging()
     knowledge_path = os.environ.get("SUPPORT_COPILOT_KNOWLEDGE_PATH")
     raw_api_keys = os.environ.get("SUPPORT_COPILOT_API_KEYS")
     api_key_hashes_path = os.environ.get("SUPPORT_COPILOT_API_KEY_HASHES_FILE")

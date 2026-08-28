@@ -1,0 +1,26 @@
+name: Live Service Monitor
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: live-service-monitor
+  cancel-in-progress: true
+
+jobs:
+  operational-contract:
+    name: Public operational contract
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Check health, readiness, metrics, and security headers
+        run: python scripts/check_live_service.py

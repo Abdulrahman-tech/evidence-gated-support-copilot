@@ -23,6 +23,9 @@ customer support or production traffic.
 - The API applies per-process rate limiting, host validation, defensive response
   headers, and exposes aggregate Prometheus-format metrics without tenant, key,
   or ticket labels.
+- Safe request IDs correlate privacy-conscious JSON request and draft logs.
+- A scheduled external smoke check validates the public operational contract,
+  and a bounded load command enforces error-rate and p95-latency thresholds.
 - Runtime and test dependencies are hash-locked; CI audits runtime packages and
   scans repository secrets plus fixed high/critical container vulnerabilities.
 - The container runs as a non-root user and exposes health and readiness probes.
@@ -61,10 +64,11 @@ open work is:
    evaluating a locked test once.
 3. Qualify a semantic evidence verifier; the public `local_demo` lexical verifier
    is deliberately non-production.
-4. Add shared gateway rate limiting, metrics collection and alerts, load tests,
-   rollback verification, and managed secret delivery. Application-level rate
-   limiting, dependency locks/auditing, aggregate metrics, and CI security scans
-   are implemented; they do not replace the remaining platform controls.
+4. Add shared gateway rate limiting, production metrics/log collection and
+   paging alerts, sustained load and failure-injection tests, rollback
+   verification, and managed secret delivery. Application-level rate limiting,
+   aggregate metrics, structured logs, a six-hour smoke monitor, and a bounded
+   load check are implemented; they do not replace the remaining controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
 6. Add a review-first support integration without autonomous posting.
 
