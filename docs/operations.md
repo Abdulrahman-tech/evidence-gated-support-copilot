@@ -41,7 +41,9 @@ uvx pip-audit==2.10.1 --require-hashes --disable-pip -r requirements.lock
 
 The GitHub quality gate also scans repository content for secrets and scans the
 built image for fixed high and critical vulnerabilities. Scanner versions and
-GitHub Actions are pinned in the workflow.
+GitHub Actions are pinned in the workflow. The image build pulls the current
+base tag and upgrades the installed OpenSSL runtime packages from Debian's
+security repository before the scan runs.
 
 The secret scan has one narrow exception:
 `data/kubernetes/knowledge.json`. This generated corpus contains example JWTs

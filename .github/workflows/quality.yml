@@ -82,7 +82,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - name: Build production-shaped image
-        run: docker build -t evidence-gated-support-copilot:ci .
+        run: docker build --pull -t evidence-gated-support-copilot:ci .
       - name: Verify runtime user and healthcheck
         run: |
           test "$(docker image inspect evidence-gated-support-copilot:ci --format '{{.Config.User}}')" = "app"
