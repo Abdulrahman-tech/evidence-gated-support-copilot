@@ -19,3 +19,9 @@ services:
         value: "1.0"
       - key: SUPPORT_COPILOT_MAX_TICKET_CHARACTERS
         value: "2000"
+      - key: SUPPORT_COPILOT_RATE_LIMIT_REQUESTS
+        value: "30"
+      - key: SUPPORT_COPILOT_RATE_LIMIT_WINDOW_SECONDS
+        value: "60"
+      - key: SUPPORT_COPILOT_ALLOWED_HOSTS
+        value: evidence-gated-support-copilot.onrender.com,127.0.0.1,localhost

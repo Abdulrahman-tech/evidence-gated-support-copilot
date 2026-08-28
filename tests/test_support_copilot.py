@@ -827,6 +827,88 @@ the period as a nested lookup. This is useful for annotations and settings.
             },
         )
 
+    def test_api_rate_limits_each_authenticated_key(self) -> None:
+        client = TestClient(
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                rate_limit_requests=2,
+                rate_limit_window_seconds=60,
+            )
+        )
+        request = {
+            "json": {"ticket": "refund policy"},
+            "headers": {"Authorization": "Bearer secret"},
+        }
+
+        self.assertEqual(client.post("/v1/drafts", **request).status_code, 200)
+        self.assertEqual(client.post("/v1/drafts", **request).status_code, 200)
+        limited = client.post("/v1/drafts", **request)
+
+        self.assertEqual(limited.status_code, 429)
+        self.assertEqual(limited.json(), {"detail": "rate limit exceeded"})
+        self.assertGreaterEqual(int(limited.headers["retry-after"]), 1)
+
+    def test_api_rejects_untrusted_hosts_and_sets_security_headers(self) -> None:
+        client = TestClient(
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                allowed_hosts=("testserver",),
+            )
+        )
+
+        rejected = client.get("/healthz", headers={"Host": "attacker.example"})
+        accepted = client.get("/healthz")
+
+        self.assertEqual(rejected.status_code, 400)
+        self.assertEqual(accepted.headers["x-content-type-options"], "nosniff")
+        self.assertEqual(accepted.headers["x-frame-options"], "DENY")
+        self.assertEqual(accepted.headers["referrer-policy"], "no-referrer")
+        self.assertIn("frame-ancestors 'none'", accepted.headers["content-security-policy"])
+        self.assertEqual(accepted.headers["cache-control"], "no-store")
+
+    def test_api_metrics_report_outcomes_without_sensitive_labels(self) -> None:
+        client = TestClient(
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                evidence_verifier=FirstCandidateVerifier(),
+                minimum_score=0.1,
+            )
+        )
+        response = client.post(
+            "/v1/drafts",
+            json={"ticket": "refund policy"},
+            headers={"Authorization": "Bearer secret"},
+        )
+        self.assertEqual(response.status_code, 200)
+
+        metrics = client.get("/metrics")
+
+        self.assertEqual(metrics.status_code, 200)
+        self.assertIn("text/plain", metrics.headers["content-type"])
+        self.assertIn("support_copilot_http_requests_total", metrics.text)
+        self.assertIn("support_copilot_http_request_duration_seconds_sum", metrics.text)
+        self.assertIn("support_copilot_drafts_supported_total 1", metrics.text)
+        self.assertIn("support_copilot_drafts_abstained_total 0", metrics.text)
+        self.assertNotIn("refund policy", metrics.text)
+        self.assertNotIn('tenant="default"', metrics.text)
+
+    def test_api_rejects_invalid_operational_configuration(self) -> None:
+        with self.assertRaisesRegex(ValueError, "rate limit"):
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                rate_limit_requests=0,
+            )
+        with self.assertRaisesRegex(ValueError, "allowed_hosts"):
+            create_app(
+                knowledge_base(),
+                {"secret": "default"},
+                allowed_hosts=(),
+            )
+
     def test_local_demo_verifier_requires_direct_term_overlap(self) -> None:
         candidate = SearchResult(
             "services",

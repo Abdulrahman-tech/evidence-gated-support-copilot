@@ -20,6 +20,11 @@ customer support or production traffic.
 - Prompt-injection, provider-failure, invalid-evidence, routing, and abstention
   trajectories have regression tests.
 - The authenticated API enforces tenant selection from the presented key.
+- The API applies per-process rate limiting, host validation, defensive response
+  headers, and exposes aggregate Prometheus-format metrics without tenant, key,
+  or ticket labels.
+- Runtime and test dependencies are hash-locked; CI audits runtime packages and
+  scans repository secrets plus fixed high/critical container vulnerabilities.
 - The container runs as a non-root user and exposes health and readiness probes.
 - GitHub Actions tests Python 3.10 and 3.12 and verifies the container contract.
 - The public Render deployment has passed health, readiness, authentication,
@@ -56,8 +61,10 @@ open work is:
    evaluating a locked test once.
 3. Qualify a semantic evidence verifier; the public `local_demo` lexical verifier
    is deliberately non-production.
-4. Add gateway rate limiting, dependency locking and scanning, metrics, alerts,
-   load tests, rollback verification, and managed secret delivery.
+4. Add shared gateway rate limiting, metrics collection and alerts, load tests,
+   rollback verification, and managed secret delivery. Application-level rate
+   limiting, dependency locks/auditing, aggregate metrics, and CI security scans
+   are implemented; they do not replace the remaining platform controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
 6. Add a review-first support integration without autonomous posting.
 

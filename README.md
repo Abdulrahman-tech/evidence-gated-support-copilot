@@ -7,6 +7,7 @@ flags suspicious instructions, and abstains when support is insufficient.
 
 [**Live demo**](https://evidence-gated-support-copilot.onrender.com) ·
 [**Release status**](docs/release_status.md) ·
+[**Operations guide**](docs/operations.md) ·
 [**Technical case study**](docs/technical_case_study.md) ·
 [**Quality gate**](https://github.com/Abdulrahman-tech/evidence-gated-support-copilot/actions/workflows/quality.yml)
 
@@ -37,7 +38,7 @@ a reviewable draft.
 |---|---|---|
 | Runtime | FastAPI service, authenticated tenant boundary, non-root Docker image | Public demo key is demonstration access, not production authentication |
 | Evidence | Exact document IDs, quotes, source URLs, and fail-closed verifier contract | Hosted demo uses deterministic lexical overlap, not a qualified semantic verifier |
-| Safety | Ticket and retrieved-passage injection tests; oversized input rejection | Gateway rate limiting and production security monitoring remain open |
+| Safety | Injection tests, oversized-input rejection, application rate limiting, security headers, dependency audit, and secret scan | A shared gateway limiter and production security monitoring remain open |
 | Evaluation | Frozen splits, leakage groups, Wilson intervals, trajectory regressions | Kubernetes independent development, validation, and locked-test gates have not passed |
 | Delivery | Public HTTPS demo and GitHub Actions tests on Python 3.10/3.12 plus container checks | Render free tier is a portfolio environment without a production SLA |
 
@@ -416,6 +417,9 @@ The hosted demo uses the explicitly non-production `local_demo` verifier and
 retains mandatory human review. Render's free service sleeps after 15 minutes
 without traffic and can take about a minute to wake. It is a portfolio endpoint,
 not evidence that the independent production-readiness gates have passed.
+
+Runtime controls, metrics, dependency locks, security scans, and their honest
+deployment boundaries are documented in the [operations guide](docs/operations.md).
 
 The command above runs in `fail_closed` verification mode. For the free-tier
 development path, install and configure the Groq adapter. It defaults to

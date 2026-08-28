@@ -2,15 +2,17 @@ FROM python:3.12-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
+    PYTHONPATH=/app/src \
     SUPPORT_COPILOT_KNOWLEDGE_PATH=/app/data/kubernetes/knowledge.json
 
 WORKDIR /app
 
 RUN addgroup --system app && adduser --system --ingroup app app
 
-COPY pyproject.toml README.md ./
+COPY requirements.lock ./
+RUN pip install --no-cache-dir --require-hashes -r requirements.lock
+
 COPY src ./src
-RUN pip install --no-cache-dir .
 
 COPY data/kubernetes/knowledge.json ./data/kubernetes/knowledge.json
 
