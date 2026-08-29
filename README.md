@@ -40,7 +40,7 @@ a reviewable draft.
 | Evidence | Exact document IDs, quotes, source URLs, and fail-closed verifier contract | Hosted demo uses deterministic lexical overlap, not a qualified semantic verifier |
 | Safety | Injection tests, input limits, application rate limiting, security headers, dependency audit, and secret scan | A shared gateway limiter and production security monitoring remain open |
 | Evaluation | Frozen splits, leakage groups, Wilson intervals, trajectory regressions | Kubernetes independent development, validation, and locked-test gates have not passed |
-| Delivery | Public HTTPS demo, structured request logs, external smoke monitor, bounded failure injection and load checks, release-drift detection, and GitHub quality gates | Render free tier and six-hour monitoring provide no production SLA |
+| Delivery | Public HTTPS demo, signed review-only GitHub ingestion, structured request logs, external smoke monitor, bounded failure injection and load checks, release-drift detection, and GitHub quality gates | GitHub ingestion is disabled on the public demo until the process-local queue is replaced; Render free tier provides no production SLA |
 
 The historical mixed-support benchmark remains useful as engineering evidence,
 but it is not a Kubernetes production claim:

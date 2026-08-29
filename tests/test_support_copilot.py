@@ -826,6 +826,8 @@ the period as a nested lookup. This is useful for annotations and settings.
                 "evidence_verifier": "fail_closed",
                 "minimum_score": DEFAULT_MINIMUM_SCORE,
                 "minimum_score_ratio": DEFAULT_MINIMUM_SCORE_RATIO,
+                "github_integration": "disabled",
+                "github_posting": "disabled",
             },
         )
 
@@ -935,6 +937,10 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertIn("support_copilot_drafts_supported_total 1", metrics.text)
         self.assertIn("support_copilot_drafts_abstained_total 0", metrics.text)
         self.assertIn("support_copilot_rate_limited_total 0", metrics.text)
+        self.assertIn(
+            "support_copilot_github_webhooks_accepted_total 0",
+            metrics.text,
+        )
         self.assertNotIn("refund policy", metrics.text)
         self.assertNotIn('tenant="default"', metrics.text)
 

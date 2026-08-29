@@ -38,6 +38,7 @@ jobs:
         run: >-
           python -m py_compile
           src/support_copilot/api.py
+          src/support_copilot/github_review.py
           scripts/check_kubernetes_production_readiness.py
           scripts/check_live_service.py
           scripts/create_api_key_secret.py

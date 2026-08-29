@@ -97,6 +97,19 @@ refuses remote targets unless `--allow-remote` is supplied, and reads the key
 from the environment rather than a command-line argument. Remote tests must be
 authorized and sized below the deployment's rate and capacity limits.
 
+## Review-only GitHub ingestion
+
+The optional GitHub integration verifies signed issue webhooks, allowlists exact
+repositories, prevents duplicate verifier work, and creates tenant-isolated
+review records. Approval and rejection are audit decisions only; the application
+has no GitHub posting credential or outbound comment path. Configuration and the
+durability boundary are documented in
+[`github_review_integration.md`](github_review_integration.md).
+
+`/readyz` reports whether review ingestion is enabled and always reports
+`github_posting: disabled`. The external smoke monitor fails if autonomous
+posting is ever reported as enabled.
+
 ## Locked dependencies and scans
 
 `requirements.lock` contains the hash-locked runtime environment and

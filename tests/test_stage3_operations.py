@@ -13,6 +13,7 @@ class Stage3OperationsTests(unittest.TestCase):
                 "status": "ready",
                 "release": "abc1234",
                 "evidence_verifier": "fail_closed",
+                "github_posting": "disabled",
             },
             metrics,
             {
@@ -46,6 +47,7 @@ class Stage3OperationsTests(unittest.TestCase):
                 "status": "ready",
                 "release": "old-release",
                 "evidence_verifier": "fail_closed",
+                "github_posting": "disabled",
             },
             metrics,
             {

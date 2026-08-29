@@ -71,7 +71,10 @@ open work is:
    release verification, and a bounded load check are implemented; they do not
    replace the remaining controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
-6. Add a review-first support integration without autonomous posting.
+6. Replace the process-local review queue with durable storage, then enable the
+   signed review-first GitHub integration for a controlled repository. The
+   webhook, idempotency, tenant isolation, review decisions, and no-posting
+   contract are implemented; the public demo keeps ingestion disabled.
 
 ## Public demo boundary
 

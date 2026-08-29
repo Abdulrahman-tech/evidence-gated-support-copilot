@@ -26,6 +26,10 @@ REQUIRED_METRICS = (
     "support_copilot_drafts_abstained_total",
     "support_copilot_draft_failures_total",
     "support_copilot_rate_limited_total",
+    "support_copilot_github_webhooks_accepted_total",
+    "support_copilot_github_webhook_duplicates_total",
+    "support_copilot_github_reviews_approved_total",
+    "support_copilot_github_reviews_rejected_total",
 )
 
 
@@ -54,6 +58,8 @@ def validate_probe(
         failures.append("readiness contract failed")
     if not readiness.get("evidence_verifier"):
         failures.append("readiness omitted evidence verifier")
+    if readiness.get("github_posting") != "disabled":
+        failures.append("GitHub autonomous posting is not disabled")
     release = readiness.get("release")
     if not isinstance(release, str) or not release:
         failures.append("readiness omitted release identifier")

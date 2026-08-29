@@ -26,6 +26,12 @@ from support_copilot.evidence import EvidenceVerifier, FailClosedEvidenceVerifie
 from support_copilot.evidence import LocalOverlapEvidenceVerifier
 from support_copilot.demo import DEMO_HTML
 from support_copilot.groq_evidence import DEFAULT_GROQ_MODEL, GroqEvidenceVerifier
+from support_copilot.github_review import (
+    MAX_WEBHOOK_BYTES,
+    ReviewQueue,
+    ReviewRecord,
+    verify_webhook_signature,
+)
 from support_copilot.knowledge import (
     DEFAULT_MINIMUM_SCORE,
     DEFAULT_MINIMUM_SCORE_RATIO,
@@ -80,6 +86,30 @@ class DraftResponseBody(BaseModel):
     trajectory: list[str]
 
 
+class ReviewDecisionRequest(BaseModel):
+    action: str
+    edited_answer: str | None = Field(default=None, max_length=16_000)
+
+
+class ReviewResponseBody(BaseModel):
+    review_id: str
+    delivery_id: str
+    repository: str
+    issue_number: int
+    issue_url: str
+    ticket: str
+    status: str
+    answer: str
+    final_answer: str | None
+    citations: list[CitationResponse]
+    needs_human_review: bool
+    review_reasons: list[str]
+    evidence_decision: str
+    scope_route: str
+    trajectory: list[str]
+    posting_status: str = "disabled"
+
+
 def safe_request_id(value: str | None) -> str:
     if value and REQUEST_ID_PATTERN.fullmatch(value):
         return value
@@ -112,6 +142,26 @@ def load_api_keys(raw: str) -> dict[str, str]:
         for key, tenant in payload.items()
     ):
         raise ValueError("API keys and tenant IDs must be non-empty strings")
+    return payload
+
+
+def load_github_repositories(raw: str) -> dict[str, str]:
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError as error:
+        raise ValueError(
+            "SUPPORT_COPILOT_GITHUB_REPOSITORIES must be valid JSON"
+        ) from error
+    if not isinstance(payload, dict) or not payload or not all(
+        isinstance(repository, str)
+        and repository
+        and isinstance(tenant, str)
+        and tenant
+        for repository, tenant in payload.items()
+    ):
+        raise ValueError(
+            "SUPPORT_COPILOT_GITHUB_REPOSITORIES must map repositories to tenants"
+        )
     return payload
 
 
@@ -152,6 +202,8 @@ def create_app(
     rate_limit_window_seconds: int = DEFAULT_RATE_LIMIT_WINDOW_SECONDS,
     allowed_hosts: Sequence[str] = DEFAULT_ALLOWED_HOSTS,
     release_id: str = "local",
+    github_webhook_secret: str | None = None,
+    github_repositories: Mapping[str, str] | None = None,
 ) -> FastAPI:
     if not api_keys:
         raise ValueError("at least one API key is required")
@@ -168,6 +220,32 @@ def create_app(
         raise ValueError("allowed_hosts must contain non-empty host names")
     if not REQUEST_ID_PATTERN.fullmatch(release_id):
         raise ValueError("release_id must be a safe identifier of at most 128 characters")
+    raw_repository_tenants = dict(github_repositories or {})
+    if any(
+        not isinstance(repository, str)
+        or not repository
+        or "/" not in repository
+        or not isinstance(tenant, str)
+        or not tenant
+        for repository, tenant in raw_repository_tenants.items()
+    ):
+        raise ValueError("github_repositories must map owner/repository names to tenants")
+    repository_tenants = {
+        repository.lower(): tenant
+        for repository, tenant in raw_repository_tenants.items()
+    }
+    if bool(github_webhook_secret) != bool(repository_tenants):
+        raise ValueError(
+            "github_webhook_secret and github_repositories must be configured together"
+        )
+    if github_webhook_secret is not None and len(github_webhook_secret) < 16:
+        raise ValueError("github_webhook_secret must contain at least 16 characters")
+    unknown_repository_tenants = set(repository_tenants.values()) - knowledge_base.tenant_ids
+    if unknown_repository_tenants:
+        raise ValueError(
+            "github_repositories reference unknown tenants: "
+            f"{sorted(unknown_repository_tenants)}"
+        )
     key_hashes = (
         load_api_key_hashes(json.dumps(dict(api_keys)))
         if api_keys_are_sha256
@@ -193,6 +271,7 @@ def create_app(
     rate_limit_lock = Lock()
     metrics: Counter[str] = Counter()
     metrics_lock = Lock()
+    review_queue = ReviewQueue() if github_webhook_secret else None
 
     @app.middleware("http")
     async def observe_and_secure(request: Request, call_next):
@@ -234,6 +313,34 @@ def create_app(
     def increment_metric(name: str) -> None:
         with metrics_lock:
             metrics[name] += 1
+
+    def review_body(record: ReviewRecord) -> ReviewResponseBody:
+        return ReviewResponseBody(
+            review_id=record.review_id,
+            delivery_id=record.delivery_id,
+            repository=record.repository,
+            issue_number=record.issue_number,
+            issue_url=record.issue_url,
+            ticket=record.ticket,
+            status=record.status,
+            answer=record.draft.answer,
+            final_answer=record.final_answer,
+            citations=[
+                CitationResponse(
+                    document_id=item.document_id,
+                    title=item.title,
+                    source=item.source,
+                    passage=item.passage,
+                    score=item.score,
+                )
+                for item in record.draft.citations
+            ],
+            needs_human_review=record.draft.needs_human_review,
+            review_reasons=list(record.draft.review_reasons),
+            evidence_decision=record.draft.evidence_decision,
+            scope_route=record.draft.scope_route,
+            trajectory=list(record.draft.trajectory),
+        )
 
     def enforce_rate_limit(token_digest: str) -> None:
         now = time.monotonic()
@@ -294,6 +401,8 @@ def create_app(
             "evidence_verifier": verifier_mode,
             "minimum_score": minimum_score,
             "minimum_score_ratio": minimum_score_ratio,
+            "github_integration": "review_only" if review_queue else "disabled",
+            "github_posting": "disabled",
         }
 
     @app.get("/metrics", response_class=PlainTextResponse, include_in_schema=False)
@@ -327,9 +436,181 @@ def create_app(
                 "# HELP support_copilot_rate_limited_total Authenticated requests rejected by the application limiter.",
                 "# TYPE support_copilot_rate_limited_total counter",
                 f"support_copilot_rate_limited_total {snapshot['rate_limited_total']}",
+                "# HELP support_copilot_github_webhooks_accepted_total Signed issue webhooks queued for review.",
+                "# TYPE support_copilot_github_webhooks_accepted_total counter",
+                "support_copilot_github_webhooks_accepted_total "
+                f"{snapshot['github_webhooks_accepted_total']}",
+                "# HELP support_copilot_github_webhook_duplicates_total Duplicate deliveries safely ignored.",
+                "# TYPE support_copilot_github_webhook_duplicates_total counter",
+                "support_copilot_github_webhook_duplicates_total "
+                f"{snapshot['github_webhook_duplicates_total']}",
+                "# HELP support_copilot_github_reviews_approved_total Reviews approved without posting.",
+                "# TYPE support_copilot_github_reviews_approved_total counter",
+                "support_copilot_github_reviews_approved_total "
+                f"{snapshot['github_reviews_approved_total']}",
+                "# HELP support_copilot_github_reviews_rejected_total Reviews rejected without posting.",
+                "# TYPE support_copilot_github_reviews_rejected_total counter",
+                "support_copilot_github_reviews_rejected_total "
+                f"{snapshot['github_reviews_rejected_total']}",
                 "",
             )
         )
+
+    @app.post("/v1/github/webhooks", status_code=status.HTTP_202_ACCEPTED)
+    async def github_webhook(request: Request) -> dict[str, object]:
+        if review_queue is None or github_webhook_secret is None:
+            raise HTTPException(status_code=503, detail="GitHub integration is disabled")
+        body_buffer = bytearray()
+        async for chunk in request.stream():
+            if len(body_buffer) + len(chunk) > MAX_WEBHOOK_BYTES:
+                raise HTTPException(status_code=413, detail="webhook payload is too large")
+            body_buffer.extend(chunk)
+        body = bytes(body_buffer)
+        if not verify_webhook_signature(
+            body,
+            request.headers.get("X-Hub-Signature-256"),
+            github_webhook_secret,
+        ):
+            raise HTTPException(status_code=401, detail="invalid webhook signature")
+        delivery_id = request.headers.get("X-GitHub-Delivery")
+        if not delivery_id or not REQUEST_ID_PATTERN.fullmatch(delivery_id):
+            raise HTTPException(status_code=400, detail="invalid GitHub delivery ID")
+        if request.headers.get("X-GitHub-Event") != "issues":
+            return {"status": "ignored", "reason": "unsupported event"}
+        try:
+            payload = json.loads(body)
+        except json.JSONDecodeError as error:
+            raise HTTPException(status_code=400, detail="invalid webhook JSON") from error
+        if not isinstance(payload, dict) or payload.get("action") != "opened":
+            return {"status": "ignored", "reason": "unsupported issue action"}
+        repository = payload.get("repository")
+        issue = payload.get("issue")
+        repository_full_name = (
+            repository.get("full_name", "") if isinstance(repository, dict) else ""
+        )
+        repository_name = (
+            repository_full_name.lower()
+            if isinstance(repository_full_name, str)
+            else ""
+        )
+        tenant_id = repository_tenants.get(repository_name)
+        if tenant_id is None:
+            return {"status": "ignored", "reason": "repository is not configured"}
+        if not isinstance(issue, dict):
+            raise HTTPException(status_code=400, detail="webhook issue is missing")
+        title = issue.get("title")
+        issue_body = issue.get("body") or ""
+        issue_number = issue.get("number")
+        issue_url = issue.get("html_url")
+        if (
+            not isinstance(title, str)
+            or not title.strip()
+            or not isinstance(issue_body, str)
+            or not isinstance(issue_number, int)
+            or issue_number <= 0
+            or not isinstance(issue_url, str)
+            or issue_url
+            != f"https://github.com/{repository_full_name}/issues/{issue_number}"
+        ):
+            raise HTTPException(status_code=400, detail="invalid webhook issue")
+        ticket = f"{title.strip()}\n\n{issue_body.strip()}".strip()
+        if len(ticket) > max_ticket_characters:
+            raise HTTPException(status_code=413, detail="issue is too large")
+        existing, claimed = review_queue.begin_delivery(delivery_id)
+        if not claimed:
+            increment_metric("github_webhook_duplicates_total")
+            return {
+                "status": "duplicate",
+                "review_id": existing.review_id if existing is not None else None,
+                "posting_status": "disabled",
+            }
+        try:
+            draft_response = SupportCopilot(
+                knowledge_base,
+                tenant_id=tenant_id,
+                evidence_verifier=configured_verifier,
+                minimum_score=minimum_score,
+                minimum_score_ratio=minimum_score_ratio,
+            ).draft(ticket)
+            record, _ = review_queue.enqueue(
+                delivery_id=delivery_id,
+                tenant_id=tenant_id,
+                repository=repository_name,
+                issue_number=issue_number,
+                issue_url=issue_url,
+                ticket=ticket,
+                draft=draft_response,
+            )
+        except Exception:
+            review_queue.release_delivery(delivery_id)
+            increment_metric("draft_failures_total")
+            raise
+        increment_metric("github_webhooks_accepted_total")
+        increment_metric(
+            "drafts_supported_total"
+            if draft_response.evidence_decision == "supported"
+            else "drafts_abstained_total"
+        )
+        LOGGER.info(
+            json.dumps(
+                {
+                    "event": "github_review_queued",
+                    "request_id": request.state.request_id,
+                    "review_id": record.review_id,
+                    "repository": repository_name,
+                    "issue_number": issue_number,
+                    "evidence_decision": draft_response.evidence_decision,
+                    "posting_status": "disabled",
+                },
+                separators=(",", ":"),
+            )
+        )
+        return {
+            "status": "queued",
+            "review_id": record.review_id,
+            "posting_status": "disabled",
+        }
+
+    @app.get("/v1/reviews", response_model=list[ReviewResponseBody])
+    def list_reviews(tenant_id: str = Depends(authenticate)) -> list[ReviewResponseBody]:
+        if review_queue is None:
+            raise HTTPException(status_code=503, detail="GitHub integration is disabled")
+        return [review_body(item) for item in review_queue.list_for_tenant(tenant_id)]
+
+    @app.patch("/v1/reviews/{review_id}", response_model=ReviewResponseBody)
+    def decide_review(
+        review_id: str,
+        decision: ReviewDecisionRequest,
+        request: Request,
+        tenant_id: str = Depends(authenticate),
+    ) -> ReviewResponseBody:
+        if review_queue is None:
+            raise HTTPException(status_code=503, detail="GitHub integration is disabled")
+        try:
+            record = review_queue.decide(
+                review_id,
+                tenant_id,
+                decision.action,
+                decision.edited_answer,
+            )
+        except KeyError as error:
+            raise HTTPException(status_code=404, detail="review not found") from error
+        except ValueError as error:
+            raise HTTPException(status_code=409, detail=str(error)) from error
+        increment_metric(f"github_reviews_{record.status}_total")
+        LOGGER.info(
+            json.dumps(
+                {
+                    "event": "github_review_decided",
+                    "request_id": request.state.request_id,
+                    "review_id": review_id,
+                    "decision": record.status,
+                    "posting_status": "disabled",
+                },
+                separators=(",", ":"),
+            )
+        )
+        return review_body(record)
 
     @app.post("/v1/drafts", response_model=DraftResponseBody)
     def draft(
@@ -460,6 +741,15 @@ def create_app_from_env() -> FastAPI:
         "SUPPORT_COPILOT_RELEASE",
         os.environ.get("RENDER_GIT_COMMIT", "local"),
     )
+    github_webhook_secret = os.environ.get("SUPPORT_COPILOT_GITHUB_WEBHOOK_SECRET")
+    raw_github_repositories = os.environ.get(
+        "SUPPORT_COPILOT_GITHUB_REPOSITORIES"
+    )
+    github_repositories = (
+        load_github_repositories(raw_github_repositories)
+        if raw_github_repositories
+        else None
+    )
     verifier_name = os.environ.get(
         "SUPPORT_COPILOT_EVIDENCE_VERIFIER",
         "fail_closed",
@@ -501,4 +791,6 @@ def create_app_from_env() -> FastAPI:
         rate_limit_window_seconds=rate_limit_window_seconds,
         allowed_hosts=allowed_hosts,
         release_id=release_id,
+        github_webhook_secret=github_webhook_secret,
+        github_repositories=github_repositories,
     )
