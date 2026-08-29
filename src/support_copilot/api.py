@@ -28,8 +28,8 @@ from support_copilot.demo import DEMO_HTML
 from support_copilot.groq_evidence import DEFAULT_GROQ_MODEL, GroqEvidenceVerifier
 from support_copilot.github_review import (
     MAX_WEBHOOK_BYTES,
-    ReviewQueue,
     ReviewRecord,
+    SQLiteReviewQueue,
     verify_webhook_signature,
 )
 from support_copilot.knowledge import (
@@ -204,6 +204,7 @@ def create_app(
     release_id: str = "local",
     github_webhook_secret: str | None = None,
     github_repositories: Mapping[str, str] | None = None,
+    github_review_database: Path | None = None,
 ) -> FastAPI:
     if not api_keys:
         raise ValueError("at least one API key is required")
@@ -234,9 +235,15 @@ def create_app(
         repository.lower(): tenant
         for repository, tenant in raw_repository_tenants.items()
     }
-    if bool(github_webhook_secret) != bool(repository_tenants):
+    github_configuration = (
+        bool(github_webhook_secret),
+        bool(repository_tenants),
+        github_review_database is not None,
+    )
+    if len(set(github_configuration)) != 1:
         raise ValueError(
-            "github_webhook_secret and github_repositories must be configured together"
+            "github_webhook_secret, github_repositories, and github_review_database "
+            "must be configured together"
         )
     if github_webhook_secret is not None and len(github_webhook_secret) < 16:
         raise ValueError("github_webhook_secret must contain at least 16 characters")
@@ -271,7 +278,11 @@ def create_app(
     rate_limit_lock = Lock()
     metrics: Counter[str] = Counter()
     metrics_lock = Lock()
-    review_queue = ReviewQueue() if github_webhook_secret else None
+    review_queue = (
+        SQLiteReviewQueue(github_review_database)
+        if github_review_database is not None
+        else None
+    )
 
     @app.middleware("http")
     async def observe_and_secure(request: Request, call_next):
@@ -402,6 +413,7 @@ def create_app(
             "minimum_score": minimum_score,
             "minimum_score_ratio": minimum_score_ratio,
             "github_integration": "review_only" if review_queue else "disabled",
+            "github_review_storage": "sqlite" if review_queue else "disabled",
             "github_posting": "disabled",
         }
 
@@ -750,6 +762,14 @@ def create_app_from_env() -> FastAPI:
         if raw_github_repositories
         else None
     )
+    github_review_database_value = os.environ.get(
+        "SUPPORT_COPILOT_REVIEW_DB_PATH"
+    )
+    github_review_database = (
+        Path(github_review_database_value)
+        if github_review_database_value
+        else None
+    )
     verifier_name = os.environ.get(
         "SUPPORT_COPILOT_EVIDENCE_VERIFIER",
         "fail_closed",
@@ -793,4 +813,5 @@ def create_app_from_env() -> FastAPI:
         release_id=release_id,
         github_webhook_secret=github_webhook_secret,
         github_repositories=github_repositories,
+        github_review_database=github_review_database,
     )

@@ -71,10 +71,12 @@ open work is:
    release verification, and a bounded load check are implemented; they do not
    replace the remaining controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
-6. Replace the process-local review queue with durable storage, then enable the
-   signed review-first GitHub integration for a controlled repository. The
-   webhook, idempotency, tenant isolation, review decisions, and no-posting
-   contract are implemented; the public demo keeps ingestion disabled.
+6. Provision durable hosted storage, backup retention, and access auditing, then
+   enable the signed review-first GitHub integration for a controlled
+   repository. Transactional SQLite restart recovery, webhook idempotency,
+   tenant isolation, review decisions, and the no-posting contract are
+   implemented; the public free demo keeps ingestion disabled because its
+   filesystem is ephemeral.
 
 ## Public demo boundary
 

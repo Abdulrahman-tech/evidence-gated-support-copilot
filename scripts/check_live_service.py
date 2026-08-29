@@ -58,6 +58,14 @@ def validate_probe(
         failures.append("readiness contract failed")
     if not readiness.get("evidence_verifier"):
         failures.append("readiness omitted evidence verifier")
+    github_integration = readiness.get("github_integration")
+    github_review_storage = readiness.get("github_review_storage")
+    valid_github_states = {
+        ("disabled", "disabled"),
+        ("review_only", "sqlite"),
+    }
+    if (github_integration, github_review_storage) not in valid_github_states:
+        failures.append("GitHub integration and review storage state is inconsistent")
     if readiness.get("github_posting") != "disabled":
         failures.append("GitHub autonomous posting is not disabled")
     release = readiness.get("release")

@@ -827,6 +827,7 @@ the period as a nested lookup. This is useful for annotations and settings.
                 "minimum_score": DEFAULT_MINIMUM_SCORE,
                 "minimum_score_ratio": DEFAULT_MINIMUM_SCORE_RATIO,
                 "github_integration": "disabled",
+                "github_review_storage": "disabled",
                 "github_posting": "disabled",
             },
         )

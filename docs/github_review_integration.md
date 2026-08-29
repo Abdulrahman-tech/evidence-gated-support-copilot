@@ -6,17 +6,23 @@ autonomous posting code. Approving a review records the final answer only.
 
 ## Configuration
 
-Both variables are required together:
+All three variables are required together:
 
 ```bash
 export SUPPORT_COPILOT_GITHUB_WEBHOOK_SECRET='replace-with-a-long-random-secret'
 export SUPPORT_COPILOT_GITHUB_REPOSITORIES='{"owner/repository":"kubernetes"}'
+export SUPPORT_COPILOT_REVIEW_DB_PATH='/durable/path/reviews.sqlite3'
 ```
 
 The repository must be an exact `owner/repository` match and the tenant must
 exist in the pinned knowledge base and API-key mapping. Keep the webhook secret
 in the deployment secret manager, never in `render.yaml`, shell history, source
 control, screenshots, or logs.
+
+Startup fails closed if any one of these three variables is missing. The SQLite
+file uses a versioned schema, WAL journaling, full synchronous writes, a unique
+delivery-ID constraint, and owner-only permissions. It is intended for a single
+application instance on a durable volume, not multiple replicas.
 
 Configure a GitHub repository webhook to send only **Issues** events to:
 
@@ -64,10 +70,27 @@ comment.
   application input limit.
 - Aggregate counters report accepted webhooks, duplicates, approvals, and
   rejections without tenant, key, or ticket labels.
+- Review drafts, decisions, and delivery IDs survive application reconstruction.
+  An unfinished delivery claim expires after five minutes so a provider or
+  process failure cannot block GitHub retries forever.
 
-The current queue is process-local memory. Records and delivery IDs disappear
-on restart and are not shared across replicas. This is safe for demonstrating
-the review contract, but a real support workflow requires a durable database
-with unique delivery-ID constraints, encrypted storage, retention/deletion
-rules, backups, migrations, and access auditing before enabling real customer
-repositories.
+Create an integrity-checked, atomic backup without stopping the application:
+
+```bash
+python scripts/backup_review_database.py \
+  --source /durable/path/reviews.sqlite3 \
+  --destination /separate/backup/location/reviews-YYYY-MM-DD.sqlite3
+```
+
+Store backups outside the application volume, encrypt them, restrict access,
+and test restoration. The script refuses to overwrite an existing backup and
+sets owner-only permissions.
+
+SQLite is now durable across application restarts when its path is on persistent
+storage. It is not shared across replicas and does not make an ephemeral host
+durable. [Render documents](https://render.com/docs/free#local-files-lost-on-deploy)
+that free web-service files—including SQLite databases—are lost on spin-down,
+restart, or deployment, so the public free demo keeps webhook ingestion
+disabled. Enabling a real repository still requires a persistent volume or
+external database, defined retention/deletion rules, encrypted backups, and
+access auditing.
