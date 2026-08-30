@@ -207,6 +207,8 @@ def create_app(
     github_repositories: Mapping[str, str] | None = None,
     github_review_database: Path | None = None,
     github_review_database_url: str | None = None,
+    review_api_keys: Mapping[str, str] | None = None,
+    review_api_keys_are_sha256: bool = False,
 ) -> FastAPI:
     if not api_keys:
         raise ValueError("at least one API key is required")
@@ -252,6 +254,11 @@ def create_app(
             "github_webhook_secret, github_repositories, and one GitHub review "
             "database must be configured together"
         )
+    raw_review_api_keys = dict(review_api_keys or {})
+    if all(github_configuration) and not raw_review_api_keys:
+        raise ValueError("GitHub integration requires separate review API keys")
+    if raw_review_api_keys and not all(github_configuration):
+        raise ValueError("review API keys require GitHub integration")
     if github_webhook_secret is not None and len(github_webhook_secret) < 16:
         raise ValueError("github_webhook_secret must contain at least 16 characters")
     unknown_repository_tenants = set(repository_tenants.values()) - knowledge_base.tenant_ids
@@ -259,6 +266,19 @@ def create_app(
         raise ValueError(
             "github_repositories reference unknown tenants: "
             f"{sorted(unknown_repository_tenants)}"
+        )
+    unknown_review_tenants = set(raw_review_api_keys.values()) - knowledge_base.tenant_ids
+    if unknown_review_tenants:
+        raise ValueError(
+            f"review API keys reference unknown tenants: {sorted(unknown_review_tenants)}"
+        )
+    missing_review_tenants = set(repository_tenants.values()) - set(
+        raw_review_api_keys.values()
+    )
+    if missing_review_tenants:
+        raise ValueError(
+            "review API keys do not cover repository tenants: "
+            f"{sorted(missing_review_tenants)}"
         )
     key_hashes = (
         load_api_key_hashes(json.dumps(dict(api_keys)))
@@ -268,6 +288,16 @@ def create_app(
             for key, tenant in api_keys.items()
         }
     )
+    review_key_hashes = (
+        load_api_key_hashes(json.dumps(raw_review_api_keys))
+        if review_api_keys_are_sha256
+        else {
+            hashlib.sha256(key.encode("utf-8")).hexdigest(): tenant
+            for key, tenant in raw_review_api_keys.items()
+        }
+    )
+    if set(key_hashes) & set(review_key_hashes):
+        raise ValueError("draft and review API keys must be different")
 
     app = FastAPI(
         title="Evidence-Gated Support Copilot",
@@ -382,7 +412,10 @@ def create_app(
                 )
             bucket.append(now)
 
-    def authenticate(authorization: str | None = Header(default=None)) -> str:
+    def authenticate_against(
+        authorization: str | None,
+        allowed_key_hashes: Mapping[str, str],
+    ) -> str:
         scheme, separator, token = (authorization or "").partition(" ")
         if separator != " " or scheme.lower() != "bearer" or not token:
             raise HTTPException(
@@ -392,7 +425,7 @@ def create_app(
             )
         token_digest = hashlib.sha256(token.encode("utf-8")).hexdigest()
         authenticated_tenant: str | None = None
-        for candidate_digest, tenant_id in key_hashes.items():
+        for candidate_digest, tenant_id in allowed_key_hashes.items():
             if hmac.compare_digest(token_digest, candidate_digest):
                 authenticated_tenant = tenant_id
         if authenticated_tenant is not None:
@@ -403,6 +436,14 @@ def create_app(
             detail="invalid credentials",
             headers={"WWW-Authenticate": "Bearer"},
         )
+
+    def authenticate(authorization: str | None = Header(default=None)) -> str:
+        return authenticate_against(authorization, key_hashes)
+
+    def authenticate_review(
+        authorization: str | None = Header(default=None),
+    ) -> str:
+        return authenticate_against(authorization, review_key_hashes)
 
     @app.get("/healthz")
     def health() -> dict[str, str]:
@@ -612,7 +653,9 @@ def create_app(
         }
 
     @app.get("/v1/reviews", response_model=list[ReviewResponseBody])
-    def list_reviews(tenant_id: str = Depends(authenticate)) -> list[ReviewResponseBody]:
+    def list_reviews(
+        tenant_id: str = Depends(authenticate_review),
+    ) -> list[ReviewResponseBody]:
         if review_queue is None:
             raise HTTPException(status_code=503, detail="GitHub integration is disabled")
         return [review_body(item) for item in review_queue.list_for_tenant(tenant_id)]
@@ -622,7 +665,7 @@ def create_app(
         review_id: str,
         decision: ReviewDecisionRequest,
         request: Request,
-        tenant_id: str = Depends(authenticate),
+        tenant_id: str = Depends(authenticate_review),
     ) -> ReviewResponseBody:
         if review_queue is None:
             raise HTTPException(status_code=503, detail="GitHub integration is disabled")
@@ -785,6 +828,14 @@ def create_app_from_env() -> FastAPI:
     raw_github_repositories = os.environ.get(
         "SUPPORT_COPILOT_GITHUB_REPOSITORIES"
     )
+    raw_review_api_key_hashes = os.environ.get(
+        "SUPPORT_COPILOT_REVIEW_API_KEY_HASHES"
+    )
+    review_api_keys = (
+        load_api_key_hashes(raw_review_api_key_hashes)
+        if raw_review_api_key_hashes
+        else None
+    )
     github_repositories = (
         load_github_repositories(raw_github_repositories)
         if raw_github_repositories
@@ -846,4 +897,6 @@ def create_app_from_env() -> FastAPI:
         github_repositories=github_repositories,
         github_review_database=github_review_database,
         github_review_database_url=github_review_database_url,
+        review_api_keys=review_api_keys,
+        review_api_keys_are_sha256=True,
     )

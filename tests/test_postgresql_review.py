@@ -189,6 +189,7 @@ class PostgreSQLReviewQueueTests(unittest.TestCase):
                 github_webhook_secret="test-webhook-secret-value",
                 github_repositories={"example/support": "kubernetes"},
                 github_review_database_url=self.dsn,
+                review_api_keys={"review-key": "kubernetes"},
             )
         )
 

@@ -50,6 +50,10 @@ def configured_client(database_path: Path) -> TestClient:
             github_webhook_secret=SECRET,
             github_repositories={"example/support": "kubernetes"},
             github_review_database=database_path,
+            review_api_keys={
+                "kubernetes-review-key": "kubernetes",
+                "other-review-key": "other",
+            },
         )
     )
 
@@ -105,7 +109,7 @@ class GitHubReviewTests(unittest.TestCase):
             )
         reviews = client.get(
             "/v1/reviews",
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         )
 
         self.assertEqual(queued.status_code, 202)
@@ -119,6 +123,34 @@ class GitHubReviewTests(unittest.TestCase):
         self.assertTrue(review["needs_human_review"])
         self.assertNotIn("Is it reachable outside the cluster?", " ".join(logs.output))
 
+    def test_public_draft_key_cannot_access_reviews(self) -> None:
+        client = configured_client(self.database_path)
+        body = issue_payload()
+        review_id = client.post(
+            "/v1/github/webhooks",
+            content=body,
+            headers=webhook_headers(body),
+        ).json()["review_id"]
+
+        public_list = client.get(
+            "/v1/reviews",
+            headers={"Authorization": "Bearer kubernetes-key"},
+        )
+        public_decision = client.patch(
+            f"/v1/reviews/{review_id}",
+            json={"action": "reject"},
+            headers={"Authorization": "Bearer kubernetes-key"},
+        )
+        reviewer_draft = client.post(
+            "/v1/drafts",
+            json={"ticket": "How does ClusterIP work?"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
+        )
+
+        self.assertEqual(public_list.status_code, 401)
+        self.assertEqual(public_decision.status_code, 401)
+        self.assertEqual(reviewer_draft.status_code, 401)
+
     def test_duplicate_delivery_does_not_create_or_generate_twice(self) -> None:
         client = configured_client(self.database_path)
         body = issue_payload()
@@ -128,7 +160,7 @@ class GitHubReviewTests(unittest.TestCase):
         duplicate = client.post("/v1/github/webhooks", content=body, headers=headers)
         reviews = client.get(
             "/v1/reviews",
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         ).json()
 
         self.assertEqual(duplicate.json()["status"], "duplicate")
@@ -150,14 +182,14 @@ class GitHubReviewTests(unittest.TestCase):
         approved = first_client.patch(
             f"/v1/reviews/{review_id}",
             json={"action": "approve", "edited_answer": "Persisted review."},
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         )
         self.assertEqual(approved.status_code, 200)
 
         restarted_client = configured_client(self.database_path)
         reviews = restarted_client.get(
             "/v1/reviews",
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         ).json()
         duplicate = restarted_client.post(
             "/v1/github/webhooks",
@@ -183,7 +215,7 @@ class GitHubReviewTests(unittest.TestCase):
         self.assertEqual(
             client.get(
                 "/v1/reviews",
-                headers={"Authorization": "Bearer kubernetes-key"},
+                headers={"Authorization": "Bearer kubernetes-review-key"},
             ).json(),
             [],
         )
@@ -242,7 +274,7 @@ class GitHubReviewTests(unittest.TestCase):
         )
         review = client.get(
             "/v1/reviews",
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         ).json()[0]
 
         self.assertEqual(review["status"], "pending")
@@ -263,24 +295,24 @@ class GitHubReviewTests(unittest.TestCase):
         self.assertEqual(
             client.get(
                 "/v1/reviews",
-                headers={"Authorization": "Bearer other-key"},
+                headers={"Authorization": "Bearer other-review-key"},
             ).json(),
             [],
         )
         hidden = client.patch(
             f"/v1/reviews/{review_id}",
             json={"action": "approve"},
-            headers={"Authorization": "Bearer other-key"},
+            headers={"Authorization": "Bearer other-review-key"},
         )
         approved = client.patch(
             f"/v1/reviews/{review_id}",
             json={"action": "approve", "edited_answer": "Reviewed answer."},
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         )
         repeated = client.patch(
             f"/v1/reviews/{review_id}",
             json={"action": "reject"},
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         )
 
         self.assertEqual(hidden.status_code, 404)
@@ -302,7 +334,7 @@ class GitHubReviewTests(unittest.TestCase):
         response = client.patch(
             f"/v1/reviews/{review_id}",
             json={"action": "approve", "edited_answer": "   "},
-            headers={"Authorization": "Bearer kubernetes-key"},
+            headers={"Authorization": "Bearer kubernetes-review-key"},
         )
 
         self.assertEqual(response.status_code, 409)
@@ -469,6 +501,7 @@ class GitHubReviewTests(unittest.TestCase):
                 github_webhook_secret=SECRET,
                 github_repositories={"example/support": "missing"},
                 github_review_database=self.database_path,
+                review_api_keys={"review-key": "kubernetes"},
             )
         with self.assertRaisesRegex(ValueError, "owner/repository"):
             create_app(
@@ -477,6 +510,23 @@ class GitHubReviewTests(unittest.TestCase):
                 github_webhook_secret=SECRET,
                 github_repositories={"invalid-name": "kubernetes"},
                 github_review_database=self.database_path,
+            )
+        with self.assertRaisesRegex(ValueError, "separate review API keys"):
+            create_app(
+                knowledge_base(),
+                {"kubernetes-key": "kubernetes"},
+                github_webhook_secret=SECRET,
+                github_repositories={"example/support": "kubernetes"},
+                github_review_database=self.database_path,
+            )
+        with self.assertRaisesRegex(ValueError, "must be different"):
+            create_app(
+                knowledge_base(),
+                {"shared-key": "kubernetes"},
+                github_webhook_secret=SECRET,
+                github_repositories={"example/support": "kubernetes"},
+                github_review_database=self.database_path,
+                review_api_keys={"shared-key": "kubernetes"},
             )
 
 

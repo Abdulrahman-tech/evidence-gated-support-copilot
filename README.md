@@ -40,7 +40,7 @@ a reviewable draft.
 | Evidence | Exact document IDs, quotes, source URLs, and fail-closed verifier contract | Hosted demo uses deterministic lexical overlap, not a qualified semantic verifier |
 | Safety | Injection tests, input limits, application rate limiting, security headers, dependency audit, and secret scan | A shared gateway limiter and production security monitoring remain open |
 | Evaluation | Frozen splits, leakage groups, Wilson intervals, trajectory regressions | Kubernetes independent development, validation, and locked-test gates have not passed |
-| Delivery | Public HTTPS demo, signed review-only GitHub ingestion, SQLite and hosted PostgreSQL review storage, structured request logs, external smoke monitor, bounded failure injection and load checks, release-drift detection, and GitHub quality gates | Hosted storage and the controlled repository webhook are not provisioned yet; Render free tier provides no production SLA |
+| Delivery | Public HTTPS demo, signed review-only GitHub ingestion, hosted PostgreSQL review storage, capability-separated draft and review credentials, structured request logs, external smoke monitor, bounded failure injection and load checks, release-drift detection, and GitHub quality gates | Render free tier provides no production SLA |
 
 The historical mixed-support benchmark remains useful as engineering evidence,
 but it is not a Kubernetes production claim:
@@ -411,7 +411,9 @@ supported, routed, and abstained flows and the equivalent Docker command.
 The included `render.yaml` deploys the Docker image on Render's free web-service
 plan, waits for GitHub checks before redeploying, and monitors `/healthz`. Enter
 `local-demo-key` in the interface. This is deliberately public demonstration
-access, not a production credential.
+access, not a production credential. It is draft-only and cannot list or decide
+GitHub reviews. Review endpoints require a separate private credential whose
+SHA-256 digest is configured through `SUPPORT_COPILOT_REVIEW_API_KEY_HASHES`.
 
 The hosted demo uses the explicitly non-production `local_demo` verifier and
 retains mandatory human review. Render's free service sleeps after 15 minutes
@@ -482,6 +484,10 @@ should mount a digest-only secret file and set
 calling client's secret manager and must never be baked into the image or
 server environment. See [deployment secrets](docs/deployment_secrets.md) for
 generation, mounting, and rotation instructions.
+
+When GitHub review ingestion is enabled, the application fails closed unless
+`SUPPORT_COPILOT_REVIEW_API_KEY_HASHES` supplies a separate reviewer-key digest
+for every repository tenant. Draft and review credentials cannot be reused.
 
 ## Production-readiness gate
 
