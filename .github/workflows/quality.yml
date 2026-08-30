@@ -19,6 +19,23 @@ jobs:
   tests:
     name: Python ${{ matrix.python-version }}
     runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine@sha256:18cfe3ef5e6815560c98237d6216d1e5119702fb0f3894c8785dd58b8bbe5d73
+        env:
+          POSTGRES_DB: support_copilot_test
+          POSTGRES_PASSWORD: test-only-password
+          POSTGRES_USER: support_copilot
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U support_copilot -d support_copilot_test"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      PYTHONPATH: src
+      TEST_POSTGRES_DSN: postgresql://support_copilot:test-only-password@127.0.0.1:5432/support_copilot_test
     strategy:
       fail-fast: false
       matrix:

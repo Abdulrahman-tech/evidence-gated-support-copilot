@@ -106,15 +106,17 @@ has no GitHub posting credential or outbound comment path. Configuration and the
 durability boundary are documented in
 [`github_review_integration.md`](github_review_integration.md).
 
-When enabled, the review store is a versioned SQLite database with transactional
-delivery uniqueness, restart recovery, WAL mode, strict file permissions, and a
-verified backup command. It requires a single instance and a genuinely durable
-volume. The public Render free service has an ephemeral filesystem, so its
-integration remains disabled.
+When enabled, hosted review storage uses standard PostgreSQL with transactionally
+unique deliveries, migration and decision locks, TLS enforcement, bounded
+database timeouts, restart recovery, and fail-closed readiness. CI exercises the
+contract against PostgreSQL 17 on every supported Python version. SQLite remains
+available for a single instance on a genuinely durable volume. The public
+Render service remains disabled until hosted storage and controlled webhook
+secrets are provisioned.
 
-`/readyz` reports whether review ingestion is enabled and always reports
-`github_posting: disabled`. The external smoke monitor fails if autonomous
-posting is ever reported as enabled.
+`/readyz` checks enabled storage, reports its type, and always reports
+`github_posting: disabled`. The external smoke monitor rejects inconsistent
+integration/storage states and fails if autonomous posting is ever enabled.
 
 ## Locked dependencies and scans
 
@@ -147,7 +149,7 @@ Before handling confidential or customer support data, add a shared edge rate
 limiter, managed secrets, a production metrics/log backend with paging alerts,
 larger sustained load and platform-level dependency failure tests, and an
 availability target. The current structured logs, external smoke check, durable
-single-instance review store, bounded failure injection, release identity, and
+durable review stores, bounded failure injection, release identity, and
 load command are operational foundations, not substitutes for those platform
 controls. Passing the current CI gate does not by itself qualify answer accuracy
 or make the Render free-tier demo a production service.

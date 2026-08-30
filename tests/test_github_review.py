@@ -7,6 +7,7 @@ import sqlite3
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 from fastapi.testclient import TestClient
 
@@ -335,6 +336,20 @@ class GitHubReviewTests(unittest.TestCase):
         self.assertIsNone(second_record)
         self.assertFalse(second_claim)
 
+    def test_readiness_fails_closed_when_review_storage_is_unavailable(self) -> None:
+        client = configured_client(self.database_path)
+        with patch.object(
+            client.app.state.review_queue,
+            "healthcheck",
+            side_effect=RuntimeError("database password must not leak"),
+        ):
+            with self.assertLogs("support_copilot.audit", level="ERROR") as logs:
+                response = client.get("/readyz")
+
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(response.json(), {"detail": "review storage unavailable"})
+        self.assertNotIn("database password", " ".join(logs.output))
+
     def test_expired_delivery_claim_is_recovered_after_restart(self) -> None:
         now = [1_000.0]
         first_queue = SQLiteReviewQueue(
@@ -434,6 +449,18 @@ class GitHubReviewTests(unittest.TestCase):
                 {"kubernetes-key": "kubernetes"},
                 github_webhook_secret=SECRET,
                 github_repositories={"example/support": "kubernetes"},
+            )
+        with self.assertRaisesRegex(ValueError, "only one GitHub review database"):
+            create_app(
+                knowledge_base(),
+                {"kubernetes-key": "kubernetes"},
+                github_webhook_secret=SECRET,
+                github_repositories={"example/support": "kubernetes"},
+                github_review_database=self.database_path,
+                github_review_database_url=(
+                    "postgresql://user:password@database.example.com/reviews"
+                    "?sslmode=require"
+                ),
             )
         with self.assertRaisesRegex(ValueError, "unknown tenants"):
             create_app(

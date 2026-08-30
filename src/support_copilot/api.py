@@ -28,6 +28,7 @@ from support_copilot.demo import DEMO_HTML
 from support_copilot.groq_evidence import DEFAULT_GROQ_MODEL, GroqEvidenceVerifier
 from support_copilot.github_review import (
     MAX_WEBHOOK_BYTES,
+    PostgreSQLReviewQueue,
     ReviewRecord,
     SQLiteReviewQueue,
     verify_webhook_signature,
@@ -205,6 +206,7 @@ def create_app(
     github_webhook_secret: str | None = None,
     github_repositories: Mapping[str, str] | None = None,
     github_review_database: Path | None = None,
+    github_review_database_url: str | None = None,
 ) -> FastAPI:
     if not api_keys:
         raise ValueError("at least one API key is required")
@@ -235,15 +237,20 @@ def create_app(
         repository.lower(): tenant
         for repository, tenant in raw_repository_tenants.items()
     }
+    configured_review_stores = sum(
+        (github_review_database is not None, bool(github_review_database_url))
+    )
+    if configured_review_stores > 1:
+        raise ValueError("configure only one GitHub review database")
     github_configuration = (
         bool(github_webhook_secret),
         bool(repository_tenants),
-        github_review_database is not None,
+        configured_review_stores == 1,
     )
     if len(set(github_configuration)) != 1:
         raise ValueError(
-            "github_webhook_secret, github_repositories, and github_review_database "
-            "must be configured together"
+            "github_webhook_secret, github_repositories, and one GitHub review "
+            "database must be configured together"
         )
     if github_webhook_secret is not None and len(github_webhook_secret) < 16:
         raise ValueError("github_webhook_secret must contain at least 16 characters")
@@ -278,11 +285,13 @@ def create_app(
     rate_limit_lock = Lock()
     metrics: Counter[str] = Counter()
     metrics_lock = Lock()
-    review_queue = (
-        SQLiteReviewQueue(github_review_database)
-        if github_review_database is not None
-        else None
-    )
+    if github_review_database_url:
+        review_queue = PostgreSQLReviewQueue(github_review_database_url)
+    elif github_review_database is not None:
+        review_queue = SQLiteReviewQueue(github_review_database)
+    else:
+        review_queue = None
+    app.state.review_queue = review_queue
 
     @app.middleware("http")
     async def observe_and_secure(request: Request, call_next):
@@ -405,6 +414,23 @@ def create_app(
 
     @app.get("/readyz")
     def ready() -> dict[str, object]:
+        if review_queue is not None:
+            try:
+                review_queue.healthcheck()
+            except Exception as error:
+                LOGGER.error(
+                    json.dumps(
+                        {
+                            "event": "review_storage_unavailable",
+                            "error_type": type(error).__name__,
+                        },
+                        separators=(",", ":"),
+                    )
+                )
+                raise HTTPException(
+                    status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                    detail="review storage unavailable",
+                ) from error
         return {
             "status": "ready",
             "release": release_id,
@@ -413,7 +439,9 @@ def create_app(
             "minimum_score": minimum_score,
             "minimum_score_ratio": minimum_score_ratio,
             "github_integration": "review_only" if review_queue else "disabled",
-            "github_review_storage": "sqlite" if review_queue else "disabled",
+            "github_review_storage": (
+                review_queue.storage_name if review_queue else "disabled"
+            ),
             "github_posting": "disabled",
         }
 
@@ -770,6 +798,9 @@ def create_app_from_env() -> FastAPI:
         if github_review_database_value
         else None
     )
+    github_review_database_url = os.environ.get(
+        "SUPPORT_COPILOT_REVIEW_DATABASE_URL"
+    )
     verifier_name = os.environ.get(
         "SUPPORT_COPILOT_EVIDENCE_VERIFIER",
         "fail_closed",
@@ -814,4 +845,5 @@ def create_app_from_env() -> FastAPI:
         github_webhook_secret=github_webhook_secret,
         github_repositories=github_repositories,
         github_review_database=github_review_database,
+        github_review_database_url=github_review_database_url,
     )

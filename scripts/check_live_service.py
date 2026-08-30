@@ -63,6 +63,7 @@ def validate_probe(
     valid_github_states = {
         ("disabled", "disabled"),
         ("review_only", "sqlite"),
+        ("review_only", "postgresql"),
     }
     if (github_integration, github_review_storage) not in valid_github_states:
         failures.append("GitHub integration and review storage state is inconsistent")

@@ -71,12 +71,13 @@ open work is:
    release verification, and a bounded load check are implemented; they do not
    replace the remaining controls.
 5. Prove reusable onboarding and isolation with a second runtime tenant.
-6. Provision durable hosted storage, backup retention, and access auditing, then
-   enable the signed review-first GitHub integration for a controlled
-   repository. Transactional SQLite restart recovery, webhook idempotency,
-   tenant isolation, review decisions, and the no-posting contract are
-   implemented; the public free demo keeps ingestion disabled because its
-   filesystem is ephemeral.
+6. Provision a hosted PostgreSQL project, backup retention, and access auditing,
+   then enable the signed review-first GitHub integration for one controlled
+   repository. The provider-neutral PostgreSQL implementation, transactional
+   migration and delivery locks, tenant isolation, fail-closed readiness,
+   review decisions, and no-posting contract are implemented and tested. The
+   public demo remains disabled until credentials and a controlled webhook are
+   provisioned.
 
 ## Public demo boundary
 
