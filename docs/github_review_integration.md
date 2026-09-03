@@ -54,10 +54,22 @@ repositories are ignored.
 
 ## Review workflow
 
-List reviews with the existing tenant API key:
+For the browser workflow, open `https://YOUR_SERVICE/review` and enter the
+private reviewer credential from your secret manager. The dashboard lists
+pending and decided records, shows the ticket, evidence, route, trajectory, and
+citations, and supports approve-with-edit or reject. Use **Lock dashboard** when
+finished; the credential is kept only in the page's password field and is not
+written to browser storage.
+
+The dashboard is deliberately a decision interface, not a publishing
+interface. It sends authenticated requests only to the review list and decision
+endpoints. It contains no GitHub posting control, and every decision reports
+`posting_status: disabled`.
+
+List reviews with the private review API key:
 
 ```bash
-curl -H 'Authorization: Bearer YOUR_TENANT_KEY' \
+curl -H 'Authorization: Bearer YOUR_REVIEW_KEY' \
   https://YOUR_SERVICE/v1/reviews
 ```
 
@@ -65,7 +77,7 @@ Approve with the generated answer or an edited answer:
 
 ```bash
 curl -X PATCH \
-  -H 'Authorization: Bearer YOUR_TENANT_KEY' \
+  -H 'Authorization: Bearer YOUR_REVIEW_KEY' \
   -H 'Content-Type: application/json' \
   -d '{"action":"approve","edited_answer":"Reviewed answer."}' \
   https://YOUR_SERVICE/v1/reviews/REVIEW_ID

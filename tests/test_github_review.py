@@ -151,6 +151,23 @@ class GitHubReviewTests(unittest.TestCase):
         self.assertEqual(public_decision.status_code, 401)
         self.assertEqual(reviewer_draft.status_code, 401)
 
+    def test_review_dashboard_does_not_persist_keys_or_offer_posting(self) -> None:
+        client = configured_client(self.database_path)
+
+        response = client.get("/review")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertIn('id="review-key" type="password"', response.text)
+        self.assertIn("/v1/reviews", response.text)
+        self.assertIn("method:'PATCH'", response.text)
+        self.assertNotIn("localStorage", response.text)
+        self.assertNotIn("sessionStorage", response.text)
+        self.assertNotIn("innerHTML", response.text)
+        self.assertNotIn("/comments", response.text)
+        self.assertIn("Lock dashboard", response.text)
+        self.assertIn("Decisions never post to GitHub", response.text)
+        self.assertEqual(response.headers["cache-control"], "no-store")
+
     def test_duplicate_delivery_does_not_create_or_generate_twice(self) -> None:
         client = configured_client(self.database_path)
         body = issue_payload()

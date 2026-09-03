@@ -389,10 +389,11 @@ export SUPPORT_COPILOT_API_KEYS='{"replace-with-a-secret":"kubernetes"}'
 uvicorn support_copilot.api:create_app_from_env --factory --host 127.0.0.1 --port 8000
 ```
 
-Open `http://127.0.0.1:8000` for the authenticated review interface. The
-default command remains fail-closed. For a zero-cost portfolio demonstration,
-enable the explicitly non-production local verifier and the documented demo
-threshold:
+Open `http://127.0.0.1:8000` for the draft interface. When the GitHub review
+integration is configured, open `http://127.0.0.1:8000/review` for the private
+reviewer dashboard. The default command remains fail-closed. For a zero-cost
+portfolio demonstration, enable the explicitly non-production local verifier
+and the documented demo threshold:
 
 ```bash
 export SUPPORT_COPILOT_EVIDENCE_VERIFIER=local_demo
@@ -406,6 +407,8 @@ supported, routed, and abstained flows and the equivalent Docker command.
 
 [**Open the live demo**](https://evidence-gated-support-copilot.onrender.com)
 
+[**Open the private reviewer dashboard**](https://evidence-gated-support-copilot.onrender.com/review)
+
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Abdulrahman-tech/evidence-gated-support-copilot)
 
 The included `render.yaml` deploys the Docker image on Render's free web-service
@@ -414,6 +417,10 @@ plan, waits for GitHub checks before redeploying, and monitors `/healthz`. Enter
 access, not a production credential. It is draft-only and cannot list or decide
 GitHub reviews. Review endpoints require a separate private credential whose
 SHA-256 digest is configured through `SUPPORT_COPILOT_REVIEW_API_KEY_HASHES`.
+Retrieve that credential from the configured secret manager, use it only on the
+`/review` page, and lock the dashboard when finished. The browser does not
+persist the credential. Approve and reject actions only record a decision;
+GitHub posting remains disabled.
 
 The hosted demo uses the explicitly non-production `local_demo` verifier and
 retains mandatory human review. Render's free service sleeps after 15 minutes

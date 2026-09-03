@@ -24,7 +24,7 @@ from starlette.middleware.trustedhost import TrustedHostMiddleware
 from support_copilot.copilot import SupportCopilot
 from support_copilot.evidence import EvidenceVerifier, FailClosedEvidenceVerifier
 from support_copilot.evidence import LocalOverlapEvidenceVerifier
-from support_copilot.demo import DEMO_HTML
+from support_copilot.demo import DEMO_HTML, REVIEW_DASHBOARD_HTML
 from support_copilot.groq_evidence import DEFAULT_GROQ_MODEL, GroqEvidenceVerifier
 from support_copilot.github_review import (
     MAX_WEBHOOK_BYTES,
@@ -452,6 +452,10 @@ def create_app(
     @app.get("/", response_class=HTMLResponse, include_in_schema=False)
     def demo() -> str:
         return DEMO_HTML
+
+    @app.get("/review", response_class=HTMLResponse, include_in_schema=False)
+    def review_dashboard() -> str:
+        return REVIEW_DASHBOARD_HTML
 
     @app.get("/readyz")
     def ready() -> dict[str, object]:
