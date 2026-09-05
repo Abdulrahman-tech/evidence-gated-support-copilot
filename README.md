@@ -238,6 +238,20 @@ for independent validation: seven supported cases produce wide confidence
 intervals, and the local evaluation process peaked near 849 MB RSS, above the
 current Render free-instance limit. It is not wired into the runtime.
 
+The candidate thresholds are now frozen before review in
+`data/medusa/independent_validation_pilot/frozen_candidate.json`. A deterministic
+30-case blind pilot samples the untouched validation-role issue pool across
+product areas and support intents. The packet contains no retrieval output,
+semantic score, prediction, or suggested label. Because issue reports have
+historically yielded few supported cases, this pilot can measure source yield
+and unsupported abstention; it cannot by itself establish supported recall or
+production readiness. Run the evaluator only after an independent human has
+approved every row and completed the attestation:
+
+```bash
+PYTHONPATH=src python scripts/evaluate_medusa_independent_validation_pilot.py
+```
+
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.
 

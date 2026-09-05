@@ -48,6 +48,20 @@ These are source-yield gates, not claims that the final system is 95% accurate.
 System quality is established separately with class-specific metrics and 95%
 confidence intervals on frozen, independently reviewed data.
 
+## Frozen issue pilot
+
+The development-selected `local_semantic_alignment_v1` thresholds were frozen
+before opening a deterministic 30-case sample from the untouched validation
+role. The files are under `data/medusa/independent_validation_pilot`. The review
+packet deliberately omits product-area strata, retriever output, semantic
+features, model predictions, and suggested labels. The evaluator refuses to run
+until every decision is approved, supported decisions reference a real corpus
+document ID, and a human blind-review attestation is complete.
+
+This is the unsupported/source-yield half of independent validation. It does not
+solve the supported-case shortage described below and cannot promote the
+candidate to production on its own. The locked test remains unopened.
+
 ## Public-source audit result (2026-08-26)
 
 The replacement source filter was tested before a review workbook was created.

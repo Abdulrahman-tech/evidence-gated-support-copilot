@@ -79,6 +79,9 @@ from scripts.build_medusa_development_source_fidelity import (
     source_faithful_question,
     source_question_from_page,
 )
+from scripts.build_medusa_independent_validation_pilot import (
+    build as build_medusa_independent_validation_pilot,
+)
 from scripts.calibrate_medusa_retrieval_confidence import (
     EXPECTED_LOCKED_TEST_SHA256,
     EXPECTED_VALIDATION_SHA256,
@@ -88,6 +91,7 @@ from scripts.evaluate_medusa_evidence_alignment import (
     alignment_features,
     evaluate as evaluate_medusa_alignment,
 )
+from scripts.evaluate_medusa_independent_validation_pilot import validate_reviews
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -1883,6 +1887,78 @@ the period as a nested lookup. This is useful for annotations and settings.
             resources["evaluation_run"]["maximum_resident_set_bytes"],
             512 * 1024 * 1024,
         )
+
+    def test_medusa_independent_validation_pilot_is_blind_and_frozen(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        packet, manifest, frozen = build_medusa_independent_validation_pilot()
+
+        self.assertEqual(len(packet), 30)
+        self.assertEqual(len({row["case_id"] for row in packet}), 30)
+        self.assertTrue(all(row["review_status"] == "pending" for row in packet))
+        self.assertTrue(all(row["reviewer_decision"] == "" for row in packet))
+        self.assertTrue(all(row["expected_document_id"] == "" for row in packet))
+        self.assertTrue(
+            all(
+                "score" not in key and "prediction" not in key
+                for row in packet
+                for key in row
+            )
+        )
+        self.assertEqual(
+            packet,
+            json.loads(
+                (
+                    root
+                    / "data"
+                    / "medusa"
+                    / "independent_validation_pilot"
+                    / "review_packet.json"
+                ).read_text(encoding="utf-8")
+            ),
+        )
+        self.assertEqual(manifest["status"], "awaiting_independent_human_review")
+        self.assertEqual(
+            manifest["purpose"], "unsupported_source_yield_and_abstention_pilot"
+        )
+        self.assertTrue(frozen["frozen_before_review"])
+        self.assertFalse(frozen["runtime_changed"])
+        self.assertFalse(frozen["locked_test_evaluated"])
+        self.assertEqual(frozen["protected_splits_evaluated"], [])
+        self.assertEqual(frozen["hosted_calls"], 0)
+        pilot_dir = root / "data" / "medusa" / "independent_validation_pilot"
+        self.assertEqual(
+            manifest,
+            json.loads((pilot_dir / "manifest.json").read_text(encoding="utf-8")),
+        )
+        self.assertEqual(
+            frozen,
+            json.loads(
+                (pilot_dir / "frozen_candidate.json").read_text(encoding="utf-8")
+            ),
+        )
+
+    def test_medusa_independent_validation_requires_real_review(self) -> None:
+        packet, manifest, _ = build_medusa_independent_validation_pilot()
+        documents = json.loads(
+            (
+                Path(__file__).resolve().parents[1]
+                / "data"
+                / "medusa"
+                / "knowledge_expanded.json"
+            ).read_text(encoding="utf-8")
+        )
+        with self.assertRaisesRegex(ValueError, "reviewer_id is required"):
+            validate_reviews(
+                packet,
+                manifest,
+                {
+                    "reviewer_type": "human",
+                    "reviewer_id": "",
+                    "completed_at": "",
+                    "reviewed_without_model_or_retriever_outputs": False,
+                },
+                {row["document_id"] for row in documents},
+            )
 
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
         development_path = (

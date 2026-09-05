@@ -1,0 +1,302 @@
+[
+  {
+    "case_id": "medusa-issue-14020",
+    "expected_document_id": "",
+    "question": "Missing Pricing module events in Reference section",
+    "review_order": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/14020"
+  },
+  {
+    "case_id": "medusa-issue-13096",
+    "expected_document_id": "",
+    "question": "Why aren't the infrastructure modules listed in production deployment chapter? Totally missed the redis locking module",
+    "review_order": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13096"
+  },
+  {
+    "case_id": "medusa-issue-12536",
+    "expected_document_id": "",
+    "question": "Can't Handle multiple currency with the same shipping options",
+    "review_order": 3,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12536"
+  },
+  {
+    "case_id": "medusa-issue-12727",
+    "expected_document_id": "",
+    "question": "npm error 504 Gateway Timeout - GET https://registry.npmjs.org/@hapi%2ftopo",
+    "review_order": 4,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12727"
+  },
+  {
+    "case_id": "medusa-issue-12471",
+    "expected_document_id": "",
+    "question": "Medusa UseCart implementation does not work. UseCart creates a cart with a new ID, because the local storage contains no card id.",
+    "review_order": 5,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12471"
+  },
+  {
+    "case_id": "medusa-issue-14793",
+    "expected_document_id": "",
+    "question": "The cancelPayment method does not persist the data returned by the payment provider.",
+    "review_order": 6,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/14793"
+  },
+  {
+    "case_id": "medusa-issue-11848",
+    "expected_document_id": "",
+    "question": "Enhance handling of indeterminate payment states using soft deletion",
+    "review_order": 7,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/11848"
+  },
+  {
+    "case_id": "medusa-issue-13378",
+    "expected_document_id": "",
+    "question": "data.stores[0].default_sales_channel_id contains workflow metadata, but the CreateProductsWorkflowInput expects a plain string for the id field",
+    "review_order": 8,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13378"
+  },
+  {
+    "case_id": "medusa-issue-13326",
+    "expected_document_id": "",
+    "question": "Cannot find custom module in the build folder",
+    "review_order": 9,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13326"
+  },
+  {
+    "case_id": "medusa-issue-11375",
+    "expected_document_id": "",
+    "question": "Blocked request. This host (\"xx\") is not allowed. To allow this host, add \"xx\" to `server.allowedHosts` in vite.config.js.",
+    "review_order": 10,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/11375"
+  },
+  {
+    "case_id": "medusa-issue-12912",
+    "expected_document_id": "",
+    "question": "Cannot read properties of undefined (reading 'capture-payment-workflow-as-step')",
+    "review_order": 11,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12912"
+  },
+  {
+    "case_id": "medusa-issue-16285",
+    "expected_document_id": "",
+    "question": "locking-redis leaves partial multi-key acquires locked (forever without TTL), ABBA-deadlocks under awaitQueue, and releaseAll can delete another owner's lock",
+    "review_order": 12,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/16285"
+  },
+  {
+    "case_id": "medusa-issue-16522",
+    "expected_document_id": "",
+    "question": "derive country and currency names from Intl.DisplayNames instead of shipping English",
+    "review_order": 13,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/16522"
+  },
+  {
+    "case_id": "medusa-issue-13121",
+    "expected_document_id": "",
+    "question": "Trying to run a sql query gives an error \"Cannot read properties of undefined (reading 'fork')\"",
+    "review_order": 14,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13121"
+  },
+  {
+    "case_id": "medusa-issue-13083",
+    "expected_document_id": "",
+    "question": "Can't retrieve Product Option Values Based on Product Option ID",
+    "review_order": 15,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13083"
+  },
+  {
+    "case_id": "medusa-issue-10839",
+    "expected_document_id": "",
+    "question": "How to solve the error when placing order with 2 different items",
+    "review_order": 16,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/10839"
+  },
+  {
+    "case_id": "medusa-issue-9503",
+    "expected_document_id": "",
+    "question": "memory allocation of 8388608 bytes failed on medusa admin startup",
+    "review_order": 17,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/9503"
+  },
+  {
+    "case_id": "medusa-issue-12349",
+    "expected_document_id": "",
+    "question": "Admin UI \"Manage Inventory Kit\" Combobox bugs",
+    "review_order": 18,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12349"
+  },
+  {
+    "case_id": "medusa-issue-9574",
+    "expected_document_id": "",
+    "question": "Unable to Build the Medusa 2.0.0-rc.4 Storefront Starter",
+    "review_order": 19,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/9574"
+  },
+  {
+    "case_id": "medusa-issue-16053",
+    "expected_document_id": "",
+    "question": "Docs: telemetry page says data is 'only collected' on 'medusa start', but track() also fires from 'medusa user'",
+    "review_order": 20,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/16053"
+  },
+  {
+    "case_id": "medusa-issue-13806",
+    "expected_document_id": "",
+    "question": "Product images are recreated instead of updated when using medusa admin",
+    "review_order": 21,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13806"
+  },
+  {
+    "case_id": "medusa-issue-10407",
+    "expected_document_id": "",
+    "question": "Don't understand this discount behaviour",
+    "review_order": 22,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/10407"
+  },
+  {
+    "case_id": "medusa-issue-9954",
+    "expected_document_id": "",
+    "question": "Medusajs admin crash on large product",
+    "review_order": 23,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/9954"
+  },
+  {
+    "case_id": "medusa-issue-10656",
+    "expected_document_id": "",
+    "question": "How can customer update the password",
+    "review_order": 24,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/10656"
+  },
+  {
+    "case_id": "medusa-issue-14332",
+    "expected_document_id": "",
+    "question": "row.original.payment_collections is undefined on newly introduced customer details refunds",
+    "review_order": 25,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/14332"
+  },
+  {
+    "case_id": "medusa-issue-14765",
+    "expected_document_id": "",
+    "question": "Promotion that use percentage, can't be connected to campaign that uses EUR",
+    "review_order": 26,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/14765"
+  },
+  {
+    "case_id": "medusa-issue-15125",
+    "expected_document_id": "",
+    "question": "order_summary totals missing shipping and tax breakdowns",
+    "review_order": 27,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/15125"
+  },
+  {
+    "case_id": "medusa-issue-12662",
+    "expected_document_id": "",
+    "question": "custom rerouting after admin login",
+    "review_order": 28,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12662"
+  },
+  {
+    "case_id": "medusa-issue-12019",
+    "expected_document_id": "",
+    "question": "DB link from Plugin throws graphql error on migration",
+    "review_order": 29,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/12019"
+  },
+  {
+    "case_id": "medusa-issue-13868",
+    "expected_document_id": "",
+    "question": "Missing page metadata (title) in admin routes - poor UX",
+    "review_order": 30,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://github.com/medusajs/medusa/issues/13868"
+  }
+]

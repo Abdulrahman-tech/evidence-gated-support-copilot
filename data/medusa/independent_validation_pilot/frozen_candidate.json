@@ -1,0 +1,22 @@
+{
+  "calibration_artifact_sha256": "e7699225925c574677fa3917cebf7669f6f9757934d5fe8da071cfc078c9ae39",
+  "calibration_scope": "medusa_development_only",
+  "candidate": "local_semantic_alignment_v1",
+  "frozen_before_review": true,
+  "hosted_calls": 0,
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "locked_test_evaluated": false,
+  "model": {
+    "local_files_only": true,
+    "name": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "snapshot_sha256": "7d235026b90951558a99857cdac5b7e1f3da4cf34eb8594d33f3999d4fc245c5"
+  },
+  "protected_splits_evaluated": [],
+  "runtime_changed": false,
+  "thresholds": {
+    "minimum_evidence_alignment": 0.068301,
+    "minimum_semantic_similarity": 0.465592,
+    "minimum_title_alignment": 0.272727
+  }
+}
