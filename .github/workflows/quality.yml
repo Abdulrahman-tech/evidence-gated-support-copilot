@@ -58,6 +58,7 @@ jobs:
           src/support_copilot/github_review.py
           scripts/apply_medusa_development_source_fidelity.py
           scripts/backup_review_database.py
+          scripts/build_kubernetes_benchmark_recovery_audit.py
           scripts/build_medusa_development_source_fidelity.py
           scripts/build_medusa_independent_validation_pilot.py
           scripts/calibrate_medusa_retrieval_confidence.py

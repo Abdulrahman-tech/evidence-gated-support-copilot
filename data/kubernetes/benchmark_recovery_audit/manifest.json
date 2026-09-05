@@ -1,0 +1,22 @@
+{
+  "audit_id": "kubernetes_benchmark_recovery_source_audit_v1",
+  "bootstrap_candidates_sha256": "1d280bb0c5f4daec918dff41a2bd84e2d49f3e9dc8497cfcb50269c92306735d",
+  "case_count": 20,
+  "challenge_pool_sha256": "7e3d5d9f66e5603430d204b722f7b25d93388e3b162a557033c735326a6e0ad7",
+  "evaluation_labels_created": false,
+  "excluded_prior_pilot_sha256": "9c69bb29d6c820f98c87977387f28a369668789d2363bc7a66a11ff1d4d4fe23",
+  "hidden_stratum_counts": {
+    "supported_anchor": 10,
+    "unsupported_scope": 10
+  },
+  "hosted_model_calls": 0,
+  "knowledge_sha256": "941ced01adaf2483caa74280a2a776f867538d5c4ea94a693b34c6940812e8e9",
+  "locked_test_created": false,
+  "packet_sha256": "b9a1e197c80519decdb88cb927e29df8d1a0d10855bc9e524bc1099796380c4b",
+  "review_policy": "Review full source pages against the pinned official Kubernetes corpus. Accepted-answer links, routing strata, retrieval output, model predictions, and suggested labels are absent from the review packet.",
+  "role": "source_filter_audit_excluded_from_all_evaluation_splits",
+  "selection_fingerprint": "e649bc59b0cc1d32c7d1512f83627eaed93c144d3f46975074385cb593b9d7f5",
+  "selection_policy": "Ten in-scope questions whose accepted answer links to one exact corpus anchor, and ten unanswered questions explicitly routed outside Kubernetes core.",
+  "selection_seed": "kubernetes-benchmark-recovery-source-audit-v1",
+  "status": "awaiting_blind_human_review"
+}

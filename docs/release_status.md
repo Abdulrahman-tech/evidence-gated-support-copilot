@@ -35,10 +35,12 @@ customer support or production traffic.
 
 ## Evaluation boundary
 
-The Kubernetes release benchmark is not complete. Its 60-case authentic source-
-yield pilot measures whether pinned Kubernetes documentation can answer sampled
-questions, but it is excluded from development, validation, challenge, and
-locked-test metrics.
+The Kubernetes release benchmark is not complete. A fresh 20-case blind source-
+filter audit is awaiting human review. It checks whether the recovery selection
+method yields both directly supported Kubernetes-core questions and explicit
+out-of-scope questions before a larger benchmark is built. The earlier 60-case
+pilot and this recovery audit are excluded from development, validation,
+challenge, and locked-test metrics.
 
 The older mixed-support benchmark is retained as historical engineering
 evidence, not as a Kubernetes quality claim:

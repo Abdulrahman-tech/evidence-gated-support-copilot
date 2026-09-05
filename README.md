@@ -79,13 +79,15 @@ commit `25f3dcbed7429ebe20174ccc7000428d0f0aedda` and contains 7,341 unique
 sections from 1,460 English documentation pages. Each section retains its
 document ID, source path, commit, product area, and official source URL.
 
-The first qualification artifact is a 60-case source-yield pilot built from
-authentic 2025–2026 Stack Overflow Kubernetes questions. It is deliberately
-excluded from development, validation, challenge, and locked-test metrics. The
-visible review packet contains no retriever result, suggested document, AI
-label, or screening stratum. Review it manually in two batches of 30 against
-the pinned official corpus. This pilot used no hosted-model calls and does not
-yet support a production-readiness claim.
+The active recovery milestone is a fresh 20-case blind source-filter audit built
+from authentic Stack Overflow Kubernetes questions. Ten cases passed a hidden
+official-document-anchor screen and ten passed a hidden explicit-scope screen;
+those strata are absent from the review packet. The prior 60-case pilot is
+excluded. This audit contains no retriever result, suggested document, AI label,
+or confidence score, uses no hosted-model calls, and is permanently excluded
+from development, validation, challenge, and locked-test metrics. Its purpose is
+to validate the source-selection method before spending time on a larger
+independent benchmark.
 
 ```bash
 PYTHONPATH=src python scripts/build_kubernetes_corpus.py \
@@ -94,6 +96,7 @@ PYTHONPATH=src python scripts/build_kubernetes_corpus.py \
 
 PYTHONPATH=src python scripts/collect_kubernetes_questions.py
 PYTHONPATH=src python scripts/build_kubernetes_source_yield_pilot.py
+PYTHONPATH=src python scripts/build_kubernetes_benchmark_recovery_audit.py
 ```
 
 See [the Kubernetes scope](docs/kubernetes_scope.md) for the release boundary,

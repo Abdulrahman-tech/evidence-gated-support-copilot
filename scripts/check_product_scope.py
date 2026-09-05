@@ -28,6 +28,15 @@ def audit_scope(root: Path = ROOT) -> dict:
             / "manifest.json"
         ).read_text()
     )
+    recovery_audit = json.loads(
+        (
+            root
+            / "data"
+            / "kubernetes"
+            / "benchmark_recovery_audit"
+            / "manifest.json"
+        ).read_text()
+    )
     dockerfile = (root / "Dockerfile").read_text()
     render = (root / "render.yaml").read_text()
     readme = (root / "README.md").read_text()
@@ -58,6 +67,15 @@ def audit_scope(root: Path = ROOT) -> dict:
         ),
         "public_claim_is_honest": (
             "production-minded portfolio beta, not production ready" in readme.lower()
+        ),
+        "active_milestone_is_kubernetes_recovery": (
+            contract["active_benchmark_milestone"]
+            == recovery_audit["audit_id"]
+            == "kubernetes_benchmark_recovery_source_audit_v1"
+            and recovery_audit["role"]
+            == "source_filter_audit_excluded_from_all_evaluation_splits"
+            and recovery_audit["locked_test_created"] is False
+            and recovery_audit["evaluation_labels_created"] is False
         ),
         "medusa_is_not_a_production_track": (
             contract["experimental_tracks"]["medusa"] == "paused_offline_research"

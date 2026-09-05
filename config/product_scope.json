@@ -5,6 +5,7 @@
   "runtime_knowledge_path": "/app/data/kubernetes/knowledge.json",
   "runtime_knowledge_sha256": "941ced01adaf2483caa74280a2a776f867538d5c4ea94a693b34c6940812e8e9",
   "source_commit": "25f3dcbed7429ebe20174ccc7000428d0f0aedda",
+  "active_benchmark_milestone": "kubernetes_benchmark_recovery_source_audit_v1",
   "experimental_tracks": {
     "helm-v3": "offline_not_runtime_enabled",
     "medusa": "paused_offline_research"

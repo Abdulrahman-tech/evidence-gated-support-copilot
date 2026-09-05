@@ -27,6 +27,8 @@ change and matching tests.
 - the corpus commit and checksum are pinned;
 - Docker and Render use only the Kubernetes corpus;
 - the public readiness claim remains honest; and
+- the active benchmark milestone is the Kubernetes recovery source audit and
+  cannot be mistaken for release evaluation; and
 - the Medusa pilot remains paused and is not described as production.
 
 The check runs on every push and pull request. An intentional product change

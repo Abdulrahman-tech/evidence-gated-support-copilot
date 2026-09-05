@@ -1,0 +1,222 @@
+[
+  {
+    "case_id": "stackoverflow-kubernetes-79306799",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Internal Server error when trying API calls to AKS service",
+    "review_order": 1,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79306799/internal-server-error-when-trying-api-calls-to-aks-service"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79525377",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Automatically Update MinIO Tenant Policies When ConfigMap Changes",
+    "review_order": 2,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79525377/automatically-update-minio-tenant-policies-when-configmap-changes"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-78656161",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Frontend not able to communicate with backend in GKE",
+    "review_order": 3,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/78656161/frontend-not-able-to-communicate-with-backend-in-gke"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-78919096",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How does rolling update work for a statefulset in kubernetes",
+    "review_order": 4,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/78919096/how-does-rolling-update-work-for-a-statefulset-in-kubernetes"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-78500982",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Can the pod know its restart count in k8s?",
+    "review_order": 5,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/78500982/can-the-pod-know-its-restart-count-in-k8s"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79173735",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Database migrations in Helm charts using pre-install, pre-upgrade hook",
+    "review_order": 6,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79173735/database-migrations-in-helm-charts-using-pre-install-pre-upgrade-hook"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79680098",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "draining a node - surge replica up and not down",
+    "review_order": 7,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79680098/draining-a-node-surge-replica-up-and-not-down"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79632098",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to expose multiple TCP services and HTTPS via a single LB in EKS (with IP restriction support)?",
+    "review_order": 8,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79632098/how-to-expose-multiple-tcp-services-and-https-via-a-single-lb-in-eks-with-ip-re"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-78428833",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "resource missing the kubectl.kubernetes.io/last-applied-configuration",
+    "review_order": 9,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/78428833/resource-missing-the-kubectl-kubernetes-io-last-applied-configuration"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79762856",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Ingress-NGINX consistent-hash for WebSocket routing across multiple controller pods is inconsistent (hash by query param)",
+    "review_order": 10,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79762856/ingress-nginx-consistent-hash-for-websocket-routing-across-multiple-controller-p"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-77944444",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "NextJS and Kubernetes - router.push is sending the request to another POD instead of using the same",
+    "review_order": 11,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/77944444/nextjs-and-kubernetes-router-push-is-sending-the-request-to-another-pod-instea"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79856848",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Error reading file content in helm template",
+    "review_order": 12,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79856848/error-reading-file-content-in-helm-template"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79523213",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "NGINX reload triggered due to a change in configuration",
+    "review_order": 13,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79523213/nginx-reload-triggered-due-to-a-change-in-configuration"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79854498",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Argo CD App of Apps \u2013 How to automatically sync a dependent application when syncing another app?",
+    "review_order": 14,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79854498/argo-cd-app-of-apps-how-to-automatically-sync-a-dependent-application-when-syn"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79792444",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Why does KEDA create a second Selenium Node for the second Chrome session instead of using available slots on the first node",
+    "review_order": 15,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79792444/why-does-keda-create-a-second-selenium-node-for-the-second-chrome-session-instea"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79464533",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "passing env variable to docker image from k8 secret store",
+    "review_order": 16,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79464533/passing-env-variable-to-docker-image-from-k8-secret-store"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79294162",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How can I get the prometheus metrics for informer watch operation latency?",
+    "review_order": 17,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79294162/how-can-i-get-the-prometheus-metrics-for-informer-watch-operation-latency"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-77494446",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "How to specify topology keys for kubernetes service declared with terraform?",
+    "review_order": 18,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/77494446/how-to-specify-topology-keys-for-kubernetes-service-declared-with-terraform"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-79284062",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Istio failover to external service when internal service is unhealthy",
+    "review_order": 19,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/79284062/istio-failover-to-external-service-when-internal-service-is-unhealthy"
+  },
+  {
+    "case_id": "stackoverflow-kubernetes-78542380",
+    "content_license": "CC BY-SA 4.0",
+    "expected_document_id": "",
+    "question": "Kubernetes deployment; all new pods first before deleting existing pods",
+    "review_order": 20,
+    "review_status": "pending",
+    "reviewer_decision": "",
+    "reviewer_notes": "",
+    "source_url": "https://stackoverflow.com/questions/78542380/kubernetes-deployment-all-new-pods-first-before-deleting-existing-pods"
+  }
+]
