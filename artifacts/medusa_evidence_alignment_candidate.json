@@ -1,8 +1,8 @@
 {
   "best_recall_preserving_alignment": {
     "accepted_count": 37,
-    "minimum_evidence_alignment": 0.06830075815796591,
-    "minimum_title_alignment": 0.2727272727272727,
+    "minimum_evidence_alignment": 0.068301,
+    "minimum_title_alignment": 0.272727,
     "supported_recall_at_1": 0.5714285714285714,
     "supported_recall_at_3": 0.8571428571428571,
     "unsupported_abstention": 0.6477272727272727,

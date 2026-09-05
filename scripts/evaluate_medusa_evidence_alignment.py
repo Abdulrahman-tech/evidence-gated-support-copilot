@@ -179,7 +179,15 @@ def evaluate() -> dict:
     ]
     frequencies = document_frequency(documents)
     features = [
-        alignment_features(case.question, results, frequencies, len(documents))
+        tuple(
+            round(value, 6)
+            for value in alignment_features(
+                case.question,
+                results,
+                frequencies,
+                len(documents),
+            )
+        )
         for case, results in zip(cases, ranked)
     ]
     title_thresholds = sorted({0.0} | {feature[0] for feature in features})
