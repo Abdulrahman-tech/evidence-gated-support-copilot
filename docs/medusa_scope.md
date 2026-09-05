@@ -1,11 +1,11 @@
-# Medusa Support Copilot Scope
+# Paused Medusa Research Scope
 
 ## Target user and tenant
 
-The production track supports merchants and developers operating Medusa stores.
-Every request is routed to the `medusa` tenant before retrieval. The legacy
-multi-company Twitter benchmark remains a stress test and is not the production
-knowledge source.
+This offline research track explored support for merchants and developers
+operating Medusa stores. It is paused, not deployed, and not part of the current
+Kubernetes production-readiness roadmap. The retained `medusa` tenant, corpus,
+and evaluations are reproducibility artifacts only.
 
 ## Documentation coverage
 

@@ -11,6 +11,11 @@ flags suspicious instructions, and abstains when support is insufficient.
 [**Technical case study**](docs/technical_case_study.md) ·
 [**Quality gate**](https://github.com/Abdulrahman-tech/evidence-gated-support-copilot/actions/workflows/quality.yml)
 
+The machine-readable [product scope contract](config/product_scope.json) and
+[scope guide](docs/product_scope.md) fix Kubernetes core as the primary tenant
+and prevent experimental corpora from silently becoming deployment or release
+claims.
+
 > **Current status:** production-minded portfolio beta, not production ready.
 > The public demo uses an explicitly non-production lexical evidence verifier,
 > every response requires human review, and the Kubernetes independent release
@@ -100,13 +105,12 @@ unique sections from 126 pages and is intentionally not enabled for runtime
 routing until version-specific retrieval and evidence gates pass. See
 [the Helm scope](docs/helm_scope.md) for provenance and qualification status.
 
-## Medusa production track
+## Paused Medusa research archive
 
-The production-focused track is scoped to technical support for merchants and
-developers operating Medusa commerce stores. It uses a single `medusa` tenant
-and official documentation for authentication, customers, fulfillment,
-inventory, orders, payments, and products. The existing mixed-company Twitter
-data is retained only as a legacy stress test.
+This offline research archive explored technical support for merchants and
+developers operating Medusa commerce stores. It is paused and is not a product,
+deployment, active validation milestone, or production-readiness claim. Its
+corpora and failed experiments remain for reproducibility only.
 
 The initial pinned corpus contains 488 unique sections from 85 official Medusa
 documentation pages. The expanded candidate corpus contains 3,342 unique
@@ -238,19 +242,15 @@ for independent validation: seven supported cases produce wide confidence
 intervals, and the local evaluation process peaked near 849 MB RSS, above the
 current Render free-instance limit. It is not wired into the runtime.
 
-The candidate thresholds are now frozen before review in
+The candidate thresholds were frozen before review in
 `data/medusa/independent_validation_pilot/frozen_candidate.json`. A deterministic
 30-case blind pilot samples the untouched validation-role issue pool across
 product areas and support intents. The packet contains no retrieval output,
 semantic score, prediction, or suggested label. Because issue reports have
 historically yielded few supported cases, this pilot can measure source yield
 and unsupported abstention; it cannot by itself establish supported recall or
-production readiness. Run the evaluator only after an independent human has
-approved every row and completed the attestation:
-
-```bash
-PYTHONPATH=src python scripts/evaluate_medusa_independent_validation_pilot.py
-```
+production readiness. The pilot is paused with the rest of the Medusa archive;
+do not spend review time on it while Kubernetes is the primary track.
 
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.

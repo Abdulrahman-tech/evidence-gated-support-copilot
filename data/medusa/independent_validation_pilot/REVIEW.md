@@ -1,5 +1,9 @@
 # Medusa independent-validation issue pilot
 
+> **Paused:** Do not review this packet while Kubernetes core is the primary
+> product track. It is preserved only so the Medusa experiment remains
+> reproducible if it is intentionally resumed later.
+
 Review all 30 rows in `review_packet.json` using only the linked GitHub issue and
 the pinned official Medusa documentation. Do not open the semantic calibration
 artifact, run the evaluator, or consult earlier benchmark labels while deciding.

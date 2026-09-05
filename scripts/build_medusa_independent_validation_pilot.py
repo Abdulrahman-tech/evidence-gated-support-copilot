@@ -116,7 +116,7 @@ def build() -> tuple[list[dict], dict, dict]:
     )
     manifest = {
         "pilot_id": "medusa_independent_validation_issue_pilot_v1",
-        "status": "awaiting_independent_human_review",
+        "status": "paused_scope_archive",
         "purpose": "unsupported_source_yield_and_abstention_pilot",
         "case_count": len(review_packet),
         "selection_seed": SEED,

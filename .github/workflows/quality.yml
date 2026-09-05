@@ -59,14 +59,19 @@ jobs:
           scripts/apply_medusa_development_source_fidelity.py
           scripts/backup_review_database.py
           scripts/build_medusa_development_source_fidelity.py
+          scripts/build_medusa_independent_validation_pilot.py
           scripts/calibrate_medusa_retrieval_confidence.py
+          scripts/check_product_scope.py
           scripts/check_kubernetes_production_readiness.py
           scripts/check_live_service.py
           scripts/create_api_key_secret.py
           scripts/evaluate_hosted_evidence.py
           scripts/evaluate_medusa_evidence_alignment.py
+          scripts/evaluate_medusa_independent_validation_pilot.py
           scripts/evaluate_medusa_local_semantic_gate.py
           scripts/load_test_api.py
+      - name: Verify Kubernetes product scope
+        run: python scripts/check_product_scope.py
 
   dependency-audit:
     name: Dependency audit

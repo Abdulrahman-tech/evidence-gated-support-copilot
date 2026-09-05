@@ -132,7 +132,8 @@ protected-split evaluation was used.
 rules. On the repaired development split its selected boundary reaches 6/7
 supported Recall@3 (85.7%) and 71/88 unsupported abstention (80.7%). This passes
 the development point targets, but the 95% lower bounds are only 48.7% and
-71.2%, respectively. It is selected for independent validation, not production.
+71.2%, respectively. It was selected for independent validation, but that
+Medusa-only validation path is now paused and remains outside production.
 
 ```bash
 pip install -e '.[semantic]'

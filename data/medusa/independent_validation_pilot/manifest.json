@@ -58,5 +58,5 @@
   "selection_method": "deterministic_round_robin_by_product_area_and_support_intent",
   "selection_seed": "medusa-independent-validation-issue-pilot-v1",
   "source_type": "github_issue_report",
-  "status": "awaiting_independent_human_review"
+  "status": "paused_scope_archive"
 }

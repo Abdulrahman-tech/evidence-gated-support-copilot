@@ -1,5 +1,9 @@
 # Validation and hosted-token strategy
 
+> **Paused archive:** This document records the Medusa research path. Do not
+> collect, review, or evaluate more Medusa cases while Kubernetes core is the
+> repository's primary product track.
+
 ## Decision
 
 Do not manually review the entire 388-case fresh validation packet. All 388
@@ -52,13 +56,15 @@ confidence intervals on frozen, independently reviewed data.
 
 The development-selected `local_semantic_alignment_v1` thresholds were frozen
 before opening a deterministic 30-case sample from the untouched validation
-role. The files are under `data/medusa/independent_validation_pilot`. The review
+role. The pilot was then paused before human review when the project was
+re-anchored to Kubernetes. Its files remain under
+`data/medusa/independent_validation_pilot`. The review
 packet deliberately omits product-area strata, retriever output, semantic
 features, model predictions, and suggested labels. The evaluator refuses to run
 until every decision is approved, supported decisions reference a real corpus
 document ID, and a human blind-review attestation is complete.
 
-This is the unsupported/source-yield half of independent validation. It does not
+This would be the unsupported/source-yield half of independent validation. It does not
 solve the supported-case shortage described below and cannot promote the
 candidate to production on its own. The locked test remains unopened.
 

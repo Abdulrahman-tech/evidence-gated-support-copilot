@@ -91,7 +91,10 @@ from scripts.evaluate_medusa_evidence_alignment import (
     alignment_features,
     evaluate as evaluate_medusa_alignment,
 )
-from scripts.evaluate_medusa_independent_validation_pilot import validate_reviews
+from scripts.evaluate_medusa_independent_validation_pilot import (
+    evaluate as evaluate_medusa_independent_validation_pilot,
+    validate_reviews,
+)
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -1916,7 +1919,7 @@ the period as a nested lookup. This is useful for annotations and settings.
                 ).read_text(encoding="utf-8")
             ),
         )
-        self.assertEqual(manifest["status"], "awaiting_independent_human_review")
+        self.assertEqual(manifest["status"], "paused_scope_archive")
         self.assertEqual(
             manifest["purpose"], "unsupported_source_yield_and_abstention_pilot"
         )
@@ -1959,6 +1962,10 @@ the period as a nested lookup. This is useful for annotations and settings.
                 },
                 {row["document_id"] for row in documents},
             )
+
+    def test_medusa_independent_validation_is_paused(self) -> None:
+        with self.assertRaisesRegex(ValueError, "Kubernetes is the primary"):
+            evaluate_medusa_independent_validation_pilot(Path("unused-model-cache"))
 
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
         development_path = (

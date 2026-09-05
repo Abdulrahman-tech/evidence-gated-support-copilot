@@ -100,6 +100,18 @@ def validate_reviews(
 
 
 def evaluate(model_cache: Path) -> dict:
+    rows = json.loads((PILOT / "review_packet.json").read_text(encoding="utf-8"))
+    manifest = json.loads((PILOT / "manifest.json").read_text(encoding="utf-8"))
+    frozen = json.loads((PILOT / "frozen_candidate.json").read_text(encoding="utf-8"))
+    attestation = json.loads(
+        (PILOT / "reviewer_attestation.json").read_text(encoding="utf-8")
+    )
+    if manifest["status"] == "paused_scope_archive":
+        raise ValueError(
+            "Medusa validation is paused; Kubernetes is the primary product track"
+        )
+    if manifest["status"] != "awaiting_independent_human_review":
+        raise ValueError("independent-validation pilot has an invalid status")
     try:
         import numpy as np
         from sentence_transformers import SentenceTransformer
@@ -108,12 +120,6 @@ def evaluate(model_cache: Path) -> dict:
             "independent semantic evaluation requires the optional semantic dependencies"
         ) from error
 
-    rows = json.loads((PILOT / "review_packet.json").read_text(encoding="utf-8"))
-    manifest = json.loads((PILOT / "manifest.json").read_text(encoding="utf-8"))
-    frozen = json.loads((PILOT / "frozen_candidate.json").read_text(encoding="utf-8"))
-    attestation = json.loads(
-        (PILOT / "reviewer_attestation.json").read_text(encoding="utf-8")
-    )
     knowledge_path = DATA / "knowledge_expanded.json"
     documents = [
         KnowledgeDocument(**row)
