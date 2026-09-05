@@ -221,9 +221,12 @@ On the repaired development split, title/body candidate diversification reaches
 raw candidate Recall@3 of 85.7% (6/7), while the existing confidence gate passes
 only 42.9% (3/7). Unsupported pre-verifier abstention is 48.9%. These small,
 development-only measurements diagnose the next engineering bottleneck; they
-are not production claims. The confidence policy must be frozen and evaluated
-end to end before validation. The service therefore retains mandatory human
-review; the locked test has not been evaluated.
+are not production claims. An exhaustive development-only calibration found no
+score/ratio threshold that simultaneously retains 80% Recall@3 and 80%
+unsupported abstention, so runtime defaults were not changed and hosted-model
+evaluation is deferred until the gate has a more informative signal. The
+service therefore retains mandatory human review; the locked test has not been
+evaluated.
 
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.

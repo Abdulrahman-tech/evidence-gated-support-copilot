@@ -90,6 +90,24 @@ verifier; gated recall additionally applies the lexical confidence threshold.
 Keeping these metrics separate prevents a conservative pre-verifier gate from
 being misdiagnosed as a ranking failure.
 
+The Medusa development-only calibration exhaustively checks every decision
+boundary induced by the observed top score and top-two score ratio. No member
+of that threshold family can simultaneously retain at least 80% supported
+Recall@3 and abstain on at least 80% of unsupported cases. The best threshold
+that retains 6/7 retrievable supported cases abstains on only 19/88 unsupported
+cases; the best threshold meeting 80% unsupported abstention retains only 2/7
+supported cases. Therefore runtime defaults remain unchanged and another Groq
+run is deferred until the gate uses a more informative signal. Reproduce the
+diagnostic with:
+
+```bash
+PYTHONPATH=src python scripts/calibrate_medusa_retrieval_confidence.py
+```
+
+The frozen output is in
+`artifacts/medusa_confidence_gate_calibration.json`. It records protected-split
+checksums but does not evaluate validation or the locked test.
+
 ## Rejected local verifier candidate
 
 A pinned TinyRoBERTa SQuAD2 extractive model was tested only on the development

@@ -1,0 +1,52 @@
+{
+  "baseline": {
+    "accepted_count": 49,
+    "minimum_score": 9.0,
+    "minimum_score_ratio": 1.1,
+    "supported_recall_at_1": 0.42857142857142855,
+    "supported_recall_at_3": 0.42857142857142855,
+    "unsupported_abstention": 0.48863636363636365,
+    "unsupported_pass_count": 45
+  },
+  "best_abstention_while_preserving_recall": {
+    "accepted_count": 76,
+    "minimum_score": 21.5819,
+    "minimum_score_ratio": 1.0202519677594724,
+    "supported_recall_at_1": 0.5714285714285714,
+    "supported_recall_at_3": 0.8571428571428571,
+    "unsupported_abstention": 0.2159090909090909,
+    "unsupported_pass_count": 69
+  },
+  "best_recall_while_preserving_abstention": {
+    "accepted_count": 19,
+    "minimum_score": 24.2558,
+    "minimum_score_ratio": 1.1802400778945226,
+    "supported_recall_at_1": 0.2857142857142857,
+    "supported_recall_at_3": 0.2857142857142857,
+    "unsupported_abstention": 0.8068181818181818,
+    "unsupported_pass_count": 17
+  },
+  "calibration_scope": "medusa_development_only",
+  "calibration_status": "no_viable_score_ratio_threshold",
+  "candidate_threshold_count": 9409,
+  "decision": "Do not loosen the production confidence gate. Replace or augment the score-ratio feature before another hosted-model evaluation.",
+  "development": {
+    "case_count": 95,
+    "raw_candidate_recall_at_3": 0.8571428571428571,
+    "sha256": "99494e00ca32b6bb31137a9b8d5b3ab08af92663a3e2bb3e699a568047919c7c",
+    "supported_count": 7,
+    "unsupported_count": 88
+  },
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "protected_split_checksums": {
+    "locked_test": "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+    "validation": "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a"
+  },
+  "protected_splits_evaluated": [],
+  "requirements": {
+    "minimum_supported_recall_at_3": 0.8,
+    "minimum_unsupported_abstention": 0.8
+  },
+  "runtime_defaults_changed": false,
+  "selection": null
+}

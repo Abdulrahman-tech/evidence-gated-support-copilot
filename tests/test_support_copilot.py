@@ -79,6 +79,11 @@ from scripts.build_medusa_development_source_fidelity import (
     source_faithful_question,
     source_question_from_page,
 )
+from scripts.calibrate_medusa_retrieval_confidence import (
+    EXPECTED_LOCKED_TEST_SHA256,
+    EXPECTED_VALIDATION_SHA256,
+    calibrate as calibrate_medusa_confidence,
+)
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -1746,6 +1751,49 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertEqual(
             hashlib.sha256((root / "benchmark" / "test.json").read_bytes()).hexdigest(),
             "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+        )
+
+    def test_medusa_confidence_calibration_rejects_the_threshold_family(self) -> None:
+        result = calibrate_medusa_confidence()
+        artifact = json.loads(
+            (
+                Path(__file__).resolve().parents[1]
+                / "artifacts"
+                / "medusa_confidence_gate_calibration.json"
+            ).read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(result, artifact)
+        self.assertEqual(result["calibration_scope"], "medusa_development_only")
+        self.assertEqual(
+            result["calibration_status"], "no_viable_score_ratio_threshold"
+        )
+        self.assertIsNone(result["selection"])
+        self.assertFalse(result["runtime_defaults_changed"])
+        self.assertEqual(result["protected_splits_evaluated"], [])
+        self.assertEqual(
+            result["protected_split_checksums"],
+            {
+                "validation": EXPECTED_VALIDATION_SHA256,
+                "locked_test": EXPECTED_LOCKED_TEST_SHA256,
+            },
+        )
+        self.assertAlmostEqual(
+            result["development"]["raw_candidate_recall_at_3"], 6 / 7
+        )
+        self.assertAlmostEqual(result["baseline"]["supported_recall_at_3"], 3 / 7)
+        self.assertAlmostEqual(result["baseline"]["unsupported_abstention"], 43 / 88)
+        self.assertLess(
+            result["best_abstention_while_preserving_recall"][
+                "unsupported_abstention"
+            ],
+            0.80,
+        )
+        self.assertLess(
+            result["best_recall_while_preserving_abstention"][
+                "supported_recall_at_3"
+            ],
+            0.80,
         )
 
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
