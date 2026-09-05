@@ -84,6 +84,10 @@ from scripts.calibrate_medusa_retrieval_confidence import (
     EXPECTED_VALIDATION_SHA256,
     calibrate as calibrate_medusa_confidence,
 )
+from scripts.evaluate_medusa_evidence_alignment import (
+    alignment_features,
+    evaluate as evaluate_medusa_alignment,
+)
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -1793,6 +1797,54 @@ the period as a nested lookup. This is useful for annotations and settings.
             result["best_recall_while_preserving_abstention"][
                 "supported_recall_at_3"
             ],
+            0.80,
+        )
+
+    def test_evidence_alignment_uses_candidate_sentences_not_case_ids(self) -> None:
+        features = alignment_features(
+            "How to use a secret API key?. Source context: Authenticate API requests using a secret key.",
+            [
+                SearchResult(
+                    document_id="secret-keys",
+                    title="Secret API keys",
+                    source="docs/secret-keys",
+                    passage="Authenticate API requests by placing the secret API key in the authorization header.",
+                    score=10.0,
+                )
+            ],
+            collections.Counter(),
+            2,
+        )
+
+        self.assertAlmostEqual(features[0], 3 / 5)
+        self.assertAlmostEqual(features[1], 4 / 9)
+
+    def test_medusa_evidence_alignment_candidate_is_rejected_and_frozen(self) -> None:
+        result = evaluate_medusa_alignment()
+        artifact = json.loads(
+            (
+                Path(__file__).resolve().parents[1]
+                / "artifacts"
+                / "medusa_evidence_alignment_candidate.json"
+            ).read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(result, artifact)
+        self.assertEqual(result["candidate_status"], "rejected")
+        self.assertIsNone(result["selection"])
+        self.assertFalse(result["runtime_changed"])
+        self.assertEqual(result["protected_splits_evaluated"], [])
+        self.assertAlmostEqual(
+            result["best_recall_preserving_alignment"]["supported_recall_at_3"],
+            6 / 7,
+        )
+        self.assertAlmostEqual(
+            result["best_recall_preserving_alignment"]["unsupported_abstention"],
+            57 / 88,
+        )
+        self.assertGreater(result["unsupported_abstention_improvement"], 0.40)
+        self.assertLess(
+            result["best_recall_preserving_alignment"]["unsupported_abstention"],
             0.80,
         )
 

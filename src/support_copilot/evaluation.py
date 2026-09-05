@@ -7,6 +7,7 @@ from pathlib import Path
 
 from support_copilot.evidence import EvidenceDecision, EvidenceVerification
 from support_copilot.knowledge import KnowledgeBase, retrieval_is_confident
+from support_copilot.models import SearchResult
 
 
 @dataclass(frozen=True)
@@ -118,6 +119,54 @@ def unsupported_abstention_rate(
         if not retrieval_is_confident(results, minimum_score, minimum_score_ratio):
             abstentions += 1
     return abstentions / len(unsupported)
+
+
+def retrieval_confidence_metrics(
+    cases: list[EvaluationCase],
+    ranked: list[list[SearchResult]],
+    minimum_score: float,
+    minimum_score_ratio: float,
+) -> dict[str, float | int]:
+    """Measure a pre-verifier confidence rule over already-ranked candidates."""
+
+    supported_count = sum(case.expected_document_id is not None for case in cases)
+    unsupported_count = len(cases) - supported_count
+    if not supported_count or not unsupported_count or len(ranked) != len(cases):
+        raise ValueError("confidence metrics require aligned supported and unsupported cases")
+    accepted = [
+        retrieval_is_confident(results, minimum_score, minimum_score_ratio)
+        for results in ranked
+    ]
+    supported_hits_at_1 = sum(
+        is_accepted
+        and results
+        and results[0].document_id == case.expected_document_id
+        for case, results, is_accepted in zip(cases, ranked, accepted)
+        if case.expected_document_id is not None
+    )
+    supported_hits_at_3 = sum(
+        is_accepted
+        and any(
+            result.document_id == case.expected_document_id
+            for result in results[:3]
+        )
+        for case, results, is_accepted in zip(cases, ranked, accepted)
+        if case.expected_document_id is not None
+    )
+    unsupported_abstentions = sum(
+        not is_accepted
+        for case, is_accepted in zip(cases, accepted)
+        if case.expected_document_id is None
+    )
+    return {
+        "minimum_score": minimum_score,
+        "minimum_score_ratio": minimum_score_ratio,
+        "supported_recall_at_1": supported_hits_at_1 / supported_count,
+        "supported_recall_at_3": supported_hits_at_3 / supported_count,
+        "unsupported_abstention": unsupported_abstentions / unsupported_count,
+        "accepted_count": sum(accepted),
+        "unsupported_pass_count": unsupported_count - unsupported_abstentions,
+    }
 
 
 def wilson_interval(successes: int, total: int, z: float = 1.96) -> tuple[float, float]:

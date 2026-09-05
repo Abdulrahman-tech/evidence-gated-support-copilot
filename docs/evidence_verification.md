@@ -108,6 +108,22 @@ The frozen output is in
 `artifacts/medusa_confidence_gate_calibration.json`. It records protected-split
 checksums but does not evaluate validation or the locked test.
 
+A subsequent zero-cost candidate measures alignment against individual evidence
+sentences rather than whole passages. It combines title-term coverage with
+IDF-weighted full-question coverage and contains no case IDs or product-specific
+rules. At the development Recall@3 requirement it improves unsupported
+abstention from 21.6% for the best score/ratio boundary to 64.8%, but still
+misses the 80% requirement. `sentence_evidence_alignment_v1` is therefore
+recorded as rejected and is not wired into runtime behavior:
+
+```bash
+PYTHONPATH=src python scripts/evaluate_medusa_evidence_alignment.py
+```
+
+Its frozen result is
+`artifacts/medusa_evidence_alignment_candidate.json`. No hosted-model call or
+protected-split evaluation was used.
+
 ## Rejected local verifier candidate
 
 A pinned TinyRoBERTa SQuAD2 extractive model was tested only on the development

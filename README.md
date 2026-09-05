@@ -228,6 +228,10 @@ evaluation is deferred until the gate has a more informative signal. The
 service therefore retains mandatory human review; the locked test has not been
 evaluated.
 
+A zero-cost sentence-alignment candidate improved recall-preserving unsupported
+abstention from 21.6% to 64.8%, but it still failed the 80% development
+requirement. It remains an offline rejected experiment, not production code.
+
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.
 

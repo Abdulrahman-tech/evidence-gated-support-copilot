@@ -8,14 +8,13 @@ import hashlib
 import json
 from pathlib import Path
 
-from support_copilot.evaluation import EvaluationCase, load_cases
+from support_copilot.evaluation import load_cases, retrieval_confidence_metrics
 from support_copilot.knowledge import (
     DEFAULT_MINIMUM_SCORE,
     DEFAULT_MINIMUM_SCORE_RATIO,
     KnowledgeBase,
-    retrieval_is_confident,
 )
-from support_copilot.models import KnowledgeDocument, SearchResult
+from support_copilot.models import KnowledgeDocument
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -35,48 +34,7 @@ def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def measure(
-    cases: list[EvaluationCase],
-    ranked: list[list[SearchResult]],
-    minimum_score: float,
-    minimum_score_ratio: float,
-) -> dict[str, float | int]:
-    supported_count = sum(case.expected_document_id is not None for case in cases)
-    unsupported_count = len(cases) - supported_count
-    accepted = [
-        retrieval_is_confident(results, minimum_score, minimum_score_ratio)
-        for results in ranked
-    ]
-    supported_hits_at_1 = sum(
-        is_accepted
-        and results
-        and results[0].document_id == case.expected_document_id
-        for case, results, is_accepted in zip(cases, ranked, accepted)
-        if case.expected_document_id is not None
-    )
-    supported_hits_at_3 = sum(
-        is_accepted
-        and any(
-            result.document_id == case.expected_document_id
-            for result in results[:3]
-        )
-        for case, results, is_accepted in zip(cases, ranked, accepted)
-        if case.expected_document_id is not None
-    )
-    unsupported_abstentions = sum(
-        not is_accepted
-        for case, is_accepted in zip(cases, accepted)
-        if case.expected_document_id is None
-    )
-    return {
-        "minimum_score": minimum_score,
-        "minimum_score_ratio": minimum_score_ratio,
-        "supported_recall_at_1": supported_hits_at_1 / supported_count,
-        "supported_recall_at_3": supported_hits_at_3 / supported_count,
-        "unsupported_abstention": unsupported_abstentions / unsupported_count,
-        "accepted_count": sum(accepted),
-        "unsupported_pass_count": unsupported_count - unsupported_abstentions,
-    }
+measure = retrieval_confidence_metrics
 
 
 def calibrate() -> dict:

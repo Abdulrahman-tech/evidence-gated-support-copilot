@@ -1,0 +1,53 @@
+{
+  "best_recall_preserving_alignment": {
+    "accepted_count": 37,
+    "minimum_evidence_alignment": 0.06830075815796591,
+    "minimum_title_alignment": 0.2727272727272727,
+    "supported_recall_at_1": 0.5714285714285714,
+    "supported_recall_at_3": 0.8571428571428571,
+    "unsupported_abstention": 0.6477272727272727,
+    "unsupported_pass_count": 31
+  },
+  "best_recall_preserving_score_ratio": {
+    "accepted_count": 76,
+    "minimum_score": 21.5819,
+    "minimum_score_ratio": 1.0202519677594724,
+    "supported_recall_at_1": 0.5714285714285714,
+    "supported_recall_at_3": 0.8571428571428571,
+    "unsupported_abstention": 0.2159090909090909,
+    "unsupported_pass_count": 69
+  },
+  "calibration_scope": "medusa_development_only",
+  "candidate": "sentence_evidence_alignment_v1",
+  "candidate_status": "rejected",
+  "candidate_threshold_count": 2784,
+  "development": {
+    "case_count": 95,
+    "sha256": "99494e00ca32b6bb31137a9b8d5b3ab08af92663a3e2bb3e699a568047919c7c",
+    "supported_count": 7,
+    "unsupported_count": 88
+  },
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "protected_split_checksums": {
+    "locked_test": "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+    "validation": "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a"
+  },
+  "protected_splits_evaluated": [],
+  "rejection_reason": "No alignment threshold meets both development recall and abstention requirements.",
+  "requirements": {
+    "minimum_supported_recall_at_3": 0.8,
+    "minimum_unsupported_abstention": 0.8
+  },
+  "runtime_changed": false,
+  "score_ratio_baseline": {
+    "accepted_count": 49,
+    "minimum_score": 9.0,
+    "minimum_score_ratio": 1.1,
+    "supported_recall_at_1": 0.42857142857142855,
+    "supported_recall_at_3": 0.42857142857142855,
+    "unsupported_abstention": 0.48863636363636365,
+    "unsupported_pass_count": 45
+  },
+  "selection": null,
+  "unsupported_abstention_improvement": 0.43181818181818177
+}
