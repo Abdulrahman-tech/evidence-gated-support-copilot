@@ -1,0 +1,34 @@
+[
+  {
+    "case_id": "medusa-discussion-3677",
+    "decision": "outdated",
+    "original_question": "Send email with sendgrid.",
+    "review_notes": "The source uses the obsolete Medusa v1 medusa-plugin-sendgrid service interface.",
+    "reviewed_question": "Send email with sendgrid.. Source context: I need to be able to send an emails via sendgrid. I have found I can do it with the built in subscription methods effectively. However when I attemp to send an email using the following code I get back an error: const sendgridService = req.scope.resolve(\"sendgridService\") const x = await sendgridService.sendEmail('d-a7d63....', 'support@m....s.com', 'b@....com, { test: \"test\"}); TypeError: Cannot create property 'isMultiple' on string ''d-a7d63....' at MailService.send (\\node_modules@sendgrid\\mail\\src\\classes\\mail-service.js:184:25) at _callee5$ (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:531:68) at tryCatch (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:24:2407) at Generator._invoke (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:24:1967) at Generator.next (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:24:3258) at asyncGeneratorStep (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:26:103) at _next (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:28:194) at \\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:28:364 at new Promise () at SendGridService. (\\node_modules\\medusa-plugin-sendgrid\\services\\sendgrid.js:28:97) Is there a way for me to send an email without using a built in template? Am I doing something wrong?",
+    "source_url": "https://github.com/medusajs/medusa/discussions/3677"
+  },
+  {
+    "case_id": "medusa-discussion-4743",
+    "decision": "outdated",
+    "original_question": "I couldn't connect to PostgreSQL while installing Medusa.",
+    "review_notes": "The failure is tied to the obsolete create-medusa-app 1.0.4 installer flow.",
+    "reviewed_question": "Couldn't connect my postgress while installing medusa.. Source context: I had already downloaded my posgresql in my computer and created the database but when i installing medusa it is not working. I'm 100% sure i'm providing the right password `PS G:\\Practices\\04_Medusa_experiment> yarn create medusa-app yarn create v1.22.19 [1/4] Resolving packages... [2/4] Fetching packages... [3/4] Linking dependencies... [4/4] Building fresh packages... success Installed \"create-medusa-app@1.0.4\" with binaries: - create-medusa-app ? What's the name of your project? my-medusa-store ? Enter your Postgres username postgres ? Enter your Postgres password [hidden] Couldn't connect to PostgreSQL. Make sure you have PostgreSQL installed and the credentials you provided are correct. You can learn how to install PostgreSQL here: https://docs.medusajs.com/development/backend/prepare-environment?os=windows#postgresql If you keep running into this issue despite having PostgreSQL installed, please check out our troubleshooting guidelines: https://docs.medusajs.com/troubleshooting/database-error error Command failed. Exit code: 1 Command: C:\\Users\\farde\\AppData\\Local\\Yarn\\bin\\create-medusa-app Arguments: Directory: G:\\Practices\\04_Medusa_experiment Output: `",
+    "source_url": "https://github.com/medusajs/medusa/discussions/4743"
+  },
+  {
+    "case_id": "medusa-issue-10541",
+    "decision": "outdated",
+    "original_question": "Create fulfilment creates partial fulfilment in case there are more than one line item in the order.",
+    "review_notes": "The source is explicitly labelled Medusa version 1.0 and uses the former fulfillment architecture.",
+    "reviewed_question": "Create fulfilment creates partial fulfilment in case there are more than one line item in the order.. Source context: Expected behavior: After creating a fulfilment it should be marked fulfilled.",
+    "source_url": "https://github.com/medusajs/medusa/issues/10541"
+  },
+  {
+    "case_id": "medusa-issue-9764",
+    "decision": "outdated",
+    "original_question": "Variant price not saved, order with lower prices took place.",
+    "review_notes": "The source reports Medusa 1.20.9 and the former v1 Admin pricing flow.",
+    "reviewed_question": "Variant price not saved, order with lower prices took place.. Source context: Hi! using medusa `1.20.9`, when I save a price trough the admin UI (on this route for example (https://medusa.birdblocker.shop/app/a/products/prod_01H1PXK8DW6NRG9B8RS9RWBKAT), the update is shown successfully, but the price is not saved. This resulted in various orders where customers paid cheaper prices as we thought the prices were higher. This is very bad off course, how could this have happend? See this video. https://github.com/user-attachments/assets/06b02f77-78d2-447d-a6a7-f75524e4ab2b",
+    "source_url": "https://github.com/medusajs/medusa/issues/9764"
+  }
+]

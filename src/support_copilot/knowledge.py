@@ -82,7 +82,7 @@ class KnowledgeBase:
                 passages.append(_Passage(document, text, Counter(tokenize(index_text))))
         return passages
 
-    def search(
+    def _search_single(
         self,
         query: str,
         limit: int = 3,
@@ -149,6 +149,43 @@ class KnowledgeBase:
             if len(results) == limit:
                 break
         return results
+
+    def search(
+        self,
+        query: str,
+        limit: int = 3,
+        tenant_id: str | None = None,
+    ) -> list[SearchResult]:
+        """Rank a ticket while reserving one candidate for its concise title."""
+
+        full_results = self._search_single(query, limit=limit, tenant_id=tenant_id)
+        if limit < 3:
+            return full_results
+        title_query = ""
+        if ". Source context:" in query:
+            title_query = query.split(". Source context:", 1)[0].strip()
+        else:
+            lines = query.strip().splitlines()
+            if len(lines) > 1 and lines[0].strip() and len(lines[0].strip()) <= 300:
+                title_query = lines[0].strip()
+        if not title_query or title_query == query.strip():
+            return full_results
+
+        title_results = self._search_single(
+            title_query,
+            limit=limit,
+            tenant_id=tenant_id,
+        )
+        diversified = full_results[:2]
+        seen = {result.document_id for result in diversified}
+        for result in title_results + full_results[2:]:
+            if result.document_id in seen:
+                continue
+            diversified.append(result)
+            seen.add(result.document_id)
+            if len(diversified) == limit:
+                break
+        return diversified
 
 
 def retrieval_is_confident(

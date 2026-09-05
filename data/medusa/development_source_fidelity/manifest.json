@@ -1,0 +1,11 @@
+{
+  "case_count": 99,
+  "changed_question_count": 99,
+  "discussion_count": 41,
+  "issue_count": 58,
+  "packet_sha256": "d572732cd47ba61977a095c84cfd6853d4139f64754f9790f7f496ddd9029485",
+  "review_method": "ai_assisted_source_fidelity_audit_user_authorized",
+  "review_status": "approved",
+  "scope": "development_only",
+  "source_hash_match_count": 99
+}

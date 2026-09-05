@@ -84,6 +84,12 @@ PYTHONPATH=src python scripts/evaluate_groq_evidence.py \
 This protects evaluation progress; it does not increase provider capacity or
 make a free-tier API suitable for production traffic.
 
+Development retrieval reports candidate recall separately from gated recall.
+Candidate recall answers whether the correct document reached the evidence
+verifier; gated recall additionally applies the lexical confidence threshold.
+Keeping these metrics separate prevents a conservative pre-verifier gate from
+being misdiagnosed as a ranking failure.
+
 ## Rejected local verifier candidate
 
 A pinned TinyRoBERTa SQuAD2 extractive model was tested only on the development

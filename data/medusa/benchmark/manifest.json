@@ -48,26 +48,39 @@
       "workbook_sha256": "5d8ea9b5dc33e096b055b0a9423be22040fc88570cf53f25e003f8d30506fb63"
     }
   ],
+  "development_source_fidelity_audit": {
+    "audit_id": "medusa_development_source_fidelity_v1",
+    "audit_sha256": "d572732cd47ba61977a095c84cfd6853d4139f64754f9790f7f496ddd9029485",
+    "excluded": 4,
+    "excluded_sha256": "c4e59f50cdea36a01e4982ba72daadeab5ea75f34b9b8f76ecccd00cb880cd96",
+    "included": 95,
+    "outdated": 4,
+    "review_method": "ai_assisted_source_fidelity_audit_user_authorized",
+    "reviewed": 99,
+    "source_hash_matches": 99,
+    "supported": 7,
+    "unsupported": 88
+  },
   "excluded": {
     "ambiguous": 2,
     "outdated": 28
   },
   "review_method": "mixed",
-  "review_warning": "Development combines AI-assisted labels with user-reviewed manual batches. Validation labels remain AI-assisted. The locked test was independently reviewed.",
+  "review_warning": "Development uses an AI-assisted, user-authorized full-source audit. Validation labels remain AI-assisted. The locked test remains independently reviewed.",
   "reviewed_candidates_sha256": "8fbd3d8339aadc3305d6e2afb3d0a7d4db7ab9f5c3f2b2f4757968315636529b",
   "seed": "medusa-discussions-v1",
   "source_commit": "c4a823a19e4787bb69f2c3238a3cb5cb0918d7cc",
   "split_review_methods": {
-    "development": "mixed",
+    "development": "ai_assisted_source_fidelity_audit_user_authorized",
     "test": "independent_manual_human_review",
     "validation": "ai_assisted_user_authorized"
   },
   "splits": {
     "development": {
-      "count": 99,
-      "sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
-      "supported": 13,
-      "unsupported": 86
+      "count": 95,
+      "sha256": "99494e00ca32b6bb31137a9b8d5b3ab08af92663a3e2bb3e699a568047919c7c",
+      "supported": 7,
+      "unsupported": 88
     },
     "test": {
       "count": 11,

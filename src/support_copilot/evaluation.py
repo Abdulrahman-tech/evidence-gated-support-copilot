@@ -26,6 +26,8 @@ class EvaluationCase:
     review_method: str = ""
     review_batch: str = ""
     review_notes: str = ""
+    source_question_sha256: str = ""
+    source_word_count: int = 0
 
 
 @dataclass(frozen=True)

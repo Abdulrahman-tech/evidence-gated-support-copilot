@@ -183,9 +183,13 @@ development batch with visible retrieval evidence, not a blind evaluation.
 
 Batch 02 added 30 approved development labels: 1 supported and 29 unsupported.
 Batch 03 reviewed another 30 cases and imported 28 usable labels: 2 supported
-and 26 unsupported. Its two ambiguous decisions remain in the batch exclusion
-record and are not benchmark labels. Development now contains 100 cases (21
-supported and 79 unsupported). Validation and locked test remain untouched.
+and 26 unsupported. A later source-fidelity audit checked the complete source
+body and frozen-source checksum for all 99 then-current development cases. It
+rewrote every title-only question from its source, retained 95 usable cases (7
+supported and 88 unsupported), and excluded four version-specific outdated
+cases. The audit packet and explicit decisions are stored under
+`data/medusa/development_source_fidelity`. Validation and locked test remain
+byte-for-byte unchanged.
 
 The two V1 high-confidence cases in Batch 03 were not clean supported matches
 (one was ambiguous and one unsupported), while two explicit-issue cases had
@@ -206,20 +210,20 @@ PYTHONPATH=src python scripts/validate_medusa_large_candidate_pool.py \
 PYTHONPATH=src python scripts/build_medusa_benchmark_splits.py
 ```
 
-Evaluate only the Medusa development and validation splits while keeping the
-locked test unavailable:
+Evaluate the Medusa development split while keeping the locked test
+unavailable. Validation is opt-in and must not be used for tuning:
 
 ```bash
-PYTHONPATH=src python scripts/evaluate_medusa_benchmark.py --split all
+PYTHONPATH=src python scripts/evaluate_medusa_benchmark.py
 ```
 
-The current `bm25_title_dedup_v2` candidate indexes section titles twice and
-returns unique documents rather than duplicate passages. On development it
-improved gated Recall@3 from 9.5% to 23.8%. On validation, Recall@1 and Recall@3
-remained 16.7%, while unsupported-question abstention improved from 37.5% to
-62.5%. The 14-case validation interval remains wide, and accepted-result risk
-is still too high for autonomous answers. The service therefore retains
-mandatory human review; the locked test has not been evaluated.
+On the repaired development split, title/body candidate diversification reaches
+raw candidate Recall@3 of 85.7% (6/7), while the existing confidence gate passes
+only 42.9% (3/7). Unsupported pre-verifier abstention is 48.9%. These small,
+development-only measurements diagnose the next engineering bottleneck; they
+are not production claims. The confidence policy must be frozen and evaluated
+end to end before validation. The service therefore retains mandatory human
+review; the locked test has not been evaluated.
 
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.
@@ -450,6 +454,11 @@ PYTHONPATH=src python scripts/evaluate_groq_evidence.py --max-cases 5
 PYTHONPATH=src python scripts/evaluate_groq_evidence.py \
   --output artifacts/groq_evidence_development.json
 ```
+
+`artifacts/groq_evidence_development_pre_source_fidelity.json` is a historical
+99-case run against the earlier title-only/mislabeled development set. It is
+retained for provenance and must not be cited as current quality evidence or
+resumed against the repaired benchmark.
 
 The output is an atomic checkpoint written after every completed case. If Groq
 reaches its rate limit, wait for the quota window to reset and continue without

@@ -1,0 +1,897 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "verifier_version": "direct_evidence_v3",
+  "split": "development",
+  "case_count": 99,
+  "development_sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "configuration": {
+    "provider": "groq",
+    "model": "openai/gpt-oss-20b",
+    "verifier_version": "direct_evidence_v3",
+    "split": "development",
+    "development_sha256": "b7b733229cb4c29d6b3d2f0f861ea543e4ff06532d4870c8b2ecf4e7496d4308",
+    "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+    "candidate_inputs_sha256": "1e19b7f2f787e0a32b083b372e05cae4b7d744c57cc27fe3a0afa5435eee9474",
+    "candidate_limit": 3,
+    "prompt_sha256": "7976cd0f70e9b55e9c39b65e0451bc2eeca8d1a75095a7c11bf6ddfaf196bf12",
+    "schema_sha256": "9675f41fd1bd0c179ed51bcd88dbfea3e46709e03a9522ef1ba127a678e76b57",
+    "case_ids": [
+      "medusa-discussion-10594",
+      "medusa-discussion-10646",
+      "medusa-discussion-10750",
+      "medusa-discussion-10766",
+      "medusa-discussion-11251",
+      "medusa-discussion-11320",
+      "medusa-discussion-11521",
+      "medusa-discussion-11554",
+      "medusa-discussion-12125",
+      "medusa-discussion-12466",
+      "medusa-discussion-12638",
+      "medusa-discussion-12680",
+      "medusa-discussion-13239",
+      "medusa-discussion-13369",
+      "medusa-discussion-1339",
+      "medusa-discussion-14208",
+      "medusa-discussion-15550",
+      "medusa-discussion-15884",
+      "medusa-discussion-2251",
+      "medusa-discussion-2407",
+      "medusa-discussion-2606",
+      "medusa-discussion-2624",
+      "medusa-discussion-2755",
+      "medusa-discussion-2826",
+      "medusa-discussion-2848",
+      "medusa-discussion-3530",
+      "medusa-discussion-3677",
+      "medusa-discussion-3823",
+      "medusa-discussion-4325",
+      "medusa-discussion-4387",
+      "medusa-discussion-4432",
+      "medusa-discussion-4575",
+      "medusa-discussion-4742",
+      "medusa-discussion-4743",
+      "medusa-discussion-4811",
+      "medusa-discussion-5006",
+      "medusa-discussion-5175",
+      "medusa-discussion-5987",
+      "medusa-discussion-7163",
+      "medusa-discussion-8660",
+      "medusa-discussion-9996",
+      "medusa-issue-10089",
+      "medusa-issue-10146",
+      "medusa-issue-10163",
+      "medusa-issue-10238",
+      "medusa-issue-10283",
+      "medusa-issue-10332",
+      "medusa-issue-10501",
+      "medusa-issue-10541",
+      "medusa-issue-10746",
+      "medusa-issue-10783",
+      "medusa-issue-11069",
+      "medusa-issue-11201",
+      "medusa-issue-11232",
+      "medusa-issue-11321",
+      "medusa-issue-11587",
+      "medusa-issue-11590",
+      "medusa-issue-11648",
+      "medusa-issue-11649",
+      "medusa-issue-11654",
+      "medusa-issue-11659",
+      "medusa-issue-11681",
+      "medusa-issue-11691",
+      "medusa-issue-11703",
+      "medusa-issue-11860",
+      "medusa-issue-11882",
+      "medusa-issue-12085",
+      "medusa-issue-12389",
+      "medusa-issue-12789",
+      "medusa-issue-12876",
+      "medusa-issue-12959",
+      "medusa-issue-13066",
+      "medusa-issue-13337",
+      "medusa-issue-13403",
+      "medusa-issue-13877",
+      "medusa-issue-13892",
+      "medusa-issue-14057",
+      "medusa-issue-14249",
+      "medusa-issue-14304",
+      "medusa-issue-14347",
+      "medusa-issue-14965",
+      "medusa-issue-15077",
+      "medusa-issue-15207",
+      "medusa-issue-15508",
+      "medusa-issue-15589",
+      "medusa-issue-15658",
+      "medusa-issue-15960",
+      "medusa-issue-16232",
+      "medusa-issue-16300",
+      "medusa-issue-16310",
+      "medusa-issue-9468",
+      "medusa-issue-9540",
+      "medusa-issue-9546",
+      "medusa-issue-9569",
+      "medusa-issue-9764",
+      "medusa-issue-9881",
+      "medusa-issue-9883",
+      "medusa-issue-9896",
+      "medusa-issue-9997"
+    ]
+  },
+  "complete": true,
+  "completed_case_count": 99,
+  "verifier_failures": 2,
+  "system_fingerprint": null,
+  "system_fingerprints": [
+    "fp_1074f9ce08",
+    "fp_228717f27c",
+    "fp_24bfb4a850",
+    "fp_2b688e7cc3",
+    "fp_37c9245f64",
+    "fp_3cdd24b83b",
+    "fp_4a35f7bd1b",
+    "fp_4f7e7dc26e",
+    "fp_565badff47",
+    "fp_587d0d67cc",
+    "fp_5979a0e1b7",
+    "fp_63473661d7",
+    "fp_639a5351c8",
+    "fp_66891002f6",
+    "fp_66f3850a1a",
+    "fp_75c733514d",
+    "fp_80501ff3a1",
+    "fp_84bb35977d",
+    "fp_851252edc2",
+    "fp_8b41efc9a3",
+    "fp_8e23cedc90",
+    "fp_9340e7d14d",
+    "fp_976a85d17a",
+    "fp_996f667773",
+    "fp_9b8528b477",
+    "fp_a12402de73",
+    "fp_a4315eb300",
+    "fp_a8c584dda7",
+    "fp_c5a89987dc",
+    "fp_c9afb2bdb4",
+    "fp_d3e146e1a5",
+    "fp_d6de37e6be",
+    "fp_e189667b30",
+    "fp_e23fc997ca",
+    "fp_e2cb7a84ec",
+    "fp_e594c51153",
+    "fp_e99e93f2ac",
+    "fp_ef00694abe",
+    "fp_feb9b278f1"
+  ],
+  "predictions": [
+    {
+      "case_id": "medusa-discussion-10594",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-18192a7a7890a7f1",
+          "quote": "To authenticate using a secret API key, pass it with HTTP Basic authentication in the Authorization header: Secret API keys must be sent using HTTP Basic authentication, not as a Bearer token. Sending a secret API key as Authorization: Bearer {secret_api_key} returns a 401 error."
+        }
+      ],
+      "reason": "The passage explicitly states that a secret API key must be sent using HTTP Basic authentication in the Authorization header, not as a Bearer token, directly answering how to use a secret API key.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-10646",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention a model named \"relay\" or the methods \"createRelaies\" and \"deleteRelaies\".",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-10750",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address enforcing single execution of a scheduled job per environment.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-10766",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: BadRequestError",
+      "verifier_failure": true
+    },
+    {
+      "case_id": "medusa-discussion-11251",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly explain how to distribute a File Module Provider as a plugin. They discuss creating or registering providers, but do not address distribution or plugin packaging.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-11320",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly and directly answer the question \"Add Medusa (2) Docs to Cursor\".",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-11521",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly and directly answer the question about an unauthorized error occurring on production, including the cause, environment, or specific handling in that context.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-11554",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a passage that explicitly and directly addresses the error \"Could not resolve 'remoteQuery' when using useRemoteQueryStep in step\".",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-12125",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention or explain a thumbnail URL set to localhost.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-12466",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly explain why the `.medusa/types` folder is not generated in production mode.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-12638",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly and directly explain how to disable core modules in Medusa. The passages discuss module linking, caching invalidation, and telemetry settings, none of which address disabling core modules.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-12680",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly and directly answer how to debug a custom workflow.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-13239",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain information about 61 vulnerabilities, including the breakdown of 8 low, 3 moderate, and 50 high.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-13369",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly state how to obtain an OrderId before calling payment.initiatePaymentSession.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-1339",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly and directly answer the question \"How to configure the development environment\" with sufficient detail or qualifiers. They provide specific environment variable settings for Slack or Stripe, or a pointer to a development section, but do not give a comprehensive guide to configuring a development environment.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-14208",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that the store/products endpoint cannot filter based on product status or explain why it cannot.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-15550",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a direct statement or quote that addresses the race condition risk in compensatePaymentIfNeededStep or provides evidence related to the regression analysis for PR #15527.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-15884",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly address a connection error with Medusa Doc MCP after re-authentication.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2251",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided passages explicitly describe how the Medusa backend scales horizontally.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2407",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages explicitly explain why the billing address is null when creating a draft order via the API.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2606",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly state that a customer’s list of orders is included in the authorization response. The passages describe retrieving orders in a separate API route, handling admin authentication, or listing products, but do not provide evidence that the authorization response contains a customer’s orders.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2624",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-4a0ed8d25b387feb",
+          "quote": "To sort products by a field, use the order query parameter. Its value is a comma-separated list of fields to sort by, and each field is optionally prefixed by - to indicate descending order."
+        }
+      ],
+      "reason": "The passage explicitly states how to sort products using the order query parameter.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2755",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address a memory leak on a server running on Railway, nor do they provide evidence that such a leak is caused by the in-memory cache or workflow engine modules described.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2826",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly describe how to link a registered customer to their previous orders.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-2848",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly describe how to connect Medusa Admin, the Medusa backend, the Next.js starter, and MinIO together.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-3530",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state which field should be used to fill the reference product.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-3677",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-0534a3eefb4b44ba",
+          "quote": "You can also send an email using SendGrid in any workflow. This allows you to send emails within your custom flows. You can use the sendNotificationsStep in your workflow to send an email using SendGrid."
+        }
+      ],
+      "reason": "The passage explicitly explains how to send an email with SendGrid by using the sendNotificationsStep in a workflow, directly addressing the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-3823",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages explicitly state whether medusa.customers.listOrders() should return all orders. The passages discuss invoice workflows, vendor order creation, and digital product fulfillment, none of which address the behavior of medusa.customers.listOrders().",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4325",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-707ce5efda3f5fff",
+          "quote": "To retrieve a product by its handle, send a request to the List Products API route passing the handle query parameter: ]"
+        }
+      ],
+      "reason": "The first candidate document explicitly states how to retrieve a product by its handle, directly answering the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4387",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly and directly answer how to recover a cart after a user logs out and logs in again. The passages discuss logout mechanisms, login flow, and a generic cart recovery function, but none provide a clear, step-by-step solution for the specific scenario of restoring a cart post-logout.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4432",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a statement that directly addresses whether Medusa CLI can be run without a global installation. The passages discuss database reset, develop command options, and lint command options, but do not mention global or local installation requirements.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4575",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a direct statement that addresses in-person payments or the specific Stripe payment_method_types. The passages discuss webhook URLs, provider IDs, and declined test cards, but do not provide evidence for the requested topic.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4742",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly answer whether PostgreSQL is required for Medusa or whether Neon can be used with Medusa. The passages only discuss PostgreSQL as a locking provider and do not address the question about Neon or the requirement of PostgreSQL for Medusa as a whole.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4743",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-e70e11f375ef11f2",
+          "quote": "To use a PostgreSQL database hosted on Vercel, use the --db-url option and add to the end of your connection URL ?sslmode=require."
+        }
+      ],
+      "reason": "The passage explicitly instructs how to connect to a PostgreSQL database using the --db-url option and adding sslmode=require, directly addressing the connection issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-4811",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly describe uploading an import CSV for products in Medusa. The first passage discusses uploading a product feed to Meta, not a CSV import for Medusa. The other passages are unrelated to CSV product import.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-5006",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address multi‑vendor marketplace inventory management. They discuss general inventory features, product variant inventory, and inventory kits, but do not mention multi‑vendor scenarios, environments, or specific implementations.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-5175",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly explain why a custom widget that works in development fails to load in production.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-5987",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly describe reserving a product via a deposit and paying the remainder at a later time.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-7163",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a direct answer to the question \"Only query in-stock products\". The passages discuss retrieving fields related to stock locations, sales channels, fulfillment sets, and providers, but do not address filtering products by stock status or provide instructions for querying only in-stock products.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-8660",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly address a concern about an admin dependency in Medusa V2.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-discussion-9996",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents directly explain how to translate the Medusa Admin Dashboard to Spanish.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10089",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a passage that explicitly and directly addresses the issue of promotions not working with sales channel conditions.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10146",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that a customer email address fails to update, nor do they provide a direct explanation or evidence of such a failure. The passages discuss email handling in checkout components, cart functions, and email reuse after deletion, but they do not address a failure scenario for updating a customer email address.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10163",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention a missing import of the Heading component from @medusajs/ui or provide a direct answer to the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10238",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that a free order appears as awaiting after capturing a free amount.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10283",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state how to redirect to a different custom page after login, nor do they provide a direct solution to the reported issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10332",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that the Medusa Admin UI allows an Order to be cancelled multiple times.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10501",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate documents explicitly address or explain the issue of the Query API for the price entity’s filtering not working as outlined by the API documentation.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10541",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that creating a fulfillment results in a partial fulfillment when an order contains more than one line item.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10746",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate documents contain information that directly addresses the issue of a page not scrolling down using arrow keys or Chrome Vim plugin shortcuts.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-10783",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly and directly answer the question about why an automatically applied promotion for a specific customer group is always applied.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11069",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address a date inconsistency between order details and order list views.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11201",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly address the issue of admin products list response mapping prices incorrectly.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11232",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages directly address the issue of an incorrect TanStack version in the customize admin widget documentation.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11321",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that tiered pricing disappears when editing. They only describe how to set tiered pricing or how tiered pricing is selected, without addressing the disappearance issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11587",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that custom line items cause an error when retrieving shipping options. The first passage discusses how shipping options are determined by the cart’s shipping address and suggests a workaround, but it does not mention an error caused by custom line items. The other passages are unrelated to shipping options or custom line items.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11590",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly and directly list the parameters and return types for the payment provider documentation. The third passage only mentions that authorizePaymentSession returns null or a payment object, but does not provide a comprehensive list of parameters or return types, and the other passages are about authentication routes, not payment provider docs.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11648",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that custom line items disappear when changing the cart region.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11649",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly explain why deleting a customer address does not work or provide a direct solution to the issue. The first document only describes how to perform the deletion, while the other documents discuss unrelated topics.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11654",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that the API route documentation is incomplete or missing GET, service, or model setup details. They only describe how to create routes or retrieve fields, not that the documentation is lacking.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11659",
+      "decision": "uncertain",
+      "claims": [],
+      "reason": "verifier failure: BadRequestError",
+      "verifier_failure": true
+    },
+    {
+      "case_id": "medusa-issue-11681",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that Medusa v2.5.1 breaks in production on Ubuntu servers or provide evidence of such a failure.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11691",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that inventory updates do not emit events, nor do they directly address the issue of cache revalidation being prevented by missing inventory events.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11703",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided passages explicitly state that cancelling a fulfillment does not recreate the first reservation.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11860",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-fd0e25b1ffc118c3",
+          "quote": "In this guide, you'll learn how to handle the auth.password_reset event to send a reset password email (or other notification type) to users."
+        }
+      ],
+      "reason": "The candidate document explicitly states how to handle the auth.password_reset event, directly addressing the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-11882",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly provide the correct migration command for marketplaceModuleService or directly address the issue of an incorrect migration command for that service.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-12085",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly address amendments to the instructions for creating a plugin and generating migrations. They only describe how to generate migrations for specific modules, not how to amend or modify the instructions for plugin creation.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-12389",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that createPaymentSession fails when using stripe as the provider ID, nor do they provide a direct solution or explanation for that specific issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-12789",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address a rounding issue when capturing payment from a Stripe webhook. They only describe webhook routes, events, and URLs, without mentioning rounding behavior or related errors.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-12876",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that decimal values for width/length/height are rejected due to HTML input validation.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-12959",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that payment_sessions are missing from Order.payment_collections or provide evidence for that specific issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-13066",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly address the issue of refunding a shipping amount or explain why it might be failing.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-13337",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a statement that directly addresses the issue of baseUrl \"/\" in the draft order plugin causing problems when the backend is on a different domain than the dashboard.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-13403",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that the shipping cost is not added to the total or explain why it might be missing. They only describe the fields present in the shipping_methods array and how totals are calculated, but do not directly address the issue of shipping cost not being included in the overall total.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-13877",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that PostgreSQL must be running in the background and that the user must create a database and provide it in the CLI. The passages discuss database reset, CLI options, and connecting to a Vercel PostgreSQL database, but they do not directly address the requirement mentioned in the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-13892",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a statement that directly addresses the failure of the reserve-inventory-step in the Complete Cart Workflow when the \"Allow Backorders\" setting is enabled. The passages discuss unrelated topics such as ticket booking validation, general inventory features, and payment failure handling, but do not provide evidence for the specific issue described in the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-14057",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that fetching shipping options does not include the shipping option type in all cases.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-14249",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that the inventory level table fails to refresh after an update in the Admin UI, nor do they describe a related issue or solution.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-14304",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that orders created in the admin panel have incorrect `requires_shipping` when a fulfillment is created.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-14347",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that the current documentation on Docker installation produces non-functional medusa.js instances. The passages discuss Docker path configuration, installation commands, and Next.js project setup, but do not address the issue of documentation causing non-functional medusa.js instances.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-14965",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages explicitly address the issue of a query.index filter on a second linked module entity returning empty due to a missing inSchemaRef in the parent registration. The passages discuss query.index usage, field inclusion for Contentful integration, and cache invalidation, but do not provide evidence that directly answers the specific problem described in the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15077",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that the Medusa CLI plugin:db:generate crashes when model files export TypeScript enums. The passages discuss migrations and a generic export keyword error, but do not mention enums or the specific crash scenario.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15207",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention an unrecognized customer_group_ids schema key or explain a crash caused by it. The documents discuss price lists and customer groups in general, but do not provide evidence that the crash is due to an unrecognized schema key.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15508",
+      "decision": "supported",
+      "claims": [
+        {
+          "document_id": "medusa-1746fb462448d5d2",
+          "quote": "This will remove the session cookie from the customer's browser."
+        }
+      ],
+      "reason": "The candidate document explicitly states that a DELETE request to /auth/session removes the session cookie, directly addressing the issue of the cookie not being cleared.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15589",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that each cart total change during checkout creates a new Stripe PaymentIntent. The third passage mentions that refreshPaymentCollectionForCartWorkflow refreshes payment sessions, but it does not link this to cart total changes or the creation of new PaymentIntents. Therefore the evidence does not support the claim.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15658",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly address the issue of SSL being forced for non-localhost DB connections, the resulting Docker Compose breakage, or the silent db:migrate hang in Medusa 2.15.x. The passages discuss unrelated Docker path configuration and CLI options, and do not provide evidence for the specific regression described.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-15960",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that a promotion is incorrectly shown as \"Campaign expired\" for per-attribute (use_by_attribute) campaign budgets. The passages discuss general budget limits and expiration when limits are reached, but do not address the specific issue of per-attribute budgets causing an incorrect expired status.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-16232",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention or explain the quadratic variant lookup in prepareVariantsAndItemsWithPricesStep or the cart refresh path.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-16300",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that numeric shipping option rule values are compared as dates.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-16310",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a statement that directly addresses the bug where prepareRetrieveQuery drops an entity from the remote query configuration. The passages discuss entity discovery, column configuration, and cache tags, but do not mention prepareRetrieveQuery or the described issue.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9468",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided candidate passages explicitly state that the createProductVariantsWorkflow fails when an inventory item with the same SKU already exists.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9540",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a direct statement or explanation that addresses the issue of a GPay button not processing payments. The passages discuss Medusa checkout steps, Stripe payment element initialization, and PayPal button integration, but they do not mention GPay or provide troubleshooting steps for a GPay button that fails to process a payment.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9546",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly state that logging in with Google in Medusa v2 causes cart or customer cookie issues on Firefox, or that the issue is resolved by closing and reopening the tab. The passages discuss cache module removal and OAuth state storage, but do not address the specific Firefox-only symptom described in the question.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9569",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain information about an error starting a server due to a mappedBy reference in module models.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9764",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that a variant price was not saved and that an order was placed with lower prices. The passages discuss retrieving variant prices and payment method usage, but do not address the specific issue of unsaved variant prices or orders with incorrect pricing.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9881",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate passages explicitly mention the medusa-payment-razorpay plugin or its absence when updating Medusa to v2.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9883",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents contain a passage that explicitly and directly addresses the issue of a missing store entity in remote query entry points.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9896",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the candidate documents explicitly and directly answer the question about the specific TypeError occurring during payment processing. The passages discuss unrelated configuration errors or generic payment session statuses, but do not provide evidence for the exact error message or its cause.",
+      "verifier_failure": false
+    },
+    {
+      "case_id": "medusa-issue-9997",
+      "decision": "unsupported",
+      "claims": [],
+      "reason": "None of the provided documents explicitly state that Event Bus Services do not log subscription errors properly, nor do they describe the logging behavior of subscription errors.",
+      "verifier_failure": false
+    }
+  ]
+}

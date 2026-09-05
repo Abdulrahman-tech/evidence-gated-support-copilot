@@ -41,15 +41,32 @@ def evaluate_split(knowledge_base: KnowledgeBase, split_name: str) -> None:
         f"(supported={supported_count},unsupported={unsupported_count})"
     )
     for k in (1, 3):
-        recall = retrieval_recall_at_k(
+        candidate_recall = retrieval_recall_at_k(
+            knowledge_base,
+            cases,
+            k=k,
+        )
+        lower, upper = wilson_interval(
+            round(candidate_recall * supported_count),
+            supported_count,
+        )
+        print(f"medusa_{split_name}_candidate_recall_at_{k}={candidate_recall:.3f}")
+        print(
+            f"medusa_{split_name}_candidate_recall_at_{k}_95ci="
+            f"[{lower:.3f},{upper:.3f}]"
+        )
+        gated_recall = retrieval_recall_at_k(
             knowledge_base,
             cases,
             k=k,
             minimum_score=DEFAULT_MINIMUM_SCORE,
             minimum_score_ratio=DEFAULT_MINIMUM_SCORE_RATIO,
         )
-        lower, upper = wilson_interval(round(recall * supported_count), supported_count)
-        print(f"medusa_{split_name}_retrieval_recall_at_{k}={recall:.3f}")
+        lower, upper = wilson_interval(
+            round(gated_recall * supported_count),
+            supported_count,
+        )
+        print(f"medusa_{split_name}_retrieval_recall_at_{k}={gated_recall:.3f}")
         print(
             f"medusa_{split_name}_retrieval_recall_at_{k}_95ci="
             f"[{lower:.3f},{upper:.3f}]"
@@ -84,8 +101,11 @@ def main() -> None:
     parser.add_argument(
         "--split",
         choices=("development", "validation", "all"),
-        default="all",
-        help="The locked test is deliberately unavailable from this command.",
+        default="development",
+        help=(
+            "Defaults to development. Validation requires an explicit selection; "
+            "the locked test is unavailable."
+        ),
     )
     args = parser.parse_args()
 

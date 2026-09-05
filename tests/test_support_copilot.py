@@ -75,6 +75,10 @@ from scripts.bootstrap_kubernetes_benchmark_links import (
 )
 from scripts.collect_kubernetes_questions import candidate_from_item
 from scripts import evaluate_hosted_evidence
+from scripts.build_medusa_development_source_fidelity import (
+    source_faithful_question,
+    source_question_from_page,
+)
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -384,20 +388,19 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertEqual(
             benchmark_manifest["splits"]["development"],
             {
-                "count": 99,
-                "supported": 13,
-                "unsupported": 86,
+                "count": 95,
+                "supported": 7,
+                "unsupported": 88,
                 "sha256": hashlib.sha256(
                     (root / "benchmark" / "development.json").read_bytes()
                 ).hexdigest(),
             },
         )
-        self.assertEqual(
-            sum(
-                item.get("review_batch") == "medusa_development_manual_batch_03"
+        self.assertTrue(
+            all(
+                item.get("review_batch") == "medusa_development_source_fidelity_v1"
                 for item in development
-            ),
-            28,
+            )
         )
 
     def test_medusa_supported_label_audit_is_applied_to_development_only(self) -> None:
@@ -429,12 +432,11 @@ the period as a nested lookup. This is useful for annotations and settings.
             {"supported": 4, "unsupported": 7, "ambiguous": 1},
         )
         self.assertNotIn("medusa-discussion-4533", by_id)
-        self.assertEqual(
-            sum(
-                case.get("review_batch") == "medusa_supported_label_audit_12"
+        self.assertTrue(
+            all(
+                case.get("review_batch") == "medusa_development_source_fidelity_v1"
                 for case in development
-            ),
-            11,
+            )
         )
         self.assertEqual((record["reviewed"], record["included"], record["excluded"]), (12, 11, 1))
         self.assertEqual(
@@ -620,13 +622,24 @@ the period as a nested lookup. This is useful for annotations and settings.
                 )
                 if item["reviewer_decision"] in {"supported", "unsupported"}
             )
+        fidelity_excluded_urls = {
+            item["source_url"]
+            for item in json.loads(
+                (root / "development_source_fidelity" / "excluded.json").read_text(
+                    encoding="utf-8"
+                )
+            )
+        }
 
         self.assertEqual(len(sources), 1500)
         self.assertEqual(len({item["case_id"] for item in sources}), 1500)
         self.assertEqual(len({item["source_url"] for item in sources}), 1500)
         source_urls = {item["source_url"] for item in sources}
         self.assertFalse(protected_urls & source_urls)
-        self.assertEqual(development_urls & source_urls, reviewed_urls)
+        self.assertEqual(
+            (development_urls | fidelity_excluded_urls) & source_urls,
+            reviewed_urls,
+        )
         self.assertTrue(
             all(item["label_status"] == "unlabelled_candidate" for item in sources)
         )
@@ -1642,6 +1655,99 @@ the period as a nested lookup. This is useful for annotations and settings.
             with self.assertRaisesRegex(ValueError, "does not match"):
                 evaluate_hosted_evidence.load_checkpoint(output, changed)
 
+    def test_source_fidelity_extracts_issue_context_without_package_boilerplate(self) -> None:
+        page = """<script type="application/ld+json">{
+          "@type": "DiscussionForumPosting",
+          "headline": "[Bug]: Reset event fails",
+          "articleBody": "### Package.json file\\n```json\\n{\\\"@medusajs/medusa\\\": \\\"2.6.0\\\"}\\n```\\n### What happended?\\nThe server throws TypeError when token is interpolated.\\n### Expected behavior\\nThe email should be sent."
+        }</script>"""
+
+        title, body, canonical_body = source_question_from_page(page)
+        question = source_faithful_question(title, body, "github_issue_manual_review")
+
+        self.assertIn("TypeError when token is interpolated", question)
+        self.assertIn("The email should be sent", question)
+        self.assertIn("Reported Medusa version: 2.6.0", question)
+        self.assertNotIn("Package.json file", question)
+        self.assertIn("Package.json file", canonical_body)
+
+    def test_source_fidelity_extracts_discussion_question(self) -> None:
+        page = """<script type="application/ld+json">{
+            "@type": "QAPage",
+            "mainEntity": {
+              "name": "How do jobs run?",
+              "text": "<p>My scheduled job runs on every node.</p><h3>My package.json</h3><p>irrelevant-package-data</p>",
+              "acceptedAnswer": {"text": "<p>Use Redis.</p>"}
+            }
+        }</script>"""
+
+        title, body, canonical_body = source_question_from_page(page)
+        question = source_faithful_question(
+            title,
+            body,
+            "github_discussion_answered_q_and_a",
+        )
+
+        self.assertEqual(title, "How do jobs run?")
+        self.assertIn("irrelevant-package-data", canonical_body)
+        self.assertIn("runs on every node", question)
+        self.assertNotIn("irrelevant-package-data", question)
+
+    def test_medusa_source_fidelity_audit_is_complete_and_development_only(self) -> None:
+        root = Path(__file__).resolve().parents[1] / "data" / "medusa"
+        audit_root = root / "development_source_fidelity"
+        audit_path = audit_root / "audit.json"
+        audit = json.loads(audit_path.read_text(encoding="utf-8"))
+        audit_manifest = json.loads(
+            (audit_root / "manifest.json").read_text(encoding="utf-8")
+        )
+        excluded = json.loads(
+            (audit_root / "excluded.json").read_text(encoding="utf-8")
+        )
+        development = json.loads(
+            (root / "benchmark" / "development.json").read_text(encoding="utf-8")
+        )
+        benchmark_manifest = json.loads(
+            (root / "benchmark" / "manifest.json").read_text(encoding="utf-8")
+        )
+
+        self.assertEqual(len(audit), 99)
+        self.assertTrue(all(row["source_hash_matches"] for row in audit))
+        self.assertTrue(all(row["review_status"] == "approved" for row in audit))
+        self.assertEqual(
+            collections.Counter(row["reviewer_decision"] for row in audit),
+            {"unsupported": 88, "supported": 7, "outdated": 4},
+        )
+        self.assertEqual(
+            hashlib.sha256(audit_path.read_bytes()).hexdigest(),
+            audit_manifest["packet_sha256"],
+        )
+        self.assertEqual(len(development), 95)
+        self.assertTrue(
+            all("Source context:" in case["question"] for case in development)
+        )
+        self.assertEqual(
+            {row["case_id"] for row in excluded},
+            {
+                "medusa-discussion-3677",
+                "medusa-discussion-4743",
+                "medusa-issue-10541",
+                "medusa-issue-9764",
+            },
+        )
+        self.assertEqual(
+            benchmark_manifest["development_source_fidelity_audit"]["audit_sha256"],
+            audit_manifest["packet_sha256"],
+        )
+        self.assertEqual(
+            hashlib.sha256((root / "benchmark" / "validation.json").read_bytes()).hexdigest(),
+            "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a",
+        )
+        self.assertEqual(
+            hashlib.sha256((root / "benchmark" / "test.json").read_bytes()).hexdigest(),
+            "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+        )
+
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
         development_path = (
             Path(__file__).resolve().parents[1]
@@ -1911,6 +2017,37 @@ the period as a nested lookup. This is useful for annotations and settings.
             [result.document_id for result in results],
             ["refunds", "returns"],
         )
+
+    def test_structured_ticket_reserves_one_result_for_the_title(self) -> None:
+        documents = [
+            KnowledgeDocument(
+                "title-match",
+                "Remote query scope",
+                "Pass the request scope when invoking the workflow.",
+                "https://example.com/title",
+            ),
+            KnowledgeDocument(
+                "body-one",
+                "Dependency trace alpha",
+                "dependency trace alpha package metadata",
+                "https://example.com/body-one",
+            ),
+            KnowledgeDocument(
+                "body-two",
+                "Dependency trace beta",
+                "dependency trace beta package metadata",
+                "https://example.com/body-two",
+            ),
+        ]
+        policies = KnowledgeBase(documents)
+
+        results = policies.search(
+            "Remote query scope\n\ndependency trace alpha beta package metadata",
+            limit=3,
+        )
+
+        self.assertIn("title-match", {result.document_id for result in results})
+        self.assertEqual(len(results), 3)
 
     def test_measures_retrieval_recall(self) -> None:
         cases = [
