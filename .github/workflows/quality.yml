@@ -60,6 +60,7 @@ jobs:
           scripts/check_kubernetes_production_readiness.py
           scripts/check_live_service.py
           scripts/create_api_key_secret.py
+          scripts/evaluate_hosted_evidence.py
           scripts/load_test_api.py
 
   dependency-audit:

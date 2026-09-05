@@ -451,6 +451,20 @@ PYTHONPATH=src python scripts/evaluate_groq_evidence.py \
   --output artifacts/groq_evidence_development.json
 ```
 
+The output is an atomic checkpoint written after every completed case. If Groq
+reaches its rate limit, wait for the quota window to reset and continue without
+paying for the completed cases again:
+
+```bash
+PYTHONPATH=src python scripts/evaluate_groq_evidence.py \
+  --output artifacts/groq_evidence_development.json --resume
+```
+
+Resume is allowed only when the provider, model, verifier contract, prompt,
+schema, dataset, knowledge corpus, selected case IDs, and exact retrieved
+candidate inputs still match. Use `--overwrite` only when intentionally
+starting the evaluation again with a changed configuration.
+
 The hosted-verifier evaluation sends the same top three passages used by the
 production API. This avoids evaluation-serving skew and reduces dynamic input
 compared with the earlier five-passage evaluator. Run retrieval evaluation

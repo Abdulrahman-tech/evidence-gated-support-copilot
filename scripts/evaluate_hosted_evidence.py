@@ -13,7 +13,10 @@ from support_copilot.evaluation import (
     wilson_interval,
 )
 from support_copilot.evidence import (
+    EVIDENCE_RESPONSE_SCHEMA,
+    EVIDENCE_SYSTEM_INSTRUCTIONS,
     EVIDENCE_VERIFIER_VERSION,
+    EvidenceClaim,
     EvidenceDecision,
     EvidenceVerification,
     EvidenceVerifier,
@@ -33,6 +36,129 @@ EVIDENCE_CANDIDATE_LIMIT = 3
 
 def sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def evaluation_configuration(
+    provider: str,
+    model: str,
+    development_sha256: str,
+    knowledge_sha256: str,
+    candidate_inputs_sha256: str,
+    case_ids: list[str],
+) -> dict[str, object]:
+    """Describe every input that must match before predictions can be reused."""
+
+    prompt_sha256 = hashlib.sha256(
+        EVIDENCE_SYSTEM_INSTRUCTIONS.encode("utf-8")
+    ).hexdigest()
+    schema_sha256 = hashlib.sha256(
+        json.dumps(EVIDENCE_RESPONSE_SCHEMA, sort_keys=True).encode("utf-8")
+    ).hexdigest()
+    return {
+        "provider": provider,
+        "model": model,
+        "verifier_version": EVIDENCE_VERIFIER_VERSION,
+        "split": "development",
+        "development_sha256": development_sha256,
+        "knowledge_sha256": knowledge_sha256,
+        "candidate_inputs_sha256": candidate_inputs_sha256,
+        "candidate_limit": EVIDENCE_CANDIDATE_LIMIT,
+        "prompt_sha256": prompt_sha256,
+        "schema_sha256": schema_sha256,
+        "case_ids": case_ids,
+    }
+
+
+def load_checkpoint(
+    path: Path,
+    expected_configuration: dict[str, object],
+) -> tuple[dict[str, dict[str, object]], set[str]]:
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as error:
+        raise ValueError("evidence checkpoint is unreadable") from error
+    if payload.get("configuration") != expected_configuration:
+        raise ValueError("evidence checkpoint configuration does not match this run")
+    raw_predictions = payload.get("predictions")
+    if not isinstance(raw_predictions, list):
+        raise ValueError("evidence checkpoint predictions must be a list")
+    records: dict[str, dict[str, object]] = {}
+    allowed_case_ids = set(expected_configuration["case_ids"])
+    for record in raw_predictions:
+        if not isinstance(record, dict) or not isinstance(record.get("case_id"), str):
+            raise ValueError("evidence checkpoint contains an invalid prediction")
+        case_id = record["case_id"]
+        if case_id not in allowed_case_ids or case_id in records:
+            raise ValueError("evidence checkpoint contains an unexpected case ID")
+        records[case_id] = record
+    fingerprints = payload.get("system_fingerprints", [])
+    if not isinstance(fingerprints, list) or not all(
+        isinstance(value, str) for value in fingerprints
+    ):
+        raise ValueError("evidence checkpoint fingerprints must be strings")
+    return records, set(fingerprints)
+
+
+def write_checkpoint(
+    path: Path,
+    configuration: dict[str, object],
+    records: dict[str, dict[str, object]],
+    system_fingerprints: set[str],
+    *,
+    complete: bool,
+) -> None:
+    ordered_records = [
+        records[case_id]
+        for case_id in configuration["case_ids"]
+        if case_id in records
+    ]
+    ordered_fingerprints = sorted(system_fingerprints)
+    payload = {
+        # Preserve the original top-level metadata for existing result readers.
+        "provider": configuration["provider"],
+        "model": configuration["model"],
+        "verifier_version": configuration["verifier_version"],
+        "split": configuration["split"],
+        "case_count": len(configuration["case_ids"]),
+        "development_sha256": configuration["development_sha256"],
+        "knowledge_sha256": configuration["knowledge_sha256"],
+        "configuration": configuration,
+        "complete": complete,
+        "completed_case_count": len(ordered_records),
+        "verifier_failures": sum(
+            bool(record.get("verifier_failure")) for record in ordered_records
+        ),
+        "system_fingerprint": (
+            ordered_fingerprints[0] if len(ordered_fingerprints) == 1 else None
+        ),
+        "system_fingerprints": ordered_fingerprints,
+        "predictions": ordered_records,
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = path.with_name(f".{path.name}.tmp")
+    temporary_path.write_text(
+        json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+    temporary_path.replace(path)
+
+
+def verification_from_record(record: dict[str, object]) -> EvidenceVerification:
+    decision = EvidenceDecision(record.get("decision"))
+    raw_claims = record.get("claims")
+    reason = record.get("reason")
+    if not isinstance(raw_claims, list) or not isinstance(reason, str):
+        raise ValueError("evidence checkpoint prediction has invalid fields")
+    claims = []
+    for claim in raw_claims:
+        if not isinstance(claim, dict) or set(claim) != {"document_id", "quote"}:
+            raise ValueError("evidence checkpoint claim is invalid")
+        document_id = claim["document_id"]
+        quote = claim["quote"]
+        if not isinstance(document_id, str) or not isinstance(quote, str):
+            raise ValueError("evidence checkpoint claim fields must be strings")
+        claims.append(EvidenceClaim(document_id=document_id, quote=quote))
+    return EvidenceVerification(decision=decision, claims=tuple(claims), reason=reason)
 
 
 def configured_verifier(provider: str) -> tuple[str, EvidenceVerifier]:
@@ -70,6 +196,16 @@ def main(provider: str | None = None) -> None:
         help="Evaluate only this development case; may be repeated.",
     )
     parser.add_argument("--output", type=Path)
+    parser.add_argument(
+        "--resume",
+        action="store_true",
+        help="Reuse a configuration-matched partial checkpoint.",
+    )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Replace an existing output instead of resuming it.",
+    )
     args = parser.parse_args()
     if args.max_cases is not None and args.max_cases <= 0:
         raise SystemExit("--max-cases must be positive")
@@ -79,6 +215,12 @@ def main(provider: str | None = None) -> None:
         raise SystemExit("--max-cases and --case-id cannot be combined")
     if args.start_index and args.max_cases is None:
         raise SystemExit("--start-index requires --max-cases")
+    if args.resume and args.overwrite:
+        raise SystemExit("--resume and --overwrite cannot be combined")
+    if args.resume and args.output is None:
+        raise SystemExit("--resume requires --output")
+    if args.output and args.output.exists() and not (args.resume or args.overwrite):
+        raise SystemExit("output already exists; pass --resume or --overwrite")
     provider = provider or args.provider
     model, verifier = configured_verifier(provider)
 
@@ -112,24 +254,84 @@ def main(provider: str | None = None) -> None:
             raise SystemExit("development case range is empty")
 
     knowledge_base = KnowledgeBase(documents)
-    predictions = []
-    records = []
-    verifier_failures = 0
-    for case in cases:
-        candidates = knowledge_base.search(
+    candidates_by_case = {
+        case.case_id: knowledge_base.search(
             case.question,
             limit=EVIDENCE_CANDIDATE_LIMIT,
         )
+        for case in cases
+    }
+    candidate_inputs = [
+        {
+            "case_id": case.case_id,
+            "question": case.question,
+            "candidates": [
+                {
+                    "document_id": candidate.document_id,
+                    "title": candidate.title,
+                    "passage": candidate.passage,
+                }
+                for candidate in candidates_by_case[case.case_id]
+            ],
+        }
+        for case in cases
+    ]
+    candidate_inputs_sha256 = hashlib.sha256(
+        json.dumps(
+            candidate_inputs,
+            sort_keys=True,
+            ensure_ascii=False,
+        ).encode("utf-8")
+    ).hexdigest()
+    configuration = evaluation_configuration(
+        provider,
+        model,
+        sha256(development_path),
+        sha256(knowledge_path),
+        candidate_inputs_sha256,
+        [case.case_id for case in cases],
+    )
+    records: dict[str, dict[str, object]] = {}
+    system_fingerprints: set[str] = set()
+    if args.resume and args.output:
+        try:
+            records, system_fingerprints = load_checkpoint(
+                args.output,
+                configuration,
+            )
+        except ValueError as error:
+            raise SystemExit(str(error)) from error
+
+    predictions = []
+    for case in cases:
+        candidates = candidates_by_case[case.case_id]
+        if case.case_id in records:
+            try:
+                prediction = verification_from_record(records[case.case_id])
+                validate_verification(prediction, candidates)
+            except ValueError as error:
+                raise SystemExit(
+                    f"checkpoint prediction for {case.case_id} is invalid: {error}"
+                ) from error
+            predictions.append(prediction)
+            continue
         try:
             prediction = verifier.verify(case.question, candidates)
             validate_verification(prediction, candidates)
         except Exception as error:
             if type(error).__name__ == "RateLimitError":
+                if args.output:
+                    write_checkpoint(
+                        args.output,
+                        configuration,
+                        records,
+                        system_fingerprints,
+                        complete=False,
+                    )
                 raise SystemExit(
-                    f"{provider} rate limit reached; evaluation aborted without metrics. "
-                    "Wait for the provider quota to reset before retrying."
+                    f"{provider} rate limit reached after {len(records)}/{len(cases)} "
+                    "cases. Wait for quota to reset, then rerun with --resume."
                 ) from error
-            verifier_failures += 1
             failure_reason = f"verifier failure: {type(error).__name__}"
             if isinstance(error, ValueError):
                 failure_reason = f"{failure_reason}: {error}"
@@ -138,18 +340,31 @@ def main(provider: str | None = None) -> None:
                 reason=failure_reason,
             )
         predictions.append(prediction)
-        records.append(
-            {
-                "case_id": case.case_id,
-                "decision": prediction.decision.value,
-                "claims": [
-                    {"document_id": claim.document_id, "quote": claim.quote}
-                    for claim in prediction.claims
-                ],
-                "reason": prediction.reason,
-            }
-        )
+        records[case.case_id] = {
+            "case_id": case.case_id,
+            "decision": prediction.decision.value,
+            "claims": [
+                {"document_id": claim.document_id, "quote": claim.quote}
+                for claim in prediction.claims
+            ],
+            "reason": prediction.reason,
+            "verifier_failure": prediction.reason.startswith("verifier failure:"),
+        }
+        fingerprint = getattr(verifier, "last_system_fingerprint", None)
+        if fingerprint:
+            system_fingerprints.add(fingerprint)
+        if args.output:
+            write_checkpoint(
+                args.output,
+                configuration,
+                records,
+                system_fingerprints,
+                complete=False,
+            )
 
+    verifier_failures = sum(
+        bool(record.get("verifier_failure")) for record in records.values()
+    )
     metrics = evidence_verification_metrics(cases, predictions)
     supported_total = sum(case.expected_document_id is not None for case in cases)
     unsupported_total = len(cases) - supported_total
@@ -180,22 +395,12 @@ def main(provider: str | None = None) -> None:
         print(f"unsupported_abstention_rate_95ci=[{lower:.3f},{upper:.3f}]")
 
     if args.output:
-        payload = {
-            "provider": provider,
-            "model": model,
-            "verifier_version": EVIDENCE_VERIFIER_VERSION,
-            "split": "development",
-            "case_count": len(cases),
-            "development_sha256": sha256(development_path),
-            "knowledge_sha256": sha256(knowledge_path),
-            "verifier_failures": verifier_failures,
-            "system_fingerprint": getattr(verifier, "last_system_fingerprint", None),
-            "predictions": records,
-        }
-        args.output.parent.mkdir(parents=True, exist_ok=True)
-        args.output.write_text(
-            json.dumps(payload, indent=2, ensure_ascii=False) + "\n",
-            encoding="utf-8",
+        write_checkpoint(
+            args.output,
+            configuration,
+            records,
+            system_fingerprints,
+            complete=True,
         )
 
 

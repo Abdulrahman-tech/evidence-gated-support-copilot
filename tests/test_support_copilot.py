@@ -6,6 +6,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
+from unittest import mock
 
 from fastapi.testclient import TestClient
 
@@ -73,6 +74,7 @@ from scripts.bootstrap_kubernetes_benchmark_links import (
     official_document_urls,
 )
 from scripts.collect_kubernetes_questions import candidate_from_item
+from scripts import evaluate_hosted_evidence
 
 
 def knowledge_base() -> KnowledgeBase:
@@ -1541,6 +1543,104 @@ the period as a nested lookup. This is useful for annotations and settings.
         self.assertEqual(metrics.supported_precision, 1.0)
         self.assertEqual(metrics.supported_recall, 0.5)
         self.assertEqual(metrics.unsupported_abstention_rate, 1.0)
+
+    def test_hosted_evidence_evaluation_resumes_after_rate_limit(self) -> None:
+        class RateLimitError(Exception):
+            pass
+
+        class RateLimitedVerifier:
+            last_system_fingerprint = "fingerprint-a"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def verify(self, question, candidates):
+                del question, candidates
+                self.calls += 1
+                if self.calls == 2:
+                    raise RateLimitError("quota exhausted")
+                return EvidenceVerification(EvidenceDecision.UNSUPPORTED)
+
+        class ResumedVerifier:
+            last_system_fingerprint = "fingerprint-a"
+
+            def __init__(self) -> None:
+                self.calls = 0
+
+            def verify(self, question, candidates):
+                del question, candidates
+                self.calls += 1
+                return EvidenceVerification(EvidenceDecision.UNSUPPORTED)
+
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "checkpoint.json"
+            first_verifier = RateLimitedVerifier()
+            with mock.patch.object(
+                evaluate_hosted_evidence,
+                "configured_verifier",
+                return_value=("test-model", first_verifier),
+            ), mock.patch(
+                "sys.argv",
+                [
+                    "evaluate_groq_evidence.py",
+                    "--max-cases",
+                    "2",
+                    "--output",
+                    str(output),
+                ],
+            ):
+                with self.assertRaisesRegex(SystemExit, "after 1/2 cases"):
+                    evaluate_hosted_evidence.main("groq")
+
+            partial = json.loads(output.read_text(encoding="utf-8"))
+            self.assertFalse(partial["complete"])
+            self.assertEqual(partial["completed_case_count"], 1)
+            self.assertEqual(len(partial["predictions"]), 1)
+
+            resumed_verifier = ResumedVerifier()
+            with mock.patch.object(
+                evaluate_hosted_evidence,
+                "configured_verifier",
+                return_value=("test-model", resumed_verifier),
+            ), mock.patch(
+                "sys.argv",
+                [
+                    "evaluate_groq_evidence.py",
+                    "--max-cases",
+                    "2",
+                    "--output",
+                    str(output),
+                    "--resume",
+                ],
+            ):
+                evaluate_hosted_evidence.main("groq")
+
+            completed = json.loads(output.read_text(encoding="utf-8"))
+            self.assertTrue(completed["complete"])
+            self.assertEqual(completed["completed_case_count"], 2)
+            self.assertEqual(resumed_verifier.calls, 1)
+
+    def test_hosted_evidence_checkpoint_rejects_configuration_drift(self) -> None:
+        configuration = evaluate_hosted_evidence.evaluation_configuration(
+            "groq",
+            "test-model",
+            "development-digest",
+            "knowledge-digest",
+            "candidate-inputs-digest",
+            ["case-1"],
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "checkpoint.json"
+            evaluate_hosted_evidence.write_checkpoint(
+                output,
+                configuration,
+                {},
+                set(),
+                complete=False,
+            )
+            changed = {**configuration, "model": "different-model"}
+            with self.assertRaisesRegex(ValueError, "does not match"):
+                evaluate_hosted_evidence.load_checkpoint(output, changed)
 
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
         development_path = (
