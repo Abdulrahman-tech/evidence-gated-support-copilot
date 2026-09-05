@@ -124,6 +124,31 @@ Its frozen result is
 `artifacts/medusa_evidence_alignment_candidate.json`. No hosted-model call or
 protected-split evaluation was used.
 
+## Pinned local semantic gate candidate
+
+`local_semantic_alignment_v1` adds cosine similarity from the pinned
+`all-MiniLM-L6-v2` revision to the two sentence-alignment signals. It runs with
+`local_files_only=True`, uses no hosted API, and contains no case-specific
+rules. On the repaired development split its selected boundary reaches 6/7
+supported Recall@3 (85.7%) and 71/88 unsupported abstention (80.7%). This passes
+the development point targets, but the 95% lower bounds are only 48.7% and
+71.2%, respectively. It is selected for independent validation, not production.
+
+```bash
+pip install -e '.[semantic]'
+HF_HUB_OFFLINE=1 PYTHONPATH=src \
+  python scripts/evaluate_medusa_local_semantic_gate.py
+```
+
+The local arm64 diagnostic measured 52.2 ms mean and 64.3 ms p95 warm encoding
+latency for one question plus three passages. The full evaluation process
+peaked at 848,936,960 bytes of resident memory, above the current Render free
+instance's 512 MB limit. This is not a cross-environment capacity benchmark,
+but it blocks deployment until a production-container memory profile passes.
+Runtime behavior remains unchanged. See
+`artifacts/medusa_local_semantic_gate.json` and
+`artifacts/medusa_local_semantic_gate_resource_profile.json`.
+
 ## Rejected local verifier candidate
 
 A pinned TinyRoBERTa SQuAD2 extractive model was tested only on the development

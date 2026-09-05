@@ -232,6 +232,12 @@ A zero-cost sentence-alignment candidate improved recall-preserving unsupported
 abstention from 21.6% to 64.8%, but it still failed the 80% development
 requirement. It remains an offline rejected experiment, not production code.
 
+A pinned offline MiniLM signal combined with sentence alignment reaches 85.7%
+Recall@3 and 80.7% unsupported abstention on development. It is only selected
+for independent validation: seven supported cases produce wide confidence
+intervals, and the local evaluation process peaked near 849 MB RSS, above the
+current Render free-instance limit. It is not wired into the runtime.
+
 See [the Medusa scope](docs/medusa_scope.md) for supported areas, provenance,
 and the release boundary.
 

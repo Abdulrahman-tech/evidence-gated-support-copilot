@@ -1,0 +1,25 @@
+{
+  "candidate": "local_semantic_alignment_v1",
+  "environment": {
+    "architecture": "arm64",
+    "operating_system": "macOS 15.7.5",
+    "python": "3.13.5"
+  },
+  "evaluation_run": {
+    "case_count": 95,
+    "elapsed_seconds": 11.746,
+    "maximum_resident_set_bytes": 848936960
+  },
+  "model_cache_bytes": 91615232,
+  "production_promotion_allowed": false,
+  "reason": "The measured process peak exceeds the Render free instance memory limit; a production-container profile is required before deployment.",
+  "role": "single_host_development_resource_diagnostic",
+  "warm_request_encoding": {
+    "input_count_per_request": 4,
+    "maximum_ms": 69.78,
+    "mean_ms": 52.24,
+    "p50_ms": 52.95,
+    "p95_ms": 64.27,
+    "request_count": 95
+  }
+}

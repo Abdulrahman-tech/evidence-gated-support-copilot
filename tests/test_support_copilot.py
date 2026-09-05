@@ -1848,6 +1848,42 @@ the period as a nested lookup. This is useful for annotations and settings.
             0.80,
         )
 
+    def test_medusa_local_semantic_gate_is_not_a_production_claim(self) -> None:
+        root = Path(__file__).resolve().parents[1]
+        result = json.loads(
+            (root / "artifacts" / "medusa_local_semantic_gate.json").read_text()
+        )
+        resources = json.loads(
+            (
+                root
+                / "artifacts"
+                / "medusa_local_semantic_gate_resource_profile.json"
+            ).read_text()
+        )
+
+        self.assertEqual(
+            result["selection_status"], "selected_for_independent_validation"
+        )
+        self.assertFalse(result["runtime_changed"])
+        self.assertEqual(result["hosted_calls"], 0)
+        self.assertEqual(result["protected_splits_evaluated"], [])
+        self.assertAlmostEqual(result["selected"]["supported_recall_at_3"], 6 / 7)
+        self.assertAlmostEqual(
+            result["selected"]["unsupported_abstention"], 71 / 88
+        )
+        self.assertLess(
+            result["development_uncertainty"]["supported_recall_at_3_95ci"][0],
+            0.80,
+        )
+        self.assertFalse(
+            result["development_uncertainty"]["production_confidence_gates_passed"]
+        )
+        self.assertFalse(resources["production_promotion_allowed"])
+        self.assertGreater(
+            resources["evaluation_run"]["maximum_resident_set_bytes"],
+            512 * 1024 * 1024,
+        )
+
     def test_direct_evidence_v3_guards_against_causal_inference_regression(self) -> None:
         development_path = (
             Path(__file__).resolve().parents[1]

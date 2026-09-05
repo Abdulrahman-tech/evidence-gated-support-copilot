@@ -1,0 +1,53 @@
+{
+  "calibration_scope": "medusa_development_only",
+  "candidate": "local_semantic_alignment_v1",
+  "candidate_threshold_count": 294,
+  "development": {
+    "case_count": 95,
+    "sha256": "99494e00ca32b6bb31137a9b8d5b3ab08af92663a3e2bb3e699a568047919c7c",
+    "supported_count": 7,
+    "unsupported_count": 88
+  },
+  "development_point_gates_passed": true,
+  "development_uncertainty": {
+    "production_confidence_gates_passed": false,
+    "reason": "Only seven supported development cases are available.",
+    "supported_recall_at_3_95ci": [
+      0.48686549668097007,
+      0.9743210440510253
+    ],
+    "unsupported_abstention_95ci": [
+      0.7122274050169833,
+      0.875741445699903
+    ]
+  },
+  "hosted_calls": 0,
+  "knowledge_sha256": "872135528b66f59c4187a9c7e93b000770255a4fa585261a825984631aa768d4",
+  "model": {
+    "local_files_only": true,
+    "name": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "snapshot_sha256": "7d235026b90951558a99857cdac5b7e1f3da4cf34eb8594d33f3999d4fc245c5"
+  },
+  "protected_split_checksums": {
+    "locked_test": "ea7e88dd4b9cbb4277528a33a9d7e9949fafb6ace5f133976c99424c2d899cfd",
+    "validation": "bd723cc8ea874734d8d6f6e715d8859cc38027e23e75107594d351644d9f494a"
+  },
+  "protected_splits_evaluated": [],
+  "requirements": {
+    "minimum_supported_recall_at_3": 0.8,
+    "minimum_unsupported_abstention": 0.8
+  },
+  "runtime_changed": false,
+  "selected": {
+    "accepted_count": 23,
+    "minimum_evidence_alignment": 0.068301,
+    "minimum_semantic_similarity": 0.465592,
+    "minimum_title_alignment": 0.272727,
+    "supported_recall_at_1": 0.5714285714285714,
+    "supported_recall_at_3": 0.8571428571428571,
+    "unsupported_abstention": 0.8068181818181818,
+    "unsupported_pass_count": 17
+  },
+  "selection_status": "selected_for_independent_validation"
+}
